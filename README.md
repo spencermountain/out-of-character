@@ -25,27 +25,43 @@
 
 Unicode has [dozens](https://character.construction/blanks) of characters that do not render any visible glyphs.
 
-This is cool, for handling the cultural idiosyncracies of historical languages. 
-More often though, their use is unintentional *(or [nefarious](https://330k.github.io/misc_tools/unicode_steganography.html)!)*, and these characters cause problems parsing text formats.
+This is *cool* for handling cultural idiosyncracies in historical languages. 
+More often though, their use is unintentional *(or [nefarious!](https://330k.github.io/misc_tools/unicode_steganography.html))*, and these characters end-up causing problems parsing text formats.
 
-They are sometimes called *zero-width*, *ignorable*, or *tag-characters*.
 
-This library helps spot, and remove these funboys, before they cause you some trouble:
+<div align="center">
+
+-they are sometimes called *zero-width*, *ignorable*, or *tag-characters*-
+
+</div>
+
+This library helps spot and remove these funboys, before they cause you some trouble:
 
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
+*work in progress*
+
 ### CLI
-`npm install -g out-of-character`
+
+<div align="center">
+  <code>npm install -g out-of-character</code>
+</div>
 
 test for any invisible characters in a file
-`out-of-character ./path/to/file.txt --detect`
+```bash
+out-of-character ./path/to/file.txt --detect
+```
 
 remove invisible characters from a file
-`out-of-character ./path/to/file.txt`
+```bash
+out-of-character ./path/to/file.txt
+```
 
 use as part of a stream
-`cat ./path/to/file.txt | out-of-character`
+```bash
+cat ./path/to/file.txt | out-of-character
+```
 
 
 <!-- spacer -->
@@ -55,9 +71,15 @@ use as part of a stream
 ```js
 import {detect, remove} from 'out-of-character'
 
-let str=''
+let str='noth­ing s͏neak឵y h᠎ere' //actually, there is.
+console.log(detect(str))
+//true
+
+str === remove(str)
+//false
 ```
 
+*Thank you to [character.construction/blanks](https://character.construction/blanks) by [Jan Lelis](https://janlelis.com/)*
 
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
