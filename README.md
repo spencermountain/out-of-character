@@ -14,7 +14,7 @@
   </a>
 </div>
 
-<div>
+<div align="center">
   <code>npm install out-of-character</code>
     <div>by <a href="https://github.com/spencermountain">Spencer Kelly</a> and <a href="https://github.com/thegoatherder">Adam Tsiopani</a></div>
   <hr/>
@@ -29,11 +29,15 @@ This is *cool* for cultural idiosyncracies in historical languages.
 More often though, their use is unintentional *(or [nefarious!](https://330k.github.io/misc_tools/unicode_steganography.html))*, and these characters end-up causing problems parsing text formats.
 
 
-<div align="center">a
+<div align="center">
 
--these are sometimes called *'zero-width'*, *'ignorable'*, or *'tag-characters'*-
-<div >unicode is complicated.</div>
+- these are sometimes called *'zero-width'*, *'ignorable'*, or *'tag-characters'* - <br/>
+unicode is pretty-complicated.
 </div>
+
+<!-- spacer -->
+<img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+
 
 This library helps spot and remove these funboys, before they cause you some trouble.
 
@@ -46,9 +50,9 @@ Please remember some text is meant to have Khmer-vowels, or Kaithi-alphabet char
 
 ### CLI
 
-<div align="center">
+<di>
   <code>npm install -g out-of-character</code>
-</div>
+</di>
 
 test for any invisible characters in a file
 ```bash
@@ -69,7 +73,7 @@ cat ./path/to/file.txt | out-of-character
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
-### JS API
+### Javascript API
 ```js
 import {detect, remove} from 'out-of-character'
 
