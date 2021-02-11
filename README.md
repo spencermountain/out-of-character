@@ -87,6 +87,24 @@ str === remove(str)
 //false
 ```
 
+fixing/detecting in files can be done like:
+```js
+const fs = require('fs')
+const {detect, remove} = require('out-of-character')
+
+let text = fs.readFileSync('./some-file.txt').toString()
+console.log(detect(text))
+// yikes.
+
+// ok, fix it
+fs.writeFileSync('./some-file.txt', replace(text))
+
+// ok, double-check it.
+let goodNow = fs.readFileSync('./some-file.txt').toString()
+console.log(detect(goodNow))
+// fhew.
+
+```
 
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
