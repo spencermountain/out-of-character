@@ -15,7 +15,8 @@
     "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
     "testb": "TESTENV=prod tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
     "watch": "amble ./scratch.js",
-    "build": "rollup -c --silent"
+    "build": "rollup -c --silent",
+    "parseConfig": "csvtojson data/characters.csv > data/characters.json"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -43,6 +44,7 @@
     "@rollup/plugin-commonjs": "17.1.0",
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "11.1.1",
+    "csvtojson": "^2.0.10",
     "rollup": "2.38.5",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-filesize-check": "0.0.1",

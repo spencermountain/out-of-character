@@ -1,0 +1,68 @@
+Type,Name,Codepoint,Escape,AKA
+Line Breaks / Separators,LINE FEED,U+000A,\n,LF
+Line Breaks / Separators,LINE TABULATION,U+000B,\t,TAB
+Line Breaks / Separators,FORM FEED,U+000C,\f,FF
+Line Breaks / Separators,CARRIAGE RETURN,U+000D,\r,CR
+Line Breaks / Separators,NEXT LINE,U+0085,NEL
+Line Breaks / Separators,LINE SEPARATOR,U+2028
+Line Breaks / Separators,PARAGRAPH SEPARATOR,U+2029
+Whitespace / Other Invisible,CHARACTER TABULATION,U+0009
+Whitespace / Other Invisible,SPACE,U+0020
+Whitespace / Other Invisible,SOFT HYPHEN,U+00AD
+Whitespace / Other Invisible,COMBINING GRAPHEME JOINER,U+034F
+Whitespace / Other Invisible,ARABIC LETTER MARK,U+061C
+Whitespace / Other Invisible,SYRIAC ABBREVIATION MARK,U+070F
+Whitespace / Other Invisible,HANGUL CHOSEONG FILLER,U+115F
+Whitespace / Other Invisible,HANGUL JUNGSEONG FILLER,U+1160
+Whitespace / Other Invisible,OGHAM SPACE MARK,U+1680
+Whitespace / Other Invisible,KHMER VOWEL INHERENT AQ,U+17B4
+Whitespace / Other Invisible,KHMER VOWEL INHERENT AA,U+17B5
+Whitespace / Other Invisible,MONGOLIAN VOWEL SEPARATOR,U+180E
+Whitespace / Other Invisible,EN QUAD,U+2000
+Whitespace / Other Invisible,EM QUAD,U+2001
+Whitespace / Other Invisible,EN SPACE,U+2002
+Whitespace / Other Invisible,EM SPACE,U+2003
+Whitespace / Other Invisible,THREE-PER-EM SPACE,U+2004
+Whitespace / Other Invisible,FOUR-PER-EM SPACE,U+2005
+Whitespace / Other Invisible,SIX-PER-EM SPACE,U+2006
+Whitespace / Other Invisible,FIGURE SPACE,U+2007
+Whitespace / Other Invisible,PUNCTUATION SPACE,U+2008
+Whitespace / Other Invisible,THIN SPACE,U+2009
+Whitespace / Other Invisible,HAIR SPACE,U+200A
+Whitespace / Other Invisible,ZERO WIDTH SPACE,U+200B
+Whitespace / Other Invisible,ZERO WIDTH NON-JOINER,U+200C
+Whitespace / Other Invisible,ZERO WIDTH ,U+200D
+Whitespace / Other Invisible,LEFT-TO-RIGHT MARK,U+200E
+Whitespace / Other Invisible,RIGHT-TO-LEFT MARK,U+200F
+Whitespace / Other Invisible,NARROW NO-BREAK SPACE,U+202F
+Whitespace / Other Invisible,MEDIUM MATHEMATICAL SPACE,U+205F
+Whitespace / Other Invisible,WORD JOINER,U+2060
+Whitespace / Other Invisible,FUNCTION APPLICATION,U+2061
+Whitespace / Other Invisible,INVISIBLE TIMES,U+2062
+Whitespace / Other Invisible,INVISIBLE SEPARATOR,U+2063
+Whitespace / Other Invisible,INVISIBLE PLUS,U+2064
+Whitespace / Other Invisible,INHIBIT SYMMETRIC SWAPPING,U+206A
+Whitespace / Other Invisible,ACTIVATE SYMMETRIC SWAPPING,U+206B
+Whitespace / Other Invisible,INHIBIT ARABIC FORM SHAPING,U+206C
+Whitespace / Other Invisible,ACTIVATE ARABIC FORM SHAPING,U+206D
+Whitespace / Other Invisible,NATIONAL DIGIT SHAPES,U+206E
+Whitespace / Other Invisible,NOMINAL DIGIT SHAPES,U+206F
+Whitespace / Other Invisible,IDEOGRAPHIC SPACE,U+3000
+Whitespace / Other Invisible,BRAILLE PATTERN BLANK,U+2800
+Whitespace / Other Invisible,HANGUL FILLER,U+3164
+Whitespace / Other Invisible,ZERO WIDTH NO-BREAK SPACE,U+FEFF
+Whitespace / Other Invisible,HALFWIDTH HANGUL FILLER,U+FFA0
+Whitespace / Other Invisible,KAITHI VOWEL SIGN I,U+110B1
+Whitespace / Other Invisible,SHORTHAND FORMAT LETTER OVERLAP,U+1BCA0
+Whitespace / Other Invisible,SHORTHAND FORMAT CONTINUING OVERLAP,U+1BCA1
+Whitespace / Other Invisible,SHORTHAND FORMAT DOWN STEP,U+1BCA2
+Whitespace / Other Invisible,SHORTHAND FORMAT UP STEP,U+1BCA3
+Whitespace / Other Invisible,MUSICAL SYMBOL NULL NOTEHEAD,U+1D159
+Whitespace / Other Invisible,MUSICAL SYMBOL BEGIN BEAM,U+1D173
+Whitespace / Other Invisible,MUSICAL SYMBOL END BEAM,U+1D174
+Whitespace / Other Invisible,MUSICAL SYMBOL BEGIN TIE,U+1D175
+Whitespace / Other Invisible,MUSICAL SYMBOL END TIE,U+1D176
+Whitespace / Other Invisible,MUSICAL SYMBOL BEGIN SLUR,U+1D177
+Whitespace / Other Invisible,MUSICAL SYMBOL END SLUR,U+1D178
+Whitespace / Other Invisible,MUSICAL SYMBOL BEGIN PHRASE,U+1D179
+Whitespace / Other Invisible,MUSICAL SYMBOL END PHRASE,U+1D17A

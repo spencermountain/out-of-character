@@ -1,0 +1,69 @@
+[
+{"Type":"Line Breaks / Separators","Name":"LINE FEED","Codepoint":"U+000A","Escape":"\\n","AKA":"LF"},
+{"Type":"Line Breaks / Separators","Name":"LINE TABULATION","Codepoint":"U+000B","Escape":"\\t","AKA":"TAB"},
+{"Type":"Line Breaks / Separators","Name":"FORM FEED","Codepoint":"U+000C","Escape":"\\f","AKA":"FF"},
+{"Type":"Line Breaks / Separators","Name":"CARRIAGE RETURN","Codepoint":"U+000D","Escape":"\\r","AKA":"CR"},
+{"Type":"Line Breaks / Separators","Name":"NEXT LINE","Codepoint":"U+0085","Escape":"NEL"},
+{"Type":"Line Breaks / Separators","Name":"LINE SEPARATOR","Codepoint":"U+2028"},
+{"Type":"Line Breaks / Separators","Name":"PARAGRAPH SEPARATOR","Codepoint":"U+2029"},
+{"Type":"Whitespace / Other Invisible","Name":"CHARACTER TABULATION","Codepoint":"U+0009"},
+{"Type":"Whitespace / Other Invisible","Name":"SPACE","Codepoint":"U+0020"},
+{"Type":"Whitespace / Other Invisible","Name":"SOFT HYPHEN","Codepoint":"U+00AD"},
+{"Type":"Whitespace / Other Invisible","Name":"COMBINING GRAPHEME JOINER","Codepoint":"U+034F"},
+{"Type":"Whitespace / Other Invisible","Name":"ARABIC LETTER MARK","Codepoint":"U+061C"},
+{"Type":"Whitespace / Other Invisible","Name":"SYRIAC ABBREVIATION MARK","Codepoint":"U+070F"},
+{"Type":"Whitespace / Other Invisible","Name":"HANGUL CHOSEONG FILLER","Codepoint":"U+115F"},
+{"Type":"Whitespace / Other Invisible","Name":"HANGUL JUNGSEONG FILLER","Codepoint":"U+1160"},
+{"Type":"Whitespace / Other Invisible","Name":"OGHAM SPACE MARK","Codepoint":"U+1680"},
+{"Type":"Whitespace / Other Invisible","Name":"KHMER VOWEL INHERENT AQ","Codepoint":"U+17B4"},
+{"Type":"Whitespace / Other Invisible","Name":"KHMER VOWEL INHERENT AA","Codepoint":"U+17B5"},
+{"Type":"Whitespace / Other Invisible","Name":"MONGOLIAN VOWEL SEPARATOR","Codepoint":"U+180E"},
+{"Type":"Whitespace / Other Invisible","Name":"EN QUAD","Codepoint":"U+2000"},
+{"Type":"Whitespace / Other Invisible","Name":"EM QUAD","Codepoint":"U+2001"},
+{"Type":"Whitespace / Other Invisible","Name":"EN SPACE","Codepoint":"U+2002"},
+{"Type":"Whitespace / Other Invisible","Name":"EM SPACE","Codepoint":"U+2003"},
+{"Type":"Whitespace / Other Invisible","Name":"THREE-PER-EM SPACE","Codepoint":"U+2004"},
+{"Type":"Whitespace / Other Invisible","Name":"FOUR-PER-EM SPACE","Codepoint":"U+2005"},
+{"Type":"Whitespace / Other Invisible","Name":"SIX-PER-EM SPACE","Codepoint":"U+2006"},
+{"Type":"Whitespace / Other Invisible","Name":"FIGURE SPACE","Codepoint":"U+2007"},
+{"Type":"Whitespace / Other Invisible","Name":"PUNCTUATION SPACE","Codepoint":"U+2008"},
+{"Type":"Whitespace / Other Invisible","Name":"THIN SPACE","Codepoint":"U+2009"},
+{"Type":"Whitespace / Other Invisible","Name":"HAIR SPACE","Codepoint":"U+200A"},
+{"Type":"Whitespace / Other Invisible","Name":"ZERO WIDTH SPACE","Codepoint":"U+200B"},
+{"Type":"Whitespace / Other Invisible","Name":"ZERO WIDTH NON-JOINER","Codepoint":"U+200C"},
+{"Type":"Whitespace / Other Invisible","Name":"ZERO WIDTH","Codepoint":"U+200D"},
+{"Type":"Whitespace / Other Invisible","Name":"LEFT-TO-RIGHT MARK","Codepoint":"U+200E"},
+{"Type":"Whitespace / Other Invisible","Name":"RIGHT-TO-LEFT MARK","Codepoint":"U+200F"},
+{"Type":"Whitespace / Other Invisible","Name":"NARROW NO-BREAK SPACE","Codepoint":"U+202F"},
+{"Type":"Whitespace / Other Invisible","Name":"MEDIUM MATHEMATICAL SPACE","Codepoint":"U+205F"},
+{"Type":"Whitespace / Other Invisible","Name":"WORD JOINER","Codepoint":"U+2060"},
+{"Type":"Whitespace / Other Invisible","Name":"FUNCTION APPLICATION","Codepoint":"U+2061"},
+{"Type":"Whitespace / Other Invisible","Name":"INVISIBLE TIMES","Codepoint":"U+2062"},
+{"Type":"Whitespace / Other Invisible","Name":"INVISIBLE SEPARATOR","Codepoint":"U+2063"},
+{"Type":"Whitespace / Other Invisible","Name":"INVISIBLE PLUS","Codepoint":"U+2064"},
+{"Type":"Whitespace / Other Invisible","Name":"INHIBIT SYMMETRIC SWAPPING","Codepoint":"U+206A"},
+{"Type":"Whitespace / Other Invisible","Name":"ACTIVATE SYMMETRIC SWAPPING","Codepoint":"U+206B"},
+{"Type":"Whitespace / Other Invisible","Name":"INHIBIT ARABIC FORM SHAPING","Codepoint":"U+206C"},
+{"Type":"Whitespace / Other Invisible","Name":"ACTIVATE ARABIC FORM SHAPING","Codepoint":"U+206D"},
+{"Type":"Whitespace / Other Invisible","Name":"NATIONAL DIGIT SHAPES","Codepoint":"U+206E"},
+{"Type":"Whitespace / Other Invisible","Name":"NOMINAL DIGIT SHAPES","Codepoint":"U+206F"},
+{"Type":"Whitespace / Other Invisible","Name":"IDEOGRAPHIC SPACE","Codepoint":"U+3000"},
+{"Type":"Whitespace / Other Invisible","Name":"BRAILLE PATTERN BLANK","Codepoint":"U+2800"},
+{"Type":"Whitespace / Other Invisible","Name":"HANGUL FILLER","Codepoint":"U+3164"},
+{"Type":"Whitespace / Other Invisible","Name":"ZERO WIDTH NO-BREAK SPACE","Codepoint":"U+FEFF"},
+{"Type":"Whitespace / Other Invisible","Name":"HALFWIDTH HANGUL FILLER","Codepoint":"U+FFA0"},
+{"Type":"Whitespace / Other Invisible","Name":"KAITHI VOWEL SIGN I","Codepoint":"U+110B1"},
+{"Type":"Whitespace / Other Invisible","Name":"SHORTHAND FORMAT LETTER OVERLAP","Codepoint":"U+1BCA0"},
+{"Type":"Whitespace / Other Invisible","Name":"SHORTHAND FORMAT CONTINUING OVERLAP","Codepoint":"U+1BCA1"},
+{"Type":"Whitespace / Other Invisible","Name":"SHORTHAND FORMAT DOWN STEP","Codepoint":"U+1BCA2"},
+{"Type":"Whitespace / Other Invisible","Name":"SHORTHAND FORMAT UP STEP","Codepoint":"U+1BCA3"},
+{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL NULL NOTEHEAD","Codepoint":"U+1D159"},
+{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL BEGIN BEAM","Codepoint":"U+1D173"},
+{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL END BEAM","Codepoint":"U+1D174"},
+{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL BEGIN TIE","Codepoint":"U+1D175"},
+{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL END TIE","Codepoint":"U+1D176"},
+{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL BEGIN SLUR","Codepoint":"U+1D177"},
+{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL END SLUR","Codepoint":"U+1D178"},
+{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL BEGIN PHRASE","Codepoint":"U+1D179"},
+{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL END PHRASE","Codepoint":"U+1D17A"}
+]
