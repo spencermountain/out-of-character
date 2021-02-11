@@ -28,27 +28,29 @@ Unicode has [a few-dozen](https://character.construction/blanks) characters that
 This is *cool* for cultural idiosyncracies in historical languages. 
 More often though, their use is unintentional *(or [nefarious!](https://330k.github.io/misc_tools/unicode_steganography.html))*, and these characters end-up causing problems parsing text formats.
 
+<img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+<!-- spacer -->
 
 <div align="center">
 
-- these are sometimes called *'zero-width'*, *'ignorable'*, or *'tag-characters'* - <br/>
-unicode is pretty-complicated.
+• these are sometimes called *'zero-width'*, *'ignorable'*, or *'tag-characters'* • <br/>
+
 </div>
 
+<img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+<!-- spacer -->
+
+
+This library helps spot and remove these funboys, before they cause some trouble.
+
+Please remember that some text is meant to have *Khmer-vowels*, or *Kaithi-alphabet* characters.
+
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
+*work in progress!*
 
-This library helps spot and remove these funboys, before they cause you some trouble.
-
-Please remember some text is meant to have Khmer-vowels, or Kaithi-alphabet characters.
-
-<!-- spacer -->
-<img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
-
-*work in progress*
-
-### CLI
+## CLI
 
 <di>
   <code>npm install -g out-of-character</code>
@@ -73,7 +75,7 @@ cat ./path/to/file.txt | out-of-character
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
-### Javascript API
+## Javascript API
 ```js
 import {detect, remove} from 'out-of-character'
 
