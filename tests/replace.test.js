@@ -1,4 +1,4 @@
-var test = require('tape')
+let test = require('tape')
 const { replace } = require('../src')
 
 // https://character.construction/blanks
