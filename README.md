@@ -56,19 +56,26 @@ Please remember that some text is meant to have *Khmer-vowels*, or *Kaithi-alpha
   <code>npm install -g out-of-character</code>
 </di>
 
-test for any invisible characters in a file
+detect invisible characters in all files in a directory
 ```bash
-out-of-character ./path/to/file.txt --detect
+out-of-character ./path/to/dir
 ```
 
-remove invisible characters from a file
+remove them from all files in a directory
+```bash
+out-of-character ./path/to/dir --replace
+```
+
+---
+
+detect invisible characters in a file
 ```bash
 out-of-character ./path/to/file.txt
 ```
 
-use as part of a stream
+remove invisible characters from a file
 ```bash
-cat ./path/to/file.txt | out-of-character
+out-of-character ./path/to/file.txt --replace
 ```
 
 

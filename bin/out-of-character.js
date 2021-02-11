@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 const fs = require('fs')
+const path = require('path')
 const { detect, replace } = require('../src/index')
+const { dim, blue } = require('colorette')
 let args = process.argv.slice(2)
+const detectFile = require('./detect-file')
 
 const modes = {
   '--test': 'detect',
@@ -10,8 +13,8 @@ const modes = {
   '--remove': 'remove',
 }
 
-let mode = 'replace'
-let path = ''
+let mode = 'detect'
+let pathStr = ''
 args = args.filter((arg) => {
   if (modes.hasOwnProperty(arg) === true) {
     mode = modes[arg]
@@ -20,30 +23,31 @@ args = args.filter((arg) => {
   return arg //is truthy
 })
 // take the first non-flag arg as path
-path = args[0]
+pathStr = args[0]
 
-if (!path) {
-  console.warn('Must supply a file path')
+if (!pathStr) {
+  console.warn(`Must supply a file path: 'out-of-character ./path/to/file.txt'`)
   process.exit(1)
 }
 
-let text = fs.readFileSync(path).toString()
-if (mode === 'detect') {
-  let found = detect(text)
-  if (found) {
-    console.log(`Found hidden-character(s) in '${path}'`)
-    process.exit(1) //fail?
-  } else {
-    console.log(`Found no hidden-character(s) in '${path}'`)
-    process.exit(0) //success
-  }
+let files = []
+// do a directory?
+const isDir = fs.lstatSync(pathStr).isDirectory()
+if (isDir) {
+  fs.readdirSync(pathStr).forEach((file) => {
+    files.push(path.join(pathStr, file))
+  })
+  console.log(dim(`\ninspecting ${files.length} ${files.length !== 1 ? 'files' : 'file'}...\n\n`))
+} else {
+  files = [pathStr]
 }
 
-// replace mode
-let found = detect(text)
-if (found) {
-  fs.writeFileSync(path, replace(text))
-  console.log(`Successfully replaced hidden-characters in '${path}'`)
-} else {
-  console.log(`Found no hidden-character(s) in '${path}'`)
-}
+files.forEach((file) => {
+  let found = detectFile(file)
+  if (found === true && mode === 'replace') {
+    let text = fs.readFileSync(file).toString()
+    fs.writeFileSync(file, replace(text))
+    console.log(blue(`     👍 Removed them`))
+  }
+})
+console.log('\n\n')

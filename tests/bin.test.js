@@ -3,10 +3,16 @@ const { exec } = require('shelljs')
 const fs = require('fs')
 
 test('bin detect cmd', function (t) {
-  let cmd = `./bin/out-of-character.js ./tests/bad-text/ipsom.txt --detect`
+  let cmd = `./bin/out-of-character.js ./tests/bad-text/ipsom.txt`
   let res = exec(cmd, { silent: true }).stdout
   let wasFound = res.match(/found/i) || null
   t.notEqual(wasFound, null, 'detect true')
+
+  // false-positive test
+  cmd = `./bin/out-of-character.js ./tests/bad-text/good-text.txt --detect`
+  res = exec(cmd, { silent: true }).stdout
+  wasFound = res.match(/found/i) || null
+  t.equal(wasFound, null, 'detect false')
   t.end()
 })
 
@@ -17,7 +23,7 @@ test('replace bin cmd', function (t) {
 
   let before = fs.readFileSync(path).toString()
 
-  let res = exec(`./bin/out-of-character.js ${path}`, { silent: true }).stdout
+  let res = exec(`./bin/out-of-character.js ${path} --replace`, { silent: true }).stdout
 
   let after = fs.readFileSync(path).toString()
   t.notEqual(before, after, 'file has changed')
