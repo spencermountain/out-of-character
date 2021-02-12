@@ -88,10 +88,26 @@ import {detect, remove} from 'out-of-character'
 
 let str='noth­ing s͏neak឵y h᠎ere' //actually, there is.
 console.log(detect(str))
-//true
+/*  😮  😮  😮
+[
+  {
+    name: 'KHMER VOWEL INHERENT AA',
+    code: 'U+17B5',
+    offset: 15,
+    replacement: ''
+  },
+  {
+    name: 'MONGOLIAN VOWEL SEPARATOR',
+    code: 'U+180E',
+    offset: 19,
+    replacement: ''
+  }
+]*/
 
-str === remove(str)
-//false
+// get rid of them!
+let after = remove(str)
+console.log(str !== after)
+// true
 ```
 
 fixing/detecting in files can be done like:

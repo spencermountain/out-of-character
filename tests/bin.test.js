@@ -11,8 +11,8 @@ test('bin detect cmd', function (t) {
   // false-positive test
   cmd = `./bin/out-of-character.js ./tests/bad-text/good-text.txt --detect`
   res = exec(cmd, { silent: true }).stdout
-  wasFound = res.match(/found/i) || null
-  t.equal(wasFound, null, 'detect false')
+  wasFound = res.match(/looks good/i) || null
+  t.notEqual(wasFound, null, 'detect false')
   t.end()
 })
 

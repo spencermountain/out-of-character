@@ -23,13 +23,15 @@ let codes = data
 
 // return an array of found invisible characters
 const findAll = function (text) {
-  const regEx = new RegExp(`[${codes.join('')}]`, 'g')
+  // console.log(codes)
+  const regEx = new RegExp(`(${codes.join('|')})`, 'g')
   let matches = []
-  text = text.replace(regEx, (ch, offset) => {
+  text = text.replace(regEx, (ch, _b, offset) => {
     // find the code of the char we matched
     let code = ch.charCodeAt(0)
     let hex = code.toString(16).toUpperCase()
     hex = `U+` + padStr(hex, 4)
+    // console.log(ch, code, hex)
     let found = byCode[hex] || {}
     matches.push({
       name: found.name,
