@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 const fs = require('fs')
 const path = require('path')
-const { detect, replace } = require('../src/index')
+const glob = require('glob')
 const { dim, blue } = require('colorette')
-let args = process.argv.slice(2)
 const detectFile = require('./detect-file')
+const { detect, replace } = require('../src/index')
+const getFiles = require('./getFiles')
+let args = process.argv.slice(2)
 
 const modes = {
   '--test': 'detect',
@@ -30,17 +32,12 @@ if (!pathStr) {
   process.exit(1)
 }
 
-let files = []
-// do a directory?
-const isDir = fs.lstatSync(pathStr).isDirectory()
-if (isDir) {
-  fs.readdirSync(pathStr).forEach((file) => {
-    files.push(path.join(pathStr, file))
-  })
-  console.log(dim(`\ninspecting ${files.length} ${files.length !== 1 ? 'files' : 'file'}...\n\n`))
-} else {
-  files = [pathStr]
+let files = getFiles(pathStr)
+if (files.length === 0) {
+  console.warn(`Found no files that match '${path}'`)
+  process.exit()
 }
+console.log(dim(`\ninspecting ${files.length} ${files.length !== 1 ? 'files' : 'file'}...\n\n`))
 
 files.forEach((file) => {
   let found = detectFile(file)
