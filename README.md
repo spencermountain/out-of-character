@@ -48,7 +48,7 @@ Please remember that some text is meant to have *Khmer-vowels*, or *Kaithi-alpha
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
-<img width="728" alt="image" src="https://user-images.githubusercontent.com/399657/107818111-18bad300-6d45-11eb-843a-b8e33ebd5773.png">
+<img width="787" alt="image" src="https://user-images.githubusercontent.com/399657/107824399-6e947880-6d4f-11eb-9e07-695c81df8907.png">
 
 ## CLI
 

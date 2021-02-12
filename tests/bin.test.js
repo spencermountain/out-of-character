@@ -16,7 +16,7 @@ test('test glob input', function (t) {
 })
 
 test('bin detect cmd', function (t) {
-  let cmd = `./bin/out-of-character.js ./tests/texts/ipsom.txt`
+  let cmd = `./bin/out-of-character.js ./tests/texts/bad-text.txt`
   let res = exec(cmd, { silent: true }).stdout
   let wasFound = res.match(/found/i) || null
   t.notEqual(wasFound, null, 'detect true')
@@ -31,8 +31,8 @@ test('bin detect cmd', function (t) {
 
 test('replace bin cmd', function (t) {
   // create a copy
-  let path = `./tests/texts/ipsom-copy.txt`
-  exec(`cp ./tests/texts/ipsom.txt ${path}`)
+  let path = `./tests/texts/bad-text-copy.txt`
+  exec(`cp ./tests/texts/bad-text.txt ${path}`)
 
   let before = fs.readFileSync(path).toString()
   exec(`./bin/out-of-character.js ${path} --replace`, { silent: true })
