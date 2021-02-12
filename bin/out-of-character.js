@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 const fs = require('fs')
-const path = require('path')
 const { dim, blue } = require('colorette')
 const detectFile = require('./detect-file')
 const { replace } = require('../src/index')
@@ -33,7 +32,7 @@ if (!pathStr) {
 
 let files = getFiles(pathStr)
 if (files.length === 0) {
-  console.warn(`Found no files that match '${path}'`)
+  console.warn(`Found no files that match '${pathStr}'`)
   process.exit()
 }
 console.log(dim(`\ninspecting ${files.length} ${files.length !== 1 ? 'files' : 'file'}...\n\n`))
