@@ -1,6 +1,19 @@
 const test = require('tape')
 const { exec } = require('shelljs')
 const fs = require('fs')
+const getFiles = require('../bin/getFiles')
+
+test('test glob input', function (t) {
+  let arr = getFiles('./tests/bad-text/good-text.txt')
+  t.equal(arr.length, 1, 'found file')
+
+  arr = getFiles('./tests/bad-text/')
+  t.ok(arr.length > 1, 'found dir')
+
+  arr = getFiles('./tests/bad-text/*.txt')
+  t.ok(arr.length > 1, 'found glob')
+  t.end()
+})
 
 test('bin detect cmd', function (t) {
   let cmd = `./bin/out-of-character.js ./tests/bad-text/ipsom.txt`

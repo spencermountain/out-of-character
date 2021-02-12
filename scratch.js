@@ -25,9 +25,9 @@ const fs = require('fs')
 // })
 
 // const path = './tests/bad-text/ipsom.txt'
-const path = './tests/bad-text/good-text.txt'
-let text = fs.readFileSync(path).toString()
-console.log(detect(text))
+// const path = './tests/bad-text/good-text.txt'
+// let text = fs.readFileSync(path).toString()
+// console.log(detect(text))
 // yikes.
 
 // let text = `hello mudda؜hello fadda`
