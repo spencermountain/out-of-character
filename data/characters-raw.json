@@ -1,0 +1,69 @@
+[
+{"type":"Line Breaks / Separators","name":"LINE FEED","code":"U+000A","escapeChar":"\\n","aka":"LF","replaceWith":""},
+{"type":"Line Breaks / Separators","name":"LINE TABULATION","code":"U+000B","escapeChar":"\\t","aka":"TAB","replaceWith":""},
+{"type":"Line Breaks / Separators","name":"FORM FEED","code":"U+000C","escapeChar":"\\f","aka":"FF","replaceWith":""},
+{"type":"Line Breaks / Separators","name":"CARRIAGE RETURN","code":"U+000D","escapeChar":"\\r","aka":"CR","replaceWith":""},
+{"type":"Line Breaks / Separators","name":"NEXT LINE","code":"U+0085","escapeChar":"","aka":"NEL","replaceWith":""},
+{"type":"Line Breaks / Separators","name":"LINE SEPARATOR","code":"U+2028","escapeChar":""},
+{"type":"Line Breaks / Separators","name":"PARAGRAPH SEPARATOR","code":"U+2029","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"CHARACTER TABULATION","code":"U+0009","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"SPACE","code":"U+0020","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"SOFT HYPHEN","code":"U+00AD","escapeChar":"-"},
+{"type":"Whitespace / Other Invisible","name":"COMBINING GRAPHEME JOINER","code":"U+034F","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"ARABIC LETTER MARK","code":"U+061C","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"SYRIAC ABBREVIATION MARK","code":"U+070F","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"HANGUL CHOSEONG FILLER","code":"U+115F","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"HANGUL JUNGSEONG FILLER","code":"U+1160","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"OGHAM SPACE MARK","code":"U+1680","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"KHMER VOWEL INHERENT AQ","code":"U+17B4","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"KHMER VOWEL INHERENT AA","code":"U+17B5","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MONGOLIAN VOWEL SEPARATOR","code":"U+180E","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"EN QUAD","code":"U+2000","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"EM QUAD","code":"U+2001","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"EN SPACE","code":"U+2002","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"EM SPACE","code":"U+2003","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"THREE-PER-EM SPACE","code":"U+2004","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"FOUR-PER-EM SPACE","code":"U+2005","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"SIX-PER-EM SPACE","code":"U+2006","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"FIGURE SPACE","code":"U+2007","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"PUNCTUATION SPACE","code":"U+2008","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"THIN SPACE","code":"U+2009","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"HAIR SPACE","code":"U+200A","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"ZERO WIDTH SPACE","code":"U+200B","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"ZERO WIDTH NON-JOINER","code":"U+200C","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"ZERO WIDTH","code":"U+200D","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"LEFT-TO-RIGHT MARK","code":"U+200E","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"RIGHT-TO-LEFT MARK","code":"U+200F","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"NARROW NO-BREAK SPACE","code":"U+202F","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MEDIUM MATHEMATICAL SPACE","code":"U+205F","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"WORD JOINER","code":"U+2060","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"FUNCTION APPLICATION","code":"U+2061","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"INVISIBLE TIMES","code":"U+2062","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"INVISIBLE SEPARATOR","code":"U+2063","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"INVISIBLE PLUS","code":"U+2064","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"INHIBIT SYMMETRIC SWAPPING","code":"U+206A","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"ACTIVATE SYMMETRIC SWAPPING","code":"U+206B","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"INHIBIT ARABIC FORM SHAPING","code":"U+206C","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"ACTIVATE ARABIC FORM SHAPING","code":"U+206D","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"NATIONAL DIGIT SHAPES","code":"U+206E","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"NOMINAL DIGIT SHAPES","code":"U+206F","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"IDEOGRAPHIC SPACE","code":"U+3000","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"BRAILLE PATTERN BLANK","code":"U+2800","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"HANGUL FILLER","code":"U+3164","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"ZERO WIDTH NO-BREAK SPACE","code":"U+FEFF","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"HALFWIDTH HANGUL FILLER","code":"U+FFA0","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"KAITHI VOWEL SIGN I","code":"U+110B1","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"SHORTHAND FORMAT LETTER OVERLAP","code":"U+1BCA0","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"SHORTHAND FORMAT CONTINUING OVERLAP","code":"U+1BCA1","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"SHORTHAND FORMAT DOWN STEP","code":"U+1BCA2","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"SHORTHAND FORMAT UP STEP","code":"U+1BCA3","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MUSICAL SYMBOL NULL NOTEHEAD","code":"U+1D159","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MUSICAL SYMBOL BEGIN BEAM","code":"U+1D173","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MUSICAL SYMBOL END BEAM","code":"U+1D174","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MUSICAL SYMBOL BEGIN TIE","code":"U+1D175","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MUSICAL SYMBOL END TIE","code":"U+1D176","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MUSICAL SYMBOL BEGIN SLUR","code":"U+1D177","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MUSICAL SYMBOL END SLUR","code":"U+1D178","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MUSICAL SYMBOL BEGIN PHRASE","code":"U+1D179","escapeChar":""},
+{"type":"Whitespace / Other Invisible","name":"MUSICAL SYMBOL END PHRASE","code":"U+1D17A","escapeChar":""}
+]

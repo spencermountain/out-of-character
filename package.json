@@ -17,7 +17,9 @@
     "watch": "amble ./scratch.js",
     "lint": "eslint . --fix",
     "build": "rollup -c --silent",
-    "parseConfig": "csvtojson data/characters.csv > data/characters.json"
+    "config:parse": "csvtojson data/characters.csv > data/characters-raw.json && amble scripts/parse-config/index.js",
+    "config:view": "live-server --mount=/data:./data --mount=/:./public",
+    "config:print": "do something"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -45,8 +47,10 @@
     "@rollup/plugin-commonjs": "17.1.0",
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "11.1.1",
+    "amble": "^1.2.0",
     "csvtojson": "^2.0.10",
     "eslint": "^7.19.0",
+    "live-server": "^1.2.1",
     "rollup": "2.38.5",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-filesize-check": "0.0.1",

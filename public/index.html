@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.css">
+    <style>
+      span.char {
+        font-size: 30px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        padding: 4px 7px;
+        margin: 3px;
+      }
+      span.char span {
+        background: #2666a9;
+        white-space: pre;
+      }
+    
+    </style>
+    <title>out-of-character</title>
+  </head>
+  <body>
+    <h1>Out of Character - Configuration Viewer</h1>
+    <div id="config">
+      <table id="config-table">
+        <thead>
+            <tr>
+                <th data-field="type">Character Type</th>
+                <th data-field="name">Character Name</th>
+                <th data-field="aka">AKA</th>
+                <th data-field="code">Codepoint</th>
+                <th data-field="escapeChar">Escape Char</th>
+                <th data-field="visualise">Visualise</th>
+                <th data-field="cleaned">Cleaned</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"></script>
+    <script>
+      axios.get('data/characters.json').then((response) => {
+        var data = response.data;
+        $('#config-table').bootstrapTable({
+          data: data.map(row => {
+            return {
+              ...row,
+              code: `<a target="_blank" href="${row.url}">${row.code}</a>`,
+              visualise: `<span class="char">]<span>${row.code}</span>[</span>`
+            }
+          })
+        });
+      });
+    </script>
+
+  </body>
+</html>

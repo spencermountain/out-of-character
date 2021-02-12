@@ -1,69 +1,481 @@
 [
-{"Type":"Line Breaks / Separators","Name":"LINE FEED","Codepoint":"U+000A","Escape":"\\n","AKA":"LF"},
-{"Type":"Line Breaks / Separators","Name":"LINE TABULATION","Codepoint":"U+000B","Escape":"\\t","AKA":"TAB"},
-{"Type":"Line Breaks / Separators","Name":"FORM FEED","Codepoint":"U+000C","Escape":"\\f","AKA":"FF"},
-{"Type":"Line Breaks / Separators","Name":"CARRIAGE RETURN","Codepoint":"U+000D","Escape":"\\r","AKA":"CR"},
-{"Type":"Line Breaks / Separators","Name":"NEXT LINE","Codepoint":"U+0085","Escape":"NEL"},
-{"Type":"Line Breaks / Separators","Name":"LINE SEPARATOR","Codepoint":"U+2028"},
-{"Type":"Line Breaks / Separators","Name":"PARAGRAPH SEPARATOR","Codepoint":"U+2029"},
-{"Type":"Whitespace / Other Invisible","Name":"CHARACTER TABULATION","Codepoint":"U+0009"},
-{"Type":"Whitespace / Other Invisible","Name":"SPACE","Codepoint":"U+0020"},
-{"Type":"Whitespace / Other Invisible","Name":"SOFT HYPHEN","Codepoint":"U+00AD"},
-{"Type":"Whitespace / Other Invisible","Name":"COMBINING GRAPHEME JOINER","Codepoint":"U+034F"},
-{"Type":"Whitespace / Other Invisible","Name":"ARABIC LETTER MARK","Codepoint":"U+061C"},
-{"Type":"Whitespace / Other Invisible","Name":"SYRIAC ABBREVIATION MARK","Codepoint":"U+070F"},
-{"Type":"Whitespace / Other Invisible","Name":"HANGUL CHOSEONG FILLER","Codepoint":"U+115F"},
-{"Type":"Whitespace / Other Invisible","Name":"HANGUL JUNGSEONG FILLER","Codepoint":"U+1160"},
-{"Type":"Whitespace / Other Invisible","Name":"OGHAM SPACE MARK","Codepoint":"U+1680"},
-{"Type":"Whitespace / Other Invisible","Name":"KHMER VOWEL INHERENT AQ","Codepoint":"U+17B4"},
-{"Type":"Whitespace / Other Invisible","Name":"KHMER VOWEL INHERENT AA","Codepoint":"U+17B5"},
-{"Type":"Whitespace / Other Invisible","Name":"MONGOLIAN VOWEL SEPARATOR","Codepoint":"U+180E"},
-{"Type":"Whitespace / Other Invisible","Name":"EN QUAD","Codepoint":"U+2000"},
-{"Type":"Whitespace / Other Invisible","Name":"EM QUAD","Codepoint":"U+2001"},
-{"Type":"Whitespace / Other Invisible","Name":"EN SPACE","Codepoint":"U+2002"},
-{"Type":"Whitespace / Other Invisible","Name":"EM SPACE","Codepoint":"U+2003"},
-{"Type":"Whitespace / Other Invisible","Name":"THREE-PER-EM SPACE","Codepoint":"U+2004"},
-{"Type":"Whitespace / Other Invisible","Name":"FOUR-PER-EM SPACE","Codepoint":"U+2005"},
-{"Type":"Whitespace / Other Invisible","Name":"SIX-PER-EM SPACE","Codepoint":"U+2006"},
-{"Type":"Whitespace / Other Invisible","Name":"FIGURE SPACE","Codepoint":"U+2007"},
-{"Type":"Whitespace / Other Invisible","Name":"PUNCTUATION SPACE","Codepoint":"U+2008"},
-{"Type":"Whitespace / Other Invisible","Name":"THIN SPACE","Codepoint":"U+2009"},
-{"Type":"Whitespace / Other Invisible","Name":"HAIR SPACE","Codepoint":"U+200A"},
-{"Type":"Whitespace / Other Invisible","Name":"ZERO WIDTH SPACE","Codepoint":"U+200B"},
-{"Type":"Whitespace / Other Invisible","Name":"ZERO WIDTH NON-JOINER","Codepoint":"U+200C"},
-{"Type":"Whitespace / Other Invisible","Name":"ZERO WIDTH","Codepoint":"U+200D"},
-{"Type":"Whitespace / Other Invisible","Name":"LEFT-TO-RIGHT MARK","Codepoint":"U+200E"},
-{"Type":"Whitespace / Other Invisible","Name":"RIGHT-TO-LEFT MARK","Codepoint":"U+200F"},
-{"Type":"Whitespace / Other Invisible","Name":"NARROW NO-BREAK SPACE","Codepoint":"U+202F"},
-{"Type":"Whitespace / Other Invisible","Name":"MEDIUM MATHEMATICAL SPACE","Codepoint":"U+205F"},
-{"Type":"Whitespace / Other Invisible","Name":"WORD JOINER","Codepoint":"U+2060"},
-{"Type":"Whitespace / Other Invisible","Name":"FUNCTION APPLICATION","Codepoint":"U+2061"},
-{"Type":"Whitespace / Other Invisible","Name":"INVISIBLE TIMES","Codepoint":"U+2062"},
-{"Type":"Whitespace / Other Invisible","Name":"INVISIBLE SEPARATOR","Codepoint":"U+2063"},
-{"Type":"Whitespace / Other Invisible","Name":"INVISIBLE PLUS","Codepoint":"U+2064"},
-{"Type":"Whitespace / Other Invisible","Name":"INHIBIT SYMMETRIC SWAPPING","Codepoint":"U+206A"},
-{"Type":"Whitespace / Other Invisible","Name":"ACTIVATE SYMMETRIC SWAPPING","Codepoint":"U+206B"},
-{"Type":"Whitespace / Other Invisible","Name":"INHIBIT ARABIC FORM SHAPING","Codepoint":"U+206C"},
-{"Type":"Whitespace / Other Invisible","Name":"ACTIVATE ARABIC FORM SHAPING","Codepoint":"U+206D"},
-{"Type":"Whitespace / Other Invisible","Name":"NATIONAL DIGIT SHAPES","Codepoint":"U+206E"},
-{"Type":"Whitespace / Other Invisible","Name":"NOMINAL DIGIT SHAPES","Codepoint":"U+206F"},
-{"Type":"Whitespace / Other Invisible","Name":"IDEOGRAPHIC SPACE","Codepoint":"U+3000"},
-{"Type":"Whitespace / Other Invisible","Name":"BRAILLE PATTERN BLANK","Codepoint":"U+2800"},
-{"Type":"Whitespace / Other Invisible","Name":"HANGUL FILLER","Codepoint":"U+3164"},
-{"Type":"Whitespace / Other Invisible","Name":"ZERO WIDTH NO-BREAK SPACE","Codepoint":"U+FEFF"},
-{"Type":"Whitespace / Other Invisible","Name":"HALFWIDTH HANGUL FILLER","Codepoint":"U+FFA0"},
-{"Type":"Whitespace / Other Invisible","Name":"KAITHI VOWEL SIGN I","Codepoint":"U+110B1"},
-{"Type":"Whitespace / Other Invisible","Name":"SHORTHAND FORMAT LETTER OVERLAP","Codepoint":"U+1BCA0"},
-{"Type":"Whitespace / Other Invisible","Name":"SHORTHAND FORMAT CONTINUING OVERLAP","Codepoint":"U+1BCA1"},
-{"Type":"Whitespace / Other Invisible","Name":"SHORTHAND FORMAT DOWN STEP","Codepoint":"U+1BCA2"},
-{"Type":"Whitespace / Other Invisible","Name":"SHORTHAND FORMAT UP STEP","Codepoint":"U+1BCA3"},
-{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL NULL NOTEHEAD","Codepoint":"U+1D159"},
-{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL BEGIN BEAM","Codepoint":"U+1D173"},
-{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL END BEAM","Codepoint":"U+1D174"},
-{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL BEGIN TIE","Codepoint":"U+1D175"},
-{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL END TIE","Codepoint":"U+1D176"},
-{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL BEGIN SLUR","Codepoint":"U+1D177"},
-{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL END SLUR","Codepoint":"U+1D178"},
-{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL BEGIN PHRASE","Codepoint":"U+1D179"},
-{"Type":"Whitespace / Other Invisible","Name":"MUSICAL SYMBOL END PHRASE","Codepoint":"U+1D17A"}
+  {
+    "type": "Line Breaks / Separators",
+    "name": "LINE FEED",
+    "code": "U+000A",
+    "escapeChar": "\\n",
+    "aka": "LF",
+    "replaceWith": "",
+    "url": "https://www.compart.com/en/unicode/U+000A"
+  },
+  {
+    "type": "Line Breaks / Separators",
+    "name": "LINE TABULATION",
+    "code": "U+000B",
+    "escapeChar": "\\t",
+    "aka": "TAB",
+    "replaceWith": "",
+    "url": "https://www.compart.com/en/unicode/U+000B"
+  },
+  {
+    "type": "Line Breaks / Separators",
+    "name": "FORM FEED",
+    "code": "U+000C",
+    "escapeChar": "\\f",
+    "aka": "FF",
+    "replaceWith": "",
+    "url": "https://www.compart.com/en/unicode/U+000C"
+  },
+  {
+    "type": "Line Breaks / Separators",
+    "name": "CARRIAGE RETURN",
+    "code": "U+000D",
+    "escapeChar": "\\r",
+    "aka": "CR",
+    "replaceWith": "",
+    "url": "https://www.compart.com/en/unicode/U+000D"
+  },
+  {
+    "type": "Line Breaks / Separators",
+    "name": "NEXT LINE",
+    "code": "U+0085",
+    "escapeChar": "",
+    "aka": "NEL",
+    "replaceWith": "",
+    "url": "https://www.compart.com/en/unicode/U+0085"
+  },
+  {
+    "type": "Line Breaks / Separators",
+    "name": "LINE SEPARATOR",
+    "code": "U+2028",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2028"
+  },
+  {
+    "type": "Line Breaks / Separators",
+    "name": "PARAGRAPH SEPARATOR",
+    "code": "U+2029",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2029"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "CHARACTER TABULATION",
+    "code": "U+0009",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+0009"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "SPACE",
+    "code": "U+0020",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+0020"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "SOFT HYPHEN",
+    "code": "U+00AD",
+    "escapeChar": "-",
+    "url": "https://www.compart.com/en/unicode/U+00AD"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "COMBINING GRAPHEME JOINER",
+    "code": "U+034F",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+034F"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "ARABIC LETTER MARK",
+    "code": "U+061C",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+061C"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "SYRIAC ABBREVIATION MARK",
+    "code": "U+070F",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+070F"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "HANGUL CHOSEONG FILLER",
+    "code": "U+115F",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+115F"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "HANGUL JUNGSEONG FILLER",
+    "code": "U+1160",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1160"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "OGHAM SPACE MARK",
+    "code": "U+1680",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1680"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "KHMER VOWEL INHERENT AQ",
+    "code": "U+17B4",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+17B4"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "KHMER VOWEL INHERENT AA",
+    "code": "U+17B5",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+17B5"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MONGOLIAN VOWEL SEPARATOR",
+    "code": "U+180E",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+180E"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "EN QUAD",
+    "code": "U+2000",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2000"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "EM QUAD",
+    "code": "U+2001",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2001"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "EN SPACE",
+    "code": "U+2002",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2002"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "EM SPACE",
+    "code": "U+2003",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2003"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "THREE-PER-EM SPACE",
+    "code": "U+2004",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2004"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "FOUR-PER-EM SPACE",
+    "code": "U+2005",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2005"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "SIX-PER-EM SPACE",
+    "code": "U+2006",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2006"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "FIGURE SPACE",
+    "code": "U+2007",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2007"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "PUNCTUATION SPACE",
+    "code": "U+2008",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2008"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "THIN SPACE",
+    "code": "U+2009",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2009"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "HAIR SPACE",
+    "code": "U+200A",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+200A"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "ZERO WIDTH SPACE",
+    "code": "U+200B",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+200B"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "ZERO WIDTH NON-JOINER",
+    "code": "U+200C",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+200C"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "ZERO WIDTH",
+    "code": "U+200D",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+200D"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "LEFT-TO-RIGHT MARK",
+    "code": "U+200E",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+200E"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "RIGHT-TO-LEFT MARK",
+    "code": "U+200F",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+200F"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "NARROW NO-BREAK SPACE",
+    "code": "U+202F",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+202F"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MEDIUM MATHEMATICAL SPACE",
+    "code": "U+205F",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+205F"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "WORD JOINER",
+    "code": "U+2060",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2060"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "FUNCTION APPLICATION",
+    "code": "U+2061",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2061"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "INVISIBLE TIMES",
+    "code": "U+2062",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2062"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "INVISIBLE SEPARATOR",
+    "code": "U+2063",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2063"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "INVISIBLE PLUS",
+    "code": "U+2064",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2064"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "INHIBIT SYMMETRIC SWAPPING",
+    "code": "U+206A",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+206A"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "ACTIVATE SYMMETRIC SWAPPING",
+    "code": "U+206B",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+206B"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "INHIBIT ARABIC FORM SHAPING",
+    "code": "U+206C",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+206C"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "ACTIVATE ARABIC FORM SHAPING",
+    "code": "U+206D",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+206D"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "NATIONAL DIGIT SHAPES",
+    "code": "U+206E",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+206E"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "NOMINAL DIGIT SHAPES",
+    "code": "U+206F",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+206F"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "IDEOGRAPHIC SPACE",
+    "code": "U+3000",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+3000"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "BRAILLE PATTERN BLANK",
+    "code": "U+2800",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+2800"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "HANGUL FILLER",
+    "code": "U+3164",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+3164"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "ZERO WIDTH NO-BREAK SPACE",
+    "code": "U+FEFF",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+FEFF"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "HALFWIDTH HANGUL FILLER",
+    "code": "U+FFA0",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+FFA0"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "KAITHI VOWEL SIGN I",
+    "code": "U+110B1",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+110B1"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "SHORTHAND FORMAT LETTER OVERLAP",
+    "code": "U+1BCA0",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1BCA0"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "SHORTHAND FORMAT CONTINUING OVERLAP",
+    "code": "U+1BCA1",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1BCA1"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "SHORTHAND FORMAT DOWN STEP",
+    "code": "U+1BCA2",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1BCA2"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "SHORTHAND FORMAT UP STEP",
+    "code": "U+1BCA3",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1BCA3"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MUSICAL SYMBOL NULL NOTEHEAD",
+    "code": "U+1D159",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1D159"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MUSICAL SYMBOL BEGIN BEAM",
+    "code": "U+1D173",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1D173"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MUSICAL SYMBOL END BEAM",
+    "code": "U+1D174",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1D174"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MUSICAL SYMBOL BEGIN TIE",
+    "code": "U+1D175",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1D175"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MUSICAL SYMBOL END TIE",
+    "code": "U+1D176",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1D176"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MUSICAL SYMBOL BEGIN SLUR",
+    "code": "U+1D177",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1D177"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MUSICAL SYMBOL END SLUR",
+    "code": "U+1D178",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1D178"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MUSICAL SYMBOL BEGIN PHRASE",
+    "code": "U+1D179",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1D179"
+  },
+  {
+    "type": "Whitespace / Other Invisible",
+    "name": "MUSICAL SYMBOL END PHRASE",
+    "code": "U+1D17A",
+    "escapeChar": "",
+    "url": "https://www.compart.com/en/unicode/U+1D17A"
+  }
 ]
