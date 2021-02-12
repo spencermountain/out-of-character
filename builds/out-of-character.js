@@ -1,4 +1,4 @@
-/* out-of-character 1.0.2 MIT */
+/* out-of-character 1.1.0 MIT */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
@@ -711,6 +711,46 @@
   	}
   ];
 
+  // const variationSelectors = /[\uFE00-\uFE0F]/
+  var isVariationSelector = function isVariationSelector(num) {
+    return num >= 65024 && num <= 65039;
+  }; // const highSurrogates = /[\uD800-\uDBFF]/
+
+
+  var isHighSurrogate = function isHighSurrogate(num) {
+    return num >= 55296 && num <= 56319;
+  }; // const lowSurrogates = /[\uDC00-\uDFFF]/
+
+
+  var isLowSurrogate = function isLowSurrogate(num) {
+    return num >= 56320 && num <= 57343;
+  }; // allow invisible characters in emojis
+
+
+  var isEmoji = function isEmoji(text, i) {
+    // look at code before
+    if (text[i - 1]) {
+      var code = text.charCodeAt(i - 1);
+
+      if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
+        return true;
+      }
+    } // look at code before
+
+
+    if (text[i + 1]) {
+      var _code = text.charCodeAt(i + 1);
+
+      if (isHighSurrogate(_code) || isLowSurrogate(_code) || isVariationSelector(_code)) {
+        return true;
+      }
+    }
+
+    return false;
+  };
+
+  var isEmoji_1 = isEmoji;
+
   /** add spaces at the end */
 
   var padStr = function padStr(str, width) {
@@ -743,7 +783,15 @@
       var hex = code.toString(16).toUpperCase();
       hex = "U+" + padStr(hex, 4); // console.log(ch, code, hex)
 
-      var found = byCode[hex] || {};
+      var found = byCode[hex] || {}; // dont match for emoji zero-width chars
+
+      if (found.code === 'U+200D') {
+        // is this zero-width used in an emoji?
+        if (isEmoji_1(text, offset)) {
+          return ch; //do nothing
+        }
+      }
+
       matches.push({
         name: found.name,
         code: found.code,
