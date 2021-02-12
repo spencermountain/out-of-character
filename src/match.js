@@ -1,4 +1,5 @@
 const data = require('../data/characters.json')
+const isEmoji = require('./isEmoji')
 
 /** add spaces at the end */
 const padStr = function (str, width) {
@@ -33,6 +34,13 @@ const findAll = function (text) {
     hex = `U+` + padStr(hex, 4)
     // console.log(ch, code, hex)
     let found = byCode[hex] || {}
+    // dont match for emoji zero-width chars
+    if (found.code === 'U+200D') {
+      // is this zero-width used in an emoji?
+      if (isEmoji(text, offset)) {
+        return ch //do nothing
+      }
+    }
     matches.push({
       name: found.name,
       code: found.code,

@@ -134,6 +134,8 @@ console.log(detect(goodNow))
 
 *Thank you to [character.construction/blanks](https://character.construction/blanks) by [Jan Lelis](https://janlelis.com/)*
 
+*and [a tale of characters in Unicode](https://www.contentful.com/blog/2016/12/06/unicode-javascript-and-the-emoji-family/) by [Stefan Judis](https://github.com/stefanjudis)* 
+
 ### See also
 * [printable-characters](https://github.com/xpl/printable-characters) - by Vit Gordon
 * [unzalgo](https://github.com/kdex/unzalgo) - by kdex
