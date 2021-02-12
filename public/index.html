@@ -33,7 +33,9 @@
                 <th data-field="type">Character Type</th>
                 <th data-field="name">Character Name</th>
                 <th data-field="aka">AKA</th>
+                <th data-field="htmlEntity">HTML Entity</th>
                 <th data-field="code">Codepoint</th>
+                <th data-field="codeEscaped">Code</th>
                 <th data-field="escapeChar">Escape Char</th>
                 <th data-field="visualise">Visualise</th>
                 <th data-field="cleaned">Cleaned</th>
@@ -56,7 +58,8 @@
             return {
               ...row,
               code: `<a target="_blank" href="${row.url}">${row.code}</a>`,
-              visualise: `<span class="char">]<span>${row.code}</span>[</span>`
+              visualise: `<span class="char">]<span>${row.actualUnicodeChar}</span>[</span>`,
+              cleaned:`<span class="char">]<span>${row.cleaned}</span>[</span>`
             }
           })
         });

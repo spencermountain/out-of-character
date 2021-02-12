@@ -48,6 +48,7 @@
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "11.1.1",
     "amble": "^1.2.0",
+    "axios": "^0.21.1",
     "csvtojson": "^2.0.10",
     "eslint": "^7.19.0",
     "live-server": "^1.2.1",
