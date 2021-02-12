@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 const fs = require('fs')
 const path = require('path')
-const glob = require('glob')
 const { dim, blue } = require('colorette')
 const detectFile = require('./detect-file')
-const { detect, replace } = require('../src/index')
+const { replace } = require('../src/index')
 const getFiles = require('./getFiles')
 let args = process.argv.slice(2)
 

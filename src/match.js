@@ -26,7 +26,7 @@ const findAll = function (text) {
   // console.log(codes)
   const regEx = new RegExp(`(${codes.join('|')})`, 'g')
   let matches = []
-  text = text.replace(regEx, (ch, _b, offset) => {
+  text.replace(regEx, (ch, _b, offset) => {
     // find the code of the char we matched
     let code = ch.charCodeAt(0)
     let hex = code.toString(16).toUpperCase()

@@ -35,9 +35,7 @@ test('replace bin cmd', function (t) {
   exec(`cp ./tests/bad-text/ipsom.txt ${path}`)
 
   let before = fs.readFileSync(path).toString()
-
-  let res = exec(`./bin/out-of-character.js ${path} --replace`, { silent: true }).stdout
-
+  exec(`./bin/out-of-character.js ${path} --replace`, { silent: true })
   let after = fs.readFileSync(path).toString()
   t.notEqual(before, after, 'file has changed')
   // cleanup
