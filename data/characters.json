@@ -5,10 +5,8 @@
     "code": "U+000A",
     "escapeChar": "\\n",
     "aka": "LF",
-    "codeNumber": "000A",
     "actualUnicodeChar": "\n",
     "codeEscaped": "\\u000A",
-    "htmlEntity": "&NewLine;",
     "url": "https://www.compart.com/en/unicode/U+000A"
   },
   {
@@ -18,7 +16,6 @@
     "escapeChar": "\\t",
     "aka": "TAB",
     "replaceWith": "\t",
-    "codeNumber": "000B",
     "actualUnicodeChar": "\u000b",
     "codeEscaped": "\\u000B",
     "url": "https://www.compart.com/en/unicode/U+000B"
@@ -30,7 +27,6 @@
     "escapeChar": "\\f",
     "aka": "FF",
     "replaceWith": "",
-    "codeNumber": "000C",
     "actualUnicodeChar": "\f",
     "codeEscaped": "\\u000C",
     "url": "https://www.compart.com/en/unicode/U+000C"
@@ -41,7 +37,6 @@
     "code": "U+000D",
     "escapeChar": "\\r",
     "aka": "CR",
-    "codeNumber": "000D",
     "actualUnicodeChar": "\r",
     "codeEscaped": "\\u000D",
     "url": "https://www.compart.com/en/unicode/U+000D"
@@ -53,7 +48,6 @@
     "escapeChar": "",
     "aka": "NEL",
     "replaceWith": "",
-    "codeNumber": "0085",
     "actualUnicodeChar": "",
     "codeEscaped": "\\u0085",
     "url": "https://www.compart.com/en/unicode/U+0085"
@@ -64,7 +58,6 @@
     "code": "U+2028",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "2028",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2028",
     "url": "https://www.compart.com/en/unicode/U+2028"
@@ -75,7 +68,6 @@
     "code": "U+2029",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "2029",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2029",
     "url": "https://www.compart.com/en/unicode/U+2029"
@@ -85,10 +77,8 @@
     "name": "CHARACTER TABULATION",
     "code": "U+0009",
     "escapeChar": "",
-    "codeNumber": "0009",
     "actualUnicodeChar": "\t",
     "codeEscaped": "\\u0009",
-    "htmlEntity": "&Tab;",
     "url": "https://www.compart.com/en/unicode/U+0009"
   },
   {
@@ -96,21 +86,22 @@
     "name": "SPACE",
     "code": "U+0020",
     "escapeChar": "",
-    "codeNumber": "0020",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u0020",
     "url": "https://www.compart.com/en/unicode/U+0020"
   },
   {
-    "type": "Invisible",
+    "htmlentity": "&shy;",
+    "htmlcode": "&#173;",
+    "csscode": "\\00AD",
+    "unicode": "U+00AD",
     "name": "SOFT HYPHEN",
+    "type": "Invisible",
     "code": "U+00AD",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "00AD",
     "actualUnicodeChar": "­",
     "codeEscaped": "\\u00AD",
-    "htmlEntity": "&shy",
     "url": "https://www.compart.com/en/unicode/U+00AD"
   },
   {
@@ -119,7 +110,6 @@
     "code": "U+034F",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "034F",
     "actualUnicodeChar": "͏",
     "codeEscaped": "\\u034F",
     "url": "https://www.compart.com/en/unicode/U+034F"
@@ -130,7 +120,6 @@
     "code": "U+061C",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "061C",
     "actualUnicodeChar": "؜",
     "codeEscaped": "\\u061C",
     "url": "https://www.compart.com/en/unicode/U+061C"
@@ -141,7 +130,6 @@
     "code": "U+070F",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "070F",
     "actualUnicodeChar": "܏",
     "codeEscaped": "\\u070F",
     "url": "https://www.compart.com/en/unicode/U+070F"
@@ -152,7 +140,6 @@
     "code": "U+115F",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "115F",
     "actualUnicodeChar": "ᅟ",
     "codeEscaped": "\\u115F",
     "url": "https://www.compart.com/en/unicode/U+115F"
@@ -163,7 +150,6 @@
     "code": "U+1160",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "1160",
     "actualUnicodeChar": "ᅠ",
     "codeEscaped": "\\u1160",
     "url": "https://www.compart.com/en/unicode/U+1160"
@@ -174,7 +160,6 @@
     "code": "U+1680",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "1680",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u1680",
     "url": "https://www.compart.com/en/unicode/U+1680"
@@ -185,7 +170,6 @@
     "code": "U+17B4",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "17B4",
     "actualUnicodeChar": "឴",
     "codeEscaped": "\\u17B4",
     "url": "https://www.compart.com/en/unicode/U+17B4"
@@ -196,7 +180,6 @@
     "code": "U+17B5",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "17B5",
     "actualUnicodeChar": "឵",
     "codeEscaped": "\\u17B5",
     "url": "https://www.compart.com/en/unicode/U+17B5"
@@ -207,7 +190,6 @@
     "code": "U+180E",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "180E",
     "actualUnicodeChar": "᠎",
     "codeEscaped": "\\u180E",
     "url": "https://www.compart.com/en/unicode/U+180E"
@@ -218,7 +200,6 @@
     "code": "U+2000",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2000",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2000",
     "url": "https://www.compart.com/en/unicode/U+2000"
@@ -229,33 +210,36 @@
     "code": "U+2001",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2001",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2001",
     "url": "https://www.compart.com/en/unicode/U+2001"
   },
   {
-    "type": "Whitespace",
+    "htmlentity": "&ensp;",
+    "htmlcode": "&#8194;",
+    "csscode": "\\2002",
+    "unicode": "U+2002",
     "name": "EN SPACE",
+    "type": "Whitespace",
     "code": "U+2002",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2002",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2002",
-    "htmlEntity": "&ensp;",
     "url": "https://www.compart.com/en/unicode/U+2002"
   },
   {
-    "type": "Whitespace",
+    "htmlentity": "&emsp;",
+    "htmlcode": "&#8195;",
+    "csscode": "\\2003",
+    "unicode": "U+2003",
     "name": "EM SPACE",
+    "type": "Whitespace",
     "code": "U+2003",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2003",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2003",
-    "htmlEntity": "&emsp;",
     "url": "https://www.compart.com/en/unicode/U+2003"
   },
   {
@@ -264,10 +248,8 @@
     "code": "U+2004",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2004",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2004",
-    "htmlEntity": "&emsp13;",
     "url": "https://www.compart.com/en/unicode/U+2004"
   },
   {
@@ -276,10 +258,8 @@
     "code": "U+2005",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2005",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2005",
-    "htmlEntity": "&emsp14;",
     "url": "https://www.compart.com/en/unicode/U+2005"
   },
   {
@@ -288,7 +268,6 @@
     "code": "U+2006",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2006",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2006",
     "url": "https://www.compart.com/en/unicode/U+2006"
@@ -299,10 +278,8 @@
     "code": "U+2007",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2007",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2007",
-    "htmlEntity": "&numsp;",
     "url": "https://www.compart.com/en/unicode/U+2007"
   },
   {
@@ -311,22 +288,22 @@
     "code": "U+2008",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2008",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2008",
-    "htmlEntity": "&puncsp;",
     "url": "https://www.compart.com/en/unicode/U+2008"
   },
   {
-    "type": "Whitespace",
+    "htmlentity": "&thinsp;",
+    "htmlcode": "&#8201;",
+    "csscode": "\\2009",
+    "unicode": "U+2009",
     "name": "THIN SPACE",
+    "type": "Whitespace",
     "code": "U+2009",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2009",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u2009",
-    "htmlEntity": "&ThinSpace;",
     "url": "https://www.compart.com/en/unicode/U+2009"
   },
   {
@@ -335,10 +312,8 @@
     "code": "U+200A",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "200A",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u200A",
-    "htmlEntity": "&ThickSpace;",
     "url": "https://www.compart.com/en/unicode/U+200A"
   },
   {
@@ -347,58 +322,64 @@
     "code": "U+200B",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "200B",
     "actualUnicodeChar": "​",
     "codeEscaped": "\\u200B",
-    "htmlEntity": "&NegativeMediumSpace;",
     "url": "https://www.compart.com/en/unicode/U+200B"
   },
   {
-    "type": "Invisible",
+    "htmlentity": "&zwnj;",
+    "htmlcode": "&#8204;",
+    "csscode": "\\200C",
+    "unicode": "U+200C",
     "name": "ZERO WIDTH NON-JOINER",
+    "type": "Invisible",
     "code": "U+200C",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "200C",
     "actualUnicodeChar": "‌",
     "codeEscaped": "\\u200C",
-    "htmlEntity": "&zwnj;",
     "url": "https://www.compart.com/en/unicode/U+200C"
   },
   {
-    "type": "Invisible",
+    "htmlentity": "&zwj;",
+    "htmlcode": "&#8205;",
+    "csscode": "\\200D",
+    "unicode": "U+200D",
     "name": "ZERO WIDTH",
+    "type": "Invisible",
     "code": "U+200D",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "200D",
     "actualUnicodeChar": "‍",
     "codeEscaped": "\\u200D",
-    "htmlEntity": "&zwj;",
     "url": "https://www.compart.com/en/unicode/U+200D"
   },
   {
-    "type": "Invisible",
+    "htmlentity": "&lrm;",
+    "htmlcode": "&#8206;",
+    "csscode": "\\200E",
+    "unicode": "U+200E",
     "name": "LEFT-TO-RIGHT MARK",
+    "type": "Invisible",
     "code": "U+200E",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "200E",
     "actualUnicodeChar": "‎",
     "codeEscaped": "\\u200E",
-    "htmlEntity": "&lrm;",
     "url": "https://www.compart.com/en/unicode/U+200E"
   },
   {
-    "type": "Invisible",
+    "htmlentity": "&rlm;",
+    "htmlcode": "&#8207;",
+    "csscode": "\\200F",
+    "unicode": "U+200F",
     "name": "RIGHT-TO-LEFT MARK",
+    "type": "Invisible",
     "code": "U+200F",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "200F",
     "actualUnicodeChar": "‏",
     "codeEscaped": "\\u200F",
-    "htmlEntity": "&rlm;",
     "url": "https://www.compart.com/en/unicode/U+200F"
   },
   {
@@ -407,7 +388,6 @@
     "code": "U+202F",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "202F",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u202F",
     "url": "https://www.compart.com/en/unicode/U+202F"
@@ -418,10 +398,8 @@
     "code": "U+205F",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "205F",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u205F",
-    "htmlEntity": "&MediumSpace;",
     "url": "https://www.compart.com/en/unicode/U+205F"
   },
   {
@@ -430,10 +408,8 @@
     "code": "U+2060",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "2060",
     "actualUnicodeChar": "⁠",
     "codeEscaped": "\\u2060",
-    "htmlEntity": "&NoBreak;",
     "url": "https://www.compart.com/en/unicode/U+2060"
   },
   {
@@ -442,10 +418,8 @@
     "code": "U+2061",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "2061",
     "actualUnicodeChar": "⁡",
     "codeEscaped": "\\u2061",
-    "htmlEntity": "&ApplyFunction;",
     "url": "https://www.compart.com/en/unicode/U+2061"
   },
   {
@@ -454,10 +428,8 @@
     "code": "U+2062",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "2062",
     "actualUnicodeChar": "⁢",
     "codeEscaped": "\\u2062",
-    "htmlEntity": "&InvisibleTimes;",
     "url": "https://www.compart.com/en/unicode/U+2062"
   },
   {
@@ -466,10 +438,8 @@
     "code": "U+2063",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "2063",
     "actualUnicodeChar": "⁣",
     "codeEscaped": "\\u2063",
-    "htmlEntity": "&InvisibleComma;",
     "url": "https://www.compart.com/en/unicode/U+2063"
   },
   {
@@ -478,7 +448,6 @@
     "code": "U+2064",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "2064",
     "actualUnicodeChar": "⁤",
     "codeEscaped": "\\u2064",
     "url": "https://www.compart.com/en/unicode/U+2064"
@@ -489,7 +458,6 @@
     "code": "U+206A",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "206A",
     "actualUnicodeChar": "⁪",
     "codeEscaped": "\\u206A",
     "url": "https://www.compart.com/en/unicode/U+206A"
@@ -500,7 +468,6 @@
     "code": "U+206B",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "206B",
     "actualUnicodeChar": "⁫",
     "codeEscaped": "\\u206B",
     "url": "https://www.compart.com/en/unicode/U+206B"
@@ -511,7 +478,6 @@
     "code": "U+206C",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "206C",
     "actualUnicodeChar": "⁬",
     "codeEscaped": "\\u206C",
     "url": "https://www.compart.com/en/unicode/U+206C"
@@ -522,7 +488,6 @@
     "code": "U+206D",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "206D",
     "actualUnicodeChar": "⁭",
     "codeEscaped": "\\u206D",
     "url": "https://www.compart.com/en/unicode/U+206D"
@@ -533,7 +498,6 @@
     "code": "U+206E",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "206E",
     "actualUnicodeChar": "⁮",
     "codeEscaped": "\\u206E",
     "url": "https://www.compart.com/en/unicode/U+206E"
@@ -544,7 +508,6 @@
     "code": "U+206F",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "206F",
     "actualUnicodeChar": "⁯",
     "codeEscaped": "\\u206F",
     "url": "https://www.compart.com/en/unicode/U+206F"
@@ -555,7 +518,6 @@
     "code": "U+3000",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "3000",
     "actualUnicodeChar": "　",
     "codeEscaped": "\\u3000",
     "url": "https://www.compart.com/en/unicode/U+3000"
@@ -566,7 +528,6 @@
     "code": "U+2800",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "2800",
     "actualUnicodeChar": "⠀",
     "codeEscaped": "\\u2800",
     "url": "https://www.compart.com/en/unicode/U+2800"
@@ -577,7 +538,6 @@
     "code": "U+3164",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "3164",
     "actualUnicodeChar": "ㅤ",
     "codeEscaped": "\\u3164",
     "url": "https://www.compart.com/en/unicode/U+3164"
@@ -588,7 +548,6 @@
     "code": "U+FEFF",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "FEFF",
     "actualUnicodeChar": "﻿",
     "codeEscaped": "\\uFEFF",
     "url": "https://www.compart.com/en/unicode/U+FEFF"
@@ -599,7 +558,6 @@
     "code": "U+FFA0",
     "escapeChar": "",
     "replaceWith": " ",
-    "codeNumber": "FFA0",
     "actualUnicodeChar": "ﾠ",
     "codeEscaped": "\\uFFA0",
     "url": "https://www.compart.com/en/unicode/U+FFA0"
@@ -610,7 +568,6 @@
     "code": "U+110B1",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "110B1",
     "actualUnicodeChar": "𑂱",
     "codeEscaped": "\\u110B1",
     "url": "https://www.compart.com/en/unicode/U+110B1"
@@ -621,7 +578,6 @@
     "code": "U+1BCA0",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1BCA0",
     "actualUnicodeChar": "𛲠",
     "codeEscaped": "\\u1BCA0",
     "url": "https://www.compart.com/en/unicode/U+1BCA0"
@@ -632,7 +588,6 @@
     "code": "U+1BCA1",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1BCA1",
     "actualUnicodeChar": "𛲡",
     "codeEscaped": "\\u1BCA1",
     "url": "https://www.compart.com/en/unicode/U+1BCA1"
@@ -643,7 +598,6 @@
     "code": "U+1BCA2",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1BCA2",
     "actualUnicodeChar": "𛲢",
     "codeEscaped": "\\u1BCA2",
     "url": "https://www.compart.com/en/unicode/U+1BCA2"
@@ -654,7 +608,6 @@
     "code": "U+1BCA3",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1BCA3",
     "actualUnicodeChar": "𛲣",
     "codeEscaped": "\\u1BCA3",
     "url": "https://www.compart.com/en/unicode/U+1BCA3"
@@ -665,7 +618,6 @@
     "code": "U+1D159",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1D159",
     "actualUnicodeChar": "𝅙",
     "codeEscaped": "\\u1D159",
     "url": "https://www.compart.com/en/unicode/U+1D159"
@@ -676,7 +628,6 @@
     "code": "U+1D173",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1D173",
     "actualUnicodeChar": "𝅳",
     "codeEscaped": "\\u1D173",
     "url": "https://www.compart.com/en/unicode/U+1D173"
@@ -687,7 +638,6 @@
     "code": "U+1D174",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1D174",
     "actualUnicodeChar": "𝅴",
     "codeEscaped": "\\u1D174",
     "url": "https://www.compart.com/en/unicode/U+1D174"
@@ -698,7 +648,6 @@
     "code": "U+1D175",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1D175",
     "actualUnicodeChar": "𝅵",
     "codeEscaped": "\\u1D175",
     "url": "https://www.compart.com/en/unicode/U+1D175"
@@ -709,7 +658,6 @@
     "code": "U+1D176",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1D176",
     "actualUnicodeChar": "𝅶",
     "codeEscaped": "\\u1D176",
     "url": "https://www.compart.com/en/unicode/U+1D176"
@@ -720,7 +668,6 @@
     "code": "U+1D177",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1D177",
     "actualUnicodeChar": "𝅷",
     "codeEscaped": "\\u1D177",
     "url": "https://www.compart.com/en/unicode/U+1D177"
@@ -731,7 +678,6 @@
     "code": "U+1D178",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1D178",
     "actualUnicodeChar": "𝅸",
     "codeEscaped": "\\u1D178",
     "url": "https://www.compart.com/en/unicode/U+1D178"
@@ -742,7 +688,6 @@
     "code": "U+1D179",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1D179",
     "actualUnicodeChar": "𝅹",
     "codeEscaped": "\\u1D179",
     "url": "https://www.compart.com/en/unicode/U+1D179"
@@ -753,7 +698,6 @@
     "code": "U+1D17A",
     "escapeChar": "",
     "replaceWith": "",
-    "codeNumber": "1D17A",
     "actualUnicodeChar": "𝅺",
     "codeEscaped": "\\u1D17A",
     "url": "https://www.compart.com/en/unicode/U+1D17A"
