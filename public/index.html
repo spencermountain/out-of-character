@@ -59,7 +59,7 @@
               ...row,
               code: `<a target="_blank" href="${row.url}">${row.code}</a>`,
               visualise: `<span class="char">]<span>${row.actualUnicodeChar}</span>[</span>`,
-              cleaned:`<span class="char">]<span>${row.cleaned}</span>[</span>`
+              cleaned:`<span class="char">]<span>${row.replaceWith ? row.replaceWith : row.actualUnicodeChar}</span>[</span>`
             }
           })
         });
