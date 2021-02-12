@@ -17,7 +17,7 @@
     "watch": "amble ./scratch.js",
     "lint": "eslint . --fix",
     "build": "rollup -c --silent",
-    "config:parse": "csvtojson data/characters.csv > data/characters-raw.json && amble scripts/parse-config/index.js",
+    "config:parse": "amble scripts/parse-config/index.js",
     "config:view": "live-server --mount=/data:./data --mount=/:./public",
     "config:print": "do something"
   },
@@ -49,7 +49,6 @@
     "@rollup/plugin-node-resolve": "11.1.1",
     "amble": "^1.2.0",
     "axios": "^0.21.1",
-    "csvtojson": "^2.0.10",
     "eslint": "^7.19.0",
     "live-server": "^1.2.1",
     "rollup": "2.38.5",
