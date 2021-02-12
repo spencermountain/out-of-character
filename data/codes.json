@@ -1,0 +1,5567 @@
+[
+    {
+        "htmlentity": "&dollar;",
+        "htmlcode": "&#36;",
+        "csscode": "\\0024",
+        "unicode": "U+0024",
+        "name": "Dollar Sign"
+    },
+    {
+        "htmlentity": "&cent;",
+        "htmlcode": "&#162;",
+        "csscode": "\\00A2",
+        "unicode": "U+00A2",
+        "name": "Cent Sign"
+    },
+    {
+        "htmlentity": "&pound;",
+        "htmlcode": "&#163;",
+        "csscode": "\\00A3",
+        "unicode": "U+00A3",
+        "name": "Pound Sign"
+    },
+    {
+        "htmlentity": "&curren;",
+        "htmlcode": "&#164;",
+        "csscode": "\\00A4",
+        "unicode": "U+00A4",
+        "name": "Currency Sign"
+    },
+    {
+        "htmlentity": "&yen;",
+        "htmlcode": "&#165;",
+        "csscode": "\\00A5",
+        "unicode": "U+00A5",
+        "name": "Yen Sign"
+    },
+    {
+        "htmlentity": "&copy;",
+        "htmlcode": "&#169;",
+        "csscode": "\\00A9",
+        "unicode": "U+00A9",
+        "name": "Copyright Sign"
+    },
+    {
+        "htmlentity": "&reg;",
+        "htmlcode": "&#174;",
+        "csscode": "\\00AE",
+        "unicode": "U+00AE",
+        "name": "Registered Sign"
+    },
+    {
+        "htmlentity": "&trade;",
+        "htmlcode": "&#8482;",
+        "csscode": "\\2122",
+        "unicode": "U+2122",
+        "name": "Trade Mark Sign"
+    },
+    {
+        "htmlentity": "&commat;",
+        "htmlcode": "&#64;",
+        "csscode": "\\0040",
+        "unicode": "U+0040",
+        "name": "Commercial At"
+    },
+    {
+        "htmlentity": "&Copf;",
+        "htmlcode": "&#8450;",
+        "csscode": "\\2102",
+        "unicode": "U+2102",
+        "name": "Double-Struck Capital C"
+    },
+    {
+        "htmlentity": "&incare;",
+        "htmlcode": "&#8453;",
+        "csscode": "\\2105",
+        "unicode": "U+2105",
+        "name": "Care Of"
+    },
+    {
+        "htmlentity": "&gscr;",
+        "htmlcode": "&#8458;",
+        "csscode": "\\210A",
+        "unicode": "U+210A",
+        "name": "Script Small G"
+    },
+    {
+        "htmlentity": "&hamilt;",
+        "htmlcode": "&#8459;",
+        "csscode": "\\210B",
+        "unicode": "U+210B",
+        "name": "Script Capital H"
+    },
+    {
+        "htmlentity": "&Hfr;",
+        "htmlcode": "&#8460;",
+        "csscode": "\\210C",
+        "unicode": "U+210C",
+        "name": "Black-Letter Capital H"
+    },
+    {
+        "htmlentity": "&Hopf;",
+        "htmlcode": "&#8461;",
+        "csscode": "\\210D",
+        "unicode": "U+210D",
+        "name": "Double-Struck Capital H"
+    },
+    {
+        "htmlentity": "&planckh;",
+        "htmlcode": "&#8462;",
+        "csscode": "\\210E",
+        "unicode": "U+210E",
+        "name": "Planck Constant"
+    },
+    {
+        "htmlentity": "&planck;",
+        "htmlcode": "&#8463;",
+        "csscode": "\\210F",
+        "unicode": "U+210F",
+        "name": "Planck Constant Over Two Pi"
+    },
+    {
+        "htmlentity": "&Iscr;",
+        "htmlcode": "&#8464;",
+        "csscode": "\\2110",
+        "unicode": "U+2110",
+        "name": "Script Capital I"
+    },
+    {
+        "htmlentity": "&image;",
+        "htmlcode": "&#8465;",
+        "csscode": "\\2111",
+        "unicode": "U+2111",
+        "name": "Black-Letter Capital I"
+    },
+    {
+        "htmlentity": "&Lscr;",
+        "htmlcode": "&#8466;",
+        "csscode": "\\2112",
+        "unicode": "U+2112",
+        "name": "Script Capital L"
+    },
+    {
+        "htmlentity": "&ell;",
+        "htmlcode": "&#8467;",
+        "csscode": "\\2113",
+        "unicode": "U+2113",
+        "name": "Script Small L"
+    },
+    {
+        "htmlentity": "&Nopf;",
+        "htmlcode": "&#8469;",
+        "csscode": "\\2115",
+        "unicode": "U+2115",
+        "name": "Double-Struck Capital N"
+    },
+    {
+        "htmlentity": "&numero;",
+        "htmlcode": "&#8470;",
+        "csscode": "\\2116",
+        "unicode": "U+2116",
+        "name": "Numero Sign"
+    },
+    {
+        "htmlentity": "&copysr;",
+        "htmlcode": "&#8471;",
+        "csscode": "\\2117",
+        "unicode": "U+2117",
+        "name": "Sound Recording Copyright"
+    },
+    {
+        "htmlentity": "&weierp;",
+        "htmlcode": "&#8472;",
+        "csscode": "\\2118",
+        "unicode": "U+2118",
+        "name": "Script Capital P"
+    },
+    {
+        "htmlentity": "&Popf;",
+        "htmlcode": "&#8473;",
+        "csscode": "\\2119",
+        "unicode": "U+2119",
+        "name": "Double-Struck Capital P"
+    },
+    {
+        "htmlentity": "&Qopf;",
+        "htmlcode": "&#8474;",
+        "csscode": "\\211A",
+        "unicode": "U+211A",
+        "name": "Double-Struck Capital Q"
+    },
+    {
+        "htmlentity": "&Rscr;",
+        "htmlcode": "&#8475;",
+        "csscode": "\\211B",
+        "unicode": "U+211B",
+        "name": "Script Capital R"
+    },
+    {
+        "htmlentity": "&real;",
+        "htmlcode": "&#8476;",
+        "csscode": "\\211C",
+        "unicode": "U+211C",
+        "name": "Black-Letter Capital R"
+    },
+    {
+        "htmlentity": "&Ropf;",
+        "htmlcode": "&#8477;",
+        "csscode": "\\211D",
+        "unicode": "U+211D",
+        "name": "Double-Struck Capital R"
+    },
+    {
+        "htmlentity": "&rx;",
+        "htmlcode": "&#8478;",
+        "csscode": "\\211E",
+        "unicode": "U+211E",
+        "name": "Prescription Take"
+    },
+    {
+        "htmlentity": "&Zopf;",
+        "htmlcode": "&#8484;",
+        "csscode": "\\2124",
+        "unicode": "U+2124",
+        "name": "Double-Struck Capital Z"
+    },
+    {
+        "htmlentity": "&mho;",
+        "htmlcode": "&#8487;",
+        "csscode": "\\2127",
+        "unicode": "U+2127",
+        "name": "Inverted Ohm Sign"
+    },
+    {
+        "htmlentity": "&Zfr;",
+        "htmlcode": "&#8488;",
+        "csscode": "\\2128",
+        "unicode": "U+2128",
+        "name": "Black-Letter Capital Z"
+    },
+    {
+        "htmlentity": "&iiota;",
+        "htmlcode": "&#8489;",
+        "csscode": "\\2129",
+        "unicode": "U+2129",
+        "name": "Turned Greek Small Letter Iota"
+    },
+    {
+        "htmlentity": "&bernou;",
+        "htmlcode": "&#8492;",
+        "csscode": "\\212C",
+        "unicode": "U+212C",
+        "name": "Script Capital B"
+    },
+    {
+        "htmlentity": "&Cfr;",
+        "htmlcode": "&#8493;",
+        "csscode": "\\212D",
+        "unicode": "U+212D",
+        "name": "Black-Letter Capital C"
+    },
+    {
+        "htmlentity": "&escr;",
+        "htmlcode": "&#8495;",
+        "csscode": "\\212F",
+        "unicode": "U+212F",
+        "name": "Script Small E"
+    },
+    {
+        "htmlentity": "&Escr;",
+        "htmlcode": "&#8496;",
+        "csscode": "\\2130",
+        "unicode": "U+2130",
+        "name": "Script Capital E"
+    },
+    {
+        "htmlentity": "&Fscr;",
+        "htmlcode": "&#8497;",
+        "csscode": "\\2131",
+        "unicode": "U+2131",
+        "name": "Script Capital F"
+    },
+    {
+        "htmlentity": "&Mscr;",
+        "htmlcode": "&#8499;",
+        "csscode": "\\2133",
+        "unicode": "U+2133",
+        "name": "Script Capital M"
+    },
+    {
+        "htmlentity": "&oscr;",
+        "htmlcode": "&#8500;",
+        "csscode": "\\2134",
+        "unicode": "U+2134",
+        "name": "Script Small O"
+    },
+    {
+        "htmlentity": "&alefsym;",
+        "htmlcode": "&#8501;",
+        "csscode": "\\2135",
+        "unicode": "U+2135",
+        "name": "Alef Symbol"
+    },
+    {
+        "htmlentity": "&beth;",
+        "htmlcode": "&#8502;",
+        "csscode": "\\2136",
+        "unicode": "U+2136",
+        "name": "Bet Symbol"
+    },
+    {
+        "htmlentity": "&gimel;",
+        "htmlcode": "&#8503;",
+        "csscode": "\\2137",
+        "unicode": "U+2137",
+        "name": "Gimel Symbol"
+    },
+    {
+        "htmlentity": "&daleth;",
+        "htmlcode": "&#8504;",
+        "csscode": "\\2138",
+        "unicode": "U+2138",
+        "name": "Dalet Symbol"
+    },
+    {
+        "htmlentity": "&DD;",
+        "htmlcode": "&#8517;",
+        "csscode": "\\2145",
+        "unicode": "U+2145",
+        "name": "Double-Struck Italic Capital D"
+    },
+    {
+        "htmlentity": "&dd;",
+        "htmlcode": "&#8518;",
+        "csscode": "\\2146",
+        "unicode": "U+2146",
+        "name": "Double-Struck Italic Small D"
+    },
+    {
+        "htmlentity": "&ee;",
+        "htmlcode": "&#8519;",
+        "csscode": "\\2147",
+        "unicode": "U+2147",
+        "name": "Double-Struck Italic Small E"
+    },
+    {
+        "htmlentity": "&ii;",
+        "htmlcode": "&#8520;",
+        "csscode": "\\2148",
+        "unicode": "U+2148",
+        "name": "Double-Struck Italic Small I"
+    },
+    {
+        "htmlentity": "&starf;",
+        "htmlcode": "&#9733;",
+        "csscode": "\\2605",
+        "unicode": "U+2605",
+        "name": "Black Star"
+    },
+    {
+        "htmlentity": "&star;",
+        "htmlcode": "&#9734;",
+        "csscode": "\\2606",
+        "unicode": "U+2606",
+        "name": "White Star"
+    },
+    {
+        "htmlentity": "&phone;",
+        "htmlcode": "&#9742;",
+        "csscode": "\\260E",
+        "unicode": "U+260E",
+        "name": "Black Telephone"
+    },
+    {
+        "htmlentity": "&female;",
+        "htmlcode": "&#9792;",
+        "csscode": "\\2640",
+        "unicode": "U+2640",
+        "name": "Female Sign"
+    },
+    {
+        "htmlentity": "&male;",
+        "htmlcode": "&#9794;",
+        "csscode": "\\2642",
+        "unicode": "U+2642",
+        "name": "Male Sign"
+    },
+    {
+        "htmlentity": "&spades;",
+        "htmlcode": "&#9824;",
+        "csscode": "\\2660",
+        "unicode": "U+2660",
+        "name": "Black Spade Suit"
+    },
+    {
+        "htmlentity": "&clubs;",
+        "htmlcode": "&#9827;",
+        "csscode": "\\2663",
+        "unicode": "U+2663",
+        "name": "Black Club Suit"
+    },
+    {
+        "htmlentity": "&hearts;",
+        "htmlcode": "&#9829;",
+        "csscode": "\\2665",
+        "unicode": "U+2665",
+        "name": "Black Heart Suit"
+    },
+    {
+        "htmlentity": "&diams;",
+        "htmlcode": "&#9830;",
+        "csscode": "\\2666",
+        "unicode": "U+2666",
+        "name": "Black Diamond Suit"
+    },
+    {
+        "htmlentity": "&loz;",
+        "htmlcode": "&#9674;",
+        "csscode": "\\25CA",
+        "unicode": "U+25CA",
+        "name": "Lozenge"
+    },
+    {
+        "htmlentity": "&sung;",
+        "htmlcode": "&#9834;",
+        "csscode": "\\266A",
+        "unicode": "U+266A",
+        "name": "Eighth Note"
+    },
+    {
+        "htmlentity": "&flat;",
+        "htmlcode": "&#9837;",
+        "csscode": "\\266D",
+        "unicode": "U+266D",
+        "name": "Music Flat Sign"
+    },
+    {
+        "htmlentity": "&natural;",
+        "htmlcode": "&#9838;",
+        "csscode": "\\266E",
+        "unicode": "U+266E",
+        "name": "Music Natural Sign"
+    },
+    {
+        "htmlentity": "&sharp;",
+        "htmlcode": "&#9839;",
+        "csscode": "\\266F",
+        "unicode": "U+266F",
+        "name": "Music Sharp Sign"
+    },
+    {
+        "htmlentity": "&check;",
+        "htmlcode": "&#10003;",
+        "csscode": "\\2713",
+        "unicode": "U+2713",
+        "name": "Check Mark"
+    },
+    {
+        "htmlentity": "&cross;",
+        "htmlcode": "&#10007;",
+        "csscode": "\\2717",
+        "unicode": "U+2717",
+        "name": "Ballot X"
+    },
+    {
+        "htmlentity": "&malt;",
+        "htmlcode": "&#10016;",
+        "csscode": "\\2720",
+        "unicode": "U+2720",
+        "name": "Maltese Cross"
+    },
+    {
+        "htmlentity": "&sext;",
+        "htmlcode": "&#10038;",
+        "csscode": "\\2736",
+        "unicode": "U+2736",
+        "name": "Six Pointed Black Star"
+    },
+    {
+        "htmlentity": "&VerticalSeparator;",
+        "htmlcode": "&#10072;",
+        "csscode": "\\2758",
+        "unicode": "U+2758",
+        "name": "Light Vertical Bar"
+    },
+    {
+        "htmlentity": "&lbbrk;",
+        "htmlcode": "&#10098;",
+        "csscode": "\\2772",
+        "unicode": "U+2772",
+        "name": "Light Left Tortoise Shell Bracket Ornament"
+    },
+    {
+        "htmlentity": "&rbbrk;",
+        "htmlcode": "&#10099;",
+        "csscode": "\\2773",
+        "unicode": "U+2773",
+        "name": "Light Right Tortoise Shell Bracket Ornament"
+    },
+    {
+        "htmlentity": "&excl;",
+        "htmlcode": "&#33;",
+        "csscode": "\\0021",
+        "unicode": "U+0021",
+        "name": "Exclamation Mark"
+    },
+    {
+        "htmlentity": "&num;",
+        "htmlcode": "&#35;",
+        "csscode": "\\0023",
+        "unicode": "U+0023",
+        "name": "Number Sign"
+    },
+    {
+        "htmlentity": "&percnt;",
+        "htmlcode": "&#37;",
+        "csscode": "\\0025",
+        "unicode": "U+0025",
+        "name": "Percent Sign"
+    },
+    {
+        "htmlentity": "&amp;",
+        "htmlcode": "&#38;",
+        "csscode": "\\0026",
+        "unicode": "U+0026",
+        "name": "Ampersand"
+    },
+    {
+        "htmlentity": "&lpar;",
+        "htmlcode": "&#40;",
+        "csscode": "\\0028",
+        "unicode": "U+0028",
+        "name": "Left Parenthesis"
+    },
+    {
+        "htmlentity": "&rpar;",
+        "htmlcode": "&#41;",
+        "csscode": "\\0029",
+        "unicode": "U+0029",
+        "name": "Right Parenthesis"
+    },
+    {
+        "htmlentity": "&ast;",
+        "htmlcode": "&#42;",
+        "csscode": "\\002A",
+        "unicode": "U+002A",
+        "name": "Asterisk"
+    },
+    {
+        "htmlentity": "&comma;",
+        "htmlcode": "&#44;",
+        "csscode": "\\002C",
+        "unicode": "U+002C",
+        "name": "Comma"
+    },
+    {
+        "htmlentity": "&period;",
+        "htmlcode": "&#46;",
+        "csscode": "\\002E",
+        "unicode": "U+002E",
+        "name": "Full Stop"
+    },
+    {
+        "htmlentity": "&sol;",
+        "htmlcode": "&#47;",
+        "csscode": "\\002F",
+        "unicode": "U+002F",
+        "name": "Solidus"
+    },
+    {
+        "htmlentity": "&colon;",
+        "htmlcode": "&#58;",
+        "csscode": "\\003A",
+        "unicode": "U+003A",
+        "name": "Colon"
+    },
+    {
+        "htmlentity": "&semi;",
+        "htmlcode": "&#59;",
+        "csscode": "\\003B",
+        "unicode": "U+003B",
+        "name": "Semicolon"
+    },
+    {
+        "htmlentity": "&quest;",
+        "htmlcode": "&#63;",
+        "csscode": "\\003F",
+        "unicode": "U+003F",
+        "name": "Question Mark"
+    },
+    {
+        "htmlentity": "&lbrack;",
+        "htmlcode": "&#91;",
+        "csscode": "\\005B",
+        "unicode": "U+005B",
+        "name": "Left Square Bracket"
+    },
+    {
+        "htmlentity": "&bsol;",
+        "htmlcode": "&#92;",
+        "csscode": "\\005C",
+        "unicode": "U+005C",
+        "name": "Reverse Solidus"
+    },
+    {
+        "htmlentity": "&rbrack;",
+        "htmlcode": "&#93;",
+        "csscode": "\\005D",
+        "unicode": "U+005D",
+        "name": "Right Square Bracket"
+    },
+    {
+        "htmlentity": "&Hat;",
+        "htmlcode": "&#94;",
+        "csscode": "\\005E",
+        "unicode": "U+005E",
+        "name": "Circumflex Accent"
+    },
+    {
+        "htmlentity": "&lowbar;",
+        "htmlcode": "&#95;",
+        "csscode": "\\005F",
+        "unicode": "U+005F",
+        "name": "Low Line"
+    },
+    {
+        "htmlentity": "&grave;",
+        "htmlcode": "&#96;",
+        "csscode": "\\0060",
+        "unicode": "U+0060",
+        "name": "Grave Accent"
+    },
+    {
+        "htmlentity": "&lbrace;",
+        "htmlcode": "&#123;",
+        "csscode": "\\007B",
+        "unicode": "U+007B",
+        "name": "Left Curly Bracket"
+    },
+    {
+        "htmlentity": "&vert;",
+        "htmlcode": "&#124;",
+        "csscode": "\\007C",
+        "unicode": "U+007C",
+        "name": "Vertical Line"
+    },
+    {
+        "htmlentity": "&rbrace;",
+        "htmlcode": "&#125;",
+        "csscode": "\\007D",
+        "unicode": "U+007D",
+        "name": "Right Curly Bracket"
+    },
+    {
+        "htmlentity": "&tilde;",
+        "htmlcode": "&#126;",
+        "csscode": "\\007E",
+        "unicode": "U+007E",
+        "name": "Tilde"
+    },
+    {
+        "htmlentity": "&circ;",
+        "htmlcode": "&#710;",
+        "csscode": "\\02C6",
+        "unicode": "U+02C6",
+        "name": "Modifier Letter Circumflex Accent"
+    },
+    {
+        "htmlentity": "&nbsp;",
+        "htmlcode": "&#160;",
+        "csscode": "\\00A0",
+        "unicode": "U+00A0",
+        "name": "No-Break Space"
+    },
+    {
+        "htmlentity": "&ensp;",
+        "htmlcode": "&#8194;",
+        "csscode": "\\2002",
+        "unicode": "U+2002",
+        "name": "En Space"
+    },
+    {
+        "htmlentity": "&emsp;",
+        "htmlcode": "&#8195;",
+        "csscode": "\\2003",
+        "unicode": "U+2003",
+        "name": "Em Space"
+    },
+    {
+        "htmlentity": "&thinsp;",
+        "htmlcode": "&#8201;",
+        "csscode": "\\2009",
+        "unicode": "U+2009",
+        "name": "Thin Space"
+    },
+    {
+        "htmlentity": "&zwnj;",
+        "htmlcode": "&#8204;",
+        "csscode": "\\200C",
+        "unicode": "U+200C",
+        "name": "Zero Width Non-Joiner"
+    },
+    {
+        "htmlentity": "&zwj;",
+        "htmlcode": "&#8205;",
+        "csscode": "\\200D",
+        "unicode": "U+200D",
+        "name": "Zero Width Joiner"
+    },
+    {
+        "htmlentity": "&lrm;",
+        "htmlcode": "&#8206;",
+        "csscode": "\\200E",
+        "unicode": "U+200E",
+        "name": "Left-To-Right Mark"
+    },
+    {
+        "htmlentity": "&rlm;",
+        "htmlcode": "&#8207;",
+        "csscode": "\\200F",
+        "unicode": "U+200F",
+        "name": "Right-To-Left Mark"
+    },
+    {
+        "htmlentity": "&iexcl;",
+        "htmlcode": "&#161;",
+        "csscode": "\\00A1",
+        "unicode": "U+00A1",
+        "name": "Inverted Exclamation Mark"
+    },
+    {
+        "htmlentity": "&brvbar;",
+        "htmlcode": "&#166;",
+        "csscode": "\\00A6",
+        "unicode": "U+00A6",
+        "name": "Broken Bar"
+    },
+    {
+        "htmlentity": "&sect;",
+        "htmlcode": "&#167;",
+        "csscode": "\\00A7",
+        "unicode": "U+00A7",
+        "name": "Section Sign"
+    },
+    {
+        "htmlentity": "&uml;",
+        "htmlcode": "&#168;",
+        "csscode": "\\00A8",
+        "unicode": "U+00A8",
+        "name": "Diaeresis"
+    },
+    {
+        "htmlentity": "&ordf;",
+        "htmlcode": "&#170;",
+        "csscode": "\\00AA",
+        "unicode": "U+00AA",
+        "name": "Feminine Ordinal Indicator"
+    },
+    {
+        "htmlentity": "&not;",
+        "htmlcode": "&#172;",
+        "csscode": "\\00AC",
+        "unicode": "U+00AC",
+        "name": "Not Sign"
+    },
+    {
+        "htmlentity": "&shy;",
+        "htmlcode": "&#173;",
+        "csscode": "\\00AD",
+        "unicode": "U+00AD",
+        "name": "Soft Hyphen"
+    },
+    {
+        "htmlentity": "&macr;",
+        "htmlcode": "&#175;",
+        "csscode": "\\00AF",
+        "unicode": "U+00AF",
+        "name": "Macron"
+    },
+    {
+        "htmlentity": "&sup2;",
+        "htmlcode": "&#178;",
+        "csscode": "\\00B2",
+        "unicode": "U+00B2",
+        "name": "Superscript Two"
+    },
+    {
+        "htmlentity": "&sup3;",
+        "htmlcode": "&#179;",
+        "csscode": "\\00B3",
+        "unicode": "U+00B3",
+        "name": "Superscript Three"
+    },
+    {
+        "htmlentity": "&acute;",
+        "htmlcode": "&#180;",
+        "csscode": "\\00B4",
+        "unicode": "U+00B4",
+        "name": "Acute Accent"
+    },
+    {
+        "htmlentity": "&micro;",
+        "htmlcode": "&#181;",
+        "csscode": "\\00B5",
+        "unicode": "U+00B5",
+        "name": "Micro Sign"
+    },
+    {
+        "htmlentity": "&para;",
+        "htmlcode": "&#182;",
+        "csscode": "\\00B6",
+        "unicode": "U+00B6",
+        "name": "Pilcrow Sign"
+    },
+    {
+        "htmlentity": "&middot;",
+        "htmlcode": "&#183;",
+        "csscode": "\\00B7",
+        "unicode": "U+00B7",
+        "name": "Middle Dot"
+    },
+    {
+        "htmlentity": "&cedil;",
+        "htmlcode": "&#184;",
+        "csscode": "\\00B8",
+        "unicode": "U+00B8",
+        "name": "Cedilla"
+    },
+    {
+        "htmlentity": "&sup1;",
+        "htmlcode": "&#185;",
+        "csscode": "\\00B9",
+        "unicode": "U+00B9",
+        "name": "Superscript One"
+    },
+    {
+        "htmlentity": "&ordm;",
+        "htmlcode": "&#186;",
+        "csscode": "\\00BA",
+        "unicode": "U+00BA",
+        "name": "Masculine Ordinal Indicator"
+    },
+    {
+        "htmlentity": "&iquest;",
+        "htmlcode": "&#191;",
+        "csscode": "\\00BF",
+        "unicode": "U+00BF",
+        "name": "Inverted Question Mark"
+    },
+    {
+        "htmlentity": "&hyphen;",
+        "htmlcode": "&#8208;",
+        "csscode": "\\2010",
+        "unicode": "U+2010",
+        "name": "Hyphen"
+    },
+    {
+        "htmlentity": "&ndash;",
+        "htmlcode": "&#8211;",
+        "csscode": "\\2013",
+        "unicode": "U+2013",
+        "name": "En Dash"
+    },
+    {
+        "htmlentity": "&mdash;",
+        "htmlcode": "&#8212;",
+        "csscode": "\\2014",
+        "unicode": "U+2014",
+        "name": "Em Dash"
+    },
+    {
+        "htmlentity": "&horbar;",
+        "htmlcode": "&#8213;",
+        "csscode": "\\2015",
+        "unicode": "U+2015",
+        "name": "Horizontal Bar"
+    },
+    {
+        "htmlentity": "&Vert;",
+        "htmlcode": "&#8214;",
+        "csscode": "\\2016",
+        "unicode": "U+2016",
+        "name": "Double Vertical Line"
+    },
+    {
+        "htmlentity": "&dagger;",
+        "htmlcode": "&#8224;",
+        "csscode": "\\2020",
+        "unicode": "U+2020",
+        "name": "Dagger"
+    },
+    {
+        "htmlentity": "&Dagger;",
+        "htmlcode": "&#8225;",
+        "csscode": "\\2021",
+        "unicode": "U+2021",
+        "name": "Double Dagger"
+    },
+    {
+        "htmlentity": "&bull;",
+        "htmlcode": "&#8226;",
+        "csscode": "\\2022",
+        "unicode": "U+2022",
+        "name": "Bullet"
+    },
+    {
+        "htmlentity": "&nldr;",
+        "htmlcode": "&#8229;",
+        "csscode": "\\2025",
+        "unicode": "U+2025",
+        "name": "Two Dot Leader"
+    },
+    {
+        "htmlentity": "&hellip;",
+        "htmlcode": "&#8230;",
+        "csscode": "\\2026",
+        "unicode": "U+2026",
+        "name": "Horizontal Ellipsis"
+    },
+    {
+        "htmlentity": "&;",
+        "htmlcode": "&#8240;",
+        "csscode": "\\2030",
+        "unicode": "U+2030",
+        "name": "Per Mille Sign"
+    },
+    {
+        "htmlentity": "&pertenk;",
+        "htmlcode": "&#8241;",
+        "csscode": "\\2031",
+        "unicode": "U+2031",
+        "name": "Per Ten Thousand Sign"
+    },
+    {
+        "htmlentity": "&prime;",
+        "htmlcode": "&#8242;",
+        "csscode": "\\2032",
+        "unicode": "U+2032",
+        "name": "Prime"
+    },
+    {
+        "htmlentity": "&Prime;",
+        "htmlcode": "&#8243;",
+        "csscode": "\\2033",
+        "unicode": "U+2033",
+        "name": "Double Prime"
+    },
+    {
+        "htmlentity": "&tprime;",
+        "htmlcode": "&#8244;",
+        "csscode": "\\2034",
+        "unicode": "U+2034",
+        "name": "Triple Prime"
+    },
+    {
+        "htmlentity": "&bprime;",
+        "htmlcode": "&#8245;",
+        "csscode": "\\2035",
+        "unicode": "U+2035",
+        "name": "Reversed Prime"
+    },
+    {
+        "htmlentity": "&oline;",
+        "htmlcode": "&#8254;",
+        "csscode": "\\203E",
+        "unicode": "U+203E",
+        "name": "Overline"
+    },
+    {
+        "htmlentity": "&caret;",
+        "htmlcode": "&#8257;",
+        "csscode": "\\2041",
+        "unicode": "U+2041",
+        "name": "Caret Insertion Point"
+    },
+    {
+        "htmlentity": "&hybull;",
+        "htmlcode": "&#8259;",
+        "csscode": "\\2043",
+        "unicode": "U+2043",
+        "name": "Hyphen Bullet"
+    },
+    {
+        "htmlentity": "&frasl;",
+        "htmlcode": "&#8260;",
+        "csscode": "\\2044",
+        "unicode": "U+2044",
+        "name": "Fraction Slash"
+    },
+    {
+        "htmlentity": "&bsemi;",
+        "htmlcode": "&#8271;",
+        "csscode": "\\204F",
+        "unicode": "U+204F",
+        "name": "Reversed Semicolon"
+    },
+    {
+        "htmlentity": "&qprime;",
+        "htmlcode": "&#8279;",
+        "csscode": "\\2057",
+        "unicode": "U+2057",
+        "name": "Quadruple Prime"
+    },
+    {
+        "htmlentity": "&quot;",
+        "htmlcode": "&#34;",
+        "csscode": "\\0022",
+        "unicode": "U+0022",
+        "name": "Quotation Mark"
+    },
+    {
+        "htmlentity": "&apos;",
+        "htmlcode": "&#39;",
+        "csscode": "\\0027",
+        "unicode": "U+0027",
+        "name": "Apostrophe"
+    },
+    {
+        "htmlentity": "&laquo;",
+        "htmlcode": "&#171;",
+        "csscode": "\\00AB",
+        "unicode": "U+00AB",
+        "name": "Left-Pointing Double Angle Quotation Mark"
+    },
+    {
+        "htmlentity": "&raquo;",
+        "htmlcode": "&#187;",
+        "csscode": "\\00BB",
+        "unicode": "U+00BB",
+        "name": "Right-Pointing Double Angle Quotation Mark"
+    },
+    {
+        "htmlentity": "&lsquo;",
+        "htmlcode": "&#8216;",
+        "csscode": "\\2018",
+        "unicode": "U+2018",
+        "name": "Left Single Quotation Mark"
+    },
+    {
+        "htmlentity": "&rsquo;",
+        "htmlcode": "&#8217;",
+        "csscode": "\\2019",
+        "unicode": "U+2019",
+        "name": "Right Single Quotation Mark"
+    },
+    {
+        "htmlentity": "&sbquo;",
+        "htmlcode": "&#8218;",
+        "csscode": "\\201A",
+        "unicode": "U+201A",
+        "name": "Single Low-9 Quotation Mark"
+    },
+    {
+        "htmlentity": "&ldquo;",
+        "htmlcode": "&#8220;",
+        "csscode": "\\201C",
+        "unicode": "U+201C",
+        "name": "Left Double Quotation Mark"
+    },
+    {
+        "htmlentity": "&rdquo;",
+        "htmlcode": "&#8221;",
+        "csscode": "\\201D",
+        "unicode": "U+201D",
+        "name": "Right Double Quotation Mark"
+    },
+    {
+        "htmlentity": "&bdquo;",
+        "htmlcode": "&#8222;",
+        "csscode": "\\201E",
+        "unicode": "U+201E",
+        "name": "Double Low-9 Quotation Mark"
+    },
+    {
+        "htmlentity": "&lsaquo;",
+        "htmlcode": "&#8249;",
+        "csscode": "\\2039",
+        "unicode": "U+2039",
+        "name": "Single Left-Pointing Angle Quotation Mark"
+    },
+    {
+        "htmlentity": "&rsaquo;",
+        "htmlcode": "&#8250;",
+        "csscode": "\\203A",
+        "unicode": "U+203A",
+        "name": "Single Right-Pointing Angle Quotation Mark"
+    },
+    {
+        "htmlentity": "&frac14;",
+        "htmlcode": "&#188;",
+        "csscode": "\\00BC",
+        "unicode": "U+00BC",
+        "name": "Vulgar Fraction One Quarter"
+    },
+    {
+        "htmlentity": "&frac12;",
+        "htmlcode": "&#189;",
+        "csscode": "\\00BD",
+        "unicode": "U+00BD",
+        "name": "Vulgar Fraction One Half"
+    },
+    {
+        "htmlentity": "&frac34;",
+        "htmlcode": "&#190;",
+        "csscode": "\\00BE",
+        "unicode": "U+00BE",
+        "name": "Vulgar Fraction Three Quarters"
+    },
+    {
+        "htmlentity": "&frac13;",
+        "htmlcode": "&#8531;",
+        "csscode": "\\2153",
+        "unicode": "U+2153",
+        "name": "Vulgar Fraction One Third"
+    },
+    {
+        "htmlentity": "&frac23;",
+        "htmlcode": "&#8532;",
+        "csscode": "\\2154",
+        "unicode": "U+2154",
+        "name": "Vulgar Fraction Two Thirds"
+    },
+    {
+        "htmlentity": "&frac15;",
+        "htmlcode": "&#8533;",
+        "csscode": "\\2155",
+        "unicode": "U+2155",
+        "name": "Vulgar Fraction One Fifth"
+    },
+    {
+        "htmlentity": "&frac25;",
+        "htmlcode": "&#8534;",
+        "csscode": "\\2156",
+        "unicode": "U+2156",
+        "name": "Vulgar Fraction Two Fifths"
+    },
+    {
+        "htmlentity": "&frac35;",
+        "htmlcode": "&#8535;",
+        "csscode": "\\2157",
+        "unicode": "U+2157",
+        "name": "Vulgar Fraction Three Fifths"
+    },
+    {
+        "htmlentity": "&frac45;",
+        "htmlcode": "&#8536;",
+        "csscode": "\\2158",
+        "unicode": "U+2158",
+        "name": "Vulgar Fraction Four Fifths"
+    },
+    {
+        "htmlentity": "&frac16;",
+        "htmlcode": "&#8537;",
+        "csscode": "\\2159",
+        "unicode": "U+2159",
+        "name": "Vulgar Fraction One Sixth"
+    },
+    {
+        "htmlentity": "&frac56;",
+        "htmlcode": "&#8538;",
+        "csscode": "\\215A",
+        "unicode": "U+215A",
+        "name": "Vulgar Fraction Five Sixths"
+    },
+    {
+        "htmlentity": "&frac18;",
+        "htmlcode": "&#8539;",
+        "csscode": "\\215B",
+        "unicode": "U+215B",
+        "name": "Vulgar Fraction One Eighth"
+    },
+    {
+        "htmlentity": "&frac38;",
+        "htmlcode": "&#8540;",
+        "csscode": "\\215C",
+        "unicode": "U+215C",
+        "name": "Vulgar Fraction Three Eighths"
+    },
+    {
+        "htmlentity": "&frac58;",
+        "htmlcode": "&#8541;",
+        "csscode": "\\215D",
+        "unicode": "U+215D",
+        "name": "Vulgar Fraction Five Eighths"
+    },
+    {
+        "htmlentity": "&frac78;",
+        "htmlcode": "&#8542;",
+        "csscode": "\\215E",
+        "unicode": "U+215E",
+        "name": "Vulgar Fraction Seven Eighths"
+    },
+    {
+        "htmlentity": "&plus;",
+        "htmlcode": "&#43;",
+        "csscode": "\\002B",
+        "unicode": "U+002B",
+        "name": "Plus Sign"
+    },
+    {
+        "htmlentity": "&minus;",
+        "htmlcode": "&#8722;",
+        "csscode": "\\2212",
+        "unicode": "U+2212",
+        "name": "Minus Sign"
+    },
+    {
+        "htmlentity": "&times;",
+        "htmlcode": "&#215;",
+        "csscode": "\\00D7",
+        "unicode": "U+00D7",
+        "name": "Multiplication Sign"
+    },
+    {
+        "htmlentity": "&divide;",
+        "htmlcode": "&#247;",
+        "csscode": "\\00F7",
+        "unicode": "U+00F7",
+        "name": "Division Sign"
+    },
+    {
+        "htmlentity": "&equals;",
+        "htmlcode": "&#61;",
+        "csscode": "\\003D",
+        "unicode": "U+003D",
+        "name": "Equals Sign"
+    },
+    {
+        "htmlentity": "&ne;",
+        "htmlcode": "&#8800;",
+        "csscode": "\\2260",
+        "unicode": "U+2260",
+        "name": "Not Equal To"
+    },
+    {
+        "htmlentity": "&plusmn;",
+        "htmlcode": "&#177;",
+        "csscode": "\\00B1",
+        "unicode": "U+00B1",
+        "name": "Plus minus symbol"
+    },
+    {
+        "htmlentity": "&not;",
+        "htmlcode": "&#172;",
+        "csscode": "\\00AC",
+        "unicode": "U+00AC",
+        "name": "Not Sign"
+    },
+    {
+        "htmlentity": "&lt;",
+        "htmlcode": "&#60;",
+        "csscode": "\\003C",
+        "unicode": "U+003C",
+        "name": "Less-Than Sign"
+    },
+    {
+        "htmlentity": "&gt;",
+        "htmlcode": "&#62;",
+        "csscode": "\\003E",
+        "unicode": "U+003E",
+        "name": "Greater-Than Sign"
+    },
+    {
+        "htmlentity": "&deg;",
+        "htmlcode": "&#176;",
+        "csscode": "\\00B0",
+        "unicode": "U+00B0",
+        "name": "Degree Sign"
+    },
+    {
+        "htmlentity": "&sup1;",
+        "htmlcode": "&#185;",
+        "csscode": "\\00B9",
+        "unicode": "U+00B9",
+        "name": "Superscript One"
+    },
+    {
+        "htmlentity": "&sup2;",
+        "htmlcode": "&#178;",
+        "csscode": "\\00B2",
+        "unicode": "U+00B2",
+        "name": "Superscript Two"
+    },
+    {
+        "htmlentity": "&sup3;",
+        "htmlcode": "&#179;",
+        "csscode": "\\00B3",
+        "unicode": "U+00B3",
+        "name": "Superscript Three"
+    },
+    {
+        "htmlentity": "&fnof;",
+        "htmlcode": "&#402;",
+        "csscode": "\\0192",
+        "unicode": "U+0192",
+        "name": "Latin Small Letter F with Hook"
+    },
+    {
+        "htmlentity": "&percnt;",
+        "htmlcode": "&#37;",
+        "csscode": "\\0025",
+        "unicode": "U+0025",
+        "name": "Percent Sign"
+    },
+    {
+        "htmlentity": "&permil;",
+        "htmlcode": "&#137;",
+        "csscode": "\\0089",
+        "unicode": "U+0089",
+        "name": "Character Tabulation with Justification"
+    },
+    {
+        "htmlentity": "&pertenk;",
+        "htmlcode": "&#8241;",
+        "csscode": "\\2031",
+        "unicode": "U+2031",
+        "name": "Per Ten Thousand Sign"
+    },
+    {
+        "htmlentity": "&forall;",
+        "htmlcode": "&#8704;",
+        "csscode": "\\2200",
+        "unicode": "U+2200",
+        "name": "For All"
+    },
+    {
+        "htmlentity": "&comp;",
+        "htmlcode": "&#8705;",
+        "csscode": "\\2201",
+        "unicode": "U+2201",
+        "name": "Complement"
+    },
+    {
+        "htmlentity": "&part;",
+        "htmlcode": "&#8706;",
+        "csscode": "\\2202",
+        "unicode": "U+2202",
+        "name": "Partial Differential"
+    },
+    {
+        "htmlentity": "&exist;",
+        "htmlcode": "&#8707;",
+        "csscode": "\\2203",
+        "unicode": "U+2203",
+        "name": "There Exists"
+    },
+    {
+        "htmlentity": "&nexist;",
+        "htmlcode": "&#8708;",
+        "csscode": "\\2204",
+        "unicode": "U+2204",
+        "name": "There Does Not Exist"
+    },
+    {
+        "htmlentity": "&empty;",
+        "htmlcode": "&#8709;",
+        "csscode": "\\2205",
+        "unicode": "U+2205",
+        "name": "Empty Set"
+    },
+    {
+        "htmlentity": "&nabla;",
+        "htmlcode": "&#8711;",
+        "csscode": "\\2207",
+        "unicode": "U+2207",
+        "name": "Nabla"
+    },
+    {
+        "htmlentity": "&isin;",
+        "htmlcode": "&#8712;",
+        "csscode": "\\2208",
+        "unicode": "U+2208",
+        "name": "Element Of"
+    },
+    {
+        "htmlentity": "&notin;",
+        "htmlcode": "&#8713;",
+        "csscode": "\\2209",
+        "unicode": "U+2209",
+        "name": "Not an Element Of"
+    },
+    {
+        "htmlentity": "&ni;",
+        "htmlcode": "&#8715;",
+        "csscode": "\\220B",
+        "unicode": "U+220B",
+        "name": "Contains As Member"
+    },
+    {
+        "htmlentity": "&notni;",
+        "htmlcode": "&#8716;",
+        "csscode": "\\220C",
+        "unicode": "U+220C",
+        "name": "Does Not Contain As Member"
+    },
+    {
+        "htmlentity": "&prod;",
+        "htmlcode": "&#8719;",
+        "csscode": "\\220F",
+        "unicode": "U+220F",
+        "name": "N-Ary Product"
+    },
+    {
+        "htmlentity": "&coprod;",
+        "htmlcode": "&#8720;",
+        "csscode": "\\2210",
+        "unicode": "U+2210",
+        "name": "N-Ary Coproduct"
+    },
+    {
+        "htmlentity": "&sum;",
+        "htmlcode": "&#8721;",
+        "csscode": "\\2211",
+        "unicode": "U+2211",
+        "name": "N-Ary Summation"
+    },
+    {
+        "htmlentity": "&mnplus;",
+        "htmlcode": "&#8723;",
+        "csscode": "\\2213",
+        "unicode": "U+2213",
+        "name": "Minus-or-Plus Sign"
+    },
+    {
+        "htmlentity": "&plusdo;",
+        "htmlcode": "&#8724;",
+        "csscode": "\\2214",
+        "unicode": "U+2214",
+        "name": "Dot Plus"
+    },
+    {
+        "htmlentity": "&setminus;",
+        "htmlcode": "&#8726;",
+        "csscode": "\\2216",
+        "unicode": "U+2216",
+        "name": "Set Minus"
+    },
+    {
+        "htmlentity": "&lowast;",
+        "htmlcode": "&#8727;",
+        "csscode": "\\2217",
+        "unicode": "U+2217",
+        "name": "Asterisk Operator"
+    },
+    {
+        "htmlentity": "&compfn;",
+        "htmlcode": "&#8728;",
+        "csscode": "\\2218",
+        "unicode": "U+2218",
+        "name": "Ring Operator"
+    },
+    {
+        "htmlentity": "&radic;",
+        "htmlcode": "&#8730;",
+        "csscode": "\\221A",
+        "unicode": "U+221A",
+        "name": "Square Root"
+    },
+    {
+        "htmlentity": "&prop;",
+        "htmlcode": "&#8733;",
+        "csscode": "\\221D",
+        "unicode": "U+221D",
+        "name": "Proportional To"
+    },
+    {
+        "htmlentity": "&infin;",
+        "htmlcode": "&#8734;",
+        "csscode": "\\221E",
+        "unicode": "U+221E",
+        "name": "Infinity"
+    },
+    {
+        "htmlentity": "&angrt;",
+        "htmlcode": "&#8735;",
+        "csscode": "\\221F",
+        "unicode": "U+221F",
+        "name": "Right Angle"
+    },
+    {
+        "htmlentity": "&ang;",
+        "htmlcode": "&#8736;",
+        "csscode": "\\2220",
+        "unicode": "U+2220",
+        "name": "Angle"
+    },
+    {
+        "htmlentity": "&angmsd;",
+        "htmlcode": "&#8737;",
+        "csscode": "\\2221",
+        "unicode": "U+2221",
+        "name": "Measured Angle"
+    },
+    {
+        "htmlentity": "&angsph;",
+        "htmlcode": "&#8738;",
+        "csscode": "\\2222",
+        "unicode": "U+2222",
+        "name": "Spherical Angle"
+    },
+    {
+        "htmlentity": "&mid;",
+        "htmlcode": "&#8739;",
+        "csscode": "\\2223",
+        "unicode": "U+2223",
+        "name": "Divides"
+    },
+    {
+        "htmlentity": "&nmid;",
+        "htmlcode": "&#8740;",
+        "csscode": "\\2224",
+        "unicode": "U+2224",
+        "name": "Does Not Divide"
+    },
+    {
+        "htmlentity": "&parallel;",
+        "htmlcode": "&#8741;",
+        "csscode": "\\2225",
+        "unicode": "U+2225",
+        "name": "Parallel To"
+    },
+    {
+        "htmlentity": "&npar;",
+        "htmlcode": "&#8742;",
+        "csscode": "\\2226",
+        "unicode": "U+2226",
+        "name": "Not Parallel To"
+    },
+    {
+        "htmlentity": "&and;",
+        "htmlcode": "&#8743;",
+        "csscode": "\\2227",
+        "unicode": "U+2227",
+        "name": "Logical And"
+    },
+    {
+        "htmlentity": "&or;",
+        "htmlcode": "&#8744;",
+        "csscode": "\\2228",
+        "unicode": "U+2228",
+        "name": "Logical Or"
+    },
+    {
+        "htmlentity": "&cap;",
+        "htmlcode": "&#8745;",
+        "csscode": "\\2229",
+        "unicode": "U+2229",
+        "name": "Intersection"
+    },
+    {
+        "htmlentity": "&cup;",
+        "htmlcode": "&#8746;",
+        "csscode": "\\222A",
+        "unicode": "U+222A",
+        "name": "Union"
+    },
+    {
+        "htmlentity": "&int;",
+        "htmlcode": "&#8747;",
+        "csscode": "\\222B",
+        "unicode": "U+222B",
+        "name": "Integral"
+    },
+    {
+        "htmlentity": "&Int;",
+        "htmlcode": "&#8748;",
+        "csscode": "\\222C",
+        "unicode": "U+222C",
+        "name": "Double Integral"
+    },
+    {
+        "htmlentity": "&iiint;",
+        "htmlcode": "&#8749;",
+        "csscode": "\\222D",
+        "unicode": "U+222D",
+        "name": "Triple Integral"
+    },
+    {
+        "htmlentity": "&conint;",
+        "htmlcode": "&#8750;",
+        "csscode": "\\222E",
+        "unicode": "U+222E",
+        "name": "Contour Integral"
+    },
+    {
+        "htmlentity": "&Conint;",
+        "htmlcode": "&#8751;",
+        "csscode": "\\222F",
+        "unicode": "U+222F",
+        "name": "Surface Integral"
+    },
+    {
+        "htmlentity": "&Cconint;",
+        "htmlcode": "&#8752;",
+        "csscode": "\\2230",
+        "unicode": "U+2230",
+        "name": "Volume Integral"
+    },
+    {
+        "htmlentity": "&cwint;",
+        "htmlcode": "&#8753;",
+        "csscode": "\\2231",
+        "unicode": "U+2231",
+        "name": "Clockwise Integral"
+    },
+    {
+        "htmlentity": "&cwconint;",
+        "htmlcode": "&#8754;",
+        "csscode": "\\2232",
+        "unicode": "U+2232",
+        "name": "Clockwise Contour Integral"
+    },
+    {
+        "htmlentity": "&awconint;",
+        "htmlcode": "&#8755;",
+        "csscode": "\\2233",
+        "unicode": "U+2233",
+        "name": "Anticlockwise Contour Integral"
+    },
+    {
+        "htmlentity": "&there4;",
+        "htmlcode": "&#8756;",
+        "csscode": "\\2234",
+        "unicode": "U+2234",
+        "name": "Therefore"
+    },
+    {
+        "htmlentity": "&because;",
+        "htmlcode": "&#8757;",
+        "csscode": "\\2235",
+        "unicode": "U+2235",
+        "name": "Because"
+    },
+    {
+        "htmlentity": "&ratio;",
+        "htmlcode": "&#8758;",
+        "csscode": "\\2236",
+        "unicode": "U+2236",
+        "name": "Ratio"
+    },
+    {
+        "htmlentity": "&Colon;",
+        "htmlcode": "&#8759;",
+        "csscode": "\\2237",
+        "unicode": "U+2237",
+        "name": "Proportion"
+    },
+    {
+        "htmlentity": "&minusd;",
+        "htmlcode": "&#8760;",
+        "csscode": "\\2238",
+        "unicode": "U+2238",
+        "name": "Dot Minus"
+    },
+    {
+        "htmlentity": "&mDDot;",
+        "htmlcode": "&#8762;",
+        "csscode": "\\223A",
+        "unicode": "U+223A",
+        "name": "Geometric Proportion"
+    },
+    {
+        "htmlentity": "&homtht;",
+        "htmlcode": "&#8763;",
+        "csscode": "\\223B",
+        "unicode": "U+223B",
+        "name": "Homothetic"
+    },
+    {
+        "htmlentity": "&sim;",
+        "htmlcode": "&#8764;",
+        "csscode": "\\223C",
+        "unicode": "U+223C",
+        "name": "Tilde Operator"
+    },
+    {
+        "htmlentity": "&bsim;",
+        "htmlcode": "&#8765;",
+        "csscode": "\\223D",
+        "unicode": "U+223D",
+        "name": "Reversed Tilde"
+    },
+    {
+        "htmlentity": "&ac;",
+        "htmlcode": "&#8766;",
+        "csscode": "\\223E",
+        "unicode": "U+223E",
+        "name": "Inverted Lazy S"
+    },
+    {
+        "htmlentity": "&acd;",
+        "htmlcode": "&#8767;",
+        "csscode": "\\223F",
+        "unicode": "U+223F",
+        "name": "Sine Wave"
+    },
+    {
+        "htmlentity": "&wreath;",
+        "htmlcode": "&#8768;",
+        "csscode": "\\2240",
+        "unicode": "U+2240",
+        "name": "Wreath Product"
+    },
+    {
+        "htmlentity": "&nsim;",
+        "htmlcode": "&#8769;",
+        "csscode": "\\2241",
+        "unicode": "U+2241",
+        "name": "Not Tilde"
+    },
+    {
+        "htmlentity": "&esim;",
+        "htmlcode": "&#8770;",
+        "csscode": "\\2242",
+        "unicode": "U+2242",
+        "name": "Minus Tilde"
+    },
+    {
+        "htmlentity": "&sime;",
+        "htmlcode": "&#8771;",
+        "csscode": "\\2243",
+        "unicode": "U+2243",
+        "name": "Asymptotically Equal To"
+    },
+    {
+        "htmlentity": "&nsime;",
+        "htmlcode": "&#8772;",
+        "csscode": "\\2244",
+        "unicode": "U+2244",
+        "name": "Not Asymptotically Equal To"
+    },
+    {
+        "htmlentity": "&cong;",
+        "htmlcode": "&#8773;",
+        "csscode": "\\2245",
+        "unicode": "U+2245",
+        "name": "Approximately Equal To"
+    },
+    {
+        "htmlentity": "&simne;",
+        "htmlcode": "&#8774;",
+        "csscode": "\\2246",
+        "unicode": "U+2246",
+        "name": "Approximately But Not Actually Equal To"
+    },
+    {
+        "htmlentity": "&ncong;",
+        "htmlcode": "&#8775;",
+        "csscode": "\\2247",
+        "unicode": "U+2247",
+        "name": "Neither Approximately nor Actually Equal To"
+    },
+    {
+        "htmlentity": "&asymp;",
+        "htmlcode": "&#8776;",
+        "csscode": "\\2248",
+        "unicode": "U+2248",
+        "name": "Almost Equal To"
+    },
+    {
+        "htmlentity": "&nap;",
+        "htmlcode": "&#8777;",
+        "csscode": "\\2249",
+        "unicode": "U+2249",
+        "name": "Not Almost Equal To"
+    },
+    {
+        "htmlentity": "&approxeq;",
+        "htmlcode": "&#8778;",
+        "csscode": "\\224A",
+        "unicode": "U+224A",
+        "name": "Almost Equal or Equal To"
+    },
+    {
+        "htmlentity": "&apid;",
+        "htmlcode": "&#8779;",
+        "csscode": "\\224B",
+        "unicode": "U+224B",
+        "name": "Triple Tilde"
+    },
+    {
+        "htmlentity": "&bcong;",
+        "htmlcode": "&#8780;",
+        "csscode": "\\224C",
+        "unicode": "U+224C",
+        "name": "All Equal To"
+    },
+    {
+        "htmlentity": "&asympeq;",
+        "htmlcode": "&#8781;",
+        "csscode": "\\224D",
+        "unicode": "U+224D",
+        "name": "Equivalent To"
+    },
+    {
+        "htmlentity": "&bump;",
+        "htmlcode": "&#8782;",
+        "csscode": "\\224E",
+        "unicode": "U+224E",
+        "name": "Geometrically Equivalent To"
+    },
+    {
+        "htmlentity": "&bumpe;",
+        "htmlcode": "&#8783;",
+        "csscode": "\\224F",
+        "unicode": "U+224F",
+        "name": "Difference Between"
+    },
+    {
+        "htmlentity": "&esdot;",
+        "htmlcode": "&#8784;",
+        "csscode": "\\2250",
+        "unicode": "U+2250",
+        "name": "Approaches the Limit"
+    },
+    {
+        "htmlentity": "&eDot;",
+        "htmlcode": "&#8785;",
+        "csscode": "\\2251",
+        "unicode": "U+2251",
+        "name": "Geometrically Equal To"
+    },
+    {
+        "htmlentity": "&efDot;",
+        "htmlcode": "&#8786;",
+        "csscode": "\\2252",
+        "unicode": "U+2252",
+        "name": "Approximately Equal To or the Image Of"
+    },
+    {
+        "htmlentity": "&erDot;",
+        "htmlcode": "&#8787;",
+        "csscode": "\\2253",
+        "unicode": "U+2253",
+        "name": "Image of or Approximately Equal To"
+    },
+    {
+        "htmlentity": "&colone;",
+        "htmlcode": "&#8788;",
+        "csscode": "\\2254",
+        "unicode": "U+2254",
+        "name": "Colon Equals"
+    },
+    {
+        "htmlentity": "&ecolon;",
+        "htmlcode": "&#8789;",
+        "csscode": "\\2255",
+        "unicode": "U+2255",
+        "name": "Equals Colon"
+    },
+    {
+        "htmlentity": "&ecir;",
+        "htmlcode": "&#8790;",
+        "csscode": "\\2256",
+        "unicode": "U+2256",
+        "name": "Ring In Equal To"
+    },
+    {
+        "htmlentity": "&cire;",
+        "htmlcode": "&#8791;",
+        "csscode": "\\2257",
+        "unicode": "U+2257",
+        "name": "Ring Equal To"
+    },
+    {
+        "htmlentity": "&wedgeq;",
+        "htmlcode": "&#8793;",
+        "csscode": "\\2259",
+        "unicode": "U+2259",
+        "name": "Estimates"
+    },
+    {
+        "htmlentity": "&veeeq;",
+        "htmlcode": "&#8794;",
+        "csscode": "\\225A",
+        "unicode": "U+225A",
+        "name": "Equiangular To"
+    },
+    {
+        "htmlentity": "&trie;",
+        "htmlcode": "&#8796;",
+        "csscode": "\\225C",
+        "unicode": "U+225C",
+        "name": "Delta Equal To"
+    },
+    {
+        "htmlentity": "&equest;",
+        "htmlcode": "&#8799;",
+        "csscode": "\\225F",
+        "unicode": "U+225F",
+        "name": "Questioned Equal To"
+    },
+    {
+        "htmlentity": "&equiv;",
+        "htmlcode": "&#8801;",
+        "csscode": "\\2261",
+        "unicode": "U+2261",
+        "name": "Identical To"
+    },
+    {
+        "htmlentity": "&nequiv;",
+        "htmlcode": "&#8802;",
+        "csscode": "\\2262",
+        "unicode": "U+2262",
+        "name": "Not Identical To"
+    },
+    {
+        "htmlentity": "&le;",
+        "htmlcode": "&#8804;",
+        "csscode": "\\2264",
+        "unicode": "U+2264",
+        "name": "Less-Than or Equal To"
+    },
+    {
+        "htmlentity": "&ge;",
+        "htmlcode": "&#8805;",
+        "csscode": "\\2265",
+        "unicode": "U+2265",
+        "name": "Greater-Than or Equal To"
+    },
+    {
+        "htmlentity": "&lE;",
+        "htmlcode": "&#8806;",
+        "csscode": "\\2266",
+        "unicode": "U+2266",
+        "name": "Less-Than Over Equal To"
+    },
+    {
+        "htmlentity": "&gE;",
+        "htmlcode": "&#8807;",
+        "csscode": "\\2267",
+        "unicode": "U+2267",
+        "name": "Greater-Than Over Equal To"
+    },
+    {
+        "htmlentity": "&lnE;",
+        "htmlcode": "&#8808;",
+        "csscode": "\\2268",
+        "unicode": "U+2268",
+        "name": "Less-Than But Not Equal To"
+    },
+    {
+        "htmlentity": "&gnE;",
+        "htmlcode": "&#8809;",
+        "csscode": "\\2269",
+        "unicode": "U+2269",
+        "name": "Greater-Than But Not Equal To"
+    },
+    {
+        "htmlentity": "&Lt;",
+        "htmlcode": "&#8810;",
+        "csscode": "\\226A",
+        "unicode": "U+226A",
+        "name": "Much Less-Than"
+    },
+    {
+        "htmlentity": "&Gt;",
+        "htmlcode": "&#8811;",
+        "csscode": "\\226B",
+        "unicode": "U+226B",
+        "name": "Much Greater-Than"
+    },
+    {
+        "htmlentity": "&between;",
+        "htmlcode": "&#8812;",
+        "csscode": "\\226C",
+        "unicode": "U+226C",
+        "name": "Between"
+    },
+    {
+        "htmlentity": "&NotCupCap;",
+        "htmlcode": "&#8813;",
+        "csscode": "\\226D",
+        "unicode": "U+226D",
+        "name": "Not Equivalent To"
+    },
+    {
+        "htmlentity": "&nlt;",
+        "htmlcode": "&#8814;",
+        "csscode": "\\226E",
+        "unicode": "U+226E",
+        "name": "Not Less-Than"
+    },
+    {
+        "htmlentity": "&ngt;",
+        "htmlcode": "&#8815;",
+        "csscode": "\\226F",
+        "unicode": "U+226F",
+        "name": "Not Greater-Than"
+    },
+    {
+        "htmlentity": "&nle;",
+        "htmlcode": "&#8816;",
+        "csscode": "\\2270",
+        "unicode": "U+2270",
+        "name": "Neither Less-Than nor Equal To"
+    },
+    {
+        "htmlentity": "&nge;",
+        "htmlcode": "&#8817;",
+        "csscode": "\\2271",
+        "unicode": "U+2271",
+        "name": "Neither Greater-Than nor Equal To"
+    },
+    {
+        "htmlentity": "&lsim;",
+        "htmlcode": "&#8818;",
+        "csscode": "\\2272",
+        "unicode": "U+2272",
+        "name": "Less-Than or Equivalent To"
+    },
+    {
+        "htmlentity": "&gsim;",
+        "htmlcode": "&#8819;",
+        "csscode": "\\2273",
+        "unicode": "U+2273",
+        "name": "Greater-Than or Equivalent To"
+    },
+    {
+        "htmlentity": "&nlsim;",
+        "htmlcode": "&#8820;",
+        "csscode": "\\2274",
+        "unicode": "U+2274",
+        "name": "Neither Less-Than nor Equivalent To"
+    },
+    {
+        "htmlentity": "&ngsim;",
+        "htmlcode": "&#8821;",
+        "csscode": "\\2275",
+        "unicode": "U+2275",
+        "name": "Neither Greater-Than nor Equivalent To"
+    },
+    {
+        "htmlentity": "&lg;",
+        "htmlcode": "&#8822;",
+        "csscode": "\\2276",
+        "unicode": "U+2276",
+        "name": "Less-Than or Greater-Than"
+    },
+    {
+        "htmlentity": "&gl;",
+        "htmlcode": "&#8823;",
+        "csscode": "\\2277",
+        "unicode": "U+2277",
+        "name": "Greater-Than or Less-Than"
+    },
+    {
+        "htmlentity": "&ntlg;",
+        "htmlcode": "&#8824;",
+        "csscode": "\\2278",
+        "unicode": "U+2278",
+        "name": "Neither Less-Than nor Greater-Than"
+    },
+    {
+        "htmlentity": "&ntgl;",
+        "htmlcode": "&#8825;",
+        "csscode": "\\2279",
+        "unicode": "U+2279",
+        "name": "Neither Greater-Than nor Less-Than"
+    },
+    {
+        "htmlentity": "&pr;",
+        "htmlcode": "&#8826;",
+        "csscode": "\\227A",
+        "unicode": "U+227A",
+        "name": "Precedes"
+    },
+    {
+        "htmlentity": "&sc;",
+        "htmlcode": "&#8827;",
+        "csscode": "\\227B",
+        "unicode": "U+227B",
+        "name": "Succeeds"
+    },
+    {
+        "htmlentity": "&prcue;",
+        "htmlcode": "&#8828;",
+        "csscode": "\\227C",
+        "unicode": "U+227C",
+        "name": "Precedes or Equal To"
+    },
+    {
+        "htmlentity": "&sccue;",
+        "htmlcode": "&#8829;",
+        "csscode": "\\227D",
+        "unicode": "U+227D",
+        "name": "Succeeds or Equal To"
+    },
+    {
+        "htmlentity": "&prsim;",
+        "htmlcode": "&#8830;",
+        "csscode": "\\227E",
+        "unicode": "U+227E",
+        "name": "Precedes or Equivalent To"
+    },
+    {
+        "htmlentity": "&scsim;",
+        "htmlcode": "&#8831;",
+        "csscode": "\\227F",
+        "unicode": "U+227F",
+        "name": "Succeeds or Equivalent To"
+    },
+    {
+        "htmlentity": "&npr;",
+        "htmlcode": "&#8832;",
+        "csscode": "\\2280",
+        "unicode": "U+2280",
+        "name": "Does Not Precede"
+    },
+    {
+        "htmlentity": "&nsc;",
+        "htmlcode": "&#8833;",
+        "csscode": "\\2281",
+        "unicode": "U+2281",
+        "name": "Does Not Succeed"
+    },
+    {
+        "htmlentity": "&sub;",
+        "htmlcode": "&#8834;",
+        "csscode": "\\2282",
+        "unicode": "U+2282",
+        "name": "Subset Of"
+    },
+    {
+        "htmlentity": "&sup;",
+        "htmlcode": "&#8835;",
+        "csscode": "\\2283",
+        "unicode": "U+2283",
+        "name": "Superset Of"
+    },
+    {
+        "htmlentity": "&nsub;",
+        "htmlcode": "&#8836;",
+        "csscode": "\\2284",
+        "unicode": "U+2284",
+        "name": "Not a Subset Of"
+    },
+    {
+        "htmlentity": "&nsup;",
+        "htmlcode": "&#8837;",
+        "csscode": "\\2285",
+        "unicode": "U+2285",
+        "name": "Not a Superset Of"
+    },
+    {
+        "htmlentity": "&sube;",
+        "htmlcode": "&#8838;",
+        "csscode": "\\2286",
+        "unicode": "U+2286",
+        "name": "Subset of or Equal To"
+    },
+    {
+        "htmlentity": "&supe;",
+        "htmlcode": "&#8839;",
+        "csscode": "\\2287",
+        "unicode": "U+2287",
+        "name": "Superset of or Equal To"
+    },
+    {
+        "htmlentity": "&nsube;",
+        "htmlcode": "&#8840;",
+        "csscode": "\\2288",
+        "unicode": "U+2288",
+        "name": "Neither a Subset of nor Equal To"
+    },
+    {
+        "htmlentity": "&nsupe;",
+        "htmlcode": "&#8841;",
+        "csscode": "\\2289",
+        "unicode": "U+2289",
+        "name": "Neither a Superset of nor Equal To"
+    },
+    {
+        "htmlentity": "&subne;",
+        "htmlcode": "&#8842;",
+        "csscode": "\\228A",
+        "unicode": "U+228A",
+        "name": "Subset of with Not Equal To"
+    },
+    {
+        "htmlentity": "&supne;",
+        "htmlcode": "&#8843;",
+        "csscode": "\\228B",
+        "unicode": "U+228B",
+        "name": "Superset of with Not Equal To"
+    },
+    {
+        "htmlentity": "&cupdot;",
+        "htmlcode": "&#8845;",
+        "csscode": "\\228D",
+        "unicode": "U+228D",
+        "name": "Multiset Multiplication"
+    },
+    {
+        "htmlentity": "&uplus;",
+        "htmlcode": "&#8846;",
+        "csscode": "\\228E",
+        "unicode": "U+228E",
+        "name": "Multiset Union"
+    },
+    {
+        "htmlentity": "&sqsub;",
+        "htmlcode": "&#8847;",
+        "csscode": "\\228F",
+        "unicode": "U+228F",
+        "name": "Square Image Of"
+    },
+    {
+        "htmlentity": "&sqsup;",
+        "htmlcode": "&#8848;",
+        "csscode": "\\2290",
+        "unicode": "U+2290",
+        "name": "Square Original Of"
+    },
+    {
+        "htmlentity": "&sqsube;",
+        "htmlcode": "&#8849;",
+        "csscode": "\\2291",
+        "unicode": "U+2291",
+        "name": "Square Image of or Equal To"
+    },
+    {
+        "htmlentity": "&sqsupe;",
+        "htmlcode": "&#8850;",
+        "csscode": "\\2292",
+        "unicode": "U+2292",
+        "name": "Square Original of or Equal To"
+    },
+    {
+        "htmlentity": "&sqcap;",
+        "htmlcode": "&#8851;",
+        "csscode": "\\2293",
+        "unicode": "U+2293",
+        "name": "Square Cap"
+    },
+    {
+        "htmlentity": "&sqcup;",
+        "htmlcode": "&#8852;",
+        "csscode": "\\2294",
+        "unicode": "U+2294",
+        "name": "Square Cup"
+    },
+    {
+        "htmlentity": "&oplus;",
+        "htmlcode": "&#8853;",
+        "csscode": "\\2295",
+        "unicode": "U+2295",
+        "name": "Circled Plus"
+    },
+    {
+        "htmlentity": "&ominus;",
+        "htmlcode": "&#8854;",
+        "csscode": "\\2296",
+        "unicode": "U+2296",
+        "name": "Circled Minus"
+    },
+    {
+        "htmlentity": "&otimes;",
+        "htmlcode": "&#8855;",
+        "csscode": "\\2297",
+        "unicode": "U+2297",
+        "name": "Circled Times"
+    },
+    {
+        "htmlentity": "&osol;",
+        "htmlcode": "&#8856;",
+        "csscode": "\\2298",
+        "unicode": "U+2298",
+        "name": "Circled Division Slash"
+    },
+    {
+        "htmlentity": "&odot;",
+        "htmlcode": "&#8857;",
+        "csscode": "\\2299",
+        "unicode": "U+2299",
+        "name": "Circled Dot Operator"
+    },
+    {
+        "htmlentity": "&ocir;",
+        "htmlcode": "&#8858;",
+        "csscode": "\\229A",
+        "unicode": "U+229A",
+        "name": "Circled Ring Operator"
+    },
+    {
+        "htmlentity": "&oast;",
+        "htmlcode": "&#8859;",
+        "csscode": "\\229B",
+        "unicode": "U+229B",
+        "name": "Circled Asterisk Operator"
+    },
+    {
+        "htmlentity": "&odash;",
+        "htmlcode": "&#8861;",
+        "csscode": "\\229D",
+        "unicode": "U+229D",
+        "name": "Circled Dash"
+    },
+    {
+        "htmlentity": "&plusb;",
+        "htmlcode": "&#8862;",
+        "csscode": "\\229E",
+        "unicode": "U+229E",
+        "name": "Squared Plus"
+    },
+    {
+        "htmlentity": "&minusb;",
+        "htmlcode": "&#8863;",
+        "csscode": "\\229F",
+        "unicode": "U+229F",
+        "name": "Squared Minus"
+    },
+    {
+        "htmlentity": "&timesb;",
+        "htmlcode": "&#8864;",
+        "csscode": "\\22A0",
+        "unicode": "U+22A0",
+        "name": "Squared Times"
+    },
+    {
+        "htmlentity": "&sdotb;",
+        "htmlcode": "&#8865;",
+        "csscode": "\\22A1",
+        "unicode": "U+22A1",
+        "name": "Squared Dot Operator"
+    },
+    {
+        "htmlentity": "&vdash;",
+        "htmlcode": "&#8866;",
+        "csscode": "\\22A2",
+        "unicode": "U+22A2",
+        "name": "Right Tack"
+    },
+    {
+        "htmlentity": "&dashv;",
+        "htmlcode": "&#8867;",
+        "csscode": "\\22A3",
+        "unicode": "U+22A3",
+        "name": "Left Tack"
+    },
+    {
+        "htmlentity": "&top;",
+        "htmlcode": "&#8868;",
+        "csscode": "\\22A4",
+        "unicode": "U+22A4",
+        "name": "Down Tack"
+    },
+    {
+        "htmlentity": "&perp;",
+        "htmlcode": "&#8869;",
+        "csscode": "\\22A5",
+        "unicode": "U+22A5",
+        "name": "Up Tack"
+    },
+    {
+        "htmlentity": "&models;",
+        "htmlcode": "&#8871;",
+        "csscode": "\\22A7",
+        "unicode": "U+22A7",
+        "name": "Models"
+    },
+    {
+        "htmlentity": "&vDash;",
+        "htmlcode": "&#8872;",
+        "csscode": "\\22A8",
+        "unicode": "U+22A8",
+        "name": "TRUE"
+    },
+    {
+        "htmlentity": "&Vdash;",
+        "htmlcode": "&#8873;",
+        "csscode": "\\22A9",
+        "unicode": "U+22A9",
+        "name": "Forces"
+    },
+    {
+        "htmlentity": "&Vvdash;",
+        "htmlcode": "&#8874;",
+        "csscode": "\\22AA",
+        "unicode": "U+22AA",
+        "name": "Triple Vertical Bar Right Turnstile"
+    },
+    {
+        "htmlentity": "&VDash;",
+        "htmlcode": "&#8875;",
+        "csscode": "\\22AB",
+        "unicode": "U+22AB",
+        "name": "Double Vertical Bar Double Right Turnstile"
+    },
+    {
+        "htmlentity": "&nvdash;",
+        "htmlcode": "&#8876;",
+        "csscode": "\\22AC",
+        "unicode": "U+22AC",
+        "name": "Does Not Prove"
+    },
+    {
+        "htmlentity": "&nvDash;",
+        "htmlcode": "&#8877;",
+        "csscode": "\\22AD",
+        "unicode": "U+22AD",
+        "name": "Not True"
+    },
+    {
+        "htmlentity": "&nVdash;",
+        "htmlcode": "&#8878;",
+        "csscode": "\\22AE",
+        "unicode": "U+22AE",
+        "name": "Does Not Force"
+    },
+    {
+        "htmlentity": "&nVDash;",
+        "htmlcode": "&#8879;",
+        "csscode": "\\22AF",
+        "unicode": "U+22AF",
+        "name": "Negated Double Vertical Bar Double Right Turnstile"
+    },
+    {
+        "htmlentity": "&prurel;",
+        "htmlcode": "&#8880;",
+        "csscode": "\\22B0",
+        "unicode": "U+22B0",
+        "name": "Precedes Under Relation"
+    },
+    {
+        "htmlentity": "&vltri;",
+        "htmlcode": "&#8882;",
+        "csscode": "\\22B2",
+        "unicode": "U+22B2",
+        "name": "Normal Subgroup Of"
+    },
+    {
+        "htmlentity": "&vrtri;",
+        "htmlcode": "&#8883;",
+        "csscode": "\\22B3",
+        "unicode": "U+22B3",
+        "name": "Contains As Normal Subgroup"
+    },
+    {
+        "htmlentity": "&ltrie;",
+        "htmlcode": "&#8884;",
+        "csscode": "\\22B4",
+        "unicode": "U+22B4",
+        "name": "Normal Subgroup of or Equal To"
+    },
+    {
+        "htmlentity": "&rtrie;",
+        "htmlcode": "&#8885;",
+        "csscode": "\\22B5",
+        "unicode": "U+22B5",
+        "name": "Contains As Normal Subgroup or Equal To"
+    },
+    {
+        "htmlentity": "&origof;",
+        "htmlcode": "&#8886;",
+        "csscode": "\\22B6",
+        "unicode": "U+22B6",
+        "name": "Original Of"
+    },
+    {
+        "htmlentity": "&imof;",
+        "htmlcode": "&#8887;",
+        "csscode": "\\22B7",
+        "unicode": "U+22B7",
+        "name": "Image Of"
+    },
+    {
+        "htmlentity": "&mumap;",
+        "htmlcode": "&#8888;",
+        "csscode": "\\22B8",
+        "unicode": "U+22B8",
+        "name": "Multimap"
+    },
+    {
+        "htmlentity": "&hercon;",
+        "htmlcode": "&#8889;",
+        "csscode": "\\22B9",
+        "unicode": "U+22B9",
+        "name": "Hermitian Conjugate Matrix"
+    },
+    {
+        "htmlentity": "&intcal;",
+        "htmlcode": "&#8890;",
+        "csscode": "\\22BA",
+        "unicode": "U+22BA",
+        "name": "Intercalate"
+    },
+    {
+        "htmlentity": "&veebar;",
+        "htmlcode": "&#8891;",
+        "csscode": "\\22BB",
+        "unicode": "U+22BB",
+        "name": "Xor"
+    },
+    {
+        "htmlentity": "&barvee;",
+        "htmlcode": "&#8893;",
+        "csscode": "\\22BD",
+        "unicode": "U+22BD",
+        "name": "Nor"
+    },
+    {
+        "htmlentity": "&angrtvb;",
+        "htmlcode": "&#8894;",
+        "csscode": "\\22BE",
+        "unicode": "U+22BE",
+        "name": "Right Angle with Arc"
+    },
+    {
+        "htmlentity": "&lrtri;",
+        "htmlcode": "&#8895;",
+        "csscode": "\\22BF",
+        "unicode": "U+22BF",
+        "name": "Right Triangle"
+    },
+    {
+        "htmlentity": "&xwedge;",
+        "htmlcode": "&#8896;",
+        "csscode": "\\22C0",
+        "unicode": "U+22C0",
+        "name": "N-Ary Logical And"
+    },
+    {
+        "htmlentity": "&xvee;",
+        "htmlcode": "&#8897;",
+        "csscode": "\\22C1",
+        "unicode": "U+22C1",
+        "name": "N-Ary Logical Or"
+    },
+    {
+        "htmlentity": "&xcap;",
+        "htmlcode": "&#8898;",
+        "csscode": "\\22C2",
+        "unicode": "U+22C2",
+        "name": "N-Ary Intersection"
+    },
+    {
+        "htmlentity": "&xcup;",
+        "htmlcode": "&#8899;",
+        "csscode": "\\22C3",
+        "unicode": "U+22C3",
+        "name": "N-Ary Union"
+    },
+    {
+        "htmlentity": "&diamond;",
+        "htmlcode": "&#8900;",
+        "csscode": "\\22C4",
+        "unicode": "U+22C4",
+        "name": "Diamond Operator"
+    },
+    {
+        "htmlentity": "&sdot;",
+        "htmlcode": "&#8901;",
+        "csscode": "\\22C5",
+        "unicode": "U+22C5",
+        "name": "Dot Operator"
+    },
+    {
+        "htmlentity": "&Star;",
+        "htmlcode": "&#8902;",
+        "csscode": "\\22C6",
+        "unicode": "U+22C6",
+        "name": "Star Operator"
+    },
+    {
+        "htmlentity": "&divonx;",
+        "htmlcode": "&#8903;",
+        "csscode": "\\22C7",
+        "unicode": "U+22C7",
+        "name": "Division Times"
+    },
+    {
+        "htmlentity": "&bowtie;",
+        "htmlcode": "&#8904;",
+        "csscode": "\\22C8",
+        "unicode": "U+22C8",
+        "name": "Bowtie"
+    },
+    {
+        "htmlentity": "&ltimes;",
+        "htmlcode": "&#8905;",
+        "csscode": "\\22C9",
+        "unicode": "U+22C9",
+        "name": "Left Normal Factor Semidirect Product"
+    },
+    {
+        "htmlentity": "&rtimes;",
+        "htmlcode": "&#8906;",
+        "csscode": "\\22CA",
+        "unicode": "U+22CA",
+        "name": "Right Normal Factor Semidirect Product"
+    },
+    {
+        "htmlentity": "&lthree;",
+        "htmlcode": "&#8907;",
+        "csscode": "\\22CB",
+        "unicode": "U+22CB",
+        "name": "Left Semidirect Product"
+    },
+    {
+        "htmlentity": "&rthree;",
+        "htmlcode": "&#8908;",
+        "csscode": "\\22CC",
+        "unicode": "U+22CC",
+        "name": "Right Semidirect Product"
+    },
+    {
+        "htmlentity": "&bsime;",
+        "htmlcode": "&#8909;",
+        "csscode": "\\22CD",
+        "unicode": "U+22CD",
+        "name": "Reversed Tilde Equals"
+    },
+    {
+        "htmlentity": "&cuvee;",
+        "htmlcode": "&#8910;",
+        "csscode": "\\22CE",
+        "unicode": "U+22CE",
+        "name": "Curly Logical Or"
+    },
+    {
+        "htmlentity": "&cuwed;",
+        "htmlcode": "&#8911;",
+        "csscode": "\\22CF",
+        "unicode": "U+22CF",
+        "name": "Curly Logical And"
+    },
+    {
+        "htmlentity": "&Sub;",
+        "htmlcode": "&#8912;",
+        "csscode": "\\22D0",
+        "unicode": "U+22D0",
+        "name": "Double Subset"
+    },
+    {
+        "htmlentity": "&Sup;",
+        "htmlcode": "&#8913;",
+        "csscode": "\\22D1",
+        "unicode": "U+22D1",
+        "name": "Double Superset"
+    },
+    {
+        "htmlentity": "&Cap;",
+        "htmlcode": "&#8914;",
+        "csscode": "\\22D2",
+        "unicode": "U+22D2",
+        "name": "Double Intersection"
+    },
+    {
+        "htmlentity": "&Cup;",
+        "htmlcode": "&#8915;",
+        "csscode": "\\22D3",
+        "unicode": "U+22D3",
+        "name": "Double Union"
+    },
+    {
+        "htmlentity": "&fork;",
+        "htmlcode": "&#8916;",
+        "csscode": "\\22D4",
+        "unicode": "U+22D4",
+        "name": "Pitchfork"
+    },
+    {
+        "htmlentity": "&epar;",
+        "htmlcode": "&#8917;",
+        "csscode": "\\22D5",
+        "unicode": "U+22D5",
+        "name": "Equal and Parallel To"
+    },
+    {
+        "htmlentity": "&ltdot;",
+        "htmlcode": "&#8918;",
+        "csscode": "\\22D6",
+        "unicode": "U+22D6",
+        "name": "Less-Than with Dot"
+    },
+    {
+        "htmlentity": "&gtdot;",
+        "htmlcode": "&#8919;",
+        "csscode": "\\22D7",
+        "unicode": "U+22D7",
+        "name": "Greater-Than with Dot"
+    },
+    {
+        "htmlentity": "&Ll;",
+        "htmlcode": "&#8920;",
+        "csscode": "\\22D8",
+        "unicode": "U+22D8",
+        "name": "Very Much Less-Than"
+    },
+    {
+        "htmlentity": "&Gg;",
+        "htmlcode": "&#8921;",
+        "csscode": "\\22D9",
+        "unicode": "U+22D9",
+        "name": "Very Much Greater-Than"
+    },
+    {
+        "htmlentity": "&leg;",
+        "htmlcode": "&#8922;",
+        "csscode": "\\22DA",
+        "unicode": "U+22DA",
+        "name": "Less-Than Equal To or Greater-Than"
+    },
+    {
+        "htmlentity": "&gel;",
+        "htmlcode": "&#8923;",
+        "csscode": "\\22DB",
+        "unicode": "U+22DB",
+        "name": "Greater-Than Equal To or Less-Than"
+    },
+    {
+        "htmlentity": "&cuepr;",
+        "htmlcode": "&#8926;",
+        "csscode": "\\22DE",
+        "unicode": "U+22DE",
+        "name": "Equal To or Precedes"
+    },
+    {
+        "htmlentity": "&cuesc;",
+        "htmlcode": "&#8927;",
+        "csscode": "\\22DF",
+        "unicode": "U+22DF",
+        "name": "Equal To or Succeeds"
+    },
+    {
+        "htmlentity": "&nprcue;",
+        "htmlcode": "&#8928;",
+        "csscode": "\\22E0",
+        "unicode": "U+22E0",
+        "name": "Does Not Precede or Equal"
+    },
+    {
+        "htmlentity": "&nsccue;",
+        "htmlcode": "&#8929;",
+        "csscode": "\\22E1",
+        "unicode": "U+22E1",
+        "name": "Does Not Succeed or Equal"
+    },
+    {
+        "htmlentity": "&nsqsube;",
+        "htmlcode": "&#8930;",
+        "csscode": "\\22E2",
+        "unicode": "U+22E2",
+        "name": "Not Square Image of or Equal To"
+    },
+    {
+        "htmlentity": "&nsqsupe;",
+        "htmlcode": "&#8931;",
+        "csscode": "\\22E3",
+        "unicode": "U+22E3",
+        "name": "Not Square Original of or Equal To"
+    },
+    {
+        "htmlentity": "&lnsim;",
+        "htmlcode": "&#8934;",
+        "csscode": "\\22E6",
+        "unicode": "U+22E6",
+        "name": "Less-Than But Not Equivalent To"
+    },
+    {
+        "htmlentity": "&gnsim;",
+        "htmlcode": "&#8935;",
+        "csscode": "\\22E7",
+        "unicode": "U+22E7",
+        "name": "Greater-Than But Not Equivalent To"
+    },
+    {
+        "htmlentity": "&prnsim;",
+        "htmlcode": "&#8936;",
+        "csscode": "\\22E8",
+        "unicode": "U+22E8",
+        "name": "Precedes But Not Equivalent To"
+    },
+    {
+        "htmlentity": "&scnsim;",
+        "htmlcode": "&#8937;",
+        "csscode": "\\22E9",
+        "unicode": "U+22E9",
+        "name": "Succeeds But Not Equivalent To"
+    },
+    {
+        "htmlentity": "&nltri;",
+        "htmlcode": "&#8938;",
+        "csscode": "\\22EA",
+        "unicode": "U+22EA",
+        "name": "Not Normal Subgroup Of"
+    },
+    {
+        "htmlentity": "&nrtri;",
+        "htmlcode": "&#8939;",
+        "csscode": "\\22EB",
+        "unicode": "U+22EB",
+        "name": "Does Not Contain As Normal Subgroup"
+    },
+    {
+        "htmlentity": "&nltrie;",
+        "htmlcode": "&#8940;",
+        "csscode": "\\22EC",
+        "unicode": "U+22EC",
+        "name": "Not Normal Subgroup of or Equal To"
+    },
+    {
+        "htmlentity": "&nrtrie;",
+        "htmlcode": "&#8941;",
+        "csscode": "\\22ED",
+        "unicode": "U+22ED",
+        "name": "Does Not Contain As Normal Subgroup or Equal"
+    },
+    {
+        "htmlentity": "&vellip;",
+        "htmlcode": "&#8942;",
+        "csscode": "\\22EE",
+        "unicode": "U+22EE",
+        "name": "Vertical Ellipsis"
+    },
+    {
+        "htmlentity": "&ctdot;",
+        "htmlcode": "&#8943;",
+        "csscode": "\\22EF",
+        "unicode": "U+22EF",
+        "name": "Midline Horizontal Ellipsis"
+    },
+    {
+        "htmlentity": "&utdot;",
+        "htmlcode": "&#8944;",
+        "csscode": "\\22F0",
+        "unicode": "U+22F0",
+        "name": "Up Right Diagonal Ellipsis"
+    },
+    {
+        "htmlentity": "&dtdot;",
+        "htmlcode": "&#8945;",
+        "csscode": "\\22F1",
+        "unicode": "U+22F1",
+        "name": "Down Right Diagonal Ellipsis"
+    },
+    {
+        "htmlentity": "&disin;",
+        "htmlcode": "&#8946;",
+        "csscode": "\\22F2",
+        "unicode": "U+22F2",
+        "name": "Element of with Long Horizontal Stroke"
+    },
+    {
+        "htmlentity": "&isinsv;",
+        "htmlcode": "&#8947;",
+        "csscode": "\\22F3",
+        "unicode": "U+22F3",
+        "name": "Element of with Vertical Bar At End of Horizontal Stroke"
+    },
+    {
+        "htmlentity": "&isins;",
+        "htmlcode": "&#8948;",
+        "csscode": "\\22F4",
+        "unicode": "U+22F4",
+        "name": "Small Element of with Vertical Bar At End of Horizontal Stroke"
+    },
+    {
+        "htmlentity": "&isindot;",
+        "htmlcode": "&#8949;",
+        "csscode": "\\22F5",
+        "unicode": "U+22F5",
+        "name": "Element of with Dot Above"
+    },
+    {
+        "htmlentity": "&notinvc;",
+        "htmlcode": "&#8950;",
+        "csscode": "\\22F6",
+        "unicode": "U+22F6",
+        "name": "Element of with Overbar"
+    },
+    {
+        "htmlentity": "&notinvb;",
+        "htmlcode": "&#8951;",
+        "csscode": "\\22F7",
+        "unicode": "U+22F7",
+        "name": "Small Element of with Overbar"
+    },
+    {
+        "htmlentity": "&isinE;",
+        "htmlcode": "&#8953;",
+        "csscode": "\\22F9",
+        "unicode": "U+22F9",
+        "name": "Element of with Two Horizontal Strokes"
+    },
+    {
+        "htmlentity": "&nisd;",
+        "htmlcode": "&#8954;",
+        "csscode": "\\22FA",
+        "unicode": "U+22FA",
+        "name": "Contains with Long Horizontal Stroke"
+    },
+    {
+        "htmlentity": "&xnis;",
+        "htmlcode": "&#8955;",
+        "csscode": "\\22FB",
+        "unicode": "U+22FB",
+        "name": "Contains with Vertical Bar At End of Horizontal Stroke"
+    },
+    {
+        "htmlentity": "&nis;",
+        "htmlcode": "&#8956;",
+        "csscode": "\\22FC",
+        "unicode": "U+22FC",
+        "name": "Small Contains with Vertical Bar At End of Horizontal Stroke"
+    },
+    {
+        "htmlentity": "&notnivc;",
+        "htmlcode": "&#8957;",
+        "csscode": "\\22FD",
+        "unicode": "U+22FD",
+        "name": "Contains with Overbar"
+    },
+    {
+        "htmlentity": "&notnivb;",
+        "htmlcode": "&#8958;",
+        "csscode": "\\22FE",
+        "unicode": "U+22FE",
+        "name": "Small Contains with Overbar"
+    },
+    {
+        "htmlentity": "&lceil;",
+        "htmlcode": "&#8968;",
+        "csscode": "\\2308",
+        "unicode": "U+2308",
+        "name": "Left Ceiling"
+    },
+    {
+        "htmlentity": "&rceil;",
+        "htmlcode": "&#8969;",
+        "csscode": "\\2309",
+        "unicode": "U+2309",
+        "name": "Right Ceiling"
+    },
+    {
+        "htmlentity": "&lfloor;",
+        "htmlcode": "&#8970;",
+        "csscode": "\\230A",
+        "unicode": "U+230A",
+        "name": "Left Floor"
+    },
+    {
+        "htmlentity": "&rfloor;",
+        "htmlcode": "&#8971;",
+        "csscode": "\\230B",
+        "unicode": "U+230B",
+        "name": "Right Floor"
+    },
+    {
+        "htmlentity": "&lang;",
+        "htmlcode": "&#9001;",
+        "csscode": "\\2329",
+        "unicode": "U+2329",
+        "name": "Left-Pointing Angle Bracket"
+    },
+    {
+        "htmlentity": "&rang;",
+        "htmlcode": "&#9002;",
+        "csscode": "\\232A",
+        "unicode": "U+232A",
+        "name": "Right-Pointing Angle Bracket"
+    },
+    {
+        "htmlentity": "&Alpha;",
+        "htmlcode": "&#913;",
+        "csscode": "\\0391",
+        "unicode": "U+0391",
+        "name": "Greek Capital Letter Alpha"
+    },
+    {
+        "htmlentity": "&Beta;",
+        "htmlcode": "&#914;",
+        "csscode": "\\0392",
+        "unicode": "U+0392",
+        "name": "Greek Capital Letter Beta"
+    },
+    {
+        "htmlentity": "&Gamma;",
+        "htmlcode": "&#915;",
+        "csscode": "\\0393",
+        "unicode": "U+0393",
+        "name": "Greek Capital Letter Gamma"
+    },
+    {
+        "htmlentity": "&Delta;",
+        "htmlcode": "&#916;",
+        "csscode": "\\0394",
+        "unicode": "U+0394",
+        "name": "Greek Capital Letter Delta"
+    },
+    {
+        "htmlentity": "&Epsilon;",
+        "htmlcode": "&#917;",
+        "csscode": "\\0395",
+        "unicode": "U+0395",
+        "name": "Greek Capital Letter Epsilon"
+    },
+    {
+        "htmlentity": "&Zeta;",
+        "htmlcode": "&#918;",
+        "csscode": "\\0396",
+        "unicode": "U+0396",
+        "name": "Greek Capital Letter Zeta"
+    },
+    {
+        "htmlentity": "&Eta;",
+        "htmlcode": "&#919;",
+        "csscode": "\\0397",
+        "unicode": "U+0397",
+        "name": "Greek Capital Letter Eta"
+    },
+    {
+        "htmlentity": "&Theta;",
+        "htmlcode": "&#920;",
+        "csscode": "\\0398",
+        "unicode": "U+0398",
+        "name": "Greek Capital Letter Theta"
+    },
+    {
+        "htmlentity": "&Iota;",
+        "htmlcode": "&#921;",
+        "csscode": "\\0399",
+        "unicode": "U+0399",
+        "name": "Greek Capital Letter Iota"
+    },
+    {
+        "htmlentity": "&Kappa;",
+        "htmlcode": "&#922;",
+        "csscode": "\\039A",
+        "unicode": "U+039A",
+        "name": "Greek Capital Letter Kappa"
+    },
+    {
+        "htmlentity": "&Lambda;",
+        "htmlcode": "&#923;",
+        "csscode": "\\039B",
+        "unicode": "U+039B",
+        "name": "Greek Capital Letter Lamda"
+    },
+    {
+        "htmlentity": "&Mu;",
+        "htmlcode": "&#924;",
+        "csscode": "\\039C",
+        "unicode": "U+039C",
+        "name": "Greek Capital Letter Mu"
+    },
+    {
+        "htmlentity": "&Nu;",
+        "htmlcode": "&#925;",
+        "csscode": "\\039D",
+        "unicode": "U+039D",
+        "name": "Greek Capital Letter Nu"
+    },
+    {
+        "htmlentity": "&Xi;",
+        "htmlcode": "&#926;",
+        "csscode": "\\039E",
+        "unicode": "U+039E",
+        "name": "Greek Capital Letter Xi"
+    },
+    {
+        "htmlentity": "&Omicron;",
+        "htmlcode": "&#927;",
+        "csscode": "\\039F",
+        "unicode": "U+039F",
+        "name": "Greek Capital Letter Omicron"
+    },
+    {
+        "htmlentity": "&Pi;",
+        "htmlcode": "&#928;",
+        "csscode": "\\03A0",
+        "unicode": "U+03A0",
+        "name": "Greek Capital Letter Pi"
+    },
+    {
+        "htmlentity": "&Rho;",
+        "htmlcode": "&#929;",
+        "csscode": "\\03A1",
+        "unicode": "U+03A1",
+        "name": "Greek Capital Letter Rho"
+    },
+    {
+        "htmlentity": "&Sigma;",
+        "htmlcode": "&#931;",
+        "csscode": "\\03A3",
+        "unicode": "U+03A3",
+        "name": "Greek Capital Letter Sigma"
+    },
+    {
+        "htmlentity": "&Tau;",
+        "htmlcode": "&#932;",
+        "csscode": "\\03A4",
+        "unicode": "U+03A4",
+        "name": "Greek Capital Letter Tau"
+    },
+    {
+        "htmlentity": "&Upsilon;",
+        "htmlcode": "&#933;",
+        "csscode": "\\03A5",
+        "unicode": "U+03A5",
+        "name": "Greek Capital Letter Upsilon"
+    },
+    {
+        "htmlentity": "&Phi;",
+        "htmlcode": "&#934;",
+        "csscode": "\\03A6",
+        "unicode": "U+03A6",
+        "name": "Greek Capital Letter Phi"
+    },
+    {
+        "htmlentity": "&Chi;",
+        "htmlcode": "&#935;",
+        "csscode": "\\03A7",
+        "unicode": "U+03A7",
+        "name": "Greek Capital Letter Chi"
+    },
+    {
+        "htmlentity": "&Psi;",
+        "htmlcode": "&#936;",
+        "csscode": "\\03A8",
+        "unicode": "U+03A8",
+        "name": "Greek Capital Letter Psi"
+    },
+    {
+        "htmlentity": "&Omega;",
+        "htmlcode": "&#937;",
+        "csscode": "\\03A9",
+        "unicode": "U+03A9",
+        "name": "Greek Capital Letter Omega"
+    },
+    {
+        "htmlentity": "&alpha;",
+        "htmlcode": "&#945;",
+        "csscode": "\\03B1",
+        "unicode": "U+03B1",
+        "name": "Greek Small Letter Alpha"
+    },
+    {
+        "htmlentity": "&beta;",
+        "htmlcode": "&#946;",
+        "csscode": "\\03B2",
+        "unicode": "U+03B2",
+        "name": "Greek Small Letter Beta"
+    },
+    {
+        "htmlentity": "&gamma;",
+        "htmlcode": "&#947;",
+        "csscode": "\\03B3",
+        "unicode": "U+03B3",
+        "name": "Greek Small Letter Gamma"
+    },
+    {
+        "htmlentity": "&delta;",
+        "htmlcode": "&#948;",
+        "csscode": "\\03B4",
+        "unicode": "U+03B4",
+        "name": "Greek Small Letter Delta"
+    },
+    {
+        "htmlentity": "&epsilon;",
+        "htmlcode": "&#949;",
+        "csscode": "\\03B5",
+        "unicode": "U+03B5",
+        "name": "Greek Small Letter Epsilon"
+    },
+    {
+        "htmlentity": "&zeta;",
+        "htmlcode": "&#950;",
+        "csscode": "\\03B6",
+        "unicode": "U+03B6",
+        "name": "Greek Small Letter Zeta"
+    },
+    {
+        "htmlentity": "&eta;",
+        "htmlcode": "&#951;",
+        "csscode": "\\03B7",
+        "unicode": "U+03B7",
+        "name": "Greek Small Letter Eta"
+    },
+    {
+        "htmlentity": "&theta;",
+        "htmlcode": "&#952;",
+        "csscode": "\\03B8",
+        "unicode": "U+03B8",
+        "name": "Greek Small Letter Theta"
+    },
+    {
+        "htmlentity": "&iota;",
+        "htmlcode": "&#953;",
+        "csscode": "\\03B9",
+        "unicode": "U+03B9",
+        "name": "Greek Small Letter Iota"
+    },
+    {
+        "htmlentity": "&kappa;",
+        "htmlcode": "&#954;",
+        "csscode": "\\03BA",
+        "unicode": "U+03BA",
+        "name": "Greek Small Letter Kappa"
+    },
+    {
+        "htmlentity": "&lambda;",
+        "htmlcode": "&#955;",
+        "csscode": "\\03BB",
+        "unicode": "U+03BB",
+        "name": "Greek Small Letter Lamda"
+    },
+    {
+        "htmlentity": "&mu;",
+        "htmlcode": "&#956;",
+        "csscode": "\\03BC",
+        "unicode": "U+03BC",
+        "name": "Greek Small Letter Mu"
+    },
+    {
+        "htmlentity": "&nu;",
+        "htmlcode": "&#957;",
+        "csscode": "\\03BD",
+        "unicode": "U+03BD",
+        "name": "Greek Small Letter Nu"
+    },
+    {
+        "htmlentity": "&xi;",
+        "htmlcode": "&#958;",
+        "csscode": "\\03BE",
+        "unicode": "U+03BE",
+        "name": "Greek Small Letter Xi"
+    },
+    {
+        "htmlentity": "&omicron;",
+        "htmlcode": "&#959;",
+        "csscode": "\\03BF",
+        "unicode": "U+03BF",
+        "name": "Greek Small Letter Omicron"
+    },
+    {
+        "htmlentity": "&pi;",
+        "htmlcode": "&#960;",
+        "csscode": "\\03C0",
+        "unicode": "U+03C0",
+        "name": "Greek Small Letter Pi"
+    },
+    {
+        "htmlentity": "&rho;",
+        "htmlcode": "&#961;",
+        "csscode": "\\03C1",
+        "unicode": "U+03C1",
+        "name": "Greek Small Letter Rho"
+    },
+    {
+        "htmlentity": "&sigmaf;",
+        "htmlcode": "&#962;",
+        "csscode": "\\03C2",
+        "unicode": "U+03C2",
+        "name": "Greek Small Letter Final Sigma"
+    },
+    {
+        "htmlentity": "&sigma;",
+        "htmlcode": "&#963;",
+        "csscode": "\\03C3",
+        "unicode": "U+03C3",
+        "name": "Greek Small Letter Sigma"
+    },
+    {
+        "htmlentity": "&tau;",
+        "htmlcode": "&#964;",
+        "csscode": "\\03C4",
+        "unicode": "U+03C4",
+        "name": "Greek Small Letter Tau"
+    },
+    {
+        "htmlentity": "&upsilon;",
+        "htmlcode": "&#965;",
+        "csscode": "\\03C5",
+        "unicode": "U+03C5",
+        "name": "Greek Small Letter Upsilon"
+    },
+    {
+        "htmlentity": "&phi;",
+        "htmlcode": "&#966;",
+        "csscode": "\\03C6",
+        "unicode": "U+03C6",
+        "name": "Greek Small Letter Phi"
+    },
+    {
+        "htmlentity": "&chi;",
+        "htmlcode": "&#967;",
+        "csscode": "\\03C7",
+        "unicode": "U+03C7",
+        "name": "Greek Small Letter Chi"
+    },
+    {
+        "htmlentity": "&psi;",
+        "htmlcode": "&#968;",
+        "csscode": "\\03C8",
+        "unicode": "U+03C8",
+        "name": "Greek Small Letter Psi"
+    },
+    {
+        "htmlentity": "&omega;",
+        "htmlcode": "&#969;",
+        "csscode": "\\03C9",
+        "unicode": "U+03C9",
+        "name": "Greek Small Letter Omega"
+    },
+    {
+        "htmlentity": "&thetasym;",
+        "htmlcode": "&#977;",
+        "csscode": "\\03D1",
+        "unicode": "U+03D1",
+        "name": "Greek Theta Symbol"
+    },
+    {
+        "htmlentity": "&upsih;",
+        "htmlcode": "&#978;",
+        "csscode": "\\03D2",
+        "unicode": "U+03D2",
+        "name": "Greek Upsilon with Hook Symbol"
+    },
+    {
+        "htmlentity": "&piv;",
+        "htmlcode": "&#982;",
+        "csscode": "\\03D6",
+        "unicode": "U+03D6",
+        "name": "Greek Pi Symbol"
+    },
+    {
+        "htmlentity": "&Agrave;",
+        "htmlcode": "&#192;",
+        "csscode": "\\00C0",
+        "unicode": "U+00C0",
+        "name": "Latin Capital Letter a with Grave"
+    },
+    {
+        "htmlentity": "&Aacute;",
+        "htmlcode": "&#193;",
+        "csscode": "\\00C1",
+        "unicode": "U+00C1",
+        "name": "Latin Capital Letter a with Acute"
+    },
+    {
+        "htmlentity": "&Acirc;",
+        "htmlcode": "&#194;",
+        "csscode": "\\00C2",
+        "unicode": "U+00C2",
+        "name": "Latin Capital Letter a with Circumflex"
+    },
+    {
+        "htmlentity": "&Atilde;",
+        "htmlcode": "&#195;",
+        "csscode": "\\00C3",
+        "unicode": "U+00C3",
+        "name": "Latin Capital Letter a with Tilde"
+    },
+    {
+        "htmlentity": "&Auml;",
+        "htmlcode": "&#196;",
+        "csscode": "\\00C4",
+        "unicode": "U+00C4",
+        "name": "Latin Capital Letter a with Diaeresis"
+    },
+    {
+        "htmlentity": "&Aring;",
+        "htmlcode": "&#197;",
+        "csscode": "\\00C5",
+        "unicode": "U+00C5",
+        "name": "Latin Capital Letter a with Ring Above"
+    },
+    {
+        "htmlentity": "&AElig;",
+        "htmlcode": "&#198;",
+        "csscode": "\\00C6",
+        "unicode": "U+00C6",
+        "name": "Latin Capital Letter Ae"
+    },
+    {
+        "htmlentity": "&Ccedil;",
+        "htmlcode": "&#199;",
+        "csscode": "\\00C7",
+        "unicode": "U+00C7",
+        "name": "Latin Capital Letter C with Cedilla"
+    },
+    {
+        "htmlentity": "&Egrave;",
+        "htmlcode": "&#200;",
+        "csscode": "\\00C8",
+        "unicode": "U+00C8",
+        "name": "Latin Capital Letter E with Grave"
+    },
+    {
+        "htmlentity": "&Eacute;",
+        "htmlcode": "&#201;",
+        "csscode": "\\00C9",
+        "unicode": "U+00C9",
+        "name": "Latin Capital Letter E with Acute"
+    },
+    {
+        "htmlentity": "&Ecirc;",
+        "htmlcode": "&#202;",
+        "csscode": "\\00CA",
+        "unicode": "U+00CA",
+        "name": "Latin Capital Letter E with Circumflex"
+    },
+    {
+        "htmlentity": "&Euml;",
+        "htmlcode": "&#203;",
+        "csscode": "\\00CB",
+        "unicode": "U+00CB",
+        "name": "Latin Capital Letter E with Diaeresis"
+    },
+    {
+        "htmlentity": "&Lgrave;",
+        "htmlcode": "&#204;",
+        "csscode": "\\00CC",
+        "unicode": "U+00CC",
+        "name": "Latin Capital Letter I with Grave"
+    },
+    {
+        "htmlentity": "&Lacute;",
+        "htmlcode": "&#313;",
+        "csscode": "\\0139",
+        "unicode": "U+0139",
+        "name": "Latin Capital Letter L with Acute"
+    },
+    {
+        "htmlentity": "&Lcirc;",
+        "htmlcode": "&#206;",
+        "csscode": "\\00CE",
+        "unicode": "U+00CE",
+        "name": "Latin Capital Letter I with Circumflex"
+    },
+    {
+        "htmlentity": "&Luml;",
+        "htmlcode": "&#207;",
+        "csscode": "\\00CF",
+        "unicode": "U+00CF",
+        "name": "Latin Capital Letter I with Diaeresis"
+    },
+    {
+        "htmlentity": "&ETH;",
+        "htmlcode": "&#208;",
+        "csscode": "\\00D0",
+        "unicode": "U+00D0",
+        "name": "Latin Capital Letter Eth"
+    },
+    {
+        "htmlentity": "&Ntilde;",
+        "htmlcode": "&#209;",
+        "csscode": "\\00D1",
+        "unicode": "U+00D1",
+        "name": "Latin Capital Letter N with Tilde"
+    },
+    {
+        "htmlentity": "&Ograve;",
+        "htmlcode": "&#210;",
+        "csscode": "\\00D2",
+        "unicode": "U+00D2",
+        "name": "Latin Capital Letter O with Grave"
+    },
+    {
+        "htmlentity": "&Oacute;",
+        "htmlcode": "&#211;",
+        "csscode": "\\00D3",
+        "unicode": "U+00D3",
+        "name": "Latin Capital Letter O with Acute"
+    },
+    {
+        "htmlentity": "&Ocirc;",
+        "htmlcode": "&#212;",
+        "csscode": "\\00D4",
+        "unicode": "U+00D4",
+        "name": "Latin Capital Letter O with Circumflex"
+    },
+    {
+        "htmlentity": "&Otilde;",
+        "htmlcode": "&#213;",
+        "csscode": "\\00D5",
+        "unicode": "U+00D5",
+        "name": "Latin Capital Letter O with Tilde"
+    },
+    {
+        "htmlentity": "&Ouml;",
+        "htmlcode": "&#214;",
+        "csscode": "\\00D6",
+        "unicode": "U+00D6",
+        "name": "Latin Capital Letter O with Diaeresis"
+    },
+    {
+        "htmlentity": "&Oslash;",
+        "htmlcode": "&#216;",
+        "csscode": "\\00D8",
+        "unicode": "U+00D8",
+        "name": "Latin Capital Letter O with Stroke"
+    },
+    {
+        "htmlentity": "&Ugrave;",
+        "htmlcode": "&#217;",
+        "csscode": "\\00D9",
+        "unicode": "U+00D9",
+        "name": "Latin Capital Letter U with Grave"
+    },
+    {
+        "htmlentity": "&Uacute;",
+        "htmlcode": "&#218;",
+        "csscode": "\\00DA",
+        "unicode": "U+00DA",
+        "name": "Latin Capital Letter U with Acute"
+    },
+    {
+        "htmlentity": "&Ucirc;",
+        "htmlcode": "&#219;",
+        "csscode": "\\00DB",
+        "unicode": "U+00DB",
+        "name": "Latin Capital Letter U with Circumflex"
+    },
+    {
+        "htmlentity": "&Uuml;",
+        "htmlcode": "&#220;",
+        "csscode": "\\00DC",
+        "unicode": "U+00DC",
+        "name": "Latin Capital Letter U with Diaeresis"
+    },
+    {
+        "htmlentity": "&Yacute;",
+        "htmlcode": "&#221;",
+        "csscode": "\\00DD",
+        "unicode": "U+00DD",
+        "name": "Latin Capital Letter Y with Acute"
+    },
+    {
+        "htmlentity": "&THORN;",
+        "htmlcode": "&#222;",
+        "csscode": "\\00DE",
+        "unicode": "U+00DE",
+        "name": "Latin Capital Letter Thorn"
+    },
+    {
+        "htmlentity": "&szlig;",
+        "htmlcode": "&#223;",
+        "csscode": "\\00DF",
+        "unicode": "U+00DF",
+        "name": "Latin Small Letter Sharp S"
+    },
+    {
+        "htmlentity": "&agrave;",
+        "htmlcode": "&#224;",
+        "csscode": "\\00E0",
+        "unicode": "U+00E0",
+        "name": "Latin Small Letter a with Grave"
+    },
+    {
+        "htmlentity": "&aacute;",
+        "htmlcode": "&#225;",
+        "csscode": "\\00E1",
+        "unicode": "U+00E1",
+        "name": "Latin Small Letter a with Acute"
+    },
+    {
+        "htmlentity": "&acirc;",
+        "htmlcode": "&#226;",
+        "csscode": "\\00E2",
+        "unicode": "U+00E2",
+        "name": "Latin Small Letter a with Circumflex"
+    },
+    {
+        "htmlentity": "&atilde;",
+        "htmlcode": "&#227;",
+        "csscode": "\\00E3",
+        "unicode": "U+00E3",
+        "name": "Latin Small Letter a with Tilde"
+    },
+    {
+        "htmlentity": "&auml;",
+        "htmlcode": "&#228;",
+        "csscode": "\\00E4",
+        "unicode": "U+00E4",
+        "name": "Latin Small Letter a with Diaeresis"
+    },
+    {
+        "htmlentity": "&aring;",
+        "htmlcode": "&#229;",
+        "csscode": "\\00E5",
+        "unicode": "U+00E5",
+        "name": "Latin Small Letter a with Ring Above"
+    },
+    {
+        "htmlentity": "&aelig;",
+        "htmlcode": "&#230;",
+        "csscode": "\\00E6",
+        "unicode": "U+00E6",
+        "name": "Latin Small Letter Ae"
+    },
+    {
+        "htmlentity": "&ccedil;",
+        "htmlcode": "&#231;",
+        "csscode": "\\00E7",
+        "unicode": "U+00E7",
+        "name": "Latin Small Letter C with Cedilla"
+    },
+    {
+        "htmlentity": "&egrave;",
+        "htmlcode": "&#232;",
+        "csscode": "\\00E8",
+        "unicode": "U+00E8",
+        "name": "Latin Small Letter E with Grave"
+    },
+    {
+        "htmlentity": "&eacute;",
+        "htmlcode": "&#233;",
+        "csscode": "\\00E9",
+        "unicode": "U+00E9",
+        "name": "Latin Small Letter E with Acute"
+    },
+    {
+        "htmlentity": "&ecirc;",
+        "htmlcode": "&#234;",
+        "csscode": "\\00EA",
+        "unicode": "U+00EA",
+        "name": "Latin Small Letter E with Circumflex"
+    },
+    {
+        "htmlentity": "&euml;",
+        "htmlcode": "&#235;",
+        "csscode": "\\00EB",
+        "unicode": "U+00EB",
+        "name": "Latin Small Letter E with Diaeresis"
+    },
+    {
+        "htmlentity": "&igrave;",
+        "htmlcode": "&#236;",
+        "csscode": "\\00EC",
+        "unicode": "U+00EC",
+        "name": "Latin Small Letter I with Grave"
+    },
+    {
+        "htmlentity": "&iacute;",
+        "htmlcode": "&#237;",
+        "csscode": "\\00ED",
+        "unicode": "U+00ED",
+        "name": "Latin Small Letter I with Acute"
+    },
+    {
+        "htmlentity": "&icirc;",
+        "htmlcode": "&#238;",
+        "csscode": "\\00EE",
+        "unicode": "U+00EE",
+        "name": "Latin Small Letter I with Circumflex"
+    },
+    {
+        "htmlentity": "&iuml;",
+        "htmlcode": "&#239;",
+        "csscode": "\\00EF",
+        "unicode": "U+00EF",
+        "name": "Latin Small Letter I with Diaeresis"
+    },
+    {
+        "htmlentity": "&eth;",
+        "htmlcode": "&#240;",
+        "csscode": "\\00F0",
+        "unicode": "U+00F0",
+        "name": "Latin Small Letter Eth"
+    },
+    {
+        "htmlentity": "&ntilde;",
+        "htmlcode": "&#241;",
+        "csscode": "\\00F1",
+        "unicode": "U+00F1",
+        "name": "Latin Small Letter N with Tilde"
+    },
+    {
+        "htmlentity": "&ograve;",
+        "htmlcode": "&#242;",
+        "csscode": "\\00F2",
+        "unicode": "U+00F2",
+        "name": "Latin Small Letter O with Grave"
+    },
+    {
+        "htmlentity": "&oacute;",
+        "htmlcode": "&#243;",
+        "csscode": "\\00F3",
+        "unicode": "U+00F3",
+        "name": "Latin Small Letter O with Acute"
+    },
+    {
+        "htmlentity": "&ocirc;",
+        "htmlcode": "&#244;",
+        "csscode": "\\00F4",
+        "unicode": "U+00F4",
+        "name": "Latin Small Letter O with Circumflex"
+    },
+    {
+        "htmlentity": "&otilde;",
+        "htmlcode": "&#245;",
+        "csscode": "\\00F5",
+        "unicode": "U+00F5",
+        "name": "Latin Small Letter O with Tilde"
+    },
+    {
+        "htmlentity": "&ouml;",
+        "htmlcode": "&#246;",
+        "csscode": "\\00F6",
+        "unicode": "U+00F6",
+        "name": "Latin Small Letter O with Diaeresis"
+    },
+    {
+        "htmlentity": "&oslash;",
+        "htmlcode": "&#248;",
+        "csscode": "\\00F8",
+        "unicode": "U+00F8",
+        "name": "Latin Small Letter O with Stroke"
+    },
+    {
+        "htmlentity": "&ugrave;",
+        "htmlcode": "&#249;",
+        "csscode": "\\00F9",
+        "unicode": "U+00F9",
+        "name": "Latin Small Letter U with Grave"
+    },
+    {
+        "htmlentity": "&uacute;",
+        "htmlcode": "&#250;",
+        "csscode": "\\00FA",
+        "unicode": "U+00FA",
+        "name": "Latin Small Letter U with Acute"
+    },
+    {
+        "htmlentity": "&ucirc;",
+        "htmlcode": "&#251;",
+        "csscode": "\\00FB",
+        "unicode": "U+00FB",
+        "name": "Latin Small Letter U with Circumflex"
+    },
+    {
+        "htmlentity": "&uuml;",
+        "htmlcode": "&#252;",
+        "csscode": "\\00FC",
+        "unicode": "U+00FC",
+        "name": "U with two Dots"
+    },
+    {
+        "htmlentity": "&yacute;",
+        "htmlcode": "&#253;",
+        "csscode": "\\00FD",
+        "unicode": "U+00FD",
+        "name": "Latin Small Letter Y with Acute"
+    },
+    {
+        "htmlentity": "&thorn;",
+        "htmlcode": "&#254;",
+        "csscode": "\\00FE",
+        "unicode": "U+00FE",
+        "name": "Latin Small Letter Thorn"
+    },
+    {
+        "htmlentity": "&yuml;",
+        "htmlcode": "&#255;",
+        "csscode": "\\00FF",
+        "unicode": "U+00FF",
+        "name": "Latin Small Letter Y with Diaeresis"
+    },
+    {
+        "htmlentity": "&Amacr;",
+        "htmlcode": "&#256;",
+        "csscode": "\\0100",
+        "unicode": "U+0100",
+        "name": "Latin Capital Letter a with Macron"
+    },
+    {
+        "htmlentity": "&amacr;",
+        "htmlcode": "&#257;",
+        "csscode": "\\0101",
+        "unicode": "U+0101",
+        "name": "Latin Small Letter a with Macron"
+    },
+    {
+        "htmlentity": "&Abreve;",
+        "htmlcode": "&#258;",
+        "csscode": "\\0102",
+        "unicode": "U+0102",
+        "name": "Latin Capital Letter a with Breve"
+    },
+    {
+        "htmlentity": "&abreve;",
+        "htmlcode": "&#259;",
+        "csscode": "\\0103",
+        "unicode": "U+0103",
+        "name": "Latin Small Letter a with Breve"
+    },
+    {
+        "htmlentity": "&Aogon;",
+        "htmlcode": "&#260;",
+        "csscode": "\\0104",
+        "unicode": "U+0104",
+        "name": "Latin Capital Letter a with Ogonek"
+    },
+    {
+        "htmlentity": "&aogon;",
+        "htmlcode": "&#261;",
+        "csscode": "\\0105",
+        "unicode": "U+0105",
+        "name": "Latin Small Letter a with Ogonek"
+    },
+    {
+        "htmlentity": "&Cacute;",
+        "htmlcode": "&#262;",
+        "csscode": "\\0106",
+        "unicode": "U+0106",
+        "name": "Latin Capital Letter C with Acute"
+    },
+    {
+        "htmlentity": "&cacute;",
+        "htmlcode": "&#263;",
+        "csscode": "\\0107",
+        "unicode": "U+0107",
+        "name": "Latin Small Letter C with Acute"
+    },
+    {
+        "htmlentity": "&Ccirc;",
+        "htmlcode": "&#264;",
+        "csscode": "\\0108",
+        "unicode": "U+0108",
+        "name": "Latin Capital Letter C with Circumflex"
+    },
+    {
+        "htmlentity": "&ccirc;",
+        "htmlcode": "&#265;",
+        "csscode": "\\0109",
+        "unicode": "U+0109",
+        "name": "Latin Small Letter C with Circumflex"
+    },
+    {
+        "htmlentity": "&Cdot;",
+        "htmlcode": "&#266;",
+        "csscode": "\\010A",
+        "unicode": "U+010A",
+        "name": "Latin Capital Letter C with Dot Above"
+    },
+    {
+        "htmlentity": "&cdot;",
+        "htmlcode": "&#267;",
+        "csscode": "\\010B",
+        "unicode": "U+010B",
+        "name": "Latin Small Letter C with Dot Above"
+    },
+    {
+        "htmlentity": "&Ccaron;",
+        "htmlcode": "&#268;",
+        "csscode": "\\010C",
+        "unicode": "U+010C",
+        "name": "Latin Capital Letter C with Caron"
+    },
+    {
+        "htmlentity": "&ccaron;",
+        "htmlcode": "&#269;",
+        "csscode": "\\010D",
+        "unicode": "U+010D",
+        "name": "Latin Small Letter C with Caron"
+    },
+    {
+        "htmlentity": "&Dcaron;",
+        "htmlcode": "&#270;",
+        "csscode": "\\010E",
+        "unicode": "U+010E",
+        "name": "Latin Capital Letter D with Caron"
+    },
+    {
+        "htmlentity": "&dcaron;",
+        "htmlcode": "&#271;",
+        "csscode": "\\010F",
+        "unicode": "U+010F",
+        "name": "Latin Small Letter D with Caron"
+    },
+    {
+        "htmlentity": "&Dstrok;",
+        "htmlcode": "&#272;",
+        "csscode": "\\0110",
+        "unicode": "U+0110",
+        "name": "Latin Capital Letter D with Stroke"
+    },
+    {
+        "htmlentity": "&dstrok;",
+        "htmlcode": "&#273;",
+        "csscode": "\\0111",
+        "unicode": "U+0111",
+        "name": "Latin Small Letter D with Stroke"
+    },
+    {
+        "htmlentity": "&Emacr;",
+        "htmlcode": "&#274;",
+        "csscode": "\\0112",
+        "unicode": "U+0112",
+        "name": "Latin Capital Letter E with Macron"
+    },
+    {
+        "htmlentity": "&emacr;",
+        "htmlcode": "&#275;",
+        "csscode": "\\0113",
+        "unicode": "U+0113",
+        "name": "Latin Small Letter E with Macron"
+    },
+    {
+        "htmlentity": "&Edot;",
+        "htmlcode": "&#278;",
+        "csscode": "\\0116",
+        "unicode": "U+0116",
+        "name": "Latin Capital Letter E with Dot Above"
+    },
+    {
+        "htmlentity": "&edot;",
+        "htmlcode": "&#279;",
+        "csscode": "\\0117",
+        "unicode": "U+0117",
+        "name": "Latin Small Letter E with Dot Above"
+    },
+    {
+        "htmlentity": "&Eogon;",
+        "htmlcode": "&#280;",
+        "csscode": "\\0118",
+        "unicode": "U+0118",
+        "name": "Latin Capital Letter E with Ogonek"
+    },
+    {
+        "htmlentity": "&eogon;",
+        "htmlcode": "&#281;",
+        "csscode": "\\0119",
+        "unicode": "U+0119",
+        "name": "Latin Small Letter E with Ogonek"
+    },
+    {
+        "htmlentity": "&Ecaron;",
+        "htmlcode": "&#282;",
+        "csscode": "\\011A",
+        "unicode": "U+011A",
+        "name": "Latin Capital Letter E with Caron"
+    },
+    {
+        "htmlentity": "&ecaron;",
+        "htmlcode": "&#283;",
+        "csscode": "\\011B",
+        "unicode": "U+011B",
+        "name": "Latin Small Letter E with Caron"
+    },
+    {
+        "htmlentity": "&Gcirc;",
+        "htmlcode": "&#284;",
+        "csscode": "\\011C",
+        "unicode": "U+011C",
+        "name": "Latin Capital Letter G with Circumflex"
+    },
+    {
+        "htmlentity": "&gcirc;",
+        "htmlcode": "&#285;",
+        "csscode": "\\011D",
+        "unicode": "U+011D",
+        "name": "Latin Small Letter G with Circumflex"
+    },
+    {
+        "htmlentity": "&Gbreve;",
+        "htmlcode": "&#286;",
+        "csscode": "\\011E",
+        "unicode": "U+011E",
+        "name": "Latin Capital Letter G with Breve"
+    },
+    {
+        "htmlentity": "&gbreve;",
+        "htmlcode": "&#287;",
+        "csscode": "\\011F",
+        "unicode": "U+011F",
+        "name": "Latin Small Letter G with Breve"
+    },
+    {
+        "htmlentity": "&Gdot;",
+        "htmlcode": "&#288;",
+        "csscode": "\\0120",
+        "unicode": "U+0120",
+        "name": "Latin Capital Letter G with Dot Above"
+    },
+    {
+        "htmlentity": "&gdot;",
+        "htmlcode": "&#289;",
+        "csscode": "\\0121",
+        "unicode": "U+0121",
+        "name": "Latin Small Letter G with Dot Above"
+    },
+    {
+        "htmlentity": "&Gcedil;",
+        "htmlcode": "&#290;",
+        "csscode": "\\0122",
+        "unicode": "U+0122",
+        "name": "Latin Capital Letter G with Cedilla"
+    },
+    {
+        "htmlentity": "&Hcirc;",
+        "htmlcode": "&#292;",
+        "csscode": "\\0124",
+        "unicode": "U+0124",
+        "name": "Latin Capital Letter H with Circumflex"
+    },
+    {
+        "htmlentity": "&hcirc;",
+        "htmlcode": "&#293;",
+        "csscode": "\\0125",
+        "unicode": "U+0125",
+        "name": "Latin Small Letter H with Circumflex"
+    },
+    {
+        "htmlentity": "&Hstrok;",
+        "htmlcode": "&#294;",
+        "csscode": "\\0126",
+        "unicode": "U+0126",
+        "name": "Latin Capital Letter H with Stroke"
+    },
+    {
+        "htmlentity": "&hstrok;",
+        "htmlcode": "&#295;",
+        "csscode": "\\0127",
+        "unicode": "U+0127",
+        "name": "Latin Small Letter H with Stroke"
+    },
+    {
+        "htmlentity": "&Itilde;",
+        "htmlcode": "&#296;",
+        "csscode": "\\0128",
+        "unicode": "U+0128",
+        "name": "Latin Capital Letter I with Tilde"
+    },
+    {
+        "htmlentity": "&itilde;",
+        "htmlcode": "&#297;",
+        "csscode": "\\0129",
+        "unicode": "U+0129",
+        "name": "Latin Small Letter I with Tilde"
+    },
+    {
+        "htmlentity": "&Imacr;",
+        "htmlcode": "&#298;",
+        "csscode": "\\012A",
+        "unicode": "U+012A",
+        "name": "Latin Capital Letter I with Macron"
+    },
+    {
+        "htmlentity": "&imacr;",
+        "htmlcode": "&#299;",
+        "csscode": "\\012B",
+        "unicode": "U+012B",
+        "name": "Latin Small Letter I with Macron"
+    },
+    {
+        "htmlentity": "&Iogon;",
+        "htmlcode": "&#302;",
+        "csscode": "\\012E",
+        "unicode": "U+012E",
+        "name": "Latin Capital Letter I with Ogonek"
+    },
+    {
+        "htmlentity": "&iogon;",
+        "htmlcode": "&#303;",
+        "csscode": "\\012F",
+        "unicode": "U+012F",
+        "name": "Latin Small Letter I with Ogonek"
+    },
+    {
+        "htmlentity": "&Idot;",
+        "htmlcode": "&#304;",
+        "csscode": "\\0130",
+        "unicode": "U+0130",
+        "name": "Latin Capital Letter I with Dot Above"
+    },
+    {
+        "htmlentity": "&imath;",
+        "htmlcode": "&#305;",
+        "csscode": "\\0131",
+        "unicode": "U+0131",
+        "name": "Latin Small Letter Dotless I"
+    },
+    {
+        "htmlentity": "&IJlig;",
+        "htmlcode": "&#306;",
+        "csscode": "\\0132",
+        "unicode": "U+0132",
+        "name": "Latin Capital Ligature Ij"
+    },
+    {
+        "htmlentity": "&ijlig;",
+        "htmlcode": "&#307;",
+        "csscode": "\\0133",
+        "unicode": "U+0133",
+        "name": "Latin Small Ligature Ij"
+    },
+    {
+        "htmlentity": "&Jcirc;",
+        "htmlcode": "&#308;",
+        "csscode": "\\0134",
+        "unicode": "U+0134",
+        "name": "Latin Capital Letter J with Circumflex"
+    },
+    {
+        "htmlentity": "&jcirc;",
+        "htmlcode": "&#309;",
+        "csscode": "\\0135",
+        "unicode": "U+0135",
+        "name": "Latin Small Letter J with Circumflex"
+    },
+    {
+        "htmlentity": "&Kcedil;",
+        "htmlcode": "&#310;",
+        "csscode": "\\0136",
+        "unicode": "U+0136",
+        "name": "Latin Capital Letter K with Cedilla"
+    },
+    {
+        "htmlentity": "&kcedil;",
+        "htmlcode": "&#311;",
+        "csscode": "\\0137",
+        "unicode": "U+0137",
+        "name": "Latin Small Letter K with Cedilla"
+    },
+    {
+        "htmlentity": "&kgreen;",
+        "htmlcode": "&#312;",
+        "csscode": "\\0138",
+        "unicode": "U+0138",
+        "name": "Latin Small Letter Kra"
+    },
+    {
+        "htmlentity": "&lacute;",
+        "htmlcode": "&#314;",
+        "csscode": "\\013A",
+        "unicode": "U+013A",
+        "name": "Latin Small Letter L with Acute"
+    },
+    {
+        "htmlentity": "&Lcedil;",
+        "htmlcode": "&#315;",
+        "csscode": "\\013B",
+        "unicode": "U+013B",
+        "name": "Latin Capital Letter L with Cedilla"
+    },
+    {
+        "htmlentity": "&lcedil;",
+        "htmlcode": "&#316;",
+        "csscode": "\\013C",
+        "unicode": "U+013C",
+        "name": "Latin Small Letter L with Cedilla"
+    },
+    {
+        "htmlentity": "&Lcaron;",
+        "htmlcode": "&#317;",
+        "csscode": "\\013D",
+        "unicode": "U+013D",
+        "name": "Latin Capital Letter L with Caron"
+    },
+    {
+        "htmlentity": "&lcaron;",
+        "htmlcode": "&#318;",
+        "csscode": "\\013E",
+        "unicode": "U+013E",
+        "name": "Latin Small Letter L with Caron"
+    },
+    {
+        "htmlentity": "&Lmidot;",
+        "htmlcode": "&#319;",
+        "csscode": "\\013F",
+        "unicode": "U+013F",
+        "name": "Latin Capital Letter L with Middle Dot"
+    },
+    {
+        "htmlentity": "&lmidot;",
+        "htmlcode": "&#320;",
+        "csscode": "\\0140",
+        "unicode": "U+0140",
+        "name": "Latin Small Letter L with Middle Dot"
+    },
+    {
+        "htmlentity": "&Lstrok;",
+        "htmlcode": "&#321;",
+        "csscode": "\\0141",
+        "unicode": "U+0141",
+        "name": "Latin Capital Letter L with Stroke"
+    },
+    {
+        "htmlentity": "&lstrok;",
+        "htmlcode": "&#322;",
+        "csscode": "\\0142",
+        "unicode": "U+0142",
+        "name": "Latin Small Letter L with Stroke"
+    },
+    {
+        "htmlentity": "&Nacute;",
+        "htmlcode": "&#323;",
+        "csscode": "\\0143",
+        "unicode": "U+0143",
+        "name": "Latin Capital Letter N with Acute"
+    },
+    {
+        "htmlentity": "&nacute;",
+        "htmlcode": "&#324;",
+        "csscode": "\\0144",
+        "unicode": "U+0144",
+        "name": "Latin Small Letter N with Acute"
+    },
+    {
+        "htmlentity": "&Ncedil;",
+        "htmlcode": "&#325;",
+        "csscode": "\\0145",
+        "unicode": "U+0145",
+        "name": "Latin Capital Letter N with Cedilla"
+    },
+    {
+        "htmlentity": "&ncedil;",
+        "htmlcode": "&#326;",
+        "csscode": "\\0146",
+        "unicode": "U+0146",
+        "name": "Latin Small Letter N with Cedilla"
+    },
+    {
+        "htmlentity": "&Ncaron;",
+        "htmlcode": "&#327;",
+        "csscode": "\\0147",
+        "unicode": "U+0147",
+        "name": "Latin Capital Letter N with Caron"
+    },
+    {
+        "htmlentity": "&ncaron;",
+        "htmlcode": "&#328;",
+        "csscode": "\\0148",
+        "unicode": "U+0148",
+        "name": "Latin Small Letter N with Caron"
+    },
+    {
+        "htmlentity": "&napos;",
+        "htmlcode": "&#329;",
+        "csscode": "\\0149",
+        "unicode": "U+0149",
+        "name": "Latin Small Letter N Preceded By Apostrophe"
+    },
+    {
+        "htmlentity": "&ENG;",
+        "htmlcode": "&#330;",
+        "csscode": "\\014A",
+        "unicode": "U+014A",
+        "name": "Latin Capital Letter Eng"
+    },
+    {
+        "htmlentity": "&eng;",
+        "htmlcode": "&#331;",
+        "csscode": "\\014B",
+        "unicode": "U+014B",
+        "name": "Latin Small Letter Eng"
+    },
+    {
+        "htmlentity": "&Omacr;",
+        "htmlcode": "&#332;",
+        "csscode": "\\014C",
+        "unicode": "U+014C",
+        "name": "Latin Capital Letter O with Macron"
+    },
+    {
+        "htmlentity": "&omacr;",
+        "htmlcode": "&#333;",
+        "csscode": "\\014D",
+        "unicode": "U+014D",
+        "name": "Latin Small Letter O with Macron"
+    },
+    {
+        "htmlentity": "&Odblac;",
+        "htmlcode": "&#336;",
+        "csscode": "\\0150",
+        "unicode": "U+0150",
+        "name": "Latin Capital Letter O with Double Acute"
+    },
+    {
+        "htmlentity": "&odblac;",
+        "htmlcode": "&#337;",
+        "csscode": "\\0151",
+        "unicode": "U+0151",
+        "name": "Latin Small Letter O with Double Acute"
+    },
+    {
+        "htmlentity": "&OElig;",
+        "htmlcode": "&#338;",
+        "csscode": "\\0152",
+        "unicode": "U+0152",
+        "name": "Latin Capital Ligature Oe"
+    },
+    {
+        "htmlentity": "&oelig;",
+        "htmlcode": "&#339;",
+        "csscode": "\\0153",
+        "unicode": "U+0153",
+        "name": "Latin Small Ligature Oe"
+    },
+    {
+        "htmlentity": "&Racute;",
+        "htmlcode": "&#340;",
+        "csscode": "\\0154",
+        "unicode": "U+0154",
+        "name": "Latin Capital Letter R with Acute"
+    },
+    {
+        "htmlentity": "&racute;",
+        "htmlcode": "&#341;",
+        "csscode": "\\0155",
+        "unicode": "U+0155",
+        "name": "Latin Small Letter R with Acute"
+    },
+    {
+        "htmlentity": "&Rcedil;",
+        "htmlcode": "&#342;",
+        "csscode": "\\0156",
+        "unicode": "U+0156",
+        "name": "Latin Capital Letter R with Cedilla"
+    },
+    {
+        "htmlentity": "&rcedil;",
+        "htmlcode": "&#343;",
+        "csscode": "\\0157",
+        "unicode": "U+0157",
+        "name": "Latin Small Letter R with Cedilla"
+    },
+    {
+        "htmlentity": "&Rcaron;",
+        "htmlcode": "&#344;",
+        "csscode": "\\0158",
+        "unicode": "U+0158",
+        "name": "Latin Capital Letter R with Caron"
+    },
+    {
+        "htmlentity": "&rcaron;",
+        "htmlcode": "&#345;",
+        "csscode": "\\0159",
+        "unicode": "U+0159",
+        "name": "Latin Small Letter R with Caron"
+    },
+    {
+        "htmlentity": "&Sacute;",
+        "htmlcode": "&#346;",
+        "csscode": "\\015A",
+        "unicode": "U+015A",
+        "name": "Latin Capital Letter S with Acute"
+    },
+    {
+        "htmlentity": "&sacute;",
+        "htmlcode": "&#347;",
+        "csscode": "\\015B",
+        "unicode": "U+015B",
+        "name": "Latin Small Letter S with Acute"
+    },
+    {
+        "htmlentity": "&Scirc;",
+        "htmlcode": "&#348;",
+        "csscode": "\\015C",
+        "unicode": "U+015C",
+        "name": "Latin Capital Letter S with Circumflex"
+    },
+    {
+        "htmlentity": "&scirc;",
+        "htmlcode": "&#349;",
+        "csscode": "\\015D",
+        "unicode": "U+015D",
+        "name": "Latin Small Letter S with Circumflex"
+    },
+    {
+        "htmlentity": "&Scedil;",
+        "htmlcode": "&#350;",
+        "csscode": "\\015E",
+        "unicode": "U+015E",
+        "name": "Latin Capital Letter S with Cedilla"
+    },
+    {
+        "htmlentity": "&scedil;",
+        "htmlcode": "&#351;",
+        "csscode": "\\015F",
+        "unicode": "U+015F",
+        "name": "Latin Small Letter S with Cedilla"
+    },
+    {
+        "htmlentity": "&Scaron;",
+        "htmlcode": "&#352;",
+        "csscode": "\\0160",
+        "unicode": "U+0160",
+        "name": "Latin Capital Letter S with Caron"
+    },
+    {
+        "htmlentity": "&scaron;",
+        "htmlcode": "&#353;",
+        "csscode": "\\0161",
+        "unicode": "U+0161",
+        "name": "Latin Small Letter S with Caron"
+    },
+    {
+        "htmlentity": "&Tcedil;",
+        "htmlcode": "&#354;",
+        "csscode": "\\0162",
+        "unicode": "U+0162",
+        "name": "Latin Capital Letter T with Cedilla"
+    },
+    {
+        "htmlentity": "&tcedil;",
+        "htmlcode": "&#355;",
+        "csscode": "\\0163",
+        "unicode": "U+0163",
+        "name": "Latin Small Letter T with Cedilla"
+    },
+    {
+        "htmlentity": "&Tcaron;",
+        "htmlcode": "&#356;",
+        "csscode": "\\0164",
+        "unicode": "U+0164",
+        "name": "Latin Capital Letter T with Caron"
+    },
+    {
+        "htmlentity": "&tcaron;",
+        "htmlcode": "&#357;",
+        "csscode": "\\0165",
+        "unicode": "U+0165",
+        "name": "Latin Small Letter T with Caron"
+    },
+    {
+        "htmlentity": "&Tstrok;",
+        "htmlcode": "&#358;",
+        "csscode": "\\0166",
+        "unicode": "U+0166",
+        "name": "Latin Capital Letter T with Stroke"
+    },
+    {
+        "htmlentity": "&tstrok;",
+        "htmlcode": "&#359;",
+        "csscode": "\\0167",
+        "unicode": "U+0167",
+        "name": "Latin Small Letter T with Stroke"
+    },
+    {
+        "htmlentity": "&Utilde;",
+        "htmlcode": "&#360;",
+        "csscode": "\\0168",
+        "unicode": "U+0168",
+        "name": "Latin Capital Letter U with Tilde"
+    },
+    {
+        "htmlentity": "&utilde;",
+        "htmlcode": "&#361;",
+        "csscode": "\\0169",
+        "unicode": "U+0169",
+        "name": "Latin Small Letter U with Tilde"
+    },
+    {
+        "htmlentity": "&Umacr;",
+        "htmlcode": "&#362;",
+        "csscode": "\\016A",
+        "unicode": "U+016A",
+        "name": "Latin Capital Letter U with Macron"
+    },
+    {
+        "htmlentity": "&umacr;",
+        "htmlcode": "&#363;",
+        "csscode": "\\016B",
+        "unicode": "U+016B",
+        "name": "Latin Small Letter U with Macron"
+    },
+    {
+        "htmlentity": "&Ubreve;",
+        "htmlcode": "&#364;",
+        "csscode": "\\016C",
+        "unicode": "U+016C",
+        "name": "Latin Capital Letter U with Breve"
+    },
+    {
+        "htmlentity": "&ubreve;",
+        "htmlcode": "&#365;",
+        "csscode": "\\016D",
+        "unicode": "U+016D",
+        "name": "Latin Small Letter U with Breve"
+    },
+    {
+        "htmlentity": "&Uring;",
+        "htmlcode": "&#366;",
+        "csscode": "\\016E",
+        "unicode": "U+016E",
+        "name": "Latin Capital Letter U with Ring Above"
+    },
+    {
+        "htmlentity": "&uring;",
+        "htmlcode": "&#367;",
+        "csscode": "\\016F",
+        "unicode": "U+016F",
+        "name": "Latin Small Letter U with Ring Above"
+    },
+    {
+        "htmlentity": "&Udblac;",
+        "htmlcode": "&#368;",
+        "csscode": "\\0170",
+        "unicode": "U+0170",
+        "name": "Latin Capital Letter U with Double Acute"
+    },
+    {
+        "htmlentity": "&udblac;",
+        "htmlcode": "&#369;",
+        "csscode": "\\0171",
+        "unicode": "U+0171",
+        "name": "Latin Small Letter U with Double Acute"
+    },
+    {
+        "htmlentity": "&Uogon;",
+        "htmlcode": "&#370;",
+        "csscode": "\\0172",
+        "unicode": "U+0172",
+        "name": "Latin Capital Letter U with Ogonek"
+    },
+    {
+        "htmlentity": "&uogon;",
+        "htmlcode": "&#371;",
+        "csscode": "\\0173",
+        "unicode": "U+0173",
+        "name": "Latin Small Letter U with Ogonek"
+    },
+    {
+        "htmlentity": "&Wcirc;",
+        "htmlcode": "&#372;",
+        "csscode": "\\0174",
+        "unicode": "U+0174",
+        "name": "Latin Capital Letter W with Circumflex"
+    },
+    {
+        "htmlentity": "&wcirc;",
+        "htmlcode": "&#373;",
+        "csscode": "\\0175",
+        "unicode": "U+0175",
+        "name": "Latin Small Letter W with Circumflex"
+    },
+    {
+        "htmlentity": "&Ycirc;",
+        "htmlcode": "&#374;",
+        "csscode": "\\0176",
+        "unicode": "U+0176",
+        "name": "Latin Capital Letter Y with Circumflex"
+    },
+    {
+        "htmlentity": "&ycirc;",
+        "htmlcode": "&#375;",
+        "csscode": "\\0177",
+        "unicode": "U+0177",
+        "name": "Latin Small Letter Y with Circumflex"
+    },
+    {
+        "htmlentity": "&Yuml;",
+        "htmlcode": "&#376;",
+        "csscode": "\\0178",
+        "unicode": "U+0178",
+        "name": "Latin Capital Letter Y with Diaeresis"
+    },
+    {
+        "htmlentity": "&Zacute;",
+        "htmlcode": "&#377;",
+        "csscode": "\\0179",
+        "unicode": "U+0179",
+        "name": "Latin Capital Letter Z with Acute"
+    },
+    {
+        "htmlentity": "&zacute;",
+        "htmlcode": "&#378;",
+        "csscode": "\\017A",
+        "unicode": "U+017A",
+        "name": "Latin Small Letter Z with Acute"
+    },
+    {
+        "htmlentity": "&Zdot;",
+        "htmlcode": "&#379;",
+        "csscode": "\\017B",
+        "unicode": "U+017B",
+        "name": "Latin Capital Letter Z with Dot Above"
+    },
+    {
+        "htmlentity": "&zdot;",
+        "htmlcode": "&#380;",
+        "csscode": "\\017C",
+        "unicode": "U+017C",
+        "name": "Latin Small Letter Z with Dot Above"
+    },
+    {
+        "htmlentity": "&Zcaron;",
+        "htmlcode": "&#381;",
+        "csscode": "\\017D",
+        "unicode": "U+017D",
+        "name": "Latin Capital Letter Z with Caron"
+    },
+    {
+        "htmlentity": "&zcaron;",
+        "htmlcode": "&#382;",
+        "csscode": "\\017E",
+        "unicode": "U+017E",
+        "name": "Latin Small Letter Z with Caron"
+    },
+    {
+        "htmlentity": "&DownBreve;",
+        "htmlcode": "&#785;",
+        "csscode": "\\0311",
+        "unicode": "U+0311",
+        "name": "Combining Inverted Breve"
+    },
+    {
+        "htmlentity": "&olarr;",
+        "htmlcode": "&#8634;",
+        "csscode": "\\21BA",
+        "unicode": "U+21BA",
+        "name": "Anticlockwise Open Circle Arrow"
+    },
+    {
+        "htmlentity": "&orarr;",
+        "htmlcode": "&#8635;",
+        "csscode": "\\21BB",
+        "unicode": "U+21BB",
+        "name": "Clockwise Open Circle Arrow"
+    },
+    {
+        "htmlentity": "&lharu;",
+        "htmlcode": "&#8636;",
+        "csscode": "\\21BC",
+        "unicode": "U+21BC",
+        "name": "Leftwards Harpoon with Barb Upwards"
+    },
+    {
+        "htmlentity": "&lhard;",
+        "htmlcode": "&#8637;",
+        "csscode": "\\21BD",
+        "unicode": "U+21BD",
+        "name": "Leftwards Harpoon with Barb Downwards"
+    },
+    {
+        "htmlentity": "&uharr;",
+        "htmlcode": "&#8638;",
+        "csscode": "\\21BE",
+        "unicode": "U+21BE",
+        "name": "Upwards Harpoon with Barb Rightwards"
+    },
+    {
+        "htmlentity": "&uharl;",
+        "htmlcode": "&#8639;",
+        "csscode": "\\21BF",
+        "unicode": "U+21BF",
+        "name": "Upwards Harpoon with Barb Leftwards"
+    },
+    {
+        "htmlentity": "&rharu;",
+        "htmlcode": "&#8640;",
+        "csscode": "\\21C0",
+        "unicode": "U+21C0",
+        "name": "Rightwards Harpoon with Barb Upwards"
+    },
+    {
+        "htmlentity": "&rhard;",
+        "htmlcode": "&#8641;",
+        "csscode": "\\21C1",
+        "unicode": "U+21C1",
+        "name": "Rightwards Harpoon with Barb Downwards"
+    },
+    {
+        "htmlentity": "&dharr;",
+        "htmlcode": "&#8642;",
+        "csscode": "\\21C2",
+        "unicode": "U+21C2",
+        "name": "Downwards Harpoon with Barb Rightwards"
+    },
+    {
+        "htmlentity": "&dharl;",
+        "htmlcode": "&#8643;",
+        "csscode": "\\21C3",
+        "unicode": "U+21C3",
+        "name": "Downwards Harpoon with Barb Leftwards"
+    },
+    {
+        "htmlentity": "&rlarr;",
+        "htmlcode": "&#8644;",
+        "csscode": "\\21C4",
+        "unicode": "U+21C4",
+        "name": "Rightwards Arrow Over Leftwards Arrow"
+    },
+    {
+        "htmlentity": "&udarr;",
+        "htmlcode": "&#8645;",
+        "csscode": "\\21C5",
+        "unicode": "U+21C5",
+        "name": "Upwards Arrow Leftwards of Downwards Arrow"
+    },
+    {
+        "htmlentity": "&lrarr;",
+        "htmlcode": "&#8646;",
+        "csscode": "\\21C6",
+        "unicode": "U+21C6",
+        "name": "Leftwards Arrow Over Rightwards Arrow"
+    },
+    {
+        "htmlentity": "&llarr;",
+        "htmlcode": "&#8647;",
+        "csscode": "\\21C7",
+        "unicode": "U+21C7",
+        "name": "Leftwards Paired Arrows"
+    },
+    {
+        "htmlentity": "&uuarr;",
+        "htmlcode": "&#8648;",
+        "csscode": "\\21C8",
+        "unicode": "U+21C8",
+        "name": "Upwards Paired Arrows"
+    },
+    {
+        "htmlentity": "&rrarr;",
+        "htmlcode": "&#8649;",
+        "csscode": "\\21C9",
+        "unicode": "U+21C9",
+        "name": "Rightwards Paired Arrows"
+    },
+    {
+        "htmlentity": "&ddarr;",
+        "htmlcode": "&#8650;",
+        "csscode": "\\21CA",
+        "unicode": "U+21CA",
+        "name": "Downwards Paired Arrows"
+    },
+    {
+        "htmlentity": "&lrhar;",
+        "htmlcode": "&#8651;",
+        "csscode": "\\21CB",
+        "unicode": "U+21CB",
+        "name": "Leftwards Harpoon Over Rightwards Harpoon"
+    },
+    {
+        "htmlentity": "&rlhar;",
+        "htmlcode": "&#8652;",
+        "csscode": "\\21CC",
+        "unicode": "U+21CC",
+        "name": "Rightwards Harpoon Over Leftwards Harpoon"
+    },
+    {
+        "htmlentity": "&nlArr;",
+        "htmlcode": "&#8653;",
+        "csscode": "\\21CD",
+        "unicode": "U+21CD",
+        "name": "Leftwards Double Arrow with Stroke"
+    },
+    {
+        "htmlentity": "&nhArr;",
+        "htmlcode": "&#8654;",
+        "csscode": "\\21CE",
+        "unicode": "U+21CE",
+        "name": "Left Right Double Arrow with Stroke"
+    },
+    {
+        "htmlentity": "&nrArr;",
+        "htmlcode": "&#8655;",
+        "csscode": "\\21CF",
+        "unicode": "U+21CF",
+        "name": "Rightwards Double Arrow with Stroke"
+    },
+    {
+        "htmlentity": "&lArr;",
+        "htmlcode": "&#8656;",
+        "csscode": "\\21D0",
+        "unicode": "U+21D0",
+        "name": "Leftwards Double Arrow"
+    },
+    {
+        "htmlentity": "&uArr;",
+        "htmlcode": "&#8657;",
+        "csscode": "\\21D1",
+        "unicode": "U+21D1",
+        "name": "Upwards Double Arrow"
+    },
+    {
+        "htmlentity": "&rArr;",
+        "htmlcode": "&#8658;",
+        "csscode": "\\21D2",
+        "unicode": "U+21D2",
+        "name": "Rightwards Double Arrow"
+    },
+    {
+        "htmlentity": "&dArr;",
+        "htmlcode": "&#8659;",
+        "csscode": "\\21D3",
+        "unicode": "U+21D3",
+        "name": "Downwards Double Arrow"
+    },
+    {
+        "htmlentity": "&hArr;",
+        "htmlcode": "&#8660;",
+        "csscode": "\\21D4",
+        "unicode": "U+21D4",
+        "name": "Left Right Double Arrow"
+    },
+    {
+        "htmlentity": "&vArr;",
+        "htmlcode": "&#8661;",
+        "csscode": "\\21D5",
+        "unicode": "U+21D5",
+        "name": "Up Down Double Arrow"
+    },
+    {
+        "htmlentity": "&nwArr;",
+        "htmlcode": "&#8662;",
+        "csscode": "\\21D6",
+        "unicode": "U+21D6",
+        "name": "North West Double Arrow"
+    },
+    {
+        "htmlentity": "&neArr;",
+        "htmlcode": "&#8663;",
+        "csscode": "\\21D7",
+        "unicode": "U+21D7",
+        "name": "North East Double Arrow"
+    },
+    {
+        "htmlentity": "&seArr;",
+        "htmlcode": "&#8664;",
+        "csscode": "\\21D8",
+        "unicode": "U+21D8",
+        "name": "South East Double Arrow"
+    },
+    {
+        "htmlentity": "&swArr;",
+        "htmlcode": "&#8665;",
+        "csscode": "\\21D9",
+        "unicode": "U+21D9",
+        "name": "South West Double Arrow"
+    },
+    {
+        "htmlentity": "&lAarr;",
+        "htmlcode": "&#8666;",
+        "csscode": "\\21DA",
+        "unicode": "U+21DA",
+        "name": "Leftwards Triple Arrow"
+    },
+    {
+        "htmlentity": "&rAarr;",
+        "htmlcode": "&#8667;",
+        "csscode": "\\21DB",
+        "unicode": "U+21DB",
+        "name": "Rightwards Triple Arrow"
+    },
+    {
+        "htmlentity": "&ziglarr;",
+        "htmlcode": "&#8668;",
+        "csscode": "\\21DC",
+        "unicode": "U+21DC",
+        "name": "Leftwards Squiggle Arrow"
+    },
+    {
+        "htmlentity": "&zigrarr;",
+        "htmlcode": "&#8669;",
+        "csscode": "\\21DD",
+        "unicode": "U+21DD",
+        "name": "Rightwards Squiggle Arrow"
+    },
+    {
+        "htmlentity": "&larrb;",
+        "htmlcode": "&#8676;",
+        "csscode": "\\21E4",
+        "unicode": "U+21E4",
+        "name": "Leftwards Arrow To Bar"
+    },
+    {
+        "htmlentity": "&rarrb;",
+        "htmlcode": "&#8677;",
+        "csscode": "\\21E5",
+        "unicode": "U+21E5",
+        "name": "Rightwards Arrow To Bar"
+    },
+    {
+        "htmlentity": "&duarr;",
+        "htmlcode": "&#8693;",
+        "csscode": "\\21F5",
+        "unicode": "U+21F5",
+        "name": "Downwards Arrow Leftwards of Upwards Arrow"
+    },
+    {
+        "htmlentity": "&hoarr;",
+        "htmlcode": "&#8703;",
+        "csscode": "\\21FF",
+        "unicode": "U+21FF",
+        "name": "Left Right Open-Headed Arrow"
+    },
+    {
+        "htmlentity": "&loarr;",
+        "htmlcode": "&#8701;",
+        "csscode": "\\21FD",
+        "unicode": "U+21FD",
+        "name": "Leftwards Open-Headed Arrow"
+    },
+    {
+        "htmlentity": "&roarr;",
+        "htmlcode": "&#8702;",
+        "csscode": "\\21FE",
+        "unicode": "U+21FE",
+        "name": "Rightwards Open-Headed Arrow"
+    },
+    {
+        "htmlentity": "&xlarr;",
+        "htmlcode": "&#10229;",
+        "csscode": "\\27F5",
+        "unicode": "U+27F5",
+        "name": "Long Leftwards Arrow"
+    },
+    {
+        "htmlentity": "&xrarr;",
+        "htmlcode": "&#10230;",
+        "csscode": "\\27F6",
+        "unicode": "U+27F6",
+        "name": "Long Rightwards Arrow"
+    },
+    {
+        "htmlentity": "&xharr;",
+        "htmlcode": "&#10231;",
+        "csscode": "\\27F7",
+        "unicode": "U+27F7",
+        "name": "Long Left Right Arrow"
+    },
+    {
+        "htmlentity": "&xlArr;",
+        "htmlcode": "&#10232;",
+        "csscode": "\\27F8",
+        "unicode": "U+27F8",
+        "name": "Long Leftwards Double Arrow"
+    },
+    {
+        "htmlentity": "&xrArr;",
+        "htmlcode": "&#10233;",
+        "csscode": "\\27F9",
+        "unicode": "U+27F9",
+        "name": "Long Rightwards Double Arrow"
+    },
+    {
+        "htmlentity": "&xhArr;",
+        "htmlcode": "&#10234;",
+        "csscode": "\\27FA",
+        "unicode": "U+27FA",
+        "name": "Long Left Right Double Arrow"
+    },
+    {
+        "htmlentity": "&dzigrarr;",
+        "htmlcode": "&#10239;",
+        "csscode": "\\27FF",
+        "unicode": "U+27FF",
+        "name": "Long Rightwards Squiggle Arrow"
+    },
+    {
+        "htmlentity": "&xmap;",
+        "htmlcode": "&#10236;",
+        "csscode": "\\27FC",
+        "unicode": "U+27FC",
+        "name": "Long Rightwards Arrow from Bar"
+    },
+    {
+        "htmlentity": "&nvlArr;",
+        "htmlcode": "&#10498;",
+        "csscode": "\\2902",
+        "unicode": "U+2902",
+        "name": "Leftwards Double Arrow with Vertical Stroke"
+    },
+    {
+        "htmlentity": "&nvrArr;",
+        "htmlcode": "&#10499;",
+        "csscode": "\\2903",
+        "unicode": "U+2903",
+        "name": "Rightwards Double Arrow with Vertical Stroke"
+    },
+    {
+        "htmlentity": "&nvHarr;",
+        "htmlcode": "&#10500;",
+        "csscode": "\\2904",
+        "unicode": "U+2904",
+        "name": "Left Right Double Arrow with Vertical Stroke"
+    },
+    {
+        "htmlentity": "&Map;",
+        "htmlcode": "&#10501;",
+        "csscode": "\\2905",
+        "unicode": "U+2905",
+        "name": "Rightwards Two-Headed Arrow from Bar"
+    },
+    {
+        "htmlentity": "&lbarr;",
+        "htmlcode": "&#10508;",
+        "csscode": "\\290C",
+        "unicode": "U+290C",
+        "name": "Leftwards Double Dash Arrow"
+    },
+    {
+        "htmlentity": "&rbarr;",
+        "htmlcode": "&#10509;",
+        "csscode": "\\290D",
+        "unicode": "U+290D",
+        "name": "Rightwards Double Dash Arrow"
+    },
+    {
+        "htmlentity": "&lBarr;",
+        "htmlcode": "&#10510;",
+        "csscode": "\\290E",
+        "unicode": "U+290E",
+        "name": "Leftwards Triple Dash Arrow"
+    },
+    {
+        "htmlentity": "&rBarr;",
+        "htmlcode": "&#10511;",
+        "csscode": "\\290F",
+        "unicode": "U+290F",
+        "name": "Rightwards Triple Dash Arrow"
+    },
+    {
+        "htmlentity": "&RBarr;",
+        "htmlcode": "&#10512;",
+        "csscode": "\\2910",
+        "unicode": "U+2910",
+        "name": "Rightwards Two-Headed Triple Dash Arrow"
+    },
+    {
+        "htmlentity": "&DDotrahd;",
+        "htmlcode": "&#10513;",
+        "csscode": "\\2911",
+        "unicode": "U+2911",
+        "name": "Rightwards Arrow with Dotted Stem"
+    },
+    {
+        "htmlentity": "&UpArrowBar;",
+        "htmlcode": "&#10514;",
+        "csscode": "\\2912",
+        "unicode": "U+2912",
+        "name": "Upwards Arrow To Bar"
+    },
+    {
+        "htmlentity": "&DownArrowBar;",
+        "htmlcode": "&#10515;",
+        "csscode": "\\2913",
+        "unicode": "U+2913",
+        "name": "Downwards Arrow To Bar"
+    },
+    {
+        "htmlentity": "&Rarrtl;",
+        "htmlcode": "&#10518;",
+        "csscode": "\\2916",
+        "unicode": "U+2916",
+        "name": "Rightwards Two-Headed Arrow with Tail"
+    },
+    {
+        "htmlentity": "&latail;",
+        "htmlcode": "&#10521;",
+        "csscode": "\\2919",
+        "unicode": "U+2919",
+        "name": "Leftwards Arrow-Tail"
+    },
+    {
+        "htmlentity": "&ratail;",
+        "htmlcode": "&#10522;",
+        "csscode": "\\291A",
+        "unicode": "U+291A",
+        "name": "Rightwards Arrow-Tail"
+    },
+    {
+        "htmlentity": "&lAtail;",
+        "htmlcode": "&#10523;",
+        "csscode": "\\291B",
+        "unicode": "U+291B",
+        "name": "Leftwards Double Arrow-Tail"
+    },
+    {
+        "htmlentity": "&rAtail;",
+        "htmlcode": "&#10524;",
+        "csscode": "\\291C",
+        "unicode": "U+291C",
+        "name": "Rightwards Double Arrow-Tail"
+    },
+    {
+        "htmlentity": "&larrfs;",
+        "htmlcode": "&#10525;",
+        "csscode": "\\291D",
+        "unicode": "U+291D",
+        "name": "Leftwards Arrow To Black Diamond"
+    },
+    {
+        "htmlentity": "&rarrfs;",
+        "htmlcode": "&#10526;",
+        "csscode": "\\291E",
+        "unicode": "U+291E",
+        "name": "Rightwards Arrow To Black Diamond"
+    },
+    {
+        "htmlentity": "&larrbfs;",
+        "htmlcode": "&#10527;",
+        "csscode": "\\291F",
+        "unicode": "U+291F",
+        "name": "Leftwards Arrow from Bar To Black Diamond"
+    },
+    {
+        "htmlentity": "&rarrbfs;",
+        "htmlcode": "&#10528;",
+        "csscode": "\\2920",
+        "unicode": "U+2920",
+        "name": "Rightwards Arrow from Bar To Black Diamond"
+    },
+    {
+        "htmlentity": "&nwarhk;",
+        "htmlcode": "&#10531;",
+        "csscode": "\\2923",
+        "unicode": "U+2923",
+        "name": "North West Arrow with Hook"
+    },
+    {
+        "htmlentity": "&nearhk;",
+        "htmlcode": "&#10532;",
+        "csscode": "\\2924",
+        "unicode": "U+2924",
+        "name": "North East Arrow with Hook"
+    },
+    {
+        "htmlentity": "&searhk;",
+        "htmlcode": "&#10533;",
+        "csscode": "\\2925",
+        "unicode": "U+2925",
+        "name": "South East Arrow with Hook"
+    },
+    {
+        "htmlentity": "&swarhk;",
+        "htmlcode": "&#10534;",
+        "csscode": "\\2926",
+        "unicode": "U+2926",
+        "name": "South West Arrow with Hook"
+    },
+    {
+        "htmlentity": "&nwnear;",
+        "htmlcode": "&#10535;",
+        "csscode": "\\2927",
+        "unicode": "U+2927",
+        "name": "North West Arrow and North East Arrow"
+    },
+    {
+        "htmlentity": "&nesear;",
+        "htmlcode": "&#10536;",
+        "csscode": "\\2928",
+        "unicode": "U+2928",
+        "name": "North East Arrow and South East Arrow"
+    },
+    {
+        "htmlentity": "&seswar;",
+        "htmlcode": "&#10537;",
+        "csscode": "\\2929",
+        "unicode": "U+2929",
+        "name": "South East Arrow and South West Arrow"
+    },
+    {
+        "htmlentity": "&swnwar;",
+        "htmlcode": "&#10538;",
+        "csscode": "\\292A",
+        "unicode": "U+292A",
+        "name": "South West Arrow and North West Arrow"
+    },
+    {
+        "htmlentity": "&cudarrr;",
+        "htmlcode": "&#10549;",
+        "csscode": "\\2935",
+        "unicode": "U+2935",
+        "name": "Arrow Pointing Rightwards Then Curving Downwards"
+    },
+    {
+        "htmlentity": "&ldca;",
+        "htmlcode": "&#10550;",
+        "csscode": "\\2936",
+        "unicode": "U+2936",
+        "name": "Arrow Pointing Downwards Then Curving Leftwards"
+    },
+    {
+        "htmlentity": "&rdca;",
+        "htmlcode": "&#10551;",
+        "csscode": "\\2937",
+        "unicode": "U+2937",
+        "name": "Arrow Pointing Downwards Then Curving Rightwards"
+    },
+    {
+        "htmlentity": "&cudarrl;",
+        "htmlcode": "&#10552;",
+        "csscode": "\\2938",
+        "unicode": "U+2938",
+        "name": "Right-Side Arc Clockwise Arrow"
+    },
+    {
+        "htmlentity": "&larrpl;",
+        "htmlcode": "&#10553;",
+        "csscode": "\\2939",
+        "unicode": "U+2939",
+        "name": "Left-Side Arc Anticlockwise Arrow"
+    },
+    {
+        "htmlentity": "&curarrm;",
+        "htmlcode": "&#10556;",
+        "csscode": "\\293C",
+        "unicode": "U+293C",
+        "name": "Top Arc Clockwise Arrow with Minus"
+    },
+    {
+        "htmlentity": "&cularrp;",
+        "htmlcode": "&#10557;",
+        "csscode": "\\293D",
+        "unicode": "U+293D",
+        "name": "Top Arc Anticlockwise Arrow with Plus"
+    },
+    {
+        "htmlentity": "&rarrpl;",
+        "htmlcode": "&#10565;",
+        "csscode": "\\2945",
+        "unicode": "U+2945",
+        "name": "Rightwards Arrow with Plus Below"
+    },
+    {
+        "htmlentity": "&harrcir;",
+        "htmlcode": "&#10568;",
+        "csscode": "\\2948",
+        "unicode": "U+2948",
+        "name": "Left Right Arrow Through Small Circle"
+    },
+    {
+        "htmlentity": "&Uarrocir;",
+        "htmlcode": "&#10569;",
+        "csscode": "\\2949",
+        "unicode": "U+2949",
+        "name": "Upwards Two-Headed Arrow from Small Circle"
+    },
+    {
+        "htmlentity": "&lurdshar;",
+        "htmlcode": "&#10570;",
+        "csscode": "\\294A",
+        "unicode": "U+294A",
+        "name": "Left Barb Up Right Barb Down Harpoon"
+    },
+    {
+        "htmlentity": "&ldrushar;",
+        "htmlcode": "&#10571;",
+        "csscode": "\\294B",
+        "unicode": "U+294B",
+        "name": "Left Barb Down Right Barb Up Harpoon"
+    },
+    {
+        "htmlentity": "&RightUpDownVector;",
+        "htmlcode": "&#10575;",
+        "csscode": "\\294F",
+        "unicode": "U+294F",
+        "name": "Up Barb Right Down Barb Right Harpoon"
+    },
+    {
+        "htmlentity": "&DownLeftRightVector;",
+        "htmlcode": "&#10576;",
+        "csscode": "\\2950",
+        "unicode": "U+2950",
+        "name": "Left Barb Down Right Barb Down Harpoon"
+    },
+    {
+        "htmlentity": "&LeftUpDownVector;",
+        "htmlcode": "&#10577;",
+        "csscode": "\\2951",
+        "unicode": "U+2951",
+        "name": "Up Barb Left Down Barb Left Harpoon"
+    },
+    {
+        "htmlentity": "&LeftVectorBar;",
+        "htmlcode": "&#10578;",
+        "csscode": "\\2952",
+        "unicode": "U+2952",
+        "name": "Leftwards Harpoon with Barb Up To Bar"
+    },
+    {
+        "htmlentity": "&RightVectorBar;",
+        "htmlcode": "&#10579;",
+        "csscode": "\\2953",
+        "unicode": "U+2953",
+        "name": "Rightwards Harpoon with Barb Up To Bar"
+    },
+    {
+        "htmlentity": "&RightUpVectorBar;",
+        "htmlcode": "&#10580;",
+        "csscode": "\\2954",
+        "unicode": "U+2954",
+        "name": "Upwards Harpoon with Barb Right To Bar"
+    },
+    {
+        "htmlentity": "&RightDownVectorBar;",
+        "htmlcode": "&#10581;",
+        "csscode": "\\2955",
+        "unicode": "U+2955",
+        "name": "Downwards Harpoon with Barb Right To Bar"
+    },
+    {
+        "htmlentity": "&DownLeftVectorBar;",
+        "htmlcode": "&#10582;",
+        "csscode": "\\2956",
+        "unicode": "U+2956",
+        "name": "Leftwards Harpoon with Barb Down To Bar"
+    },
+    {
+        "htmlentity": "&DownRightVectorBar;",
+        "htmlcode": "&#10583;",
+        "csscode": "\\2957",
+        "unicode": "U+2957",
+        "name": "Rightwards Harpoon with Barb Down To Bar"
+    },
+    {
+        "htmlentity": "&LeftUpVectorBar;",
+        "htmlcode": "&#10584;",
+        "csscode": "\\2958",
+        "unicode": "U+2958",
+        "name": "Upwards Harpoon with Barb Left To Bar"
+    },
+    {
+        "htmlentity": "&LeftDownVectorBar;",
+        "htmlcode": "&#10585;",
+        "csscode": "\\2959",
+        "unicode": "U+2959",
+        "name": "Downwards Harpoon with Barb Left To Bar"
+    },
+    {
+        "htmlentity": "&LeftTeeVector;",
+        "htmlcode": "&#10586;",
+        "csscode": "\\295A",
+        "unicode": "U+295A",
+        "name": "Leftwards Harpoon with Barb Up from Bar"
+    },
+    {
+        "htmlentity": "&RightTeeVector;",
+        "htmlcode": "&#10587;",
+        "csscode": "\\295B",
+        "unicode": "U+295B",
+        "name": "Rightwards Harpoon with Barb Up from Bar"
+    },
+    {
+        "htmlentity": "&RightUpTeeVector;",
+        "htmlcode": "&#10588;",
+        "csscode": "\\295C",
+        "unicode": "U+295C",
+        "name": "Upwards Harpoon with Barb Right from Bar"
+    },
+    {
+        "htmlentity": "&RightDownTeeVector;",
+        "htmlcode": "&#10589;",
+        "csscode": "\\295D",
+        "unicode": "U+295D",
+        "name": "Downwards Harpoon with Barb Right from Bar"
+    },
+    {
+        "htmlentity": "&DownLeftTeeVector;",
+        "htmlcode": "&#10590;",
+        "csscode": "\\295E",
+        "unicode": "U+295E",
+        "name": "Leftwards Harpoon with Barb Down from Bar"
+    },
+    {
+        "htmlentity": "&DownRightTeeVector;",
+        "htmlcode": "&#10591;",
+        "csscode": "\\295F",
+        "unicode": "U+295F",
+        "name": "Rightwards Harpoon with Barb Down from Bar"
+    },
+    {
+        "htmlentity": "&LeftUpTeeVector;",
+        "htmlcode": "&#10592;",
+        "csscode": "\\2960",
+        "unicode": "U+2960",
+        "name": "Upwards Harpoon with Barb Left from Bar"
+    },
+    {
+        "htmlentity": "&LeftDownTeeVector;",
+        "htmlcode": "&#10593;",
+        "csscode": "\\2961",
+        "unicode": "U+2961",
+        "name": "Downwards Harpoon with Barb Left from Bar"
+    },
+    {
+        "htmlentity": "&lHar;",
+        "htmlcode": "&#10594;",
+        "csscode": "\\2962",
+        "unicode": "U+2962",
+        "name": "Leftwards Harpoon with Barb Up Above Leftwards Harpoon with Barb Down"
+    },
+    {
+        "htmlentity": "&uHar;",
+        "htmlcode": "&#10595;",
+        "csscode": "\\2963",
+        "unicode": "U+2963",
+        "name": "Upwards Harpoon with Barb Left Beside Upwards Harpoon with Barb Right"
+    },
+    {
+        "htmlentity": "&rHar;",
+        "htmlcode": "&#10596;",
+        "csscode": "\\2964",
+        "unicode": "U+2964",
+        "name": "Rightwards Harpoon with Barb Up Above Rightwards Harpoon with Barb Down"
+    },
+    {
+        "htmlentity": "&dHar;",
+        "htmlcode": "&#10597;",
+        "csscode": "\\2965",
+        "unicode": "U+2965",
+        "name": "Downwards Harpoon with Barb Left Beside Downwards Harpoon with Barb Right"
+    },
+    {
+        "htmlentity": "&luruhar;",
+        "htmlcode": "&#10598;",
+        "csscode": "\\2966",
+        "unicode": "U+2966",
+        "name": "Leftwards Harpoon with Barb Up Above Rightwards Harpoon with Barb Up"
+    },
+    {
+        "htmlentity": "&ldrdhar;",
+        "htmlcode": "&#10599;",
+        "csscode": "\\2967",
+        "unicode": "U+2967",
+        "name": "Leftwards Harpoon with Barb Down Above Rightwards Harpoon with Barb Down"
+    },
+    {
+        "htmlentity": "&ruluhar;",
+        "htmlcode": "&#10600;",
+        "csscode": "\\2968",
+        "unicode": "U+2968",
+        "name": "Rightwards Harpoon with Barb Up Above Leftwards Harpoon with Barb Up"
+    },
+    {
+        "htmlentity": "&rdldhar;",
+        "htmlcode": "&#10601;",
+        "csscode": "\\2969",
+        "unicode": "U+2969",
+        "name": "Rightwards Harpoon with Barb Down Above Leftwards Harpoon with Barb Down"
+    },
+    {
+        "htmlentity": "&lharul;",
+        "htmlcode": "&#10602;",
+        "csscode": "\\296A",
+        "unicode": "U+296A",
+        "name": "Leftwards Harpoon with Barb Up Above Long Dash"
+    },
+    {
+        "htmlentity": "&llhard;",
+        "htmlcode": "&#10603;",
+        "csscode": "\\296B",
+        "unicode": "U+296B",
+        "name": "Leftwards Harpoon with Barb Down Below Long Dash"
+    },
+    {
+        "htmlentity": "&rharul;",
+        "htmlcode": "&#10604;",
+        "csscode": "\\296C",
+        "unicode": "U+296C",
+        "name": "Rightwards Harpoon with Barb Up Above Long Dash"
+    },
+    {
+        "htmlentity": "&lrhard;",
+        "htmlcode": "&#10605;",
+        "csscode": "\\296D",
+        "unicode": "U+296D",
+        "name": "Rightwards Harpoon with Barb Down Below Long Dash"
+    },
+    {
+        "htmlentity": "&udhar;",
+        "htmlcode": "&#10606;",
+        "csscode": "\\296E",
+        "unicode": "U+296E",
+        "name": "Upwards Harpoon with Barb Left Beside Downwards Harpoon with Barb Right"
+    },
+    {
+        "htmlentity": "&duhar;",
+        "htmlcode": "&#10607;",
+        "csscode": "\\296F",
+        "unicode": "U+296F",
+        "name": "Downwards Harpoon with Barb Left Beside Upwards Harpoon with Barb Right"
+    },
+    {
+        "htmlentity": "&RoundImplies;",
+        "htmlcode": "&#10608;",
+        "csscode": "\\2970",
+        "unicode": "U+2970",
+        "name": "Right Double Arrow with Rounded Head"
+    },
+    {
+        "htmlentity": "&erarr;",
+        "htmlcode": "&#10609;",
+        "csscode": "\\2971",
+        "unicode": "U+2971",
+        "name": "Equals Sign Above Rightwards Arrow"
+    },
+    {
+        "htmlentity": "&simrarr;",
+        "htmlcode": "&#10610;",
+        "csscode": "\\2972",
+        "unicode": "U+2972",
+        "name": "Tilde Operator Above Rightwards Arrow"
+    },
+    {
+        "htmlentity": "&larrsim;",
+        "htmlcode": "&#10611;",
+        "csscode": "\\2973",
+        "unicode": "U+2973",
+        "name": "Leftwards Arrow Above Tilde Operator"
+    },
+    {
+        "htmlentity": "&rarrsim;",
+        "htmlcode": "&#10612;",
+        "csscode": "\\2974",
+        "unicode": "U+2974",
+        "name": "Rightwards Arrow Above Tilde Operator"
+    },
+    {
+        "htmlentity": "&rarrap;",
+        "htmlcode": "&#10613;",
+        "csscode": "\\2975",
+        "unicode": "U+2975",
+        "name": "Rightwards Arrow Above Almost Equal To"
+    },
+    {
+        "htmlentity": "&ltlarr;",
+        "htmlcode": "&#10614;",
+        "csscode": "\\2976",
+        "unicode": "U+2976",
+        "name": "Less-Than Above Leftwards Arrow"
+    },
+    {
+        "htmlentity": "&gtrarr;",
+        "htmlcode": "&#10616;",
+        "csscode": "\\2978",
+        "unicode": "U+2978",
+        "name": "Greater-Than Above Rightwards Arrow"
+    },
+    {
+        "htmlentity": "&subrarr;",
+        "htmlcode": "&#10617;",
+        "csscode": "\\2979",
+        "unicode": "U+2979",
+        "name": "Subset Above Rightwards Arrow"
+    },
+    {
+        "htmlentity": "&suplarr;",
+        "htmlcode": "&#10619;",
+        "csscode": "\\297B",
+        "unicode": "U+297B",
+        "name": "Superset Above Leftwards Arrow"
+    },
+    {
+        "htmlentity": "&lfisht;",
+        "htmlcode": "&#10620;",
+        "csscode": "\\297C",
+        "unicode": "U+297C",
+        "name": "Left Fish Tail"
+    },
+    {
+        "htmlentity": "&rfisht;",
+        "htmlcode": "&#10621;",
+        "csscode": "\\297D",
+        "unicode": "U+297D",
+        "name": "Right Fish Tail"
+    },
+    {
+        "htmlentity": "&ufisht;",
+        "htmlcode": "&#10622;",
+        "csscode": "\\297E",
+        "unicode": "U+297E",
+        "name": "Up Fish Tail"
+    },
+    {
+        "htmlentity": "&dfisht;",
+        "htmlcode": "&#10623;",
+        "csscode": "\\297F",
+        "unicode": "U+297F",
+        "name": "Down Fish Tail"
+    }
+]
