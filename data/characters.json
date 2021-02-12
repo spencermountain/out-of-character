@@ -338,7 +338,7 @@
     "codeNumber": "200A",
     "actualUnicodeChar": " ",
     "codeEscaped": "\\u200A",
-    "htmlEntity": "&VeryThinSpace;",
+    "htmlEntity": "&ThickSpace;",
     "url": "https://www.compart.com/en/unicode/U+200A"
   },
   {

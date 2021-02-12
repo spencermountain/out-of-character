@@ -10,7 +10,9 @@ let lookup = []
 let parsed = []
 
 const getEntity = (value) => {
-    return Object.keys(lookup).find(key => lookup[key].characters === value);
+    // @todo doesn't seem to work all the time
+    const regex = new RegExp(value)
+    return Object.keys(lookup).find(key => lookup[key].characters.match(regex));
 }
 
 const parse = (char) => {

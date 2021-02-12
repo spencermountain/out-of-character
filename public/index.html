@@ -58,6 +58,7 @@
             return {
               ...row,
               code: `<a target="_blank" href="${row.url}">${row.code}</a>`,
+              htmlEntity: typeof(row.htmlEntity) === 'undefined' ? null : `<pre>${row.htmlEntity.replace('&', '&amp;')}</pre>`, 
               visualise: `<span class="char">]<span>${row.actualUnicodeChar}</span>[</span>`,
               cleaned:`<span class="char">]<span>${typeof(row.replaceWith) === 'undefined' ? row.actualUnicodeChar : row.replaceWith}</span>[</span>`
             }
