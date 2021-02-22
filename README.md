@@ -84,7 +84,7 @@ out-of-character ./path/to/file.txt --replace
 
 ## Javascript API
 ```js
-import {detect, remove} from 'out-of-character'
+import {detect, replace} from 'out-of-character'
 
 let str='noth­ing s͏neak឵y h᠎ere' //actually, there is.
 console.log(detect(str))
@@ -105,7 +105,7 @@ console.log(detect(str))
 ]*/
 
 // get rid of them!
-let after = remove(str)
+let after = replace(str)
 console.log(str !== after)
 // true
 ```
@@ -113,7 +113,7 @@ console.log(str !== after)
 fixing/detecting in files can be done like:
 ```js
 const fs = require('fs')
-const {detect, remove} = require('out-of-character')
+const {detect, replace} = require('out-of-character')
 
 let text = fs.readFileSync('./some-file.txt').toString()
 console.log(detect(text))
