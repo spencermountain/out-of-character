@@ -11,7 +11,10 @@ const getFiles = function (pathStr) {
     const isDir = fs.lstatSync(pathStr).isDirectory()
     if (isDir) {
       fs.readdirSync(pathStr).forEach((file) => {
-        files.push(path.join(pathStr, file))
+        let filePath = path.join(pathStr, file)
+        if (fs.lstatSync(filePath).isDirectory() === false) {
+          files.push(filePath)
+        }
       })
       return files
     }

@@ -1,7 +1,7 @@
 {
   "name": "out-of-character",
   "description": "remove invisible unicode characters",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Spencer Kelly and Adam Tsiopani",
   "main": "./builds/out-of-character.js",
   "unpkg": "./builds/out-of-character.min.js",
