@@ -1,4 +1,4 @@
-/* out-of-character 1.1.0 MIT */
+/* out-of-character 1.2.0 MIT */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :

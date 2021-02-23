@@ -1,4 +1,4 @@
-/* out-of-character 1.1.0 MIT */
+/* out-of-character 1.2.0 MIT */
 var data = [
 	{
 		type: "Line Break",
