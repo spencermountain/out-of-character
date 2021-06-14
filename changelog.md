@@ -3,7 +3,7 @@
 
 -->
 
-#### 1.1.1
+#### 1.2.1
 
 - typescript fix
 - update deps
