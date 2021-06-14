@@ -1,5 +1,5 @@
-/* out-of-character 1.2.0 MIT */
-var data = [
+/* out-of-character 1.2.1 MIT */
+var require$$0 = [
 	{
 		type: "Line Break",
 		name: "LINE FEED",
@@ -705,7 +705,6 @@ var data = [
 	}
 ];
 
-// const variationSelectors = /[\uFE00-\uFE0F]/
 var isVariationSelector = function isVariationSelector(num) {
   return num >= 65024 && num <= 65039;
 }; // const highSurrogates = /[\uD800-\uDBFF]/
@@ -721,7 +720,7 @@ var isLowSurrogate = function isLowSurrogate(num) {
 }; // allow invisible characters in emojis
 
 
-var isEmoji = function isEmoji(text, i) {
+var isEmoji$1 = function isEmoji(text, i) {
   // look at code before
   if (text[i - 1]) {
     var code = text.charCodeAt(i - 1);
@@ -743,8 +742,10 @@ var isEmoji = function isEmoji(text, i) {
   return false;
 };
 
-var isEmoji_1 = isEmoji;
+var isEmoji_1 = isEmoji$1;
 
+var data = require$$0;
+var isEmoji = isEmoji_1;
 /** add spaces at the end */
 
 var padStr = function padStr(str, width) {
@@ -767,7 +768,7 @@ var codes = data.filter(function (obj) {
   return obj.code.replace(/^U\+/, "\\u");
 }); // return an array of found invisible characters
 
-var findAll = function findAll(text) {
+var findAll$1 = function findAll(text) {
   // console.log(codes)
   var regEx = new RegExp("(".concat(codes.join('|'), ")"), 'g');
   var matches = [];
@@ -781,7 +782,7 @@ var findAll = function findAll(text) {
 
     if (found.code === 'U+200D') {
       // is this zero-width used in an emoji?
-      if (isEmoji_1(text, offset)) {
+      if (isEmoji(text, offset)) {
         return ch; //do nothing
       }
     }
@@ -797,12 +798,13 @@ var findAll = function findAll(text) {
   return matches;
 };
 
-var match = findAll;
+var match = findAll$1;
 
+var findAll = match;
 var src = {
   // find invisible or strange unicode characters in the text
   detect: function detect(text) {
-    var matches = match(text);
+    var matches = findAll(text);
 
     if (matches.length > 0) {
       return matches;
@@ -812,7 +814,7 @@ var src = {
   },
   // remove invisible or strange unicode characters from the text
   replace: function replace(text) {
-    var matches = match(text);
+    var matches = findAll(text);
     matches.forEach(function (o) {
       var code = o.code.replace(/^U\+/, "\\u");
       var reg = new RegExp(code, 'g');

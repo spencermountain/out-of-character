@@ -1,11 +1,11 @@
-/* out-of-character 1.2.0 MIT */
+/* out-of-character 1.2.1 MIT */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.outOfCharacter = factory());
 }(this, (function () { 'use strict';
 
-  var data = [
+  var require$$0 = [
   	{
   		type: "Line Break",
   		name: "LINE FEED",
@@ -711,7 +711,6 @@
   	}
   ];
 
-  // const variationSelectors = /[\uFE00-\uFE0F]/
   var isVariationSelector = function isVariationSelector(num) {
     return num >= 65024 && num <= 65039;
   }; // const highSurrogates = /[\uD800-\uDBFF]/
@@ -727,7 +726,7 @@
   }; // allow invisible characters in emojis
 
 
-  var isEmoji = function isEmoji(text, i) {
+  var isEmoji$1 = function isEmoji(text, i) {
     // look at code before
     if (text[i - 1]) {
       var code = text.charCodeAt(i - 1);
@@ -749,8 +748,10 @@
     return false;
   };
 
-  var isEmoji_1 = isEmoji;
+  var isEmoji_1 = isEmoji$1;
 
+  var data = require$$0;
+  var isEmoji = isEmoji_1;
   /** add spaces at the end */
 
   var padStr = function padStr(str, width) {
@@ -773,7 +774,7 @@
     return obj.code.replace(/^U\+/, "\\u");
   }); // return an array of found invisible characters
 
-  var findAll = function findAll(text) {
+  var findAll$1 = function findAll(text) {
     // console.log(codes)
     var regEx = new RegExp("(".concat(codes.join('|'), ")"), 'g');
     var matches = [];
@@ -787,7 +788,7 @@
 
       if (found.code === 'U+200D') {
         // is this zero-width used in an emoji?
-        if (isEmoji_1(text, offset)) {
+        if (isEmoji(text, offset)) {
           return ch; //do nothing
         }
       }
@@ -803,12 +804,13 @@
     return matches;
   };
 
-  var match = findAll;
+  var match = findAll$1;
 
+  var findAll = match;
   var src = {
     // find invisible or strange unicode characters in the text
     detect: function detect(text) {
-      var matches = match(text);
+      var matches = findAll(text);
 
       if (matches.length > 0) {
         return matches;
@@ -818,7 +820,7 @@
     },
     // remove invisible or strange unicode characters from the text
     replace: function replace(text) {
-      var matches = match(text);
+      var matches = findAll(text);
       matches.forEach(function (o) {
         var code = o.code.replace(/^U\+/, "\\u");
         var reg = new RegExp(code, 'g');
