@@ -523,7 +523,7 @@
     "url": "https://www.compart.com/en/unicode/U+206F"
   },
   {
-    "type": "Whitepace",
+    "type": "Whitespace",
     "name": "IDEOGRAPHIC SPACE",
     "code": "U+3000",
     "escapeChar": "",
@@ -533,7 +533,7 @@
     "url": "https://www.compart.com/en/unicode/U+3000"
   },
   {
-    "type": "Whitepace",
+    "type": "Whitespace",
     "name": "BRAILLE PATTERN BLANK",
     "code": "U+2800",
     "escapeChar": "",
@@ -543,7 +543,7 @@
     "url": "https://www.compart.com/en/unicode/U+2800"
   },
   {
-    "type": "Whitepace",
+    "type": "Whitespace",
     "name": "HANGUL FILLER",
     "code": "U+3164",
     "escapeChar": "",
