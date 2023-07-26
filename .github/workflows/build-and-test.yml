@@ -32,7 +32,7 @@ jobs:
 
       - name: install
         run: |
-          npm ci
+          npm ci --ignore-scripts
 
       - name: static checks
         run: |
