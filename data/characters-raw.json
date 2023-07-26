@@ -38,6 +38,13 @@
         "replaceWith": ""
     },
     {
+        "type": "Whitespace",
+        "name": "NO-BREAK SPACE",
+        "code": "U+00A0",
+        "escapeChar": "",
+        "replaceWith": " "
+    },
+    {
         "type": "Separators",
         "name": "LINE SEPARATOR",
         "code": "U+2028",
@@ -337,21 +344,21 @@
         "replaceWith": ""
     },
     {
-        "type": "Whitepace",
+        "type": "Whitespace",
         "name": "IDEOGRAPHIC SPACE",
         "code": "U+3000",
         "escapeChar": "",
         "replaceWith": " "
     },
     {
-        "type": "Whitepace",
+        "type": "Whitespace",
         "name": "BRAILLE PATTERN BLANK",
         "code": "U+2800",
         "escapeChar": "",
         "replaceWith": " "
     },
     {
-        "type": "Whitepace",
+        "type": "Whitespace",
         "name": "HANGUL FILLER",
         "code": "U+3164",
         "escapeChar": "",
