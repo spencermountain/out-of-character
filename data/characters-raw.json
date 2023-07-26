@@ -38,6 +38,13 @@
         "replaceWith": ""
     },
     {
+        "type": "Whitespace",
+        "name": "NO-BREAK SPACE",
+        "code": "U+00A0",
+        "escapeChar": "",
+        "replaceWith": " "
+    },
+    {
         "type": "Separators",
         "name": "LINE SEPARATOR",
         "code": "U+2028",

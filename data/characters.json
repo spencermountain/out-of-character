@@ -53,6 +53,16 @@
     "url": "https://www.compart.com/en/unicode/U+0085"
   },
   {
+    "type": "Whitespace",
+    "name": "NO-BREAK SPACE",
+    "code": "U+00A0",
+    "escapeChar": "",
+    "replaceWith": " ",
+    "actualUnicodeChar": " ",
+    "codeEscaped": "\\u00A0",
+    "url": "https://www.compart.com/en/unicode/U+00A0"
+  },
+  {
     "type": "Separators",
     "name": "LINE SEPARATOR",
     "code": "U+2028",
