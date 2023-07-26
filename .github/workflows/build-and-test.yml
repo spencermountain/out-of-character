@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [6.x, 8.x, 10.x, 12.x, 14.x, 18.x]
+        node-version: [16, 18, 20]
         os: [macos-latest, ubuntu-latest, windows-latest]
 
     steps:
@@ -32,7 +32,7 @@ jobs:
 
       - name: install
         run: |
-          npm ci
+          npm ci --ignore-scripts
 
       - name: static checks
         run: |
