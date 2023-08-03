@@ -1,4 +1,4 @@
-/* out-of-character 1.2.1 MIT */
+/* out-of-character 1.2.2 MIT */
 var require$$0 = [
 	{
 		type: "Line Break",
@@ -52,6 +52,16 @@ var require$$0 = [
 		actualUnicodeChar: "",
 		codeEscaped: "\\u0085",
 		url: "https://www.compart.com/en/unicode/U+0085"
+	},
+	{
+		type: "Whitespace",
+		name: "NO-BREAK SPACE",
+		code: "U+00A0",
+		escapeChar: "",
+		replaceWith: " ",
+		actualUnicodeChar: " ",
+		codeEscaped: "\\u00A0",
+		url: "https://www.compart.com/en/unicode/U+00A0"
 	},
 	{
 		type: "Separators",
@@ -514,7 +524,7 @@ var require$$0 = [
 		url: "https://www.compart.com/en/unicode/U+206F"
 	},
 	{
-		type: "Whitepace",
+		type: "Whitespace",
 		name: "IDEOGRAPHIC SPACE",
 		code: "U+3000",
 		escapeChar: "",
@@ -524,7 +534,7 @@ var require$$0 = [
 		url: "https://www.compart.com/en/unicode/U+3000"
 	},
 	{
-		type: "Whitepace",
+		type: "Whitespace",
 		name: "BRAILLE PATTERN BLANK",
 		code: "U+2800",
 		escapeChar: "",
@@ -534,7 +544,7 @@ var require$$0 = [
 		url: "https://www.compart.com/en/unicode/U+2800"
 	},
 	{
-		type: "Whitepace",
+		type: "Whitespace",
 		name: "HANGUL FILLER",
 		code: "U+3164",
 		escapeChar: "",
@@ -707,13 +717,11 @@ var require$$0 = [
 
 var isVariationSelector = function isVariationSelector(num) {
   return num >= 65024 && num <= 65039;
-}; // const highSurrogates = /[\uD800-\uDBFF]/
-
+};
 
 var isHighSurrogate = function isHighSurrogate(num) {
   return num >= 55296 && num <= 56319;
-}; // const lowSurrogates = /[\uDC00-\uDFFF]/
-
+};
 
 var isLowSurrogate = function isLowSurrogate(num) {
   return num >= 56320 && num <= 57343;
@@ -769,15 +777,13 @@ var codes = data.filter(function (obj) {
 }); // return an array of found invisible characters
 
 var findAll$1 = function findAll(text) {
-  // console.log(codes)
   var regEx = new RegExp("(".concat(codes.join('|'), ")"), 'g');
   var matches = [];
   text.replace(regEx, function (ch, _b, offset) {
     // find the code of the char we matched
     var code = ch.charCodeAt(0);
     var hex = code.toString(16).toUpperCase();
-    hex = "U+" + padStr(hex, 4); // console.log(ch, code, hex)
-
+    hex = "U+" + padStr(hex, 4);
     var found = byCode[hex] || {}; // dont match for emoji zero-width chars
 
     if (found.code === 'U+200D') {

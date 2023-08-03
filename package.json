@@ -1,7 +1,7 @@
 {
   "name": "out-of-character",
   "description": "remove invisible unicode characters",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": "Spencer Kelly and Adam Tsiopani",
   "main": "./builds/out-of-character.js",
   "unpkg": "./builds/out-of-character.min.js",
@@ -51,19 +51,19 @@
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "13.0.0",
     "amble": "1.3.0",
-    "axios": "^0.21.1",
-    "eslint": "7.28.0",
-    "live-server": "^1.2.1",
+    "axios": "1.4.0",
+    "eslint": "8.46.0",
+    "live-server": "1.2.2",
     "rollup": "2.51.2",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-filesize-check": "0.0.1",
     "rollup-plugin-terser": "7.0.2",
     "shelljs": "^0.8.4",
-    "tap-dancer": "0.3.1",
-    "tape": "5.2.2"
+    "tap-dancer": "0.3.4",
+    "tape": "5.6.6"
   },
   "dependencies": {
-    "colorette": "1.2.2",
+    "colorette": "2.0.20",
     "glob": "7.1.7"
   },
   "license": "MIT"

@@ -3,6 +3,11 @@
 
 -->
 
+#### 1.2.2
+- fix/nbsp
+- cosmetic changes
+- update deps
+
 #### 1.2.1
 
 - typescript fix
