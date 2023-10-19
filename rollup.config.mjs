@@ -3,7 +3,6 @@ import json from '@rollup/plugin-json'
 import resolve from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
 import babel from '@rollup/plugin-babel'
-import sizeCheck from 'rollup-plugin-filesize-check'
 const name = 'out-of-character'
 
 import pkg from './package.json' assert { type: 'json' };
@@ -31,7 +30,6 @@ export default [
       json(),
       commonjs(),
       babel(babelConfig),
-      sizeCheck(),
     ],
   },
   {
@@ -50,7 +48,6 @@ export default [
       json(),
       commonjs(),
       babel(babelConfig),
-      // sizeCheck(),
     ],
   },
   {
@@ -68,7 +65,6 @@ export default [
       commonjs(),
       babel(babelConfig),
       terser(),
-      sizeCheck(),
     ],
   },
 ]
