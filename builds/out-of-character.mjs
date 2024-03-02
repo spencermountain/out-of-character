@@ -1,4 +1,8 @@
 /* out-of-character 1.2.2 MIT */
+function getDefaultExportFromCjs (x) {
+	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+}
+
 var require$$0 = [
 	{
 		type: "Line Break",
@@ -718,64 +722,58 @@ var require$$0 = [
 var isVariationSelector = function isVariationSelector(num) {
   return num >= 65024 && num <= 65039;
 };
-
 var isHighSurrogate = function isHighSurrogate(num) {
   return num >= 55296 && num <= 56319;
 };
-
 var isLowSurrogate = function isLowSurrogate(num) {
   return num >= 56320 && num <= 57343;
-}; // allow invisible characters in emojis
+};
 
-
+// allow invisible characters in emojis
 var isEmoji$1 = function isEmoji(text, i) {
   // look at code before
   if (text[i - 1]) {
     var code = text.charCodeAt(i - 1);
-
     if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
       return true;
     }
-  } // look at code before
-
-
+  }
+  // look at code before
   if (text[i + 1]) {
     var _code = text.charCodeAt(i + 1);
-
     if (isHighSurrogate(_code) || isLowSurrogate(_code) || isVariationSelector(_code)) {
       return true;
     }
   }
-
   return false;
 };
-
 var isEmoji_1 = isEmoji$1;
 
 var data = require$$0;
 var isEmoji = isEmoji_1;
-/** add spaces at the end */
 
+/** add spaces at the end */
 var padStr = function padStr(str, width) {
   while (str.length < width) {
     str = '0' + str;
   }
-
   return str;
-}; // for easier look-up
+};
 
-
+// for easier look-up
 var byCode = data.reduce(function (h, obj) {
   h[obj.code] = obj;
   return h;
-}, {}); // chars to create our regex with
+}, {});
 
+// chars to create our regex with
 var codes = data.filter(function (obj) {
   return obj.replaceWith !== undefined;
 }).map(function (obj) {
   return obj.code.replace(/^U\+/, "\\u");
-}); // return an array of found invisible characters
+});
 
+// return an array of found invisible characters
 var findAll$1 = function findAll(text) {
   var regEx = new RegExp("(".concat(codes.join('|'), ")"), 'g');
   var matches = [];
@@ -784,8 +782,8 @@ var findAll$1 = function findAll(text) {
     var code = ch.charCodeAt(0);
     var hex = code.toString(16).toUpperCase();
     hex = "U+" + padStr(hex, 4);
-    var found = byCode[hex] || {}; // dont match for emoji zero-width chars
-
+    var found = byCode[hex] || {};
+    // dont match for emoji zero-width chars
     if (found.code === 'U+200D') {
       // is this zero-width used in an emoji?
       if (isEmoji(text, offset)) {
@@ -801,9 +799,9 @@ var findAll$1 = function findAll(text) {
     });
     return ch; //do nothing
   });
+
   return matches;
 };
-
 var match = findAll$1;
 
 var findAll = match;
@@ -811,11 +809,9 @@ var src = {
   // find invisible or strange unicode characters in the text
   detect: function detect(text) {
     var matches = findAll(text);
-
     if (matches.length > 0) {
       return matches;
     }
-
     return null;
   },
   // remove invisible or strange unicode characters from the text
@@ -829,5 +825,6 @@ var src = {
     return text;
   }
 };
+var index = /*@__PURE__*/getDefaultExportFromCjs(src);
 
-export default src;
+export { index as default };

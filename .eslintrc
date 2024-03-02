@@ -1,12 +1,12 @@
 {
   "root": true,
   "env": {
-    "es2021": true,
+    "es2023": true,
     "browser": true,
     "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 2021,
+    "ecmaVersion": 2023,
     "sourceType": "module",
     "ecmaFeatures": {}
   },

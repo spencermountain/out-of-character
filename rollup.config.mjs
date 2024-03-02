@@ -1,13 +1,19 @@
 import commonjs from '@rollup/plugin-commonjs'
 import json from '@rollup/plugin-json'
 import resolve from '@rollup/plugin-node-resolve'
-import { terser } from 'rollup-plugin-terser'
-import babel from 'rollup-plugin-babel'
-import sizeCheck from 'rollup-plugin-filesize-check'
+import terser from '@rollup/plugin-terser'
+import babel from '@rollup/plugin-babel'
 const name = 'out-of-character'
 
-import { version } from './package.json'
-const banner = `/* ${name} ${version} MIT */`
+import pkg from './package.json' assert { type: 'json' };
+
+const banner = `/* ${name} ${pkg.version} MIT */`
+
+const babelConfig = {
+  babelHelpers: 'bundled',
+  babelrc: false,
+  presets: ['@babel/preset-env'],
+}
 
 export default [
   {
@@ -23,11 +29,7 @@ export default [
       resolve(),
       json(),
       commonjs(),
-      babel({
-        babelrc: false,
-        presets: ['@babel/preset-env'],
-      }),
-      sizeCheck(),
+      babel(babelConfig),
     ],
   },
   {
@@ -45,11 +47,7 @@ export default [
       resolve(),
       json(),
       commonjs(),
-      babel({
-        babelrc: false,
-        presets: ['@babel/preset-env'],
-      }),
-      sizeCheck(),
+      babel(babelConfig),
     ],
   },
   {
@@ -65,12 +63,8 @@ export default [
       resolve(),
       json(),
       commonjs(),
-      babel({
-        babelrc: false,
-        presets: ['@babel/preset-env'],
-      }),
+      babel(babelConfig),
       terser(),
-      sizeCheck(),
     ],
   },
 ]

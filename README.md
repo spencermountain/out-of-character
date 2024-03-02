@@ -2,12 +2,12 @@
   <img src="https://cloud.githubusercontent.com/assets/399657/23590290/ede73772-01aa-11e7-8915-181ef21027bc.png" />
 
   <div>remove invisible unicode characters from a text</div>
-  
+
   <!-- npm version -->
   <a href="https://npmjs.org/package/out-of-character">
     <img src="https://img.shields.io/npm/v/out-of-character.svg?style=flat-square" />
   </a>
-  
+
   <!-- file size -->
   <a href="https://unpkg.com/out-of-character/builds/out-of-character.min.js">
     <img src="https://badge-size.herokuapp.com/spencermountain/compromise/master/plugins/dates/builds/out-of-character.min.js" />
@@ -25,7 +25,7 @@
 
 Unicode has [a few-dozen](https://character.construction/blanks) characters that *do not render anything*, on purpose.
 
-This is *cool* for cultural idiosyncracies in historical languages. 
+This is *cool* for cultural idiosyncracies in historical languages.
 More often though, their use is unintentional *(or [nefarious!](https://330k.github.io/misc_tools/unicode_steganography.html))*, and these characters end-up causing problems parsing text formats.
 
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
@@ -134,7 +134,7 @@ console.log(detect(goodNow))
 
 *Thank you to [character.construction/blanks](https://character.construction/blanks) by [Jan Lelis](https://janlelis.com/)*
 
-*and [a tale of characters in Unicode](https://www.contentful.com/blog/2016/12/06/unicode-javascript-and-the-emoji-family/) by [Stefan Judis](https://github.com/stefanjudis)* 
+*and [a tale of characters in Unicode](https://www.contentful.com/blog/2016/12/06/unicode-javascript-and-the-emoji-family/) by [Stefan Judis](https://github.com/stefanjudis)*
 
 ### See also
 * [printable-characters](https://github.com/xpl/printable-characters) - by Vit Gordon

@@ -20,7 +20,7 @@
         background: #2666a9;
         white-space: pre;
       }
-    
+ 
     </style>
     <title>out-of-character</title>
   </head>
@@ -61,9 +61,9 @@
             return {
               ...row,
               code: `<a target="_blank" href="${row.url}">${row.code}</a>`,
-              htmlCode: typeof(row.htmlcode) === 'undefined' ? null : `<pre>${row.htmlcode.replace('&', '&amp;')}</pre>`, 
-              cssCode: typeof(row.csscode) === 'undefined' ? null : `<pre>${row.csscode}</pre>`, 
-              htmlEntity: typeof(row.htmlentity) === 'undefined' ? null : `<pre>${row.htmlentity.replace('&', '&amp;')}</pre>`, 
+              htmlCode: typeof(row.htmlcode) === 'undefined' ? null : `<pre>${row.htmlcode.replace('&', '&amp;')}</pre>`,
+              cssCode: typeof(row.csscode) === 'undefined' ? null : `<pre>${row.csscode}</pre>`,
+              htmlEntity: typeof(row.htmlentity) === 'undefined' ? null : `<pre>${row.htmlentity.replace('&', '&amp;')}</pre>`,
               visualise: `<span class="char">]<span>${row.actualUnicodeChar}</span>[</span>`,
               shouldClean: typeof(row.replaceWith) === 'undefined' ? 'NO' : 'YES',
               cleaned:`<span class="char">]<span>${typeof(row.replaceWith) === 'undefined' ? row.actualUnicodeChar : row.replaceWith}</span>[</span>`
