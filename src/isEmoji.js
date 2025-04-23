@@ -6,14 +6,14 @@ const isLowSurrogate = (num) => num >= 56320 && num <= 57343
 const isEmoji = function (text, i) {
   // look at code before
   if (text[i - 1]) {
-    let code = text.charCodeAt(i - 1)
+    const code = text.charCodeAt(i - 1)
     if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
       return true
     }
   }
   // look at code before
   if (text[i + 1]) {
-    let code = text.charCodeAt(i + 1)
+    const code = text.charCodeAt(i + 1)
     if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
       return true
     }

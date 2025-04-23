@@ -1,6 +1,6 @@
-let test = require('tape')
+const test = require('tape')
 const { replace } = require('../src')
-let spaces = [
+const spaces = [
   'beforeᅟafter', // HANGUL CHOSEONG FILLER
   'beforeᅠafter', // HANGUL JUNGSEONG FILLER
   'before after', // OGHAM SPACE MARK
@@ -24,14 +24,14 @@ let spaces = [
 // https://character.construction/blanks
 test('remove invisible characters', function (t) {
   spaces.forEach((before, i) => {
-    let after = replace(before)
+    const after = replace(before)
     t.notEqual(before, after, `#${i} - ${before}`)
     t.equal(after, 'before after', `#${i} - is before-after`)
   })
   t.end()
 })
 
-let noSpaces = [
+const noSpaces = [
   'beforeafter', // FORM FEED
   'beforeafter', // NEXT LINE
   'before after', // LINE SEPARATOR
@@ -78,7 +78,7 @@ let noSpaces = [
 ]
 test('remove whitespace characters', function (t) {
   noSpaces.forEach((before, i) => {
-    let after = replace(before)
+    const after = replace(before)
     t.notEqual(before, after, `#${i} - ${before}`)
     t.equal(after, 'beforeafter', `#${i} - is 'beforeafter'`)
   })

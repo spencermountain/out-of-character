@@ -4,14 +4,14 @@ const path = require('path')
 
 // return a list of paths from either dir, file, or glob
 const getFiles = function (pathStr) {
-  let files = []
+  const files = []
   // file/folder exists
   if (fs.existsSync(pathStr)) {
     // get files from directory
     const isDir = fs.lstatSync(pathStr).isDirectory()
     if (isDir) {
       fs.readdirSync(pathStr).forEach((file) => {
-        let filePath = path.join(pathStr, file)
+        const filePath = path.join(pathStr, file)
         if (fs.lstatSync(filePath).isDirectory() === false) {
           files.push(filePath)
         }

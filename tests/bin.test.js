@@ -33,12 +33,12 @@ test.skip('bin detect cmd', function (t) {
 /** @todo Review this test. */
 test.skip('replace bin cmd', function (t) {
   // create a copy
-  let path = `./tests/texts/bad-text-copy.txt`
+  const path = `./tests/texts/bad-text-copy.txt`
   exec(`cp ./tests/texts/bad-text.txt ${path}`)
 
-  let before = fs.readFileSync(path).toString()
+  const before = fs.readFileSync(path).toString()
   exec(`./bin/out-of-character.js ${path} --replace`, { silent: true })
-  let after = fs.readFileSync(path).toString()
+  const after = fs.readFileSync(path).toString()
   t.notEqual(before, after, 'file has changed')
   // cleanup
   exec(`rm ${path}`)

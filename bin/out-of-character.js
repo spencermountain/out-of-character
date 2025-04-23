@@ -30,7 +30,7 @@ if (!pathStr) {
   process.exit(1)
 }
 
-let files = getFiles(pathStr)
+const files = getFiles(pathStr)
 if (files.length === 0) {
   console.warn(`Found no files that match '${pathStr}'`)
   process.exit()
@@ -38,9 +38,9 @@ if (files.length === 0) {
 console.log(dim(`\ninspecting ${files.length} ${files.length !== 1 ? 'files' : 'file'}...\n\n`))
 
 files.forEach((file) => {
-  let found = detectFile(file)
+  const found = detectFile(file)
   if (found === true && mode === 'replace') {
-    let text = fs.readFileSync(file).toString()
+    const text = fs.readFileSync(file).toString()
     fs.writeFileSync(file, replace(text))
     console.log(blue(`     👍 Removed them`))
   }

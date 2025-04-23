@@ -1,4 +1,4 @@
-let test = require('tape')
+const test = require('tape')
 const { detect } = require('../src')
 
 test('detect', function (t) {
