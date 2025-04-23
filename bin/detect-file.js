@@ -1,3 +1,5 @@
+'use strict'
+
 const fs = require('fs')
 const { detect } = require('../src/index')
 const { blue, yellow, dim, italic, red } = require('colorette')

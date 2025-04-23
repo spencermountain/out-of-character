@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+
+'use strict'
+
 const fs = require('fs')
 const { dim, blue } = require('colorette')
 const detectFile = require('./detect-file')

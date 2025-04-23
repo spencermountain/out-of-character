@@ -1,4 +1,7 @@
 /* eslint-disable no-unused-vars */
+
+'use strict'
+
 const { detect, replace } = require('./src')
 const fs = require('fs')
 

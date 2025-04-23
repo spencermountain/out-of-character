@@ -1,3 +1,5 @@
+'use strict'
+
 const test = require('tape')
 const { exec } = require('shelljs')
 const fs = require('fs')

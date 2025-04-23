@@ -1,3 +1,5 @@
+'use strict'
+
 // @todo turn this into modules and promisify + tidy
 const codes = require('../../data/codes.json')
 const config = require('../../data/characters-raw.json')
