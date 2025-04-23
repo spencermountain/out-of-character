@@ -6,6 +6,7 @@
   "main": "./builds/out-of-character.js",
   "unpkg": "./builds/out-of-character.min.js",
   "module": "./builds/out-of-character.mjs",
+  "type": "commonjs",
   "types": "types/index.d.ts",
   "repository": {
     "type": "git",
