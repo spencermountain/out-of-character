@@ -1,3 +1,5 @@
+'use strict'
+
 const findAll = require('./match')
 
 module.exports = {

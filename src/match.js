@@ -1,3 +1,5 @@
+'use strict'
+
 const data = require('../data/characters.json')
 const isEmoji = require('./isEmoji')
 
