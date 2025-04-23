@@ -16,7 +16,7 @@ const byCode = data.reduce((h, obj) => {
 }, {})
 
 // chars to create our regex with
-let codes = data
+const codes = data
   .filter((obj) => obj.replaceWith !== undefined)
   .map((obj) => {
     return obj.code.replace(/^U\+/, '\\u')
@@ -25,14 +25,14 @@ let codes = data
 // return an array of found invisible characters
 const findAll = function (text) {
   const regEx = new RegExp(`(${codes.join('|')})`, 'g')
-  let matches = []
+  const matches = []
   text.replace(regEx, (ch, _b, offset) => {
     // find the code of the char we matched
-    let code = ch.charCodeAt(0)
+    const code = ch.charCodeAt(0)
     let hex = code.toString(16).toUpperCase()
     hex = `U+` + padStr(hex, 4)
 
-    let found = byCode[hex] || {}
+    const found = byCode[hex] || {}
     // dont match for emoji zero-width chars
     if (found.code === 'U+200D') {
       // is this zero-width used in an emoji?

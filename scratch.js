@@ -14,7 +14,7 @@ const fs = require('fs')
 // U+1F468 + U+200D + U+1F469 + U+200D + U+1F466
 // let str = `‍👨‍👩‍👦`
 
-let str = `👨‍🦰`
+const str = `👨‍🦰`
 // console.log(str.length)
 // console.log(str[0])
 // console.log(str[1])
