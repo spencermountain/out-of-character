@@ -1,6 +1,6 @@
 'use strict'
 
-// @todo turn this into modules and promisify + tidy
+/** @todo Turn this into modules and promisify + tidy. **/
 const codes = require('../../data/codes.json')
 const config = require('../../data/characters-raw.json')
 const fs = require('fs')
@@ -8,7 +8,7 @@ const {resolve} = require('path')
 
 let parsed = []
 
-const parse = (char) => {
+const parse = function (char) {
   const codeEscaped = char.code.replace(/^U\+/, '\\u')
   const codeNumber = char.code.replace('U+', '')
   const actualUnicodeChar = String.fromCodePoint(`0x${codeNumber}`)
@@ -22,7 +22,7 @@ const parse = (char) => {
   }
 }
 
-const save = (obj) => {
+const save = function (obj) {
   fs.writeFile(resolve(`${__dirname}/../../data/characters.json`), JSON.stringify(obj, null, 2), (err) => {
     if (err) throw err
     console.log('The file has been saved!')
@@ -34,5 +34,5 @@ const save = (obj) => {
 parsed = config.map(parse)
 save(parsed)
 
-// @todo fix: this won't work because axios.get is promise
+/** @todo Fix this won't work because axios.get is promise. **/
 module.exports = parsed

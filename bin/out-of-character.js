@@ -25,7 +25,7 @@ args = args.filter((arg) => {
   }
   return arg //is truthy
 })
-// take the first non-flag arg as path
+// Take the first non-flag arg as path
 pathStr = args[0]
 
 if (!pathStr) {
