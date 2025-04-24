@@ -5,7 +5,7 @@ import terser from '@rollup/plugin-terser'
 import babel from '@rollup/plugin-babel'
 const name = 'out-of-character'
 
-import pkg from './package.json' assert { type: 'json' };
+import pkg from './package.json' with { type: 'json' };
 
 const banner = `/* ${name} ${pkg.version} MIT */`
 
