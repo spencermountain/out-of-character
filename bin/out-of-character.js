@@ -45,7 +45,7 @@ files.forEach((file) => {
   if (found === true && mode === 'replace') {
     const text = fs.readFileSync(file).toString()
     fs.writeFileSync(file, replace(text))
-    console.log(blue(`     👍 Removed them`))
+    console.log(blue('     👍 Removed them'))
   }
 })
 console.log('\n\n')

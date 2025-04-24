@@ -9,12 +9,12 @@ test('detect', function (t) {
   t.equal(found.length, 4, 'found 4')
 
   // ARABIC LETTER MARK
-  text = `hello mudda؜hello fadda`
+  text = 'hello mudda؜hello fadda'
   found = detect(text)
   t.equal(found.length, 1, 'found ar ltr mark')
 
   // EM SPACE
-  text = `goodmorning vietnam`
+  text = 'goodmorning vietnam'
   found = detect(text)
   t.equal(found.length, 1, 'found quad')
   t.equal(found[0].name, 'EM SPACE', 'EM SPACE')
