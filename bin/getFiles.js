@@ -4,12 +4,16 @@ const glob = require('glob')
 const fs = require('fs')
 const path = require('path')
 
-// return a list of paths from either dir, file, or glob
+/**
+ * @description Get files from a directory, file, or glob pattern.
+ * @param {string} pathStr - The path to the file or directory.
+ * @returns {string[]} An array of file paths.
+ */
 const getFiles = function (pathStr) {
   const files = []
-  // file/folder exists
+  // File/folder exists
   if (fs.existsSync(pathStr)) {
-    // get files from directory
+    // Get files from directory
     const isDir = fs.lstatSync(pathStr).isDirectory()
     if (isDir) {
       fs.readdirSync(pathStr).forEach((file) => {
@@ -20,7 +24,7 @@ const getFiles = function (pathStr) {
       })
       return files
     }
-    // return a single file
+    // Return a single file
     const isFile = fs.lstatSync(pathStr).isFile()
     if (isFile) {
       return [pathStr]
@@ -28,4 +32,5 @@ const getFiles = function (pathStr) {
   }
   return glob.sync(pathStr) || []
 }
+
 module.exports = getFiles

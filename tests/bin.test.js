@@ -24,7 +24,7 @@ test.skip('bin detect cmd', function (t) {
   let wasFound = res.match(/found/i) || null
   t.notEqual(wasFound, null, 'detect true')
 
-  // false-positive test
+  // False-positive test
   cmd = './bin/out-of-character.js ./tests/texts/good-text.txt --detect'
   res = exec(cmd, { silent: true }).stdout
   wasFound = res.match(/looks good/i) || null
@@ -34,7 +34,7 @@ test.skip('bin detect cmd', function (t) {
 
 /** @todo Review this test. */
 test.skip('replace bin cmd', function (t) {
-  // create a copy
+  // Create a copy
   const path = './tests/texts/bad-text-copy.txt'
   exec(`cp ./tests/texts/bad-text.txt ${path}`)
 
@@ -42,7 +42,7 @@ test.skip('replace bin cmd', function (t) {
   exec(`./bin/out-of-character.js ${path} --replace`, { silent: true })
   const after = fs.readFileSync(path).toString()
   t.notEqual(before, after, 'file has changed')
-  // cleanup
+  // Cleanup
   exec(`rm ${path}`)
   t.end()
 })

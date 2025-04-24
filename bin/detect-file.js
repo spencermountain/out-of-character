@@ -4,6 +4,11 @@ const fs = require('fs')
 const { detect } = require('../src/index')
 const { blue, yellow, dim, italic, red } = require('colorette')
 
+/**
+ * @description Detects hidden characters in a file.
+ * @param {string} path - The path to the file to check.
+ * @returns {boolean} True if hidden characters are found, false otherwise.
+ */
 const detectFile = function (path) {
   const text = fs.readFileSync(path).toString()
   const found = detect(text)
@@ -16,9 +21,10 @@ const detectFile = function (path) {
     })
     return true
   }
-  // looks good
+  // Looks good
   console.log(italic('  ' + yellow(path)))
   console.log(dim(blue(`     ${'•'} looks good`)))
   return false
 }
+
 module.exports = detectFile
