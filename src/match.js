@@ -32,7 +32,7 @@ const findAll = function (text) {
     // find the code of the char we matched
     const code = ch.charCodeAt(0)
     let hex = code.toString(16).toUpperCase()
-    hex = `U+` + padStr(hex, 4)
+    hex = 'U+' + padStr(hex, 4)
 
     const found = byCode[hex] || {}
     // dont match for emoji zero-width chars

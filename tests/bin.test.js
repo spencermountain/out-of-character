@@ -19,13 +19,13 @@ test('test glob input', function (t) {
 
 /** @todo Review this test. */
 test.skip('bin detect cmd', function (t) {
-  let cmd = `./bin/out-of-character.js ./tests/texts/bad-text.txt`
+  let cmd = './bin/out-of-character.js ./tests/texts/bad-text.txt'
   let res = exec(cmd, { silent: true }).stdout
   let wasFound = res.match(/found/i) || null
   t.notEqual(wasFound, null, 'detect true')
 
   // false-positive test
-  cmd = `./bin/out-of-character.js ./tests/texts/good-text.txt --detect`
+  cmd = './bin/out-of-character.js ./tests/texts/good-text.txt --detect'
   res = exec(cmd, { silent: true }).stdout
   wasFound = res.match(/looks good/i) || null
   t.notEqual(wasFound, null, 'detect false')
@@ -35,7 +35,7 @@ test.skip('bin detect cmd', function (t) {
 /** @todo Review this test. */
 test.skip('replace bin cmd', function (t) {
   // create a copy
-  const path = `./tests/texts/bad-text-copy.txt`
+  const path = './tests/texts/bad-text-copy.txt'
   exec(`cp ./tests/texts/bad-text.txt ${path}`)
 
   const before = fs.readFileSync(path).toString()
