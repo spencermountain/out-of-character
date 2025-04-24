@@ -1,4 +1,4 @@
-/* out-of-character 1.2.2 MIT */
+/* out-of-character 1.2.3 MIT */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
@@ -7,6 +7,67 @@
 
 	function getDefaultExportFromCjs (x) {
 		return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+	}
+
+	function _arrayLikeToArray(r, a) {
+	  (null == a || a > r.length) && (a = r.length);
+	  for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
+	  return n;
+	}
+	function _createForOfIteratorHelper(r, e) {
+	  var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+	  if (!t) {
+	    if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e) {
+	      t && (r = t);
+	      var n = 0,
+	        F = function () {};
+	      return {
+	        s: F,
+	        n: function () {
+	          return n >= r.length ? {
+	            done: true
+	          } : {
+	            done: false,
+	            value: r[n++]
+	          };
+	        },
+	        e: function (r) {
+	          throw r;
+	        },
+	        f: F
+	      };
+	    }
+	    throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+	  }
+	  var o,
+	    a = true,
+	    u = false;
+	  return {
+	    s: function () {
+	      t = t.call(r);
+	    },
+	    n: function () {
+	      var r = t.next();
+	      return a = r.done, r;
+	    },
+	    e: function (r) {
+	      u = true, o = r;
+	    },
+	    f: function () {
+	      try {
+	        a || null == t.return || t.return();
+	      } finally {
+	        if (u) throw o;
+	      }
+	    }
+	  };
+	}
+	function _unsupportedIterableToArray(r, a) {
+	  if (r) {
+	    if ("string" == typeof r) return _arrayLikeToArray(r, a);
+	    var t = {}.toString.call(r).slice(8, -1);
+	    return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0;
+	  }
 	}
 
 	var require$$0 = [
@@ -725,113 +786,173 @@
 		}
 	];
 
-	var isVariationSelector = function isVariationSelector(num) {
-	  return num >= 65024 && num <= 65039;
-	};
-	var isHighSurrogate = function isHighSurrogate(num) {
-	  return num >= 55296 && num <= 56319;
-	};
-	var isLowSurrogate = function isLowSurrogate(num) {
-	  return num >= 56320 && num <= 57343;
-	};
+	var isEmoji_1;
+	var hasRequiredIsEmoji;
+	function requireIsEmoji() {
+	  if (hasRequiredIsEmoji) return isEmoji_1;
+	  hasRequiredIsEmoji = 1;
+	  var isVariationSelector = function isVariationSelector(num) {
+	    return num >= 65024 && num <= 65039;
+	  };
+	  var isHighSurrogate = function isHighSurrogate(num) {
+	    return num >= 55296 && num <= 56319;
+	  };
+	  var isLowSurrogate = function isLowSurrogate(num) {
+	    return num >= 56320 && num <= 57343;
+	  };
 
-	// allow invisible characters in emojis
-	var isEmoji$1 = function isEmoji(text, i) {
-	  // look at code before
-	  if (text[i - 1]) {
-	    var code = text.charCodeAt(i - 1);
-	    if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
-	      return true;
-	    }
-	  }
-	  // look at code before
-	  if (text[i + 1]) {
-	    var _code = text.charCodeAt(i + 1);
-	    if (isHighSurrogate(_code) || isLowSurrogate(_code) || isVariationSelector(_code)) {
-	      return true;
-	    }
-	  }
-	  return false;
-	};
-	var isEmoji_1 = isEmoji$1;
-
-	var data = require$$0;
-	var isEmoji = isEmoji_1;
-
-	/** add spaces at the end */
-	var padStr = function padStr(str, width) {
-	  while (str.length < width) {
-	    str = '0' + str;
-	  }
-	  return str;
-	};
-
-	// for easier look-up
-	var byCode = data.reduce(function (h, obj) {
-	  h[obj.code] = obj;
-	  return h;
-	}, {});
-
-	// chars to create our regex with
-	var codes = data.filter(function (obj) {
-	  return obj.replaceWith !== undefined;
-	}).map(function (obj) {
-	  return obj.code.replace(/^U\+/, "\\u");
-	});
-
-	// return an array of found invisible characters
-	var findAll$1 = function findAll(text) {
-	  var regEx = new RegExp("(".concat(codes.join('|'), ")"), 'g');
-	  var matches = [];
-	  text.replace(regEx, function (ch, _b, offset) {
-	    // find the code of the char we matched
-	    var code = ch.charCodeAt(0);
-	    var hex = code.toString(16).toUpperCase();
-	    hex = "U+" + padStr(hex, 4);
-	    var found = byCode[hex] || {};
-	    // dont match for emoji zero-width chars
-	    if (found.code === 'U+200D') {
-	      // is this zero-width used in an emoji?
-	      if (isEmoji(text, offset)) {
-	        return ch; //do nothing
+	  /**
+	   * @description Checks if the character at the given index in the text is an emoji.
+	   * @param {string} text - The text to check for emojis.
+	   * @param {number} i - The offset of the character to check.
+	   * @returns {boolean} True if the character is an emoji, false otherwise.
+	   */
+	  var isEmoji = function isEmoji(text, i) {
+	    // Look at code before
+	    if (text[i - 1]) {
+	      var code = text.charCodeAt(i - 1);
+	      if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
+	        return true;
 	      }
 	    }
-
-	    matches.push({
-	      name: found.name,
-	      code: found.code,
-	      offset: offset,
-	      replacement: found.replaceWith || ''
-	    });
-	    return ch; //do nothing
-	  });
-
-	  return matches;
-	};
-	var match = findAll$1;
-
-	var findAll = match;
-	var src = {
-	  // find invisible or strange unicode characters in the text
-	  detect: function detect(text) {
-	    var matches = findAll(text);
-	    if (matches.length > 0) {
-	      return matches;
+	    // Look at code after
+	    if (text[i + 1]) {
+	      var _code = text.charCodeAt(i + 1);
+	      if (isHighSurrogate(_code) || isLowSurrogate(_code) || isVariationSelector(_code)) {
+	        return true;
+	      }
 	    }
-	    return null;
-	  },
-	  // remove invisible or strange unicode characters from the text
-	  replace: function replace(text) {
-	    var matches = findAll(text);
-	    matches.forEach(function (o) {
-	      var code = o.code.replace(/^U\+/, "\\u");
-	      var reg = new RegExp(code, 'g');
-	      text = text.replace(reg, o.replacement || '');
-	    });
-	    return text;
-	  }
-	};
-	var index = /*@__PURE__*/getDefaultExportFromCjs(src);
+	    return false;
+	  };
+	  isEmoji_1 = isEmoji;
+	  return isEmoji_1;
+	}
+
+	var match;
+	var hasRequiredMatch;
+	function requireMatch() {
+	  if (hasRequiredMatch) return match;
+	  hasRequiredMatch = 1;
+	  var data = require$$0;
+	  var isEmoji = requireIsEmoji();
+
+	  // For easier lookup
+	  var byCode = data.reduce(function (h, obj) {
+	    h[obj.code] = obj;
+	    return h;
+	  }, {});
+
+	  // Chars to create our regex with
+	  var unicodePrefixRegex = /^U\+/;
+	  var codes = data.filter(function (obj) {
+	    return obj.replaceWith !== undefined;
+	  }).map(function (obj) {
+	    // Convert "U+XXXX" to "\\uXXXX" for RegExp
+	    return obj.code.replace(unicodePrefixRegex, "\\u");
+	  });
+	  var codeRegex = new RegExp("(".concat(codes.join('|'), ")"), 'g');
+
+	  /**
+	   * @description Finds all invisible characters in the given text.
+	   * @param {string} text - The text to search for invisible characters.
+	   * @returns {{name: string, code: string, offset: number, replacement: string}[]} An array
+	   * of objects representing the found invisible characters.
+	   */
+	  var findAll = function findAll(text) {
+	    var matches = [];
+	    var _iterator = _createForOfIteratorHelper(text.matchAll(codeRegex)),
+	      _step;
+	    try {
+	      for (_iterator.s(); !(_step = _iterator.n()).done;) {
+	        var _match = _step.value;
+	        var _char = _match[0];
+	        var offset = _match.index;
+
+	        // Find the code details of the matched character
+	        var codePoint = _char.codePointAt(0); // Use codePointAt for full Unicode support
+	        var hex = 'U+' + codePoint.toString(16).toUpperCase().padStart(4, '0');
+	        var found = byCode[hex]; // Lookup using the canonical 'U+XXXX' format
+	        if (found) {
+	          // Don't report U+200D (Zero Width Joiner) if it's part of an emoji sequence
+	          if (found.code === 'U+200D' && isEmoji(text, offset)) {
+	            continue;
+	          }
+	          matches.push({
+	            name: found.name,
+	            code: found.code,
+	            offset: offset,
+	            replacement: found.replaceWith || ''
+	          });
+	        }
+	      }
+	    } catch (err) {
+	      _iterator.e(err);
+	    } finally {
+	      _iterator.f();
+	    }
+	    return matches;
+	  };
+	  match = findAll;
+	  return match;
+	}
+
+	var src;
+	var hasRequiredSrc;
+	function requireSrc() {
+	  if (hasRequiredSrc) return src;
+	  hasRequiredSrc = 1;
+	  var findAll = requireMatch();
+	  src = {
+	    /**
+	     * @description Detects hidden characters in the given text.
+	     * @param {string} text - The text to search for hidden characters.
+	     * @returns {{name: string, code: string, offset: number, replacement: string}[]|null} An array
+	     * of objects representing the found hidden characters, or null if none are found.
+	     */
+	    detect: function detect(text) {
+	      var matches = findAll(text);
+	      if (matches.length > 0) {
+	        return matches;
+	      }
+	      return null;
+	    },
+	    /**
+	     * @description Remove invisible or strange unicode characters from the text.
+	     * @param {string} text - The text to search.
+	     * @returns {string} The text with invisible characters removed.
+	     */
+	    replace: function replace(text) {
+	      var matches = findAll(text);
+
+	      // Early return if no matches
+	      if (matches.length === 0) {
+	        return text;
+	      }
+	      var result = '';
+	      var lastIndex = 0;
+	      var _iterator = _createForOfIteratorHelper(matches),
+	        _step;
+	      try {
+	        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+	          var match = _step.value;
+	          result += text.slice(lastIndex, match.offset);
+	          result += match.replacement;
+	          lastIndex = match.offset + 1;
+	        }
+	      } catch (err) {
+	        _iterator.e(err);
+	      } finally {
+	        _iterator.f();
+	      }
+	      result += text.slice(lastIndex);
+	      return result;
+	    }
+	  };
+	  return src;
+	}
+
+	var srcExports = requireSrc();
+	var index = /*@__PURE__*/getDefaultExportFromCjs(srcExports);
 
 	return index;
 

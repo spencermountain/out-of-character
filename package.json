@@ -1,7 +1,7 @@
 {
   "name": "out-of-character",
   "description": "remove invisible unicode characters",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "author": "Spencer Kelly and Adam Tsiopani",
   "contributors": [
     {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/spencermountain/out-of-character",
   "bugs": {
-	  "url": "https://github.com/spencermountain/out-of-character/issues"
+    "url": "https://github.com/spencermountain/out-of-character/issues"
   },
   "scripts": {
     "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
