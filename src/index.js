@@ -2,9 +2,6 @@
 
 const findAll = require('./match')
 
-// Cache immutable regex as they are expensive to create and garbage collect
-const unicodePrefixRegex = /^U\+/
-
 module.exports = {
   /**
    * @description Detects hidden characters in the given text.
@@ -32,14 +29,16 @@ module.exports = {
       return text
     }
     
-    const matchesLength = matches.length
-    for (let i = 0; i < matchesLength; i+= 1) {
-      const o = matches[i]
-      const code = o.code.replace(unicodePrefixRegex, '\\u')
-      const reg = new RegExp(code, 'g')
-      text = text.replace(reg, o.replacement || '')
-    }
+    let result = ''
+    let lastIndex = 0
 
-    return text
+    for (const match of matches) {
+      result += text.slice(lastIndex, match.offset)
+      result += match.replacement
+      lastIndex = match.offset + 1
+    }
+    result += text.slice(lastIndex)
+
+    return result
   },
 }
