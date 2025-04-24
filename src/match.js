@@ -3,19 +3,6 @@
 const data = require('../data/characters.json')
 const isEmoji = require('./isEmoji')
 
-/**
- * @description Adds leading zeros to a string until it reaches the specified width.
- * @param {string} str - The string to pad with leading zeros.
- * @param {number} width - The desired width of the string.
- * @returns {string} The padded string with leading zeros.
- */
-const padStr = function (str, width) {
-  while (str.length < width) {
-    str = '0' + str
-  }
-  return str
-}
-
 // For easier lookup
 const byCode = data.reduce((h, obj) => {
   h[obj.code] = obj
@@ -27,6 +14,7 @@ const unicodePrefixRegex = /^U\+/
 const codes = data
   .filter((obj) => obj.replaceWith !== undefined)
   .map((obj) => {
+    // Convert "U+XXXX" to "\\uXXXX" for RegExp
     return obj.code.replace(unicodePrefixRegex, '\\u')
   })
 const codeRegex = new RegExp(`(${codes.join('|')})`, 'g')
@@ -39,28 +27,30 @@ const codeRegex = new RegExp(`(${codes.join('|')})`, 'g')
  */
 const findAll = function (text) {
   const matches = []
-  text.replace(codeRegex, (ch, _b, offset) => {
-    // Find the code of the char we matched
-    const code = ch.charCodeAt(0)
-    let hex = code.toString(16).toUpperCase()
-    hex = 'U+' + padStr(hex, 4)
 
-    const found = byCode[hex] || {}
-    // Don't match for emoji zero-width chars
-    if (found.code === 'U+200D') {
-      // Is this zero-width used in an emoji?
-      if (isEmoji(text, offset)) {
-        return ch // Do nothing
+  for (const match of text.matchAll(codeRegex)) {
+    const char = match[0]
+    const offset = match.index
+
+    // Find the code details of the matched character
+    const codePoint = char.codePointAt(0) // Use codePointAt for full Unicode support
+    const hex = 'U+' + codePoint.toString(16).toUpperCase().padStart(4, '0')
+
+    const found = byCode[hex] // Lookup using the canonical 'U+XXXX' format
+    if (found) {
+      // Don't report U+200D (Zero Width Joiner) if it's part of an emoji sequence
+      if (found.code === 'U+200D' && isEmoji(text, offset)) {
+        continue
       }
+
+      matches.push({
+        name: found.name,
+        code: found.code,
+        offset: offset,
+        replacement: found.replaceWith || '',
+      })
     }
-    matches.push({
-      name: found.name,
-      code: found.code,
-      offset: offset,
-      replacement: found.replaceWith || '',
-    })
-    return ch // Do nothing
-  })
+  }
   return matches
 }
 
