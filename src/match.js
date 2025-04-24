@@ -23,11 +23,13 @@ const byCode = data.reduce((h, obj) => {
 }, {})
 
 // Chars to create our regex with
+const unicodePrefixRegex = /^U\+/
 const codes = data
   .filter((obj) => obj.replaceWith !== undefined)
   .map((obj) => {
-    return obj.code.replace(/^U\+/, '\\u')
+    return obj.code.replace(unicodePrefixRegex, '\\u')
   })
+const codeRegex = new RegExp(`(${codes.join('|')})`, 'g')
 
 /**
  * @description Finds all invisible characters in the given text.
@@ -36,9 +38,8 @@ const codes = data
  * of objects representing the found invisible characters.
  */
 const findAll = function (text) {
-  const regEx = new RegExp(`(${codes.join('|')})`, 'g')
   const matches = []
-  text.replace(regEx, (ch, _b, offset) => {
+  text.replace(codeRegex, (ch, _b, offset) => {
     // Find the code of the char we matched
     const code = ch.charCodeAt(0)
     let hex = code.toString(16).toUpperCase()
