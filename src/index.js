@@ -26,11 +26,20 @@ module.exports = {
    */
   replace: (text) => {
     const matches = findAll(text)
-    matches.forEach((o) => {
+
+    // Early return if no matches
+    if (matches.length === 0) {
+      return text
+    }
+    
+    const matchesLength = matches.length
+    for (let i = 0; i < matchesLength; i+= 1) {
+      const o = matches[i]
       const code = o.code.replace(unicodePrefixRegex, '\\u')
       const reg = new RegExp(code, 'g')
       text = text.replace(reg, o.replacement || '')
-    })
+    }
+
     return text
   },
 }
