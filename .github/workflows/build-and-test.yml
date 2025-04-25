@@ -72,6 +72,9 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
+      - name: Run Lockfile Linter
+        run: npm run lint:lockfile
+
       - name: Run build
         run: npm run build --if-present
 
