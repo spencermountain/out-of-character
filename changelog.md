@@ -3,6 +3,9 @@
 
 -->
 
+### 1.2.4
+- performance improvements
+
 #### 1.2.3
 - update deps
 - cosmetic changes
