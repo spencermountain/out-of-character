@@ -1,0 +1,54 @@
+name: CodeQL Analysis
+
+# **What it does**: This runs CodeQL on this repo.
+# **Why we have it**: Security scanning.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**/*.html"
+      - "**/*.js"
+      - "**/*.yml"
+    types: [opened, ready_for_review, reopened, synchronize]
+
+# This allows a subsequently queued workflow run to interrupt previous runs
+concurrency:
+  group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: CodeQL Analysis
+    if: github.event.pull_request.draft == false
+    strategy:
+      matrix:
+        languages: ["actions", "javascript-typescript"]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      # Initialises the CodeQL tools for scanning
+      - name: Initialise CodeQL
+        uses: github/codeql-action/init@1b549b9259bda1cb5ddde3b41741a82a2d15a841 # v3.28.13
+        with:
+          config-file: ./.github/codeql-config.yml
+          languages: ${{ matrix.languages }}
+
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@1b549b9259bda1cb5ddde3b41741a82a2d15a841 # v3.28.13
+        with:
+          category: "/language:${{matrix.language}}"
