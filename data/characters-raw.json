@@ -42,438 +42,501 @@
         "name": "NO-BREAK SPACE",
         "code": "U+00A0",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Separators",
         "name": "LINE SEPARATOR",
         "code": "U+2028",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Separators",
         "name": "PARAGRAPH SEPARATOR",
         "code": "U+2029",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "CHARACTER TABULATION",
         "code": "U+0009",
-        "escapeChar": ""
+        "escapeChar": "",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "SPACE",
         "code": "U+0020",
-        "escapeChar": ""
+        "escapeChar": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "SOFT HYPHEN",
         "code": "U+00AD",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "COMBINING GRAPHEME JOINER",
         "code": "U+034F",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "ARABIC LETTER MARK",
         "code": "U+061C",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Visible",
         "name": "SYRIAC ABBREVIATION MARK",
         "code": "U+070F",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "HANGUL CHOSEONG FILLER",
         "code": "U+115F",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "HANGUL JUNGSEONG FILLER",
         "code": "U+1160",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Visible",
         "name": "OGHAM SPACE MARK",
         "code": "U+1680",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "KHMER VOWEL INHERENT AQ",
         "code": "U+17B4",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "KHMER VOWEL INHERENT AA",
         "code": "U+17B5",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "MONGOLIAN VOWEL SEPARATOR",
         "code": "U+180E",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "EN QUAD",
         "code": "U+2000",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "EM QUAD",
         "code": "U+2001",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "EN SPACE",
         "code": "U+2002",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "EM SPACE",
         "code": "U+2003",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "THREE-PER-EM SPACE",
         "code": "U+2004",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "FOUR-PER-EM SPACE",
         "code": "U+2005",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "SIX-PER-EM SPACE",
         "code": "U+2006",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "FIGURE SPACE",
         "code": "U+2007",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "PUNCTUATION SPACE",
         "code": "U+2008",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "THIN SPACE",
         "code": "U+2009",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "HAIR SPACE",
         "code": "U+200A",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "ZERO WIDTH SPACE",
         "code": "U+200B",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "ZERO WIDTH NON-JOINER",
         "code": "U+200C",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "ZERO WIDTH",
         "code": "U+200D",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "LEFT-TO-RIGHT MARK",
         "code": "U+200E",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "RIGHT-TO-LEFT MARK",
         "code": "U+200F",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "NARROW NO-BREAK SPACE",
         "code": "U+202F",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "MEDIUM MATHEMATICAL SPACE",
         "code": "U+205F",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "WORD JOINER",
         "code": "U+2060",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "FUNCTION APPLICATION",
         "code": "U+2061",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "INVISIBLE TIMES",
         "code": "U+2062",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "INVISIBLE SEPARATOR",
         "code": "U+2063",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "INVISIBLE PLUS",
         "code": "U+2064",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "INHIBIT SYMMETRIC SWAPPING",
         "code": "U+206A",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "ACTIVATE SYMMETRIC SWAPPING",
         "code": "U+206B",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "INHIBIT ARABIC FORM SHAPING",
         "code": "U+206C",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "ACTIVATE ARABIC FORM SHAPING",
         "code": "U+206D",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "NATIONAL DIGIT SHAPES",
         "code": "U+206E",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "NOMINAL DIGIT SHAPES",
         "code": "U+206F",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "IDEOGRAPHIC SPACE",
         "code": "U+3000",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "BRAILLE PATTERN BLANK",
         "code": "U+2800",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "HANGUL FILLER",
         "code": "U+3164",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "ZERO WIDTH NO-BREAK SPACE",
         "code": "U+FEFF",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Whitespace",
         "name": "HALFWIDTH HANGUL FILLER",
         "code": "U+FFA0",
         "escapeChar": "",
-        "replaceWith": " "
+        "replaceWith": " ",
+        "aka": ""
     },
     {
         "type": "Visible",
         "name": "KAITHI VOWEL SIGN I",
         "code": "U+110B1",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Visible",
         "name": "SHORTHAND FORMAT LETTER OVERLAP",
         "code": "U+1BCA0",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Visible",
         "name": "SHORTHAND FORMAT CONTINUING OVERLAP",
         "code": "U+1BCA1",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Visible",
         "name": "SHORTHAND FORMAT DOWN STEP",
         "code": "U+1BCA2",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Visible",
         "name": "SHORTHAND FORMAT UP STEP",
         "code": "U+1BCA3",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Visible",
         "name": "MUSICAL SYMBOL NULL NOTEHEAD",
         "code": "U+1D159",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "MUSICAL SYMBOL BEGIN BEAM",
         "code": "U+1D173",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "MUSICAL SYMBOL END BEAM",
         "code": "U+1D174",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "MUSICAL SYMBOL BEGIN TIE",
         "code": "U+1D175",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "MUSICAL SYMBOL END TIE",
         "code": "U+1D176",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "MUSICAL SYMBOL BEGIN SLUR",
         "code": "U+1D177",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "MUSICAL SYMBOL END SLUR",
         "code": "U+1D178",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "MUSICAL SYMBOL BEGIN PHRASE",
         "code": "U+1D179",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     },
     {
         "type": "Invisible",
         "name": "MUSICAL SYMBOL END PHRASE",
         "code": "U+1D17A",
         "escapeChar": "",
-        "replaceWith": ""
+        "replaceWith": "",
+        "aka": ""
     }
 ]
