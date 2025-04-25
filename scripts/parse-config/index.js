@@ -13,13 +13,23 @@ const parse = function (char) {
   const codeNumber = char.code.replace('U+', '')
   const actualUnicodeChar = String.fromCodePoint(`0x${codeNumber}`)
   const htmlEntity = codes.find(code => code.unicode === char.code)
-  return {
+
+  const combinedObject = {
     ...htmlEntity,
     ...char,
     actualUnicodeChar,
     codeEscaped,
     url: `https://www.compart.com/en/unicode/${char.code}`
+  };
+
+  // Return the object with keys sorted alphabetically
+  const sortedKeys = Object.keys(combinedObject).sort();
+  const sortedObject = {};
+  for (const key of sortedKeys) {
+    sortedObject[key] = combinedObject[key];
   }
+
+  return sortedObject; 
 }
 
 const save = function (obj) {
