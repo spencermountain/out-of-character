@@ -14,6 +14,7 @@ on:
       - "**/*.html"
       - "**/*.js"
       - "**/*.yml"
+      - "!build/**"
     types: [opened, ready_for_review, reopened, synchronize]
 
 # This allows a subsequently queued workflow run to interrupt previous runs
