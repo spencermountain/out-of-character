@@ -1,4 +1,4 @@
-/* out-of-character 1.2.4 MIT */
+/* out-of-character 2.0.0 MIT */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
@@ -844,15 +844,10 @@
 		  return h
 		}, {});
 
-		// Chars to create our regex with
-		const unicodePrefixRegex = /^U\+/;
 		const codes = data
 		  .filter((obj) => obj.replaceWith !== undefined)
-		  .map((obj) => {
-		    // Convert "U+XXXX" to "\\uXXXX" for RegExp
-		    return obj.code.replace(unicodePrefixRegex, '\\u')
-		  });
-		const codeRegex = new RegExp(`(${codes.join('|')})`, 'g');
+		  .map((obj) => obj.actualUnicodeChar);
+		const codeRegex = new RegExp(`(${codes.join('|')})`, 'gu');
 
 		/**
 		 * @description Finds all invisible characters in the given text.
@@ -879,8 +874,8 @@
 		      }
 
 		      matches.push({
-		        name: found.name,
 		        code: found.code,
+		        name: found.name,
 		        offset: offset,
 		        replacement: found.replaceWith || '',
 		      });
