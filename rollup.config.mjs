@@ -2,18 +2,11 @@ import commonjs from '@rollup/plugin-commonjs'
 import json from '@rollup/plugin-json'
 import resolve from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
-import babel from '@rollup/plugin-babel'
 const name = 'out-of-character'
 
 import pkg from './package.json' with { type: 'json' };
 
 const banner = `/* ${name} ${pkg.version} MIT */`
-
-const babelConfig = {
-  babelHelpers: 'bundled',
-  babelrc: false,
-  presets: ['@babel/preset-env'],
-}
 
 export default [
   {
@@ -29,7 +22,6 @@ export default [
       resolve(),
       json(),
       commonjs(),
-      babel(babelConfig),
     ],
   },
   {
@@ -47,7 +39,6 @@ export default [
       resolve(),
       json(),
       commonjs(),
-      babel(babelConfig),
     ],
   },
   {
@@ -63,7 +54,6 @@ export default [
       resolve(),
       json(),
       commonjs(),
-      babel(babelConfig),
       terser(),
     ],
   },
