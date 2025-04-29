@@ -44,9 +44,9 @@
   "bin": {
     "out-of-character": "./bin/out-of-character.js"
   },
-	"engines": {
-		"node": ">=20"
-	},
+  "engines": {
+    "node": ">=20"
+  },
   "files": [
     "src/",
     "data/characters.json",
