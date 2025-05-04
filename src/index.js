@@ -32,7 +32,9 @@ module.exports = {
     let result = ''
     let lastIndex = 0
 
-    for (const match of matches) {
+    const matchesLength = matches.length
+    for (let i = 0; i < matchesLength; i+= 1) {
+      const match = matches[i]
       result += text.slice(lastIndex, match.offset)
       result += match.replacement
       lastIndex = match.offset + 1
