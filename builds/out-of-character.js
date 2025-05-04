@@ -1,4 +1,4 @@
-/* out-of-character 2.0.0 MIT */
+/* out-of-character 2.0.1 MIT */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
@@ -927,7 +927,9 @@
 		    let result = '';
 		    let lastIndex = 0;
 
-		    for (const match of matches) {
+		    const matchesLength = matches.length;
+		    for (let i = 0; i < matchesLength; i+= 1) {
+		      const match = matches[i];
 		      result += text.slice(lastIndex, match.offset);
 		      result += match.replacement;
 		      lastIndex = match.offset + 1;

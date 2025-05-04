@@ -1,7 +1,7 @@
 {
   "name": "out-of-character",
   "description": "remove invisible unicode characters",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Spencer Kelly and Adam Tsiopani",
   "contributors": [
     {

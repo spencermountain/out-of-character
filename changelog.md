@@ -3,12 +3,15 @@
 
 -->
 
-### 2.0.0
+#### 2.0.1
+- performance improvements
+
+#### 2.0.0
 - **BREAKING CHANGE**: dropped support for Node <=18
 - removed Babel to get rid of inefficient polyfills
 - performance improvements
 
-### 1.2.4
+#### 1.2.4
 - performance improvements
 
 #### 1.2.3
