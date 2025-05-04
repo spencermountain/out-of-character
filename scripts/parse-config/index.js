@@ -20,16 +20,18 @@ const parse = function (char) {
     actualUnicodeChar,
     codeEscaped,
     url: `https://www.compart.com/en/unicode/${char.code}`
-  };
-
-  // Return the object with keys sorted alphabetically
-  const sortedKeys = Object.keys(combinedObject).sort();
-  const sortedObject = {};
-  for (const key of sortedKeys) {
-    sortedObject[key] = combinedObject[key];
   }
 
-  return sortedObject; 
+  // Return the object with keys sorted alphabetically
+  const sortedKeys = Object.keys(combinedObject).sort()
+  const sortedObject = {}
+  const sortedKeysLength = sortedKeys.length
+  for (let i = 0; i < sortedKeysLength; i+= 1) {
+    const key = sortedKeys[i]
+    sortedObject[key] = combinedObject[key]
+  }
+
+  return sortedObject
 }
 
 const save = function (obj) {
