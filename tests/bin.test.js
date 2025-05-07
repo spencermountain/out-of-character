@@ -46,3 +46,43 @@ test.skip('replace bin cmd', function (t) {
   exec(`rm ${path}`)
   t.end()
 })
+
+test('getFiles - single file', (t) => {
+  const result = getFiles('bin/getFiles.js')
+  t.true(Array.isArray(result), 'should return an array')
+  t.equal(result.length, 1, 'should have exactly one item')
+  t.equal(result[0], 'bin/getFiles.js', 'should contain the file path')
+  t.end()
+})
+
+test('getFiles - directory', (t) => {
+  const result = getFiles('bin')
+  t.true(Array.isArray(result), 'should return an array')
+  t.true(result.length > 1, 'should have multiple items')
+  t.true(result.includes('bin/getFiles.js'), 'should include getFiles.js')
+
+  result.forEach(filePath => {
+    t.true(fs.lstatSync(filePath).isFile(), `${filePath} should be a file`)
+  })
+
+  t.end()
+})
+
+test('getFiles - recursive directory', (t) => {
+  const result = getFiles('scripts')
+  t.true(Array.isArray(result), 'should return an array')
+  t.true(result.length > 0, 'should have at least one item')
+
+  result.forEach(filePath => {
+    t.true(fs.lstatSync(filePath).isFile(), `${filePath} should be a file`)
+  })
+
+  t.end()
+})
+
+test('getFiles - non-existent path', (t) => {
+  const result = getFiles('non-existent-path')
+  t.true(Array.isArray(result), 'should return an array')
+  t.equal(result.length, 0, 'should be empty')
+  t.end()
+})
