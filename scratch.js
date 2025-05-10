@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-
+/* eslint-disable no-console, no-unused-vars */
 import { detect, replace } from './src/index.js'
 import fs from 'fs'
 

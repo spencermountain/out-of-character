@@ -1,4 +1,4 @@
-'use strict'
+/* eslint-disable no-console */
 
 /** @todo Turn this into modules and promisify + tidy. **/
 import codes from '../../data/codes.json'

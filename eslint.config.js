@@ -1,4 +1,3 @@
-
 export default [
   {
     // "ignorePatterns": ["**/builds/*"],
@@ -34,4 +33,10 @@ export default [
       "eslint-comments/no-unused-disable": 0
     }
   },
+  {
+    files: ["bin/**/*.js"],
+    rules: {
+      "no-console": 0
+    }
+  }
 ]
