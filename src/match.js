@@ -1,7 +1,7 @@
 'use strict'
 
-const data = require('../data/characters.json')
-const isEmoji = require('./isEmoji')
+import data from '../data/characters.json' with { type: 'json' }
+import isEmoji from './isEmoji.js'
 
 // For easier lookup
 const byCode = data.reduce((h, obj) => {
@@ -49,4 +49,4 @@ const findAll = function (text) {
   return matches
 }
 
-module.exports = findAll
+export default findAll

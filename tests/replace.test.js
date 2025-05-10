@@ -1,7 +1,7 @@
 'use strict'
 
-const test = require('tape')
-const { replace } = require('../src')
+import test from 'tape'
+import { replace } from '../src/index.js'
 const spaces = [
   'beforeᅟafter', // HANGUL CHOSEONG FILLER
   'beforeᅠafter', // HANGUL JUNGSEONG FILLER

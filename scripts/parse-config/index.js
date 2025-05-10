@@ -1,10 +1,10 @@
 'use strict'
 
 /** @todo Turn this into modules and promisify + tidy. **/
-const codes = require('../../data/codes.json')
-const config = require('../../data/characters-raw.json')
-const fs = require('fs')
-const {resolve} = require('path')
+import codes from '../../data/codes.json'
+import config from '../../data/characters-raw.json'
+import fs from 'fs'
+import { resolve } from 'path'
 
 let parsed = []
 
@@ -26,7 +26,7 @@ const parse = function (char) {
   const sortedKeys = Object.keys(combinedObject).sort()
   const sortedObject = {}
   const sortedKeysLength = sortedKeys.length
-  for (let i = 0; i < sortedKeysLength; i+= 1) {
+  for (let i = 0; i < sortedKeysLength; i += 1) {
     const key = sortedKeys[i]
     sortedObject[key] = combinedObject[key]
   }
@@ -47,4 +47,4 @@ parsed = config.map(parse)
 save(parsed)
 
 /** @todo Fix this won't work because axios.get is promise. **/
-module.exports = parsed
+export default parsed

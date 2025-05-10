@@ -1,8 +1,8 @@
 'use strict'
 
-const fs = require('fs')
-const { detect } = require('../src/index')
-const { blue, yellow, dim, italic, red } = require('colorette')
+import fs from 'fs'
+import { detect } from '../src/index'
+import { blue, yellow, dim, italic, red } from 'colorette'
 
 /**
  * @description Detects hidden characters in a file.
@@ -27,4 +27,4 @@ const detectFile = function (path) {
   return false
 }
 
-module.exports = detectFile
+export default detectFile

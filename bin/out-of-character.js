@@ -2,11 +2,11 @@
 
 'use strict'
 
-const fs = require('fs')
-const { dim, blue } = require('colorette')
-const detectFile = require('./detect-file')
-const { replace } = require('../src/index')
-const getFiles = require('./getFiles')
+import fs from 'fs'
+import { dim, blue } from 'colorette'
+import detectFile from './detect-file'
+import { replace } from '../src/index'
+import getFiles from './getFiles'
 let args = process.argv.slice(2)
 
 const modes = {

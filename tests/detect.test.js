@@ -1,7 +1,7 @@
 'use strict'
 
-const test = require('tape')
-const { detect } = require('../src')
+import test from 'tape'
+import { detect } from '../src/index.js'
 
 test('detect', function (t) {
   let text = 'noth­ing s͏neak឵y h᠎ere'

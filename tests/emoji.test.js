@@ -1,7 +1,5 @@
-'use strict'
-
-const test = require('tape')
-const { detect } = require('../src')
+import test from 'tape'
+import { detect } from '../src/index.js'
 
 test('dont-detect emojis', function (t) {
   let str = '👁️‍🗨️' // 7

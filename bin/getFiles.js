@@ -1,8 +1,8 @@
 'use strict'
 
-const glob = require('glob')
-const fs = require('fs')
-const path = require('path')
+import glob from 'glob'
+import fs from 'fs'
+import path from 'path'
 
 /**
  * @description Get files from a directory, file, or glob pattern.
@@ -12,7 +12,7 @@ const path = require('path')
 const getFiles = function (pathStr) {
   const files = []
 
-  const getFilesRecursive = function(currentPath) {
+  const getFilesRecursive = function (currentPath) {
     // Check if path exists
     if (fs.existsSync(currentPath)) {
       // Check if it's a directory
@@ -56,4 +56,4 @@ const getFiles = function (pathStr) {
   return files
 }
 
-module.exports = getFiles
+export default getFiles

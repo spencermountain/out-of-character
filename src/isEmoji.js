@@ -29,4 +29,4 @@ const isEmoji = function (text, i) {
   return false
 }
 
-module.exports = isEmoji
+export default isEmoji
