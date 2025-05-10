@@ -14,12 +14,17 @@ const modes = {
   '--detect': 'detect',
   '--replace': 'replace',
   '--remove': 'remove',
+  '--recursive': false,
 }
 
 let mode = 'detect'
 let pathStr = ''
 args = args.filter((arg) => {
   if (modes.hasOwnProperty(arg) === true) {
+    // cast to boolean
+    if (modes[arg] === 'false') {
+      modes[arg] = false
+    }
     mode = modes[arg]
     return false
   }
@@ -33,7 +38,7 @@ if (!pathStr) {
   process.exit(1)
 }
 
-const files = getFiles(pathStr)
+const files = getFiles(pathStr, modes['--recursive'])
 if (files.length === 0) {
   console.warn(`Found no files that match '${pathStr}'`)
   process.exit()

@@ -48,7 +48,7 @@ test.skip('replace bin cmd', function (t) {
 })
 
 test('getFiles - single file', (t) => {
-  const result = getFiles('bin/getFiles.js')
+  const result = getFiles('bin/getFiles.js',)
   t.true(Array.isArray(result), 'should return an array')
   t.equal(result.length, 1, 'should have exactly one item')
   t.equal(result[0], 'bin/getFiles.js', 'should contain the file path')
@@ -69,7 +69,7 @@ test('getFiles - directory', (t) => {
 })
 
 test('getFiles - recursive directory', (t) => {
-  const result = getFiles('scripts')
+  const result = getFiles('scripts', true)
   t.true(Array.isArray(result), 'should return an array')
   t.true(result.length > 0, 'should have at least one item')
 

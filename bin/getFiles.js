@@ -9,10 +9,10 @@ import path from 'path'
  * @param {string} pathStr - The path to the file or directory.
  * @returns {string[]} An array of file paths.
  */
-const getFiles = function (pathStr) {
+const getFiles = function (pathStr, recursive = false) {
   const files = []
 
-  const getFilesRecursive = function (currentPath) {
+  const getDirectory = function (currentPath, deep = false) {
     // Check if path exists
     if (fs.existsSync(currentPath)) {
       // Check if it's a directory
@@ -22,7 +22,9 @@ const getFiles = function (pathStr) {
           const filePath = path.join(currentPath, file)
           if (fs.lstatSync(filePath).isDirectory()) {
             // Recursively process subdirectories
-            getFilesRecursive(filePath)
+            if (deep) {
+              getDirectory(filePath)
+            }
           } else {
             // Add file to the list
             files.push(filePath)
@@ -46,7 +48,7 @@ const getFiles = function (pathStr) {
 
     if (isDir) {
       // It's a directory, use recursive function
-      getFilesRecursive(pathStr)
+      getDirectory(pathStr, recursive)
     } else {
       // It's a specific file, just add it directly
       files.push(pathStr)
