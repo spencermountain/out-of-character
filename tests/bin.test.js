@@ -3,8 +3,8 @@
 import test from 'tape'
 import sh from 'shelljs'
 import fs from 'fs'
-import getFiles from '../bin/getFiles.js'
 import path from 'path'
+import getFiles from '../bin/getFiles.js'
 
 test('test glob input', function (t) {
   let arr = getFiles('./tests/texts/good-text.txt')
@@ -36,20 +36,20 @@ test.skip('bin detect cmd', function (t) {
 /** @todo Review this test. */
 test.skip('replace bin cmd', function (t) {
   // Create a copy
-  const path = './tests/texts/bad-text-copy.txt'
-  sh.exec(`cp ./tests/texts/bad-text.txt ${path}`)
+  const filePath = './tests/texts/bad-text-copy.txt'
+  sh.exec(`cp ./tests/texts/bad-text.txt ${filePath}`)
 
-  const before = fs.readFileSync(path).toString()
-  sh.exec(`./bin/out-of-character.js ${path} --replace`, { silent: true })
-  const after = fs.readFileSync(path).toString()
+  const before = fs.readFileSync(filePath).toString()
+  sh.exec(`./bin/out-of-character.js ${filePath} --replace`, { silent: true })
+  const after = fs.readFileSync(filePath).toString()
   t.notEqual(before, after, 'file has changed')
   // Cleanup
-  sh.exec(`rm ${path}`)
+  sh.exec(`rm ${filePath}`)
   t.end()
 })
 
 test('getFiles - single file', (t) => {
-  const result = getFiles('bin/getFiles.js',)
+  const result = getFiles('bin/getFiles.js')
   t.true(Array.isArray(result), 'should return an array')
   t.equal(result.length, 1, 'should have exactly one item')
   t.equal(result[0], 'bin/getFiles.js', 'should contain the file path')
