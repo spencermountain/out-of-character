@@ -4,6 +4,7 @@ import test from 'tape'
 import sh from 'shelljs'
 import fs from 'fs'
 import getFiles from '../bin/getFiles.js'
+import path from 'path'
 
 test('test glob input', function (t) {
   let arr = getFiles('./tests/texts/good-text.txt')
@@ -59,7 +60,8 @@ test('getFiles - directory', (t) => {
   const result = getFiles('bin')
   t.true(Array.isArray(result), 'should return an array')
   t.true(result.length > 1, 'should have multiple items')
-  t.true(result.includes('bin/getFiles.js'), 'should include getFiles.js')
+  const expectedPath = path.join('bin', 'getFiles.js')
+  t.true(result.includes(expectedPath), `should include ${expectedPath}`)
 
   result.forEach(filePath => {
     t.true(fs.lstatSync(filePath).isFile(), `${filePath} should be a file`)
