@@ -1,5 +1,3 @@
-'use strict'
-
 import test from 'tape'
 import { detect } from '../src/index.js'
 

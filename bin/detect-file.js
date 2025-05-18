@@ -1,6 +1,3 @@
- 
-'use strict'
-
 import fs from 'fs'
 import { detect } from '../src/index'
 import { blue, yellow, dim, italic, red } from 'colorette'

@@ -1,5 +1,3 @@
-'use strict'
-
 import data from '../data/characters.json' with { type: 'json' }
 import isEmoji from './isEmoji.js'
 

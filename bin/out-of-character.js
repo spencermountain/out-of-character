@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-'use strict'
-
 import fs from 'fs'
 import { dim, blue } from 'colorette'
 import detectFile from './detect-file'
