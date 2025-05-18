@@ -1,5 +1,3 @@
-'use strict'
-
 const isVariationSelector = (num) => num >= 65024 && num <= 65039
 const isHighSurrogate = (num) => num >= 55296 && num <= 56319
 const isLowSurrogate = (num) => num >= 56320 && num <= 57343
