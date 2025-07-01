@@ -67,7 +67,7 @@
     "eslint": "9.26.0",
     "live-server": "^1.2.2",
     "lockfile-lint": "^4.14.0",
-    "rollup": "4.40.2",
+    "rollup": "4.44.1",
     "shelljs": "0.10.0",
     "tap-dancer": "^0.3.4",
     "tape": "^5.9.0"
