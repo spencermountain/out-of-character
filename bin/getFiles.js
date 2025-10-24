@@ -1,4 +1,4 @@
-import glob from 'glob'
+import { globSync, hasMagic } from 'glob'
 import fs from 'fs'
 import path from 'path'
 
@@ -36,8 +36,8 @@ const getFiles = function (pathStr, recursive = false) {
   }
 
   // Handle glob patterns
-  if (!fs.existsSync(pathStr) && glob.hasMagic(pathStr)) {
-    return glob.sync(pathStr) || []
+  if (!fs.existsSync(pathStr) && hasMagic(pathStr)) {
+    return globSync(pathStr) || []
   }
 
   // Check if it's a file or directory

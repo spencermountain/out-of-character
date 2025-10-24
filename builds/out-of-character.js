@@ -1,951 +1,908 @@
-/* out-of-character 2.0.1 MIT */
+/* out-of-character 2.1.0 MIT */
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.outOfCharacter = factory());
-})(this, (function () { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+  typeof define === 'function' && define.amd ? define(['exports'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.outOfCharacter = {}));
+})(this, (function (exports) { 'use strict';
 
-	function getDefaultExportFromCjs (x) {
-		return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-	}
+  var data = [
+  	{
+  		actualUnicodeChar: "\n",
+  		aka: "LF",
+  		code: "U+000A",
+  		codeEscaped: "\\u000A",
+  		escapeChar: "\\n",
+  		name: "LINE FEED",
+  		type: "Line Break",
+  		url: "https://www.compart.com/en/unicode/U+000A"
+  	},
+  	{
+  		actualUnicodeChar: "\u000b",
+  		aka: "TAB",
+  		code: "U+000B",
+  		codeEscaped: "\\u000B",
+  		escapeChar: "\\t",
+  		name: "LINE TABULATION",
+  		replaceWith: "\t",
+  		type: "Separator",
+  		url: "https://www.compart.com/en/unicode/U+000B"
+  	},
+  	{
+  		actualUnicodeChar: "\f",
+  		aka: "FF",
+  		code: "U+000C",
+  		codeEscaped: "\\u000C",
+  		escapeChar: "\\f",
+  		name: "FORM FEED",
+  		replaceWith: "",
+  		type: "Separator",
+  		url: "https://www.compart.com/en/unicode/U+000C"
+  	},
+  	{
+  		actualUnicodeChar: "\r",
+  		aka: "CR",
+  		code: "U+000D",
+  		codeEscaped: "\\u000D",
+  		escapeChar: "\\r",
+  		name: "CARRIAGE RETURN",
+  		type: "Line Break",
+  		url: "https://www.compart.com/en/unicode/U+000D"
+  	},
+  	{
+  		actualUnicodeChar: "",
+  		aka: "NEL",
+  		code: "U+0085",
+  		codeEscaped: "\\u0085",
+  		escapeChar: "",
+  		name: "NEXT LINE",
+  		replaceWith: "",
+  		type: "Separators",
+  		url: "https://www.compart.com/en/unicode/U+0085"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+00A0",
+  		codeEscaped: "\\u00A0",
+  		escapeChar: "",
+  		name: "NO-BREAK SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+00A0"
+  	},
+  	{
+  		actualUnicodeChar: "\u2028",
+  		aka: "",
+  		code: "U+2028",
+  		codeEscaped: "\\u2028",
+  		escapeChar: "",
+  		name: "LINE SEPARATOR",
+  		replaceWith: "",
+  		type: "Separators",
+  		url: "https://www.compart.com/en/unicode/U+2028"
+  	},
+  	{
+  		actualUnicodeChar: "\u2029",
+  		aka: "",
+  		code: "U+2029",
+  		codeEscaped: "\\u2029",
+  		escapeChar: "",
+  		name: "PARAGRAPH SEPARATOR",
+  		replaceWith: "",
+  		type: "Separators",
+  		url: "https://www.compart.com/en/unicode/U+2029"
+  	},
+  	{
+  		actualUnicodeChar: "\t",
+  		aka: "",
+  		code: "U+0009",
+  		codeEscaped: "\\u0009",
+  		escapeChar: "",
+  		name: "CHARACTER TABULATION",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+0009"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+0020",
+  		codeEscaped: "\\u0020",
+  		escapeChar: "",
+  		name: "SPACE",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+0020"
+  	},
+  	{
+  		actualUnicodeChar: "­",
+  		aka: "",
+  		code: "U+00AD",
+  		codeEscaped: "\\u00AD",
+  		csscode: "\\00AD",
+  		escapeChar: "",
+  		htmlcode: "&#173;",
+  		htmlentity: "&shy;",
+  		name: "SOFT HYPHEN",
+  		replaceWith: "",
+  		type: "Invisible",
+  		unicode: "U+00AD",
+  		url: "https://www.compart.com/en/unicode/U+00AD"
+  	},
+  	{
+  		actualUnicodeChar: "͏",
+  		aka: "",
+  		code: "U+034F",
+  		codeEscaped: "\\u034F",
+  		escapeChar: "",
+  		name: "COMBINING GRAPHEME JOINER",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+034F"
+  	},
+  	{
+  		actualUnicodeChar: "؜",
+  		aka: "",
+  		code: "U+061C",
+  		codeEscaped: "\\u061C",
+  		escapeChar: "",
+  		name: "ARABIC LETTER MARK",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+061C"
+  	},
+  	{
+  		actualUnicodeChar: "܏",
+  		aka: "",
+  		code: "U+070F",
+  		codeEscaped: "\\u070F",
+  		escapeChar: "",
+  		name: "SYRIAC ABBREVIATION MARK",
+  		replaceWith: "",
+  		type: "Visible",
+  		url: "https://www.compart.com/en/unicode/U+070F"
+  	},
+  	{
+  		actualUnicodeChar: "ᅟ",
+  		aka: "",
+  		code: "U+115F",
+  		codeEscaped: "\\u115F",
+  		escapeChar: "",
+  		name: "HANGUL CHOSEONG FILLER",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+115F"
+  	},
+  	{
+  		actualUnicodeChar: "ᅠ",
+  		aka: "",
+  		code: "U+1160",
+  		codeEscaped: "\\u1160",
+  		escapeChar: "",
+  		name: "HANGUL JUNGSEONG FILLER",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+1160"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+1680",
+  		codeEscaped: "\\u1680",
+  		escapeChar: "",
+  		name: "OGHAM SPACE MARK",
+  		replaceWith: " ",
+  		type: "Visible",
+  		url: "https://www.compart.com/en/unicode/U+1680"
+  	},
+  	{
+  		actualUnicodeChar: "឴",
+  		aka: "",
+  		code: "U+17B4",
+  		codeEscaped: "\\u17B4",
+  		escapeChar: "",
+  		name: "KHMER VOWEL INHERENT AQ",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+17B4"
+  	},
+  	{
+  		actualUnicodeChar: "឵",
+  		aka: "",
+  		code: "U+17B5",
+  		codeEscaped: "\\u17B5",
+  		escapeChar: "",
+  		name: "KHMER VOWEL INHERENT AA",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+17B5"
+  	},
+  	{
+  		actualUnicodeChar: "᠎",
+  		aka: "",
+  		code: "U+180E",
+  		codeEscaped: "\\u180E",
+  		escapeChar: "",
+  		name: "MONGOLIAN VOWEL SEPARATOR",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+180E"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2000",
+  		codeEscaped: "\\u2000",
+  		escapeChar: "",
+  		name: "EN QUAD",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+2000"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2001",
+  		codeEscaped: "\\u2001",
+  		escapeChar: "",
+  		name: "EM QUAD",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+2001"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2002",
+  		codeEscaped: "\\u2002",
+  		csscode: "\\2002",
+  		escapeChar: "",
+  		htmlcode: "&#8194;",
+  		htmlentity: "&ensp;",
+  		name: "EN SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		unicode: "U+2002",
+  		url: "https://www.compart.com/en/unicode/U+2002"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2003",
+  		codeEscaped: "\\u2003",
+  		csscode: "\\2003",
+  		escapeChar: "",
+  		htmlcode: "&#8195;",
+  		htmlentity: "&emsp;",
+  		name: "EM SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		unicode: "U+2003",
+  		url: "https://www.compart.com/en/unicode/U+2003"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2004",
+  		codeEscaped: "\\u2004",
+  		escapeChar: "",
+  		name: "THREE-PER-EM SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+2004"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2005",
+  		codeEscaped: "\\u2005",
+  		escapeChar: "",
+  		name: "FOUR-PER-EM SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+2005"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2006",
+  		codeEscaped: "\\u2006",
+  		escapeChar: "",
+  		name: "SIX-PER-EM SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+2006"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2007",
+  		codeEscaped: "\\u2007",
+  		escapeChar: "",
+  		name: "FIGURE SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+2007"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2008",
+  		codeEscaped: "\\u2008",
+  		escapeChar: "",
+  		name: "PUNCTUATION SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+2008"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+2009",
+  		codeEscaped: "\\u2009",
+  		csscode: "\\2009",
+  		escapeChar: "",
+  		htmlcode: "&#8201;",
+  		htmlentity: "&thinsp;",
+  		name: "THIN SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		unicode: "U+2009",
+  		url: "https://www.compart.com/en/unicode/U+2009"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+200A",
+  		codeEscaped: "\\u200A",
+  		escapeChar: "",
+  		name: "HAIR SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+200A"
+  	},
+  	{
+  		actualUnicodeChar: "​",
+  		aka: "",
+  		code: "U+200B",
+  		codeEscaped: "\\u200B",
+  		escapeChar: "",
+  		name: "ZERO WIDTH SPACE",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+200B"
+  	},
+  	{
+  		actualUnicodeChar: "‌",
+  		aka: "",
+  		code: "U+200C",
+  		codeEscaped: "\\u200C",
+  		csscode: "\\200C",
+  		escapeChar: "",
+  		htmlcode: "&#8204;",
+  		htmlentity: "&zwnj;",
+  		name: "ZERO WIDTH NON-JOINER",
+  		replaceWith: "",
+  		type: "Invisible",
+  		unicode: "U+200C",
+  		url: "https://www.compart.com/en/unicode/U+200C"
+  	},
+  	{
+  		actualUnicodeChar: "‍",
+  		aka: "",
+  		code: "U+200D",
+  		codeEscaped: "\\u200D",
+  		csscode: "\\200D",
+  		escapeChar: "",
+  		htmlcode: "&#8205;",
+  		htmlentity: "&zwj;",
+  		name: "ZERO WIDTH",
+  		replaceWith: "",
+  		type: "Invisible",
+  		unicode: "U+200D",
+  		url: "https://www.compart.com/en/unicode/U+200D"
+  	},
+  	{
+  		actualUnicodeChar: "‎",
+  		aka: "",
+  		code: "U+200E",
+  		codeEscaped: "\\u200E",
+  		csscode: "\\200E",
+  		escapeChar: "",
+  		htmlcode: "&#8206;",
+  		htmlentity: "&lrm;",
+  		name: "LEFT-TO-RIGHT MARK",
+  		replaceWith: "",
+  		type: "Invisible",
+  		unicode: "U+200E",
+  		url: "https://www.compart.com/en/unicode/U+200E"
+  	},
+  	{
+  		actualUnicodeChar: "‏",
+  		aka: "",
+  		code: "U+200F",
+  		codeEscaped: "\\u200F",
+  		csscode: "\\200F",
+  		escapeChar: "",
+  		htmlcode: "&#8207;",
+  		htmlentity: "&rlm;",
+  		name: "RIGHT-TO-LEFT MARK",
+  		replaceWith: "",
+  		type: "Invisible",
+  		unicode: "U+200F",
+  		url: "https://www.compart.com/en/unicode/U+200F"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+202F",
+  		codeEscaped: "\\u202F",
+  		escapeChar: "",
+  		name: "NARROW NO-BREAK SPACE",
+  		replaceWith: "",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+202F"
+  	},
+  	{
+  		actualUnicodeChar: " ",
+  		aka: "",
+  		code: "U+205F",
+  		codeEscaped: "\\u205F",
+  		escapeChar: "",
+  		name: "MEDIUM MATHEMATICAL SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+205F"
+  	},
+  	{
+  		actualUnicodeChar: "⁠",
+  		aka: "",
+  		code: "U+2060",
+  		codeEscaped: "\\u2060",
+  		escapeChar: "",
+  		name: "WORD JOINER",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+2060"
+  	},
+  	{
+  		actualUnicodeChar: "⁡",
+  		aka: "",
+  		code: "U+2061",
+  		codeEscaped: "\\u2061",
+  		escapeChar: "",
+  		name: "FUNCTION APPLICATION",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+2061"
+  	},
+  	{
+  		actualUnicodeChar: "⁢",
+  		aka: "",
+  		code: "U+2062",
+  		codeEscaped: "\\u2062",
+  		escapeChar: "",
+  		name: "INVISIBLE TIMES",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+2062"
+  	},
+  	{
+  		actualUnicodeChar: "⁣",
+  		aka: "",
+  		code: "U+2063",
+  		codeEscaped: "\\u2063",
+  		escapeChar: "",
+  		name: "INVISIBLE SEPARATOR",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+2063"
+  	},
+  	{
+  		actualUnicodeChar: "⁤",
+  		aka: "",
+  		code: "U+2064",
+  		codeEscaped: "\\u2064",
+  		escapeChar: "",
+  		name: "INVISIBLE PLUS",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+2064"
+  	},
+  	{
+  		actualUnicodeChar: "⁪",
+  		aka: "",
+  		code: "U+206A",
+  		codeEscaped: "\\u206A",
+  		escapeChar: "",
+  		name: "INHIBIT SYMMETRIC SWAPPING",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+206A"
+  	},
+  	{
+  		actualUnicodeChar: "⁫",
+  		aka: "",
+  		code: "U+206B",
+  		codeEscaped: "\\u206B",
+  		escapeChar: "",
+  		name: "ACTIVATE SYMMETRIC SWAPPING",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+206B"
+  	},
+  	{
+  		actualUnicodeChar: "⁬",
+  		aka: "",
+  		code: "U+206C",
+  		codeEscaped: "\\u206C",
+  		escapeChar: "",
+  		name: "INHIBIT ARABIC FORM SHAPING",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+206C"
+  	},
+  	{
+  		actualUnicodeChar: "⁭",
+  		aka: "",
+  		code: "U+206D",
+  		codeEscaped: "\\u206D",
+  		escapeChar: "",
+  		name: "ACTIVATE ARABIC FORM SHAPING",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+206D"
+  	},
+  	{
+  		actualUnicodeChar: "⁮",
+  		aka: "",
+  		code: "U+206E",
+  		codeEscaped: "\\u206E",
+  		escapeChar: "",
+  		name: "NATIONAL DIGIT SHAPES",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+206E"
+  	},
+  	{
+  		actualUnicodeChar: "⁯",
+  		aka: "",
+  		code: "U+206F",
+  		codeEscaped: "\\u206F",
+  		escapeChar: "",
+  		name: "NOMINAL DIGIT SHAPES",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+206F"
+  	},
+  	{
+  		actualUnicodeChar: "　",
+  		aka: "",
+  		code: "U+3000",
+  		codeEscaped: "\\u3000",
+  		escapeChar: "",
+  		name: "IDEOGRAPHIC SPACE",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+3000"
+  	},
+  	{
+  		actualUnicodeChar: "⠀",
+  		aka: "",
+  		code: "U+2800",
+  		codeEscaped: "\\u2800",
+  		escapeChar: "",
+  		name: "BRAILLE PATTERN BLANK",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+2800"
+  	},
+  	{
+  		actualUnicodeChar: "ㅤ",
+  		aka: "",
+  		code: "U+3164",
+  		codeEscaped: "\\u3164",
+  		escapeChar: "",
+  		name: "HANGUL FILLER",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+3164"
+  	},
+  	{
+  		actualUnicodeChar: "﻿",
+  		aka: "",
+  		code: "U+FEFF",
+  		codeEscaped: "\\uFEFF",
+  		escapeChar: "",
+  		name: "ZERO WIDTH NO-BREAK SPACE",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+FEFF"
+  	},
+  	{
+  		actualUnicodeChar: "ﾠ",
+  		aka: "",
+  		code: "U+FFA0",
+  		codeEscaped: "\\uFFA0",
+  		escapeChar: "",
+  		name: "HALFWIDTH HANGUL FILLER",
+  		replaceWith: " ",
+  		type: "Whitespace",
+  		url: "https://www.compart.com/en/unicode/U+FFA0"
+  	},
+  	{
+  		actualUnicodeChar: "𑂱",
+  		aka: "",
+  		code: "U+110B1",
+  		codeEscaped: "\\u110B1",
+  		escapeChar: "",
+  		name: "KAITHI VOWEL SIGN I",
+  		replaceWith: "",
+  		type: "Visible",
+  		url: "https://www.compart.com/en/unicode/U+110B1"
+  	},
+  	{
+  		actualUnicodeChar: "𛲠",
+  		aka: "",
+  		code: "U+1BCA0",
+  		codeEscaped: "\\u1BCA0",
+  		escapeChar: "",
+  		name: "SHORTHAND FORMAT LETTER OVERLAP",
+  		replaceWith: "",
+  		type: "Visible",
+  		url: "https://www.compart.com/en/unicode/U+1BCA0"
+  	},
+  	{
+  		actualUnicodeChar: "𛲡",
+  		aka: "",
+  		code: "U+1BCA1",
+  		codeEscaped: "\\u1BCA1",
+  		escapeChar: "",
+  		name: "SHORTHAND FORMAT CONTINUING OVERLAP",
+  		replaceWith: "",
+  		type: "Visible",
+  		url: "https://www.compart.com/en/unicode/U+1BCA1"
+  	},
+  	{
+  		actualUnicodeChar: "𛲢",
+  		aka: "",
+  		code: "U+1BCA2",
+  		codeEscaped: "\\u1BCA2",
+  		escapeChar: "",
+  		name: "SHORTHAND FORMAT DOWN STEP",
+  		replaceWith: "",
+  		type: "Visible",
+  		url: "https://www.compart.com/en/unicode/U+1BCA2"
+  	},
+  	{
+  		actualUnicodeChar: "𛲣",
+  		aka: "",
+  		code: "U+1BCA3",
+  		codeEscaped: "\\u1BCA3",
+  		escapeChar: "",
+  		name: "SHORTHAND FORMAT UP STEP",
+  		replaceWith: "",
+  		type: "Visible",
+  		url: "https://www.compart.com/en/unicode/U+1BCA3"
+  	},
+  	{
+  		actualUnicodeChar: "𝅙",
+  		aka: "",
+  		code: "U+1D159",
+  		codeEscaped: "\\u1D159",
+  		escapeChar: "",
+  		name: "MUSICAL SYMBOL NULL NOTEHEAD",
+  		replaceWith: "",
+  		type: "Visible",
+  		url: "https://www.compart.com/en/unicode/U+1D159"
+  	},
+  	{
+  		actualUnicodeChar: "𝅳",
+  		aka: "",
+  		code: "U+1D173",
+  		codeEscaped: "\\u1D173",
+  		escapeChar: "",
+  		name: "MUSICAL SYMBOL BEGIN BEAM",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+1D173"
+  	},
+  	{
+  		actualUnicodeChar: "𝅴",
+  		aka: "",
+  		code: "U+1D174",
+  		codeEscaped: "\\u1D174",
+  		escapeChar: "",
+  		name: "MUSICAL SYMBOL END BEAM",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+1D174"
+  	},
+  	{
+  		actualUnicodeChar: "𝅵",
+  		aka: "",
+  		code: "U+1D175",
+  		codeEscaped: "\\u1D175",
+  		escapeChar: "",
+  		name: "MUSICAL SYMBOL BEGIN TIE",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+1D175"
+  	},
+  	{
+  		actualUnicodeChar: "𝅶",
+  		aka: "",
+  		code: "U+1D176",
+  		codeEscaped: "\\u1D176",
+  		escapeChar: "",
+  		name: "MUSICAL SYMBOL END TIE",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+1D176"
+  	},
+  	{
+  		actualUnicodeChar: "𝅷",
+  		aka: "",
+  		code: "U+1D177",
+  		codeEscaped: "\\u1D177",
+  		escapeChar: "",
+  		name: "MUSICAL SYMBOL BEGIN SLUR",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+1D177"
+  	},
+  	{
+  		actualUnicodeChar: "𝅸",
+  		aka: "",
+  		code: "U+1D178",
+  		codeEscaped: "\\u1D178",
+  		escapeChar: "",
+  		name: "MUSICAL SYMBOL END SLUR",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+1D178"
+  	},
+  	{
+  		actualUnicodeChar: "𝅹",
+  		aka: "",
+  		code: "U+1D179",
+  		codeEscaped: "\\u1D179",
+  		escapeChar: "",
+  		name: "MUSICAL SYMBOL BEGIN PHRASE",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+1D179"
+  	},
+  	{
+  		actualUnicodeChar: "𝅺",
+  		aka: "",
+  		code: "U+1D17A",
+  		codeEscaped: "\\u1D17A",
+  		escapeChar: "",
+  		name: "MUSICAL SYMBOL END PHRASE",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+1D17A"
+  	}
+  ];
 
-	var require$$0 = [
-		{
-			actualUnicodeChar: "\n",
-			aka: "LF",
-			code: "U+000A",
-			codeEscaped: "\\u000A",
-			escapeChar: "\\n",
-			name: "LINE FEED",
-			type: "Line Break",
-			url: "https://www.compart.com/en/unicode/U+000A"
-		},
-		{
-			actualUnicodeChar: "\u000b",
-			aka: "TAB",
-			code: "U+000B",
-			codeEscaped: "\\u000B",
-			escapeChar: "\\t",
-			name: "LINE TABULATION",
-			replaceWith: "\t",
-			type: "Separator",
-			url: "https://www.compart.com/en/unicode/U+000B"
-		},
-		{
-			actualUnicodeChar: "\f",
-			aka: "FF",
-			code: "U+000C",
-			codeEscaped: "\\u000C",
-			escapeChar: "\\f",
-			name: "FORM FEED",
-			replaceWith: "",
-			type: "Separator",
-			url: "https://www.compart.com/en/unicode/U+000C"
-		},
-		{
-			actualUnicodeChar: "\r",
-			aka: "CR",
-			code: "U+000D",
-			codeEscaped: "\\u000D",
-			escapeChar: "\\r",
-			name: "CARRIAGE RETURN",
-			type: "Line Break",
-			url: "https://www.compart.com/en/unicode/U+000D"
-		},
-		{
-			actualUnicodeChar: "",
-			aka: "NEL",
-			code: "U+0085",
-			codeEscaped: "\\u0085",
-			escapeChar: "",
-			name: "NEXT LINE",
-			replaceWith: "",
-			type: "Separators",
-			url: "https://www.compart.com/en/unicode/U+0085"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+00A0",
-			codeEscaped: "\\u00A0",
-			escapeChar: "",
-			name: "NO-BREAK SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+00A0"
-		},
-		{
-			actualUnicodeChar: "\u2028",
-			aka: "",
-			code: "U+2028",
-			codeEscaped: "\\u2028",
-			escapeChar: "",
-			name: "LINE SEPARATOR",
-			replaceWith: "",
-			type: "Separators",
-			url: "https://www.compart.com/en/unicode/U+2028"
-		},
-		{
-			actualUnicodeChar: "\u2029",
-			aka: "",
-			code: "U+2029",
-			codeEscaped: "\\u2029",
-			escapeChar: "",
-			name: "PARAGRAPH SEPARATOR",
-			replaceWith: "",
-			type: "Separators",
-			url: "https://www.compart.com/en/unicode/U+2029"
-		},
-		{
-			actualUnicodeChar: "\t",
-			aka: "",
-			code: "U+0009",
-			codeEscaped: "\\u0009",
-			escapeChar: "",
-			name: "CHARACTER TABULATION",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+0009"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+0020",
-			codeEscaped: "\\u0020",
-			escapeChar: "",
-			name: "SPACE",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+0020"
-		},
-		{
-			actualUnicodeChar: "­",
-			aka: "",
-			code: "U+00AD",
-			codeEscaped: "\\u00AD",
-			csscode: "\\00AD",
-			escapeChar: "",
-			htmlcode: "&#173;",
-			htmlentity: "&shy;",
-			name: "SOFT HYPHEN",
-			replaceWith: "",
-			type: "Invisible",
-			unicode: "U+00AD",
-			url: "https://www.compart.com/en/unicode/U+00AD"
-		},
-		{
-			actualUnicodeChar: "͏",
-			aka: "",
-			code: "U+034F",
-			codeEscaped: "\\u034F",
-			escapeChar: "",
-			name: "COMBINING GRAPHEME JOINER",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+034F"
-		},
-		{
-			actualUnicodeChar: "؜",
-			aka: "",
-			code: "U+061C",
-			codeEscaped: "\\u061C",
-			escapeChar: "",
-			name: "ARABIC LETTER MARK",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+061C"
-		},
-		{
-			actualUnicodeChar: "܏",
-			aka: "",
-			code: "U+070F",
-			codeEscaped: "\\u070F",
-			escapeChar: "",
-			name: "SYRIAC ABBREVIATION MARK",
-			replaceWith: "",
-			type: "Visible",
-			url: "https://www.compart.com/en/unicode/U+070F"
-		},
-		{
-			actualUnicodeChar: "ᅟ",
-			aka: "",
-			code: "U+115F",
-			codeEscaped: "\\u115F",
-			escapeChar: "",
-			name: "HANGUL CHOSEONG FILLER",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+115F"
-		},
-		{
-			actualUnicodeChar: "ᅠ",
-			aka: "",
-			code: "U+1160",
-			codeEscaped: "\\u1160",
-			escapeChar: "",
-			name: "HANGUL JUNGSEONG FILLER",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+1160"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+1680",
-			codeEscaped: "\\u1680",
-			escapeChar: "",
-			name: "OGHAM SPACE MARK",
-			replaceWith: " ",
-			type: "Visible",
-			url: "https://www.compart.com/en/unicode/U+1680"
-		},
-		{
-			actualUnicodeChar: "឴",
-			aka: "",
-			code: "U+17B4",
-			codeEscaped: "\\u17B4",
-			escapeChar: "",
-			name: "KHMER VOWEL INHERENT AQ",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+17B4"
-		},
-		{
-			actualUnicodeChar: "឵",
-			aka: "",
-			code: "U+17B5",
-			codeEscaped: "\\u17B5",
-			escapeChar: "",
-			name: "KHMER VOWEL INHERENT AA",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+17B5"
-		},
-		{
-			actualUnicodeChar: "᠎",
-			aka: "",
-			code: "U+180E",
-			codeEscaped: "\\u180E",
-			escapeChar: "",
-			name: "MONGOLIAN VOWEL SEPARATOR",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+180E"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2000",
-			codeEscaped: "\\u2000",
-			escapeChar: "",
-			name: "EN QUAD",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+2000"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2001",
-			codeEscaped: "\\u2001",
-			escapeChar: "",
-			name: "EM QUAD",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+2001"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2002",
-			codeEscaped: "\\u2002",
-			csscode: "\\2002",
-			escapeChar: "",
-			htmlcode: "&#8194;",
-			htmlentity: "&ensp;",
-			name: "EN SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			unicode: "U+2002",
-			url: "https://www.compart.com/en/unicode/U+2002"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2003",
-			codeEscaped: "\\u2003",
-			csscode: "\\2003",
-			escapeChar: "",
-			htmlcode: "&#8195;",
-			htmlentity: "&emsp;",
-			name: "EM SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			unicode: "U+2003",
-			url: "https://www.compart.com/en/unicode/U+2003"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2004",
-			codeEscaped: "\\u2004",
-			escapeChar: "",
-			name: "THREE-PER-EM SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+2004"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2005",
-			codeEscaped: "\\u2005",
-			escapeChar: "",
-			name: "FOUR-PER-EM SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+2005"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2006",
-			codeEscaped: "\\u2006",
-			escapeChar: "",
-			name: "SIX-PER-EM SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+2006"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2007",
-			codeEscaped: "\\u2007",
-			escapeChar: "",
-			name: "FIGURE SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+2007"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2008",
-			codeEscaped: "\\u2008",
-			escapeChar: "",
-			name: "PUNCTUATION SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+2008"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+2009",
-			codeEscaped: "\\u2009",
-			csscode: "\\2009",
-			escapeChar: "",
-			htmlcode: "&#8201;",
-			htmlentity: "&thinsp;",
-			name: "THIN SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			unicode: "U+2009",
-			url: "https://www.compart.com/en/unicode/U+2009"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+200A",
-			codeEscaped: "\\u200A",
-			escapeChar: "",
-			name: "HAIR SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+200A"
-		},
-		{
-			actualUnicodeChar: "​",
-			aka: "",
-			code: "U+200B",
-			codeEscaped: "\\u200B",
-			escapeChar: "",
-			name: "ZERO WIDTH SPACE",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+200B"
-		},
-		{
-			actualUnicodeChar: "‌",
-			aka: "",
-			code: "U+200C",
-			codeEscaped: "\\u200C",
-			csscode: "\\200C",
-			escapeChar: "",
-			htmlcode: "&#8204;",
-			htmlentity: "&zwnj;",
-			name: "ZERO WIDTH NON-JOINER",
-			replaceWith: "",
-			type: "Invisible",
-			unicode: "U+200C",
-			url: "https://www.compart.com/en/unicode/U+200C"
-		},
-		{
-			actualUnicodeChar: "‍",
-			aka: "",
-			code: "U+200D",
-			codeEscaped: "\\u200D",
-			csscode: "\\200D",
-			escapeChar: "",
-			htmlcode: "&#8205;",
-			htmlentity: "&zwj;",
-			name: "ZERO WIDTH",
-			replaceWith: "",
-			type: "Invisible",
-			unicode: "U+200D",
-			url: "https://www.compart.com/en/unicode/U+200D"
-		},
-		{
-			actualUnicodeChar: "‎",
-			aka: "",
-			code: "U+200E",
-			codeEscaped: "\\u200E",
-			csscode: "\\200E",
-			escapeChar: "",
-			htmlcode: "&#8206;",
-			htmlentity: "&lrm;",
-			name: "LEFT-TO-RIGHT MARK",
-			replaceWith: "",
-			type: "Invisible",
-			unicode: "U+200E",
-			url: "https://www.compart.com/en/unicode/U+200E"
-		},
-		{
-			actualUnicodeChar: "‏",
-			aka: "",
-			code: "U+200F",
-			codeEscaped: "\\u200F",
-			csscode: "\\200F",
-			escapeChar: "",
-			htmlcode: "&#8207;",
-			htmlentity: "&rlm;",
-			name: "RIGHT-TO-LEFT MARK",
-			replaceWith: "",
-			type: "Invisible",
-			unicode: "U+200F",
-			url: "https://www.compart.com/en/unicode/U+200F"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+202F",
-			codeEscaped: "\\u202F",
-			escapeChar: "",
-			name: "NARROW NO-BREAK SPACE",
-			replaceWith: "",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+202F"
-		},
-		{
-			actualUnicodeChar: " ",
-			aka: "",
-			code: "U+205F",
-			codeEscaped: "\\u205F",
-			escapeChar: "",
-			name: "MEDIUM MATHEMATICAL SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+205F"
-		},
-		{
-			actualUnicodeChar: "⁠",
-			aka: "",
-			code: "U+2060",
-			codeEscaped: "\\u2060",
-			escapeChar: "",
-			name: "WORD JOINER",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+2060"
-		},
-		{
-			actualUnicodeChar: "⁡",
-			aka: "",
-			code: "U+2061",
-			codeEscaped: "\\u2061",
-			escapeChar: "",
-			name: "FUNCTION APPLICATION",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+2061"
-		},
-		{
-			actualUnicodeChar: "⁢",
-			aka: "",
-			code: "U+2062",
-			codeEscaped: "\\u2062",
-			escapeChar: "",
-			name: "INVISIBLE TIMES",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+2062"
-		},
-		{
-			actualUnicodeChar: "⁣",
-			aka: "",
-			code: "U+2063",
-			codeEscaped: "\\u2063",
-			escapeChar: "",
-			name: "INVISIBLE SEPARATOR",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+2063"
-		},
-		{
-			actualUnicodeChar: "⁤",
-			aka: "",
-			code: "U+2064",
-			codeEscaped: "\\u2064",
-			escapeChar: "",
-			name: "INVISIBLE PLUS",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+2064"
-		},
-		{
-			actualUnicodeChar: "⁪",
-			aka: "",
-			code: "U+206A",
-			codeEscaped: "\\u206A",
-			escapeChar: "",
-			name: "INHIBIT SYMMETRIC SWAPPING",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+206A"
-		},
-		{
-			actualUnicodeChar: "⁫",
-			aka: "",
-			code: "U+206B",
-			codeEscaped: "\\u206B",
-			escapeChar: "",
-			name: "ACTIVATE SYMMETRIC SWAPPING",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+206B"
-		},
-		{
-			actualUnicodeChar: "⁬",
-			aka: "",
-			code: "U+206C",
-			codeEscaped: "\\u206C",
-			escapeChar: "",
-			name: "INHIBIT ARABIC FORM SHAPING",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+206C"
-		},
-		{
-			actualUnicodeChar: "⁭",
-			aka: "",
-			code: "U+206D",
-			codeEscaped: "\\u206D",
-			escapeChar: "",
-			name: "ACTIVATE ARABIC FORM SHAPING",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+206D"
-		},
-		{
-			actualUnicodeChar: "⁮",
-			aka: "",
-			code: "U+206E",
-			codeEscaped: "\\u206E",
-			escapeChar: "",
-			name: "NATIONAL DIGIT SHAPES",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+206E"
-		},
-		{
-			actualUnicodeChar: "⁯",
-			aka: "",
-			code: "U+206F",
-			codeEscaped: "\\u206F",
-			escapeChar: "",
-			name: "NOMINAL DIGIT SHAPES",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+206F"
-		},
-		{
-			actualUnicodeChar: "　",
-			aka: "",
-			code: "U+3000",
-			codeEscaped: "\\u3000",
-			escapeChar: "",
-			name: "IDEOGRAPHIC SPACE",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+3000"
-		},
-		{
-			actualUnicodeChar: "⠀",
-			aka: "",
-			code: "U+2800",
-			codeEscaped: "\\u2800",
-			escapeChar: "",
-			name: "BRAILLE PATTERN BLANK",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+2800"
-		},
-		{
-			actualUnicodeChar: "ㅤ",
-			aka: "",
-			code: "U+3164",
-			codeEscaped: "\\u3164",
-			escapeChar: "",
-			name: "HANGUL FILLER",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+3164"
-		},
-		{
-			actualUnicodeChar: "﻿",
-			aka: "",
-			code: "U+FEFF",
-			codeEscaped: "\\uFEFF",
-			escapeChar: "",
-			name: "ZERO WIDTH NO-BREAK SPACE",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+FEFF"
-		},
-		{
-			actualUnicodeChar: "ﾠ",
-			aka: "",
-			code: "U+FFA0",
-			codeEscaped: "\\uFFA0",
-			escapeChar: "",
-			name: "HALFWIDTH HANGUL FILLER",
-			replaceWith: " ",
-			type: "Whitespace",
-			url: "https://www.compart.com/en/unicode/U+FFA0"
-		},
-		{
-			actualUnicodeChar: "𑂱",
-			aka: "",
-			code: "U+110B1",
-			codeEscaped: "\\u110B1",
-			escapeChar: "",
-			name: "KAITHI VOWEL SIGN I",
-			replaceWith: "",
-			type: "Visible",
-			url: "https://www.compart.com/en/unicode/U+110B1"
-		},
-		{
-			actualUnicodeChar: "𛲠",
-			aka: "",
-			code: "U+1BCA0",
-			codeEscaped: "\\u1BCA0",
-			escapeChar: "",
-			name: "SHORTHAND FORMAT LETTER OVERLAP",
-			replaceWith: "",
-			type: "Visible",
-			url: "https://www.compart.com/en/unicode/U+1BCA0"
-		},
-		{
-			actualUnicodeChar: "𛲡",
-			aka: "",
-			code: "U+1BCA1",
-			codeEscaped: "\\u1BCA1",
-			escapeChar: "",
-			name: "SHORTHAND FORMAT CONTINUING OVERLAP",
-			replaceWith: "",
-			type: "Visible",
-			url: "https://www.compart.com/en/unicode/U+1BCA1"
-		},
-		{
-			actualUnicodeChar: "𛲢",
-			aka: "",
-			code: "U+1BCA2",
-			codeEscaped: "\\u1BCA2",
-			escapeChar: "",
-			name: "SHORTHAND FORMAT DOWN STEP",
-			replaceWith: "",
-			type: "Visible",
-			url: "https://www.compart.com/en/unicode/U+1BCA2"
-		},
-		{
-			actualUnicodeChar: "𛲣",
-			aka: "",
-			code: "U+1BCA3",
-			codeEscaped: "\\u1BCA3",
-			escapeChar: "",
-			name: "SHORTHAND FORMAT UP STEP",
-			replaceWith: "",
-			type: "Visible",
-			url: "https://www.compart.com/en/unicode/U+1BCA3"
-		},
-		{
-			actualUnicodeChar: "𝅙",
-			aka: "",
-			code: "U+1D159",
-			codeEscaped: "\\u1D159",
-			escapeChar: "",
-			name: "MUSICAL SYMBOL NULL NOTEHEAD",
-			replaceWith: "",
-			type: "Visible",
-			url: "https://www.compart.com/en/unicode/U+1D159"
-		},
-		{
-			actualUnicodeChar: "𝅳",
-			aka: "",
-			code: "U+1D173",
-			codeEscaped: "\\u1D173",
-			escapeChar: "",
-			name: "MUSICAL SYMBOL BEGIN BEAM",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+1D173"
-		},
-		{
-			actualUnicodeChar: "𝅴",
-			aka: "",
-			code: "U+1D174",
-			codeEscaped: "\\u1D174",
-			escapeChar: "",
-			name: "MUSICAL SYMBOL END BEAM",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+1D174"
-		},
-		{
-			actualUnicodeChar: "𝅵",
-			aka: "",
-			code: "U+1D175",
-			codeEscaped: "\\u1D175",
-			escapeChar: "",
-			name: "MUSICAL SYMBOL BEGIN TIE",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+1D175"
-		},
-		{
-			actualUnicodeChar: "𝅶",
-			aka: "",
-			code: "U+1D176",
-			codeEscaped: "\\u1D176",
-			escapeChar: "",
-			name: "MUSICAL SYMBOL END TIE",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+1D176"
-		},
-		{
-			actualUnicodeChar: "𝅷",
-			aka: "",
-			code: "U+1D177",
-			codeEscaped: "\\u1D177",
-			escapeChar: "",
-			name: "MUSICAL SYMBOL BEGIN SLUR",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+1D177"
-		},
-		{
-			actualUnicodeChar: "𝅸",
-			aka: "",
-			code: "U+1D178",
-			codeEscaped: "\\u1D178",
-			escapeChar: "",
-			name: "MUSICAL SYMBOL END SLUR",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+1D178"
-		},
-		{
-			actualUnicodeChar: "𝅹",
-			aka: "",
-			code: "U+1D179",
-			codeEscaped: "\\u1D179",
-			escapeChar: "",
-			name: "MUSICAL SYMBOL BEGIN PHRASE",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+1D179"
-		},
-		{
-			actualUnicodeChar: "𝅺",
-			aka: "",
-			code: "U+1D17A",
-			codeEscaped: "\\u1D17A",
-			escapeChar: "",
-			name: "MUSICAL SYMBOL END PHRASE",
-			replaceWith: "",
-			type: "Invisible",
-			url: "https://www.compart.com/en/unicode/U+1D17A"
-		}
-	];
+  const isVariationSelector = (num) => num >= 65024 && num <= 65039;
+  const isHighSurrogate = (num) => num >= 55296 && num <= 56319;
+  const isLowSurrogate = (num) => num >= 56320 && num <= 57343;
 
-	var isEmoji_1;
-	var hasRequiredIsEmoji;
+  /**
+   * @description Checks if the character at the given index in the text is an emoji.
+   * @param {string} text - The text to check for emojis.
+   * @param {number} i - The offset of the character to check.
+   * @returns {boolean} True if the character is an emoji, false otherwise.
+   */
+  const isEmoji = function (text, i) {
+    // Look at code before
+    if (text[i - 1]) {
+      const code = text.charCodeAt(i - 1);
+      if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
+        return true
+      }
+    }
+    // Look at code after
+    if (text[i + 1]) {
+      const code = text.charCodeAt(i + 1);
+      if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
+        return true
+      }
+    }
 
-	function requireIsEmoji () {
-		if (hasRequiredIsEmoji) return isEmoji_1;
-		hasRequiredIsEmoji = 1;
+    return false
+  };
 
-		const isVariationSelector = (num) => num >= 65024 && num <= 65039;
-		const isHighSurrogate = (num) => num >= 55296 && num <= 56319;
-		const isLowSurrogate = (num) => num >= 56320 && num <= 57343;
+  // For easier lookup
+  const byCode = data.reduce((h, obj) => {
+    h[obj.code] = obj;
+    return h
+  }, {});
 
-		/**
-		 * @description Checks if the character at the given index in the text is an emoji.
-		 * @param {string} text - The text to check for emojis.
-		 * @param {number} i - The offset of the character to check.
-		 * @returns {boolean} True if the character is an emoji, false otherwise.
-		 */
-		const isEmoji = function (text, i) {
-		  // Look at code before
-		  if (text[i - 1]) {
-		    const code = text.charCodeAt(i - 1);
-		    if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
-		      return true
-		    }
-		  }
-		  // Look at code after
-		  if (text[i + 1]) {
-		    const code = text.charCodeAt(i + 1);
-		    if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
-		      return true
-		    }
-		  }
+  const codes = data
+    .filter((obj) => obj.replaceWith !== undefined)
+    .map((obj) => obj.actualUnicodeChar);
+  const codeRegex = new RegExp(`(${codes.join('|')})`, 'gu');
 
-		  return false
-		};
+  /**
+   * @description Finds all invisible characters in the given text.
+   * @param {string} text - The text to search for invisible characters.
+   * @returns {{name: string, code: string, offset: number, replacement: string}[]} An array
+   * of objects representing the found invisible characters.
+   */
+  const findAll = function (text) {
+    const matches = [];
 
-		isEmoji_1 = isEmoji;
-		return isEmoji_1;
-	}
+    for (const match of text.matchAll(codeRegex)) {
+      const char = match[0];
+      const offset = match.index;
 
-	var match;
-	var hasRequiredMatch;
+      // Find the code details of the matched character
+      const codePoint = char.codePointAt(0); // Use codePointAt for full Unicode support
+      const hex = 'U+' + codePoint.toString(16).toUpperCase().padStart(4, '0');
 
-	function requireMatch () {
-		if (hasRequiredMatch) return match;
-		hasRequiredMatch = 1;
+      const found = byCode[hex]; // Lookup using the canonical 'U+XXXX' format
+      if (found) {
+        // Don't report U+200D (Zero Width Joiner) if it's part of an emoji sequence
+        if (found.code === 'U+200D' && isEmoji(text, offset)) {
+          continue
+        }
 
-		const data = require$$0;
-		const isEmoji = requireIsEmoji();
+        matches.push({
+          code: found.code,
+          name: found.name,
+          offset: offset,
+          replacement: found.replaceWith || '',
+        });
+      }
+    }
+    return matches
+  };
 
-		// For easier lookup
-		const byCode = data.reduce((h, obj) => {
-		  h[obj.code] = obj;
-		  return h
-		}, {});
+  /**
+   * @description Detects hidden characters in the given text.
+   * @param {string} text - The text to search for hidden characters.
+   * @returns {{name: string, code: string, offset: number, replacement: string}[]|null} An array
+   * of objects representing the found hidden characters, or null if none are found.
+   */
+  const detect = function (text) {
+    const matches = findAll(text);
+    if (matches.length > 0) {
+      return matches
+    }
+    return null
+  };
 
-		const codes = data
-		  .filter((obj) => obj.replaceWith !== undefined)
-		  .map((obj) => obj.actualUnicodeChar);
-		const codeRegex = new RegExp(`(${codes.join('|')})`, 'gu');
+  /**
+   * @description Remove invisible or strange unicode characters from the text.
+   * @param {string} text - The text to search.
+   * @returns {string} The text with invisible characters removed.
+   */
+  const replace = function (text) {
+    const matches = findAll(text);
 
-		/**
-		 * @description Finds all invisible characters in the given text.
-		 * @param {string} text - The text to search for invisible characters.
-		 * @returns {{name: string, code: string, offset: number, replacement: string}[]} An array
-		 * of objects representing the found invisible characters.
-		 */
-		const findAll = function (text) {
-		  const matches = [];
+    // Early return if no matches
+    if (matches.length === 0) {
+      return text
+    }
 
-		  for (const match of text.matchAll(codeRegex)) {
-		    const char = match[0];
-		    const offset = match.index;
+    let result = '';
+    let lastIndex = 0;
 
-		    // Find the code details of the matched character
-		    const codePoint = char.codePointAt(0); // Use codePointAt for full Unicode support
-		    const hex = 'U+' + codePoint.toString(16).toUpperCase().padStart(4, '0');
+    const matchesLength = matches.length;
+    for (let i = 0; i < matchesLength; i += 1) {
+      const match = matches[i];
+      result += text.slice(lastIndex, match.offset);
+      result += match.replacement;
+      lastIndex = match.offset + 1;
+    }
+    result += text.slice(lastIndex);
 
-		    const found = byCode[hex]; // Lookup using the canonical 'U+XXXX' format
-		    if (found) {
-		      // Don't report U+200D (Zero Width Joiner) if it's part of an emoji sequence
-		      if (found.code === 'U+200D' && isEmoji(text, offset)) {
-		        continue
-		      }
+    return result
+  };
 
-		      matches.push({
-		        code: found.code,
-		        name: found.name,
-		        offset: offset,
-		        replacement: found.replaceWith || '',
-		      });
-		    }
-		  }
-		  return matches
-		};
-
-		match = findAll;
-		return match;
-	}
-
-	var src;
-	var hasRequiredSrc;
-
-	function requireSrc () {
-		if (hasRequiredSrc) return src;
-		hasRequiredSrc = 1;
-
-		const findAll = requireMatch();
-
-		src = {
-		  /**
-		   * @description Detects hidden characters in the given text.
-		   * @param {string} text - The text to search for hidden characters.
-		   * @returns {{name: string, code: string, offset: number, replacement: string}[]|null} An array
-		   * of objects representing the found hidden characters, or null if none are found.
-		   */
-		  detect: (text) => {
-		    const matches = findAll(text);
-		    if (matches.length > 0) {
-		      return matches
-		    }
-		    return null
-		  },
-		  /**
-		   * @description Remove invisible or strange unicode characters from the text.
-		   * @param {string} text - The text to search.
-		   * @returns {string} The text with invisible characters removed.
-		   */
-		  replace: (text) => {
-		    const matches = findAll(text);
-
-		    // Early return if no matches
-		    if (matches.length === 0) {
-		      return text
-		    }
-		    
-		    let result = '';
-		    let lastIndex = 0;
-
-		    const matchesLength = matches.length;
-		    for (let i = 0; i < matchesLength; i+= 1) {
-		      const match = matches[i];
-		      result += text.slice(lastIndex, match.offset);
-		      result += match.replacement;
-		      lastIndex = match.offset + 1;
-		    }
-		    result += text.slice(lastIndex);
-
-		    return result
-		  },
-		};
-		return src;
-	}
-
-	var srcExports = requireSrc();
-	var index = /*@__PURE__*/getDefaultExportFromCjs(srcExports);
-
-	return index;
+  exports.detect = detect;
+  exports.replace = replace;
 
 }));
 //# sourceMappingURL=out-of-character.js.map

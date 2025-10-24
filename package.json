@@ -1,7 +1,7 @@
 {
   "name": "out-of-character",
   "description": "remove invisible unicode characters",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "author": "Spencer Kelly and Adam Tsiopani",
   "contributors": [
     {
@@ -58,23 +58,23 @@
     "builds/*.js"
   ],
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-commonjs": "28.0.9",
     "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-node-resolve": "16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
     "amble": "^1.3.0",
-    "axios": "^1.8.4",
-    "eslint": "9.26.0",
+    "axios": "1.12.2",
+    "eslint": "9.38.0",
     "live-server": "^1.2.2",
     "lockfile-lint": "^4.14.0",
-    "rollup": "4.40.2",
+    "rollup": "4.52.5",
     "shelljs": "0.10.0",
     "tap-dancer": "^0.3.4",
     "tape": "^5.9.0"
   },
   "dependencies": {
     "colorette": "^2.0.20",
-    "glob": "^7.2.0"
+    "glob": "11.0.3"
   },
   "license": "MIT"
 }

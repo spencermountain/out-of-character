@@ -3,6 +3,9 @@
 
 -->
 
+#### 2.1.0
+- update dependencies
+
 #### 2.0.1
 - performance improvements
 

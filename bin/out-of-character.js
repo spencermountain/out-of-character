@@ -2,9 +2,9 @@
 
 import fs from 'fs'
 import { dim, blue } from 'colorette'
-import detectFile from './detect-file'
-import { replace } from '../src/index'
-import getFiles from './getFiles'
+import detectFile from './detect-file.js'
+import { replace } from '../src/index.js'
+import getFiles from './getFiles.js'
 let args = process.argv.slice(2)
 
 const modes = {

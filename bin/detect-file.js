@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { detect } from '../src/index'
+import { detect } from '../src/index.js'
 import { blue, yellow, dim, italic, red } from 'colorette'
 
 /**

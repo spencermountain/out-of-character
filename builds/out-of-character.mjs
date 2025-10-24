@@ -1,9 +1,5 @@
-/* out-of-character 2.0.1 MIT */
-function getDefaultExportFromCjs (x) {
-	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-}
-
-var require$$0 = [
+/* out-of-character 2.1.0 MIT */
+var data = [
 	{
 		actualUnicodeChar: "\n",
 		aka: "LF",
@@ -782,161 +778,121 @@ var require$$0 = [
 	}
 ];
 
-var isEmoji_1;
-var hasRequiredIsEmoji;
+const isVariationSelector = (num) => num >= 65024 && num <= 65039;
+const isHighSurrogate = (num) => num >= 55296 && num <= 56319;
+const isLowSurrogate = (num) => num >= 56320 && num <= 57343;
 
-function requireIsEmoji () {
-	if (hasRequiredIsEmoji) return isEmoji_1;
-	hasRequiredIsEmoji = 1;
+/**
+ * @description Checks if the character at the given index in the text is an emoji.
+ * @param {string} text - The text to check for emojis.
+ * @param {number} i - The offset of the character to check.
+ * @returns {boolean} True if the character is an emoji, false otherwise.
+ */
+const isEmoji = function (text, i) {
+  // Look at code before
+  if (text[i - 1]) {
+    const code = text.charCodeAt(i - 1);
+    if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
+      return true
+    }
+  }
+  // Look at code after
+  if (text[i + 1]) {
+    const code = text.charCodeAt(i + 1);
+    if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
+      return true
+    }
+  }
 
-	const isVariationSelector = (num) => num >= 65024 && num <= 65039;
-	const isHighSurrogate = (num) => num >= 55296 && num <= 56319;
-	const isLowSurrogate = (num) => num >= 56320 && num <= 57343;
+  return false
+};
 
-	/**
-	 * @description Checks if the character at the given index in the text is an emoji.
-	 * @param {string} text - The text to check for emojis.
-	 * @param {number} i - The offset of the character to check.
-	 * @returns {boolean} True if the character is an emoji, false otherwise.
-	 */
-	const isEmoji = function (text, i) {
-	  // Look at code before
-	  if (text[i - 1]) {
-	    const code = text.charCodeAt(i - 1);
-	    if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
-	      return true
-	    }
-	  }
-	  // Look at code after
-	  if (text[i + 1]) {
-	    const code = text.charCodeAt(i + 1);
-	    if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
-	      return true
-	    }
-	  }
+// For easier lookup
+const byCode = data.reduce((h, obj) => {
+  h[obj.code] = obj;
+  return h
+}, {});
 
-	  return false
-	};
+const codes = data
+  .filter((obj) => obj.replaceWith !== undefined)
+  .map((obj) => obj.actualUnicodeChar);
+const codeRegex = new RegExp(`(${codes.join('|')})`, 'gu');
 
-	isEmoji_1 = isEmoji;
-	return isEmoji_1;
-}
+/**
+ * @description Finds all invisible characters in the given text.
+ * @param {string} text - The text to search for invisible characters.
+ * @returns {{name: string, code: string, offset: number, replacement: string}[]} An array
+ * of objects representing the found invisible characters.
+ */
+const findAll = function (text) {
+  const matches = [];
 
-var match;
-var hasRequiredMatch;
+  for (const match of text.matchAll(codeRegex)) {
+    const char = match[0];
+    const offset = match.index;
 
-function requireMatch () {
-	if (hasRequiredMatch) return match;
-	hasRequiredMatch = 1;
+    // Find the code details of the matched character
+    const codePoint = char.codePointAt(0); // Use codePointAt for full Unicode support
+    const hex = 'U+' + codePoint.toString(16).toUpperCase().padStart(4, '0');
 
-	const data = require$$0;
-	const isEmoji = requireIsEmoji();
+    const found = byCode[hex]; // Lookup using the canonical 'U+XXXX' format
+    if (found) {
+      // Don't report U+200D (Zero Width Joiner) if it's part of an emoji sequence
+      if (found.code === 'U+200D' && isEmoji(text, offset)) {
+        continue
+      }
 
-	// For easier lookup
-	const byCode = data.reduce((h, obj) => {
-	  h[obj.code] = obj;
-	  return h
-	}, {});
+      matches.push({
+        code: found.code,
+        name: found.name,
+        offset: offset,
+        replacement: found.replaceWith || '',
+      });
+    }
+  }
+  return matches
+};
 
-	const codes = data
-	  .filter((obj) => obj.replaceWith !== undefined)
-	  .map((obj) => obj.actualUnicodeChar);
-	const codeRegex = new RegExp(`(${codes.join('|')})`, 'gu');
+/**
+ * @description Detects hidden characters in the given text.
+ * @param {string} text - The text to search for hidden characters.
+ * @returns {{name: string, code: string, offset: number, replacement: string}[]|null} An array
+ * of objects representing the found hidden characters, or null if none are found.
+ */
+const detect = function (text) {
+  const matches = findAll(text);
+  if (matches.length > 0) {
+    return matches
+  }
+  return null
+};
 
-	/**
-	 * @description Finds all invisible characters in the given text.
-	 * @param {string} text - The text to search for invisible characters.
-	 * @returns {{name: string, code: string, offset: number, replacement: string}[]} An array
-	 * of objects representing the found invisible characters.
-	 */
-	const findAll = function (text) {
-	  const matches = [];
+/**
+ * @description Remove invisible or strange unicode characters from the text.
+ * @param {string} text - The text to search.
+ * @returns {string} The text with invisible characters removed.
+ */
+const replace = function (text) {
+  const matches = findAll(text);
 
-	  for (const match of text.matchAll(codeRegex)) {
-	    const char = match[0];
-	    const offset = match.index;
+  // Early return if no matches
+  if (matches.length === 0) {
+    return text
+  }
 
-	    // Find the code details of the matched character
-	    const codePoint = char.codePointAt(0); // Use codePointAt for full Unicode support
-	    const hex = 'U+' + codePoint.toString(16).toUpperCase().padStart(4, '0');
+  let result = '';
+  let lastIndex = 0;
 
-	    const found = byCode[hex]; // Lookup using the canonical 'U+XXXX' format
-	    if (found) {
-	      // Don't report U+200D (Zero Width Joiner) if it's part of an emoji sequence
-	      if (found.code === 'U+200D' && isEmoji(text, offset)) {
-	        continue
-	      }
+  const matchesLength = matches.length;
+  for (let i = 0; i < matchesLength; i += 1) {
+    const match = matches[i];
+    result += text.slice(lastIndex, match.offset);
+    result += match.replacement;
+    lastIndex = match.offset + 1;
+  }
+  result += text.slice(lastIndex);
 
-	      matches.push({
-	        code: found.code,
-	        name: found.name,
-	        offset: offset,
-	        replacement: found.replaceWith || '',
-	      });
-	    }
-	  }
-	  return matches
-	};
+  return result
+};
 
-	match = findAll;
-	return match;
-}
-
-var src;
-var hasRequiredSrc;
-
-function requireSrc () {
-	if (hasRequiredSrc) return src;
-	hasRequiredSrc = 1;
-
-	const findAll = requireMatch();
-
-	src = {
-	  /**
-	   * @description Detects hidden characters in the given text.
-	   * @param {string} text - The text to search for hidden characters.
-	   * @returns {{name: string, code: string, offset: number, replacement: string}[]|null} An array
-	   * of objects representing the found hidden characters, or null if none are found.
-	   */
-	  detect: (text) => {
-	    const matches = findAll(text);
-	    if (matches.length > 0) {
-	      return matches
-	    }
-	    return null
-	  },
-	  /**
-	   * @description Remove invisible or strange unicode characters from the text.
-	   * @param {string} text - The text to search.
-	   * @returns {string} The text with invisible characters removed.
-	   */
-	  replace: (text) => {
-	    const matches = findAll(text);
-
-	    // Early return if no matches
-	    if (matches.length === 0) {
-	      return text
-	    }
-	    
-	    let result = '';
-	    let lastIndex = 0;
-
-	    const matchesLength = matches.length;
-	    for (let i = 0; i < matchesLength; i+= 1) {
-	      const match = matches[i];
-	      result += text.slice(lastIndex, match.offset);
-	      result += match.replacement;
-	      lastIndex = match.offset + 1;
-	    }
-	    result += text.slice(lastIndex);
-
-	    return result
-	  },
-	};
-	return src;
-}
-
-var srcExports = requireSrc();
-var index = /*@__PURE__*/getDefaultExportFromCjs(srcExports);
-
-export { index as default };
+export { detect, replace };
