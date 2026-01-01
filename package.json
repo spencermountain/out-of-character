@@ -64,7 +64,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "amble": "^1.3.0",
     "axios": "1.12.2",
-    "eslint": "9.38.0",
+    "eslint": "9.39.2",
     "live-server": "^1.2.2",
     "lockfile-lint": "^4.14.0",
     "rollup": "4.52.5",
