@@ -42,7 +42,7 @@ jobs:
           persist-credentials: false
 
       - name: Dependency review
-        uses: actions/dependency-review-action@ce3cf9537a52e8119d91fd484ab5b8a807627bf8 # v4.6.0
+        uses: actions/dependency-review-action@3c4e3dcb1aa7874d2c16be7d79418e9b7efd6261 # v4.8.2
 
   lint:
     name: Lint
