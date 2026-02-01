@@ -66,7 +66,7 @@
     "axios": "1.12.2",
     "eslint": "9.38.0",
     "live-server": "^1.2.2",
-    "lockfile-lint": "^4.14.0",
+    "lockfile-lint": "^5.0.0",
     "rollup": "4.52.5",
     "shelljs": "0.10.0",
     "tap-dancer": "^0.3.4",
