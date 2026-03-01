@@ -74,7 +74,7 @@
   },
   "dependencies": {
     "colorette": "^2.0.20",
-    "glob": "11.0.3"
+    "glob": "13.0.6"
   },
   "license": "MIT"
 }
