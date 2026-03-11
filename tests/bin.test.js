@@ -46,7 +46,7 @@ test.skip('replace bin cmd', function (t) {
 })
 
 test('getFiles - single file', (t) => {
-  const result = getFiles('bin/getFiles.js',)
+  const result = getFiles('bin/getFiles.js')
   t.true(Array.isArray(result), 'should return an array')
   t.equal(result.length, 1, 'should have exactly one item')
   t.equal(result[0], 'bin/getFiles.js', 'should contain the file path')

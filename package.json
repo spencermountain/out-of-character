@@ -1,7 +1,7 @@
 {
   "name": "out-of-character",
   "description": "remove invisible unicode characters",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "author": "Spencer Kelly and Adam Tsiopani",
   "contributors": [
     {
@@ -12,9 +12,20 @@
   ],
   "main": "./builds/out-of-character.js",
   "unpkg": "./builds/out-of-character.min.js",
-  "module": "./builds/out-of-character.mjs",
-  "type": "module",
   "types": "types/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./types/index.d.ts",
+        "default": "./builds/out-of-character.mjs"
+      },
+      "require": {
+        "types": "./types/index.d.cts",
+        "default": "./builds/out-of-character.js"
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/spencermountain/out-of-character.git"
@@ -26,11 +37,11 @@
   "scripts": {
     "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
     "testb": "TESTENV=prod tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
-    "watch": "amble ./scratch.js",
+    "watch": "node --watch ./scratch.js",
     "lint": "eslint . --fix",
     "lint:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -s -i",
     "build": "rollup -c --silent",
-    "config:parse": "amble scripts/parse-config/index.js",
+    "config:parse": "node --watch scripts/parse-config/index.js",
     "config:view": "live-server --mount=/data:./data --mount=/:./public",
     "config:print": "do something"
   },
@@ -58,23 +69,22 @@
     "builds/*.js"
   ],
   "devDependencies": {
-    "@rollup/plugin-commonjs": "28.0.9",
-    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-commonjs": "29.0.2",
+    "@rollup/plugin-json": "6.1.0",
     "@rollup/plugin-node-resolve": "16.0.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "amble": "^1.3.0",
-    "axios": "1.12.2",
-    "eslint": "9.38.0",
-    "live-server": "^1.2.2",
-    "lockfile-lint": "^4.14.0",
-    "rollup": "4.52.5",
+    "@rollup/plugin-terser": "1.0.0",
+    "axios": "1.13.6",
+    "eslint": "10.0.3",
+    "live-server": "1.2.2",
+    "lockfile-lint": "5.0.0",
+    "rollup": "4.59.0",
     "shelljs": "0.10.0",
-    "tap-dancer": "^0.3.4",
-    "tape": "^5.9.0"
+    "tap-dancer": "0.3.4",
+    "tape": "5.9.0"
   },
   "dependencies": {
     "colorette": "^2.0.20",
-    "glob": "11.0.3"
+    "glob": "13.0.6"
   },
   "license": "MIT"
 }

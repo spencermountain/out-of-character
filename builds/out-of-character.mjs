@@ -1,4 +1,4 @@
-/* out-of-character 2.1.0 MIT */
+/* out-of-character 2.2.0 MIT */
 var data = [
 	{
 		actualUnicodeChar: "\n",
