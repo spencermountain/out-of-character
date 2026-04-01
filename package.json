@@ -73,7 +73,7 @@
     "@rollup/plugin-json": "6.1.0",
     "@rollup/plugin-node-resolve": "16.0.3",
     "@rollup/plugin-terser": "1.0.0",
-    "axios": "1.13.6",
+    "axios": "1.14.0",
     "eslint": "10.0.3",
     "live-server": "1.2.2",
     "lockfile-lint": "5.0.0",
