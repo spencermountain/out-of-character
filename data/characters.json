@@ -774,5 +774,104 @@
     "replaceWith": "",
     "type": "Invisible",
     "url": "https://www.compart.com/en/unicode/U+1D17A"
+  },
+  {
+    "actualUnicodeChar": "‪",
+    "aka": "",
+    "code": "U+202A",
+    "codeEscaped": "\\u202A",
+    "escapeChar": "",
+    "name": "LEFT-TO-RIGHT EMBEDDING",
+    "replaceWith": "",
+    "type": "Invisible",
+    "url": "https://www.compart.com/en/unicode/U+202A"
+  },
+  {
+    "actualUnicodeChar": "‫",
+    "aka": "",
+    "code": "U+202B",
+    "codeEscaped": "\\u202B",
+    "escapeChar": "",
+    "name": "RIGHT-TO-LEFT EMBEDDING",
+    "replaceWith": "",
+    "type": "Invisible",
+    "url": "https://www.compart.com/en/unicode/U+202B"
+  },
+  {
+    "actualUnicodeChar": "‬",
+    "aka": "",
+    "code": "U+202C",
+    "codeEscaped": "\\u202C",
+    "escapeChar": "",
+    "name": "POP DIRECTIONAL FORMATTING",
+    "replaceWith": "",
+    "type": "Invisible",
+    "url": "https://www.compart.com/en/unicode/U+202C"
+  },
+  {
+    "actualUnicodeChar": "‭",
+    "aka": "",
+    "code": "U+202D",
+    "codeEscaped": "\\u202D",
+    "escapeChar": "",
+    "name": "LEFT-TO-RIGHT OVERRIDE",
+    "replaceWith": "",
+    "type": "Invisible",
+    "url": "https://www.compart.com/en/unicode/U+202D"
+  },
+  {
+    "actualUnicodeChar": "‮",
+    "aka": "",
+    "code": "U+202E",
+    "codeEscaped": "\\u202E",
+    "escapeChar": "",
+    "name": "RIGHT-TO-LEFT OVERRIDE",
+    "replaceWith": "",
+    "type": "Invisible",
+    "url": "https://www.compart.com/en/unicode/U+202E"
+  },
+  {
+    "actualUnicodeChar": "⁦",
+    "aka": "",
+    "code": "U+2066",
+    "codeEscaped": "\\u2066",
+    "escapeChar": "",
+    "name": "LEFT-TO-RIGHT ISOLATE",
+    "replaceWith": "",
+    "type": "Invisible",
+    "url": "https://www.compart.com/en/unicode/U+2066"
+  },
+  {
+    "actualUnicodeChar": "⁧",
+    "aka": "",
+    "code": "U+2067",
+    "codeEscaped": "\\u2067",
+    "escapeChar": "",
+    "name": "RIGHT-TO-LEFT ISOLATE",
+    "replaceWith": "",
+    "type": "Invisible",
+    "url": "https://www.compart.com/en/unicode/U+2067"
+  },
+  {
+    "actualUnicodeChar": "⁨",
+    "aka": "",
+    "code": "U+2068",
+    "codeEscaped": "\\u2068",
+    "escapeChar": "",
+    "name": "FIRST STRONG ISOLATE",
+    "replaceWith": "",
+    "type": "Invisible",
+    "url": "https://www.compart.com/en/unicode/U+2068"
+  },
+  {
+    "actualUnicodeChar": "⁩",
+    "aka": "",
+    "code": "U+2069",
+    "codeEscaped": "\\u2069",
+    "escapeChar": "",
+    "name": "POP DIRECTIONAL ISOLATE",
+    "replaceWith": "",
+    "type": "Invisible",
+    "url": "https://www.compart.com/en/unicode/U+2069"
   }
 ]
