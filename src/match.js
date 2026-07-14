@@ -1,5 +1,5 @@
 import data from '../data/characters.json' with { type: 'json' }
-import isEmoji, { charBefore } from './isEmoji.js'
+import { isEmoji, charBefore } from './isEmoji.js'
 
 // For easier lookup — keyed by the literal character
 const byChar = new Map()

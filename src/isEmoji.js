@@ -53,5 +53,4 @@ const isEmoji = function (text, i) {
   return false
 }
 
-export { charBefore, charAfter }
-export default isEmoji
+export { charBefore, isEmoji }
