@@ -16,6 +16,9 @@
 - **[new]** results include a `type` field ('Invisible', 'Bidi', 'Tag', etc)
 - **[fix]** improved emoji handling using unicode property escapes — zero-width joiners next to non-emoji astral characters are now caught
 - **[fix]** richer typescript types, and a `.d.cts` for commonjs consumers
+- **[change]** sourcemaps are disabled for the umd build
+- **[update]** cleanup dependencies
+
 
 #### 2.2.0
 - update dependencies
