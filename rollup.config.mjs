@@ -28,6 +28,23 @@ export default [
     input: 'src/index.js',
     output: [
       {
+        // the package is "type": "module", so the commonjs build needs a .cjs extension
+        file: `builds/${name}.cjs`,
+        format: 'cjs',
+        exports: 'named',
+        banner: banner,
+      },
+    ],
+    plugins: [
+      resolve(),
+      json(),
+      commonjs(),
+    ],
+  },
+  {
+    input: 'src/index.js',
+    output: [
+      {
         file: `builds/${name}.js`,
         format: 'umd',
         sourcemap: true,

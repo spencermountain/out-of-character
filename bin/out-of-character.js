@@ -11,32 +11,35 @@ const modes = {
   '--test': 'detect',
   '--detect': 'detect',
   '--replace': 'replace',
-  '--remove': 'remove',
-  '--recursive': false,
+  '--remove': 'replace',
 }
 
 let mode = 'detect'
-let pathStr = ''
+let recursive = false
 args = args.filter((arg) => {
   if (modes.hasOwnProperty(arg) === true) {
-    // cast to boolean
-    if (modes[arg] === 'false') {
-      modes[arg] = false
-    }
     mode = modes[arg]
     return false
   }
-  return arg //is truthy
+  if (arg === '--recursive') {
+    recursive = true
+    return false
+  }
+  if (arg.startsWith('--')) {
+    console.warn(`Unknown flag '${arg}'`)
+    process.exit(1)
+  }
+  return true
 })
 // Take the first non-flag arg as path
-pathStr = args[0]
+const pathStr = args[0]
 
 if (!pathStr) {
   console.warn(`Must supply a file path: 'out-of-character ./path/to/file.txt'`)
   process.exit(1)
 }
 
-const files = getFiles(pathStr, modes['--recursive'])
+const files = getFiles(pathStr, recursive)
 if (files.length === 0) {
   console.warn(`Found no files that match '${pathStr}'`)
   process.exit()

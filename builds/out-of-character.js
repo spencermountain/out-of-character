@@ -1,4 +1,4 @@
-/* out-of-character 2.2.0 MIT */
+/* out-of-character 2.3.0 MIT */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -56,7 +56,7 @@
   		escapeChar: "",
   		name: "NEXT LINE",
   		replaceWith: "",
-  		type: "Separators",
+  		type: "Separator",
   		url: "https://www.compart.com/en/unicode/U+0085"
   	},
   	{
@@ -64,10 +64,14 @@
   		aka: "",
   		code: "U+00A0",
   		codeEscaped: "\\u00A0",
+  		csscode: "\\00A0",
   		escapeChar: "",
+  		htmlcode: "&#160;",
+  		htmlentity: "&nbsp;",
   		name: "NO-BREAK SPACE",
   		replaceWith: " ",
   		type: "Whitespace",
+  		unicode: "U+00A0",
   		url: "https://www.compart.com/en/unicode/U+00A0"
   	},
   	{
@@ -78,7 +82,7 @@
   		escapeChar: "",
   		name: "LINE SEPARATOR",
   		replaceWith: "",
-  		type: "Separators",
+  		type: "Separator",
   		url: "https://www.compart.com/en/unicode/U+2028"
   	},
   	{
@@ -89,7 +93,7 @@
   		escapeChar: "",
   		name: "PARAGRAPH SEPARATOR",
   		replaceWith: "",
-  		type: "Separators",
+  		type: "Separator",
   		url: "https://www.compart.com/en/unicode/U+2029"
   	},
   	{
@@ -140,13 +144,13 @@
   	},
   	{
   		actualUnicodeChar: "؜",
-  		aka: "",
+  		aka: "ALM",
   		code: "U+061C",
   		codeEscaped: "\\u061C",
   		escapeChar: "",
   		name: "ARABIC LETTER MARK",
   		replaceWith: "",
-  		type: "Invisible",
+  		type: "Bidi",
   		url: "https://www.compart.com/en/unicode/U+061C"
   	},
   	{
@@ -402,7 +406,7 @@
   	},
   	{
   		actualUnicodeChar: "‎",
-  		aka: "",
+  		aka: "LRM",
   		code: "U+200E",
   		codeEscaped: "\\u200E",
   		csscode: "\\200E",
@@ -411,13 +415,13 @@
   		htmlentity: "&lrm;",
   		name: "LEFT-TO-RIGHT MARK",
   		replaceWith: "",
-  		type: "Invisible",
+  		type: "Bidi",
   		unicode: "U+200E",
   		url: "https://www.compart.com/en/unicode/U+200E"
   	},
   	{
   		actualUnicodeChar: "‏",
-  		aka: "",
+  		aka: "RLM",
   		code: "U+200F",
   		codeEscaped: "\\u200F",
   		csscode: "\\200F",
@@ -426,7 +430,7 @@
   		htmlentity: "&rlm;",
   		name: "RIGHT-TO-LEFT MARK",
   		replaceWith: "",
-  		type: "Invisible",
+  		type: "Bidi",
   		unicode: "U+200F",
   		url: "https://www.compart.com/en/unicode/U+200F"
   	},
@@ -437,7 +441,7 @@
   		codeEscaped: "\\u202F",
   		escapeChar: "",
   		name: "NARROW NO-BREAK SPACE",
-  		replaceWith: "",
+  		replaceWith: " ",
   		type: "Whitespace",
   		url: "https://www.compart.com/en/unicode/U+202F"
   	},
@@ -632,7 +636,7 @@
   		actualUnicodeChar: "𑂱",
   		aka: "",
   		code: "U+110B1",
-  		codeEscaped: "\\u110B1",
+  		codeEscaped: "\\u{110B1}",
   		escapeChar: "",
   		name: "KAITHI VOWEL SIGN I",
   		replaceWith: "",
@@ -643,7 +647,7 @@
   		actualUnicodeChar: "𛲠",
   		aka: "",
   		code: "U+1BCA0",
-  		codeEscaped: "\\u1BCA0",
+  		codeEscaped: "\\u{1BCA0}",
   		escapeChar: "",
   		name: "SHORTHAND FORMAT LETTER OVERLAP",
   		replaceWith: "",
@@ -654,7 +658,7 @@
   		actualUnicodeChar: "𛲡",
   		aka: "",
   		code: "U+1BCA1",
-  		codeEscaped: "\\u1BCA1",
+  		codeEscaped: "\\u{1BCA1}",
   		escapeChar: "",
   		name: "SHORTHAND FORMAT CONTINUING OVERLAP",
   		replaceWith: "",
@@ -665,7 +669,7 @@
   		actualUnicodeChar: "𛲢",
   		aka: "",
   		code: "U+1BCA2",
-  		codeEscaped: "\\u1BCA2",
+  		codeEscaped: "\\u{1BCA2}",
   		escapeChar: "",
   		name: "SHORTHAND FORMAT DOWN STEP",
   		replaceWith: "",
@@ -676,7 +680,7 @@
   		actualUnicodeChar: "𛲣",
   		aka: "",
   		code: "U+1BCA3",
-  		codeEscaped: "\\u1BCA3",
+  		codeEscaped: "\\u{1BCA3}",
   		escapeChar: "",
   		name: "SHORTHAND FORMAT UP STEP",
   		replaceWith: "",
@@ -687,7 +691,7 @@
   		actualUnicodeChar: "𝅙",
   		aka: "",
   		code: "U+1D159",
-  		codeEscaped: "\\u1D159",
+  		codeEscaped: "\\u{1D159}",
   		escapeChar: "",
   		name: "MUSICAL SYMBOL NULL NOTEHEAD",
   		replaceWith: "",
@@ -698,7 +702,7 @@
   		actualUnicodeChar: "𝅳",
   		aka: "",
   		code: "U+1D173",
-  		codeEscaped: "\\u1D173",
+  		codeEscaped: "\\u{1D173}",
   		escapeChar: "",
   		name: "MUSICAL SYMBOL BEGIN BEAM",
   		replaceWith: "",
@@ -709,7 +713,7 @@
   		actualUnicodeChar: "𝅴",
   		aka: "",
   		code: "U+1D174",
-  		codeEscaped: "\\u1D174",
+  		codeEscaped: "\\u{1D174}",
   		escapeChar: "",
   		name: "MUSICAL SYMBOL END BEAM",
   		replaceWith: "",
@@ -720,7 +724,7 @@
   		actualUnicodeChar: "𝅵",
   		aka: "",
   		code: "U+1D175",
-  		codeEscaped: "\\u1D175",
+  		codeEscaped: "\\u{1D175}",
   		escapeChar: "",
   		name: "MUSICAL SYMBOL BEGIN TIE",
   		replaceWith: "",
@@ -731,7 +735,7 @@
   		actualUnicodeChar: "𝅶",
   		aka: "",
   		code: "U+1D176",
-  		codeEscaped: "\\u1D176",
+  		codeEscaped: "\\u{1D176}",
   		escapeChar: "",
   		name: "MUSICAL SYMBOL END TIE",
   		replaceWith: "",
@@ -742,7 +746,7 @@
   		actualUnicodeChar: "𝅷",
   		aka: "",
   		code: "U+1D177",
-  		codeEscaped: "\\u1D177",
+  		codeEscaped: "\\u{1D177}",
   		escapeChar: "",
   		name: "MUSICAL SYMBOL BEGIN SLUR",
   		replaceWith: "",
@@ -753,7 +757,7 @@
   		actualUnicodeChar: "𝅸",
   		aka: "",
   		code: "U+1D178",
-  		codeEscaped: "\\u1D178",
+  		codeEscaped: "\\u{1D178}",
   		escapeChar: "",
   		name: "MUSICAL SYMBOL END SLUR",
   		replaceWith: "",
@@ -764,7 +768,7 @@
   		actualUnicodeChar: "𝅹",
   		aka: "",
   		code: "U+1D179",
-  		codeEscaped: "\\u1D179",
+  		codeEscaped: "\\u{1D179}",
   		escapeChar: "",
   		name: "MUSICAL SYMBOL BEGIN PHRASE",
   		replaceWith: "",
@@ -775,86 +779,510 @@
   		actualUnicodeChar: "𝅺",
   		aka: "",
   		code: "U+1D17A",
-  		codeEscaped: "\\u1D17A",
+  		codeEscaped: "\\u{1D17A}",
   		escapeChar: "",
   		name: "MUSICAL SYMBOL END PHRASE",
   		replaceWith: "",
   		type: "Invisible",
   		url: "https://www.compart.com/en/unicode/U+1D17A"
+  	},
+  	{
+  		actualUnicodeChar: "᠋",
+  		aka: "FVS1",
+  		code: "U+180B",
+  		codeEscaped: "\\u180B",
+  		escapeChar: "",
+  		name: "MONGOLIAN FREE VARIATION SELECTOR ONE",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+180B"
+  	},
+  	{
+  		actualUnicodeChar: "᠌",
+  		aka: "FVS2",
+  		code: "U+180C",
+  		codeEscaped: "\\u180C",
+  		escapeChar: "",
+  		name: "MONGOLIAN FREE VARIATION SELECTOR TWO",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+180C"
+  	},
+  	{
+  		actualUnicodeChar: "᠍",
+  		aka: "FVS3",
+  		code: "U+180D",
+  		codeEscaped: "\\u180D",
+  		escapeChar: "",
+  		name: "MONGOLIAN FREE VARIATION SELECTOR THREE",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+180D"
+  	},
+  	{
+  		actualUnicodeChar: "᠏",
+  		aka: "FVS4",
+  		code: "U+180F",
+  		codeEscaped: "\\u180F",
+  		escapeChar: "",
+  		name: "MONGOLIAN FREE VARIATION SELECTOR FOUR",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+180F"
+  	},
+  	{
+  		actualUnicodeChar: "‪",
+  		aka: "LRE",
+  		code: "U+202A",
+  		codeEscaped: "\\u202A",
+  		escapeChar: "",
+  		name: "LEFT-TO-RIGHT EMBEDDING",
+  		replaceWith: "",
+  		type: "Bidi",
+  		url: "https://www.compart.com/en/unicode/U+202A"
+  	},
+  	{
+  		actualUnicodeChar: "‫",
+  		aka: "RLE",
+  		code: "U+202B",
+  		codeEscaped: "\\u202B",
+  		escapeChar: "",
+  		name: "RIGHT-TO-LEFT EMBEDDING",
+  		replaceWith: "",
+  		type: "Bidi",
+  		url: "https://www.compart.com/en/unicode/U+202B"
+  	},
+  	{
+  		actualUnicodeChar: "‬",
+  		aka: "PDF",
+  		code: "U+202C",
+  		codeEscaped: "\\u202C",
+  		escapeChar: "",
+  		name: "POP DIRECTIONAL FORMATTING",
+  		replaceWith: "",
+  		type: "Bidi",
+  		url: "https://www.compart.com/en/unicode/U+202C"
+  	},
+  	{
+  		actualUnicodeChar: "‭",
+  		aka: "LRO",
+  		code: "U+202D",
+  		codeEscaped: "\\u202D",
+  		escapeChar: "",
+  		name: "LEFT-TO-RIGHT OVERRIDE",
+  		replaceWith: "",
+  		type: "Bidi",
+  		url: "https://www.compart.com/en/unicode/U+202D"
+  	},
+  	{
+  		actualUnicodeChar: "‮",
+  		aka: "RLO",
+  		code: "U+202E",
+  		codeEscaped: "\\u202E",
+  		escapeChar: "",
+  		name: "RIGHT-TO-LEFT OVERRIDE",
+  		replaceWith: "",
+  		type: "Bidi",
+  		url: "https://www.compart.com/en/unicode/U+202E"
+  	},
+  	{
+  		actualUnicodeChar: "⁦",
+  		aka: "LRI",
+  		code: "U+2066",
+  		codeEscaped: "\\u2066",
+  		escapeChar: "",
+  		name: "LEFT-TO-RIGHT ISOLATE",
+  		replaceWith: "",
+  		type: "Bidi",
+  		url: "https://www.compart.com/en/unicode/U+2066"
+  	},
+  	{
+  		actualUnicodeChar: "⁧",
+  		aka: "RLI",
+  		code: "U+2067",
+  		codeEscaped: "\\u2067",
+  		escapeChar: "",
+  		name: "RIGHT-TO-LEFT ISOLATE",
+  		replaceWith: "",
+  		type: "Bidi",
+  		url: "https://www.compart.com/en/unicode/U+2067"
+  	},
+  	{
+  		actualUnicodeChar: "⁨",
+  		aka: "FSI",
+  		code: "U+2068",
+  		codeEscaped: "\\u2068",
+  		escapeChar: "",
+  		name: "FIRST STRONG ISOLATE",
+  		replaceWith: "",
+  		type: "Bidi",
+  		url: "https://www.compart.com/en/unicode/U+2068"
+  	},
+  	{
+  		actualUnicodeChar: "⁩",
+  		aka: "PDI",
+  		code: "U+2069",
+  		codeEscaped: "\\u2069",
+  		escapeChar: "",
+  		name: "POP DIRECTIONAL ISOLATE",
+  		replaceWith: "",
+  		type: "Bidi",
+  		url: "https://www.compart.com/en/unicode/U+2069"
+  	},
+  	{
+  		actualUnicodeChar: "︀",
+  		aka: "VS1",
+  		code: "U+FE00",
+  		codeEscaped: "\\uFE00",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-1",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE00"
+  	},
+  	{
+  		actualUnicodeChar: "︁",
+  		aka: "VS2",
+  		code: "U+FE01",
+  		codeEscaped: "\\uFE01",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-2",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE01"
+  	},
+  	{
+  		actualUnicodeChar: "︂",
+  		aka: "VS3",
+  		code: "U+FE02",
+  		codeEscaped: "\\uFE02",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-3",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE02"
+  	},
+  	{
+  		actualUnicodeChar: "︃",
+  		aka: "VS4",
+  		code: "U+FE03",
+  		codeEscaped: "\\uFE03",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-4",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE03"
+  	},
+  	{
+  		actualUnicodeChar: "︄",
+  		aka: "VS5",
+  		code: "U+FE04",
+  		codeEscaped: "\\uFE04",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-5",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE04"
+  	},
+  	{
+  		actualUnicodeChar: "︅",
+  		aka: "VS6",
+  		code: "U+FE05",
+  		codeEscaped: "\\uFE05",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-6",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE05"
+  	},
+  	{
+  		actualUnicodeChar: "︆",
+  		aka: "VS7",
+  		code: "U+FE06",
+  		codeEscaped: "\\uFE06",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-7",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE06"
+  	},
+  	{
+  		actualUnicodeChar: "︇",
+  		aka: "VS8",
+  		code: "U+FE07",
+  		codeEscaped: "\\uFE07",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-8",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE07"
+  	},
+  	{
+  		actualUnicodeChar: "︈",
+  		aka: "VS9",
+  		code: "U+FE08",
+  		codeEscaped: "\\uFE08",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-9",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE08"
+  	},
+  	{
+  		actualUnicodeChar: "︉",
+  		aka: "VS10",
+  		code: "U+FE09",
+  		codeEscaped: "\\uFE09",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-10",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE09"
+  	},
+  	{
+  		actualUnicodeChar: "︊",
+  		aka: "VS11",
+  		code: "U+FE0A",
+  		codeEscaped: "\\uFE0A",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-11",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE0A"
+  	},
+  	{
+  		actualUnicodeChar: "︋",
+  		aka: "VS12",
+  		code: "U+FE0B",
+  		codeEscaped: "\\uFE0B",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-12",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE0B"
+  	},
+  	{
+  		actualUnicodeChar: "︌",
+  		aka: "VS13",
+  		code: "U+FE0C",
+  		codeEscaped: "\\uFE0C",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-13",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE0C"
+  	},
+  	{
+  		actualUnicodeChar: "︍",
+  		aka: "VS14",
+  		code: "U+FE0D",
+  		codeEscaped: "\\uFE0D",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-14",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE0D"
+  	},
+  	{
+  		actualUnicodeChar: "︎",
+  		aka: "VS15",
+  		code: "U+FE0E",
+  		codeEscaped: "\\uFE0E",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-15",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE0E"
+  	},
+  	{
+  		actualUnicodeChar: "️",
+  		aka: "VS16",
+  		code: "U+FE0F",
+  		codeEscaped: "\\uFE0F",
+  		escapeChar: "",
+  		name: "VARIATION SELECTOR-16",
+  		replaceWith: "",
+  		type: "Variation",
+  		url: "https://www.compart.com/en/unicode/U+FE0F"
+  	},
+  	{
+  		actualUnicodeChar: "￹",
+  		aka: "",
+  		code: "U+FFF9",
+  		codeEscaped: "\\uFFF9",
+  		escapeChar: "",
+  		name: "INTERLINEAR ANNOTATION ANCHOR",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+FFF9"
+  	},
+  	{
+  		actualUnicodeChar: "￺",
+  		aka: "",
+  		code: "U+FFFA",
+  		codeEscaped: "\\uFFFA",
+  		escapeChar: "",
+  		name: "INTERLINEAR ANNOTATION SEPARATOR",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+FFFA"
+  	},
+  	{
+  		actualUnicodeChar: "￻",
+  		aka: "",
+  		code: "U+FFFB",
+  		codeEscaped: "\\uFFFB",
+  		escapeChar: "",
+  		name: "INTERLINEAR ANNOTATION TERMINATOR",
+  		replaceWith: "",
+  		type: "Invisible",
+  		url: "https://www.compart.com/en/unicode/U+FFFB"
   	}
   ];
 
-  const isVariationSelector = (num) => num >= 65024 && num <= 65039;
-  const isHighSurrogate = (num) => num >= 55296 && num <= 56319;
-  const isLowSurrogate = (num) => num >= 56320 && num <= 57343;
+  // characters that legitimately sit beside a zero-width joiner in an emoji
+  // sequence — pictographs, the emoji variation selector, and skin-tone modifiers
+  const emojiish = /[\p{Extended_Pictographic}\u{FE0F}\u{1F3FB}-\u{1F3FF}]/u;
 
   /**
-   * @description Checks if the character at the given index in the text is an emoji.
+   * @description Returns the full code point ending just before index i, or '' at the start of the text.
+   * @param {string} text - The text to look in.
+   * @param {number} i - The offset to look before.
+   * @returns {string} The character before i, handling surrogate pairs.
+   */
+  const charBefore = function (text, i) {
+    if (i <= 0) {
+      return ''
+    }
+    let start = i - 1;
+    const unit = text.charCodeAt(start);
+    // a low surrogate — the code point starts one unit earlier
+    if (unit >= 0xdc00 && unit <= 0xdfff && i > 1) {
+      start -= 1;
+    }
+    return String.fromCodePoint(text.codePointAt(start))
+  };
+
+  /**
+   * @description Returns the full code point starting just after the character at index i, or '' at the end.
+   * @param {string} text - The text to look in.
+   * @param {number} i - The offset of the character to look after.
+   * @returns {string} The character after i, handling surrogate pairs.
+   */
+  const charAfter = function (text, i) {
+    const next = i + (text.codePointAt(i) > 0xffff ? 2 : 1);
+    if (next >= text.length) {
+      return ''
+    }
+    return String.fromCodePoint(text.codePointAt(next))
+  };
+
+  /**
+   * @description Checks if the character at the given index in the text is part of an emoji sequence.
    * @param {string} text - The text to check for emojis.
    * @param {number} i - The offset of the character to check.
-   * @returns {boolean} True if the character is an emoji, false otherwise.
+   * @returns {boolean} True if the character is joined to an emoji, false otherwise.
    */
   const isEmoji = function (text, i) {
-    // Look at code before
-    if (text[i - 1]) {
-      const code = text.charCodeAt(i - 1);
-      if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
-        return true
-      }
+    const before = charBefore(text, i);
+    if (before !== '' && emojiish.test(before)) {
+      return true
     }
-    // Look at code after
-    if (text[i + 1]) {
-      const code = text.charCodeAt(i + 1);
-      if (isHighSurrogate(code) || isLowSurrogate(code) || isVariationSelector(code)) {
-        return true
-      }
+    const after = charAfter(text, i);
+    if (after !== '' && emojiish.test(after)) {
+      return true
     }
-
     return false
   };
 
-  // For easier lookup
-  const byCode = data.reduce((h, obj) => {
-    h[obj.code] = obj;
-    return h
-  }, {});
+  // For easier lookup — keyed by the literal character
+  const byChar = new Map();
+  data.forEach((obj) => {
+    if (obj.replaceWith !== undefined) {
+      byChar.set(obj.actualUnicodeChar, obj);
+    }
+  });
 
-  const codes = data
-    .filter((obj) => obj.replaceWith !== undefined)
-    .map((obj) => obj.actualUnicodeChar);
-  const codeRegex = new RegExp(`(${codes.join('|')})`, 'gu');
+  const esc = (char) => `\\u{${char.codePointAt(0).toString(16).toUpperCase()}}`;
+  // one character-class over the whole catalog, plus the tag-character block (U+E0000-U+E007F)
+  const codeRegex = new RegExp(`[${[...byChar.keys()].map(esc).join('')}\\u{E0000}-\\u{E007F}]`, 'gu');
+
+  const toHex = (num) => 'U+' + num.toString(16).toUpperCase().padStart(4, '0');
+
+  // a variation selector is legitimate after an emoji, a keycap base, or a CJK ideograph
+  const vsBase = /[\p{Extended_Pictographic}\p{Emoji_Component}\p{Ideographic}]/u;
+  // a mongolian free variation selector is legitimate after a mongolian character
+  const fvsBase = /\p{Script=Mongolian}/u;
+
+  const isTagChar = (num) => num >= 0xe0000 && num <= 0xe007f;
+
+  /**
+   * @description Checks whether a run of tag characters is anchored to a pictograph,
+   * like the flag-of-england emoji — a lone run in plain text is steganography.
+   * @param {string} text - The text being searched.
+   * @param {number} offset - The offset of a tag character.
+   * @returns {boolean} True if the run begins right after an emoji.
+   */
+  const isEmojiTagSequence = function (text, offset) {
+    let i = offset;
+    // walk back over the run — tag characters are always two code units
+    while (i >= 2 && isTagChar(text.codePointAt(i - 2))) {
+      i -= 2;
+    }
+    const before = charBefore(text, i);
+    return before !== '' && /\p{Extended_Pictographic}/u.test(before)
+  };
 
   /**
    * @description Finds all invisible characters in the given text.
    * @param {string} text - The text to search for invisible characters.
-   * @returns {{name: string, code: string, offset: number, replacement: string}[]} An array
+   * @param {object} [opts] - Options.
+   * @param {string[]} [opts.exclude] - Codes (like 'U+202E') or types (like 'Bidi') to ignore.
+   * @returns {{name: string, code: string, type: string, offset: number, replacement: string}[]} An array
    * of objects representing the found invisible characters.
    */
-  const findAll = function (text) {
+  const findAll = function (text, opts = {}) {
     const matches = [];
+    const exclude = opts.exclude ? new Set(opts.exclude) : null;
 
     for (const match of text.matchAll(codeRegex)) {
       const char = match[0];
       const offset = match.index;
+      const codePoint = char.codePointAt(0);
 
-      // Find the code details of the matched character
-      const codePoint = char.codePointAt(0); // Use codePointAt for full Unicode support
-      const hex = 'U+' + codePoint.toString(16).toUpperCase().padStart(4, '0');
+      let found = byChar.get(char);
+      if (found === undefined) {
+        // otherwise we matched the tag-character block
+        found = { code: toHex(codePoint), name: 'TAG CHARACTER', replaceWith: '', type: 'Tag' };
+      }
 
-      const found = byCode[hex]; // Lookup using the canonical 'U+XXXX' format
-      if (found) {
-        // Don't report U+200D (Zero Width Joiner) if it's part of an emoji sequence
-        if (found.code === 'U+200D' && isEmoji(text, offset)) {
+      if (exclude !== null && (exclude.has(found.code) || exclude.has(found.type))) {
+        continue
+      }
+
+      // Don't report U+200D (Zero Width Joiner) if it's part of an emoji sequence
+      if (found.code === 'U+200D' && isEmoji(text, offset)) {
+        continue
+      }
+      // Don't report variation selectors doing legitimate work
+      if (found.type === 'Variation') {
+        const base = charBefore(text, offset);
+        if (base !== '' && (codePoint >= 0xfe00 ? vsBase.test(base) : fvsBase.test(base))) {
           continue
         }
-
-        matches.push({
-          code: found.code,
-          name: found.name,
-          offset: offset,
-          replacement: found.replaceWith || '',
-        });
       }
+      // Don't report tag characters that spell out an emoji
+      if (found.type === 'Tag' && isEmojiTagSequence(text, offset)) {
+        continue
+      }
+
+      matches.push({
+        code: found.code,
+        name: found.name,
+        type: found.type,
+        offset: offset,
+        replacement: found.replaceWith || '',
+      });
     }
     return matches
   };
@@ -862,11 +1290,14 @@
   /**
    * @description Detects hidden characters in the given text.
    * @param {string} text - The text to search for hidden characters.
-   * @returns {{name: string, code: string, offset: number, replacement: string}[]|null} An array
+   * @param {object} [opts] - Options.
+   * @param {string[]} [opts.exclude] - Codes (like 'U+202E') or types (like 'Bidi') to ignore.
+   * @returns {{name: string, code: string, type: string, offset: number, replacement: string}[]|null} An array
    * of objects representing the found hidden characters, or null if none are found.
+   * Offsets are UTF-16 code-unit indices, like String.prototype.indexOf.
    */
-  const detect = function (text) {
-    const matches = findAll(text);
+  const detect = function (text, opts) {
+    const matches = findAll(text, opts);
     if (matches.length > 0) {
       return matches
     }
@@ -876,10 +1307,12 @@
   /**
    * @description Remove invisible or strange unicode characters from the text.
    * @param {string} text - The text to search.
+   * @param {object} [opts] - Options.
+   * @param {string[]} [opts.exclude] - Codes (like 'U+202E') or types (like 'Bidi') to keep in the text.
    * @returns {string} The text with invisible characters removed.
    */
-  const replace = function (text) {
-    const matches = findAll(text);
+  const replace = function (text, opts) {
+    const matches = findAll(text, opts);
 
     // Early return if no matches
     if (matches.length === 0) {
@@ -894,7 +1327,8 @@
       const match = matches[i];
       result += text.slice(lastIndex, match.offset);
       result += match.replacement;
-      lastIndex = match.offset + 1;
+      // astral characters span two code units
+      lastIndex = match.offset + (text.codePointAt(match.offset) > 0xffff ? 2 : 1);
     }
     result += text.slice(lastIndex);
 

@@ -7,11 +7,6 @@
   <a href="https://npmjs.org/package/out-of-character">
     <img src="https://img.shields.io/npm/v/out-of-character.svg?style=flat-square" />
   </a>
-
-  <!-- file size -->
-  <a href="https://unpkg.com/out-of-character/builds/out-of-character.min.js">
-    <img src="https://badge-size.herokuapp.com/spencermountain/compromise/master/plugins/dates/builds/out-of-character.min.js" />
-  </a>
 </div>
 
 <div align="center">
@@ -43,6 +38,8 @@ More often though, their use is unintentional *(or [nefarious!](https://330k.git
 
 This library helps spot and remove these funboys, before they cause some trouble.
 
+It also catches *bidirectional control characters* (the ['Trojan Source'](https://trojansource.codes/) trick), *tag characters* (invisible letters used for [steganography](https://330k.github.io/misc_tools/unicode_steganography.html)), and *stray variation selectors* — while leaving legitimate emoji, keycap, CJK, and Mongolian sequences alone.
+
 Please remember that some text is meant to have *Khmer-vowels*, or *Kaithi-alphabet* characters.
 
 <!-- spacer -->
@@ -66,6 +63,11 @@ remove them from all files in a directory
 out-of-character ./path/to/dir --replace
 ```
 
+include files in nested sub-directories
+```bash
+out-of-character ./path/to/dir --replace --recursive
+```
+
 ---
 
 detect invisible characters in a file
@@ -77,6 +79,8 @@ remove invisible characters from a file
 ```bash
 out-of-character ./path/to/file.txt --replace
 ```
+
+*(`--remove` is an alias for `--replace`, and glob patterns like `./src/**/*.js` work too)*
 
 
 <!-- spacer -->
@@ -91,14 +95,30 @@ console.log(detect(str))
 /*  😮  😮  😮
 [
   {
+    name: 'SOFT HYPHEN',
+    code: 'U+00AD',
+    type: 'Invisible',
+    offset: 4,
+    replacement: ''
+  },
+  {
+    name: 'COMBINING GRAPHEME JOINER',
+    code: 'U+034F',
+    type: 'Invisible',
+    offset: 10,
+    replacement: ''
+  },
+  {
     name: 'KHMER VOWEL INHERENT AA',
     code: 'U+17B5',
+    type: 'Invisible',
     offset: 15,
     replacement: ''
   },
   {
     name: 'MONGOLIAN VOWEL SEPARATOR',
     code: 'U+180E',
+    type: 'Invisible',
     offset: 19,
     replacement: ''
   }
@@ -108,6 +128,18 @@ console.log(detect(str))
 let after = replace(str)
 console.log(str !== after)
 // true
+```
+
+`detect` returns `null` when the text is clean. Offsets are UTF-16 code-unit indices, like `String.prototype.indexOf`.
+
+Both functions accept an options object, to leave some characters alone — by code, or by type:
+
+```js
+// keep bidi controls, and the zero-width space
+replace(str, { exclude: ['Bidi', 'U+200B'] })
+
+// types are: 'Invisible', 'Whitespace', 'Bidi', 'Variation', 'Tag',
+//   'Separator', 'Line Break', and 'Visible'
 ```
 
 fixing/detecting in files can be done like:
