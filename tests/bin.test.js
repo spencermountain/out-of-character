@@ -1,6 +1,7 @@
 import test from 'tape'
 import sh from 'shelljs'
 import fs from 'fs'
+import path from 'path'
 import getFiles from '../bin/getFiles.js'
 
 test('test glob input', function (t) {
@@ -33,15 +34,15 @@ test.skip('bin detect cmd', function (t) {
 /** @todo Review this test. */
 test.skip('replace bin cmd', function (t) {
   // Create a copy
-  const path = './tests/texts/bad-text-copy.txt'
-  sh.exec(`cp ./tests/texts/bad-text.txt ${path}`)
+  const filePath = './tests/texts/bad-text-copy.txt'
+  sh.exec(`cp ./tests/texts/bad-text.txt ${filePath}`)
 
-  const before = fs.readFileSync(path).toString()
-  sh.exec(`./bin/out-of-character.js ${path} --replace`, { silent: true })
-  const after = fs.readFileSync(path).toString()
+  const before = fs.readFileSync(filePath).toString()
+  sh.exec(`./bin/out-of-character.js ${filePath} --replace`, { silent: true })
+  const after = fs.readFileSync(filePath).toString()
   t.notEqual(before, after, 'file has changed')
   // Cleanup
-  sh.exec(`rm ${path}`)
+  sh.exec(`rm ${filePath}`)
   t.end()
 })
 
@@ -57,7 +58,7 @@ test('getFiles - directory', (t) => {
   const result = getFiles('bin')
   t.true(Array.isArray(result), 'should return an array')
   t.true(result.length > 1, 'should have multiple items')
-  t.true(result.includes('bin/getFiles.js'), 'should include getFiles.js')
+  t.true(result.includes(path.join('bin', 'getFiles.js')), 'should include getFiles.js')
 
   result.forEach(filePath => {
     t.true(fs.lstatSync(filePath).isFile(), `${filePath} should be a file`)
