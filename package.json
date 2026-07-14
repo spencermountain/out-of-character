@@ -39,11 +39,9 @@
     "testb": "TESTENV=prod tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
     "watch": "node --watch ./scratch.js",
     "lint": "eslint . --fix",
-    "lint:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -s -i",
+    "lint:lockfile": "npx lockfile-lint -p package-lock.json -t npm -a npm -s -i",
     "build": "rollup -c --silent",
-    "config:parse": "node --watch scripts/parse-config/index.js",
-    "config:view": "live-server --mount=/data:./data --mount=/:./public",
-    "config:print": "do something"
+    "config:view": "npx http-server . -o=public"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -69,18 +67,15 @@
     "builds/*.js"
   ],
   "devDependencies": {
-    "@rollup/plugin-commonjs": "29.0.2",
+    "@rollup/plugin-commonjs": "29.0.3",
     "@rollup/plugin-json": "6.1.0",
     "@rollup/plugin-node-resolve": "16.0.3",
     "@rollup/plugin-terser": "1.0.0",
-    "axios": "1.13.6",
-    "eslint": "10.0.3",
-    "live-server": "1.2.2",
-    "lockfile-lint": "5.0.0",
-    "rollup": "4.59.0",
+    "eslint": "10.7.0",
+    "rollup": "4.62.2",
     "shelljs": "0.10.0",
     "tap-dancer": "0.3.4",
-    "tape": "5.9.0"
+    "tape": "5.10.2"
   },
   "dependencies": {
     "colorette": "^2.0.20",
