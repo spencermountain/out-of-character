@@ -15,6 +15,7 @@ const spaces = [
   'before after', // PUNCTUATION SPACE
   'before after', // THIN SPACE
   'before after', // HAIR SPACE
+  'before after', // NARROW NO-BREAK SPACE
   'before after', // MEDIUM MATHEMATICAL SPACE
   'before　after', // IDEOGRAPHIC SPACE
   'before⠀after', // BRAILLE PATTERN BLANK
@@ -45,10 +46,9 @@ const noSpaces = [
   'before᠎after', // MONGOLIAN VOWEL SEPARATOR
   'before​after', // ZERO WIDTH SPACE
   'before‌after', // ZERO WIDTH NON-JOINER
-  'before‍after', // ZERO WIDTH
+  'before‍after', // ZERO WIDTH JOINER
   'before‎after', // LEFT-TO-RIGHT MARK
   'before‏after', // RIGHT-TO-LEFT MARK
-  'before after', // NARROW NO-BREAK SPACE
   'before⁠after', // WORD JOINER
   'before⁡after', // FUNCTION APPLICATION
   'before⁢after', // INVISIBLE TIMES
@@ -61,26 +61,27 @@ const noSpaces = [
   'before⁮after', // NATIONAL DIGIT SHAPES
   'before⁯after', // NOMINAL DIGIT SHAPES
   'before﻿after', // ZERO WIDTH NO-BREAK SPACE
-  // 'beforeႱafter', // KAITHI VOWEL SIGN I
-  // 'before베after', // SHORTHAND FORMAT LETTER OVERLAP
-  // 'before벡after', // SHORTHAND FORMAT CONTINUING OVERLAP
-  // 'before벢after', // SHORTHAND FORMAT DOWN STEP
-  // 'before벣after', // SHORTHAND FORMAT UP STEP
-  // 'before텙after', // MUSICAL SYMBOL NULL NOTEHEAD
-  // 'before텳after', // MUSICAL SYMBOL BEGIN BEAM
-  // 'before텴after', // MUSICAL SYMBOL END BEAM
-  // 'before텵after', // MUSICAL SYMBOL BEGIN TIE
-  // 'before텶after', // MUSICAL SYMBOL END TIE
-  // 'before텷after', // MUSICAL SYMBOL BEGIN SLUR
-  // 'before텸after', // MUSICAL SYMBOL END SLUR
-  // 'before텹after', // MUSICAL SYMBOL BEGIN PHRASE
-  // 'before텺after', // MUSICAL SYMBOL END PHRASE
+  'before\u{110B1}after', // KAITHI VOWEL SIGN I
+  'before\u{1BCA0}after', // SHORTHAND FORMAT LETTER OVERLAP
+  'before\u{1BCA1}after', // SHORTHAND FORMAT CONTINUING OVERLAP
+  'before\u{1BCA2}after', // SHORTHAND FORMAT DOWN STEP
+  'before\u{1BCA3}after', // SHORTHAND FORMAT UP STEP
+  'before\u{1D159}after', // MUSICAL SYMBOL NULL NOTEHEAD
+  'before\u{1D173}after', // MUSICAL SYMBOL BEGIN BEAM
+  'before\u{1D174}after', // MUSICAL SYMBOL END BEAM
+  'before\u{1D175}after', // MUSICAL SYMBOL BEGIN TIE
+  'before\u{1D176}after', // MUSICAL SYMBOL END TIE
+  'before\u{1D177}after', // MUSICAL SYMBOL BEGIN SLUR
+  'before\u{1D178}after', // MUSICAL SYMBOL END SLUR
+  'before\u{1D179}after', // MUSICAL SYMBOL BEGIN PHRASE
+  'before\u{1D17A}after', // MUSICAL SYMBOL END PHRASE
 ]
 test('remove whitespace characters', function (t) {
   noSpaces.forEach((before, i) => {
     const after = replace(before)
     t.notEqual(before, after, `#${i} - ${before}`)
     t.equal(after, 'beforeafter', `#${i} - is 'beforeafter'`)
+    t.equal(after.isWellFormed(), true, `#${i} - no lone surrogates`)
   })
   t.end()
 })

@@ -35,7 +35,7 @@
         "escapeChar": "",
         "name": "NEXT LINE",
         "replaceWith": "",
-        "type": "Separators"
+        "type": "Separator"
     },
     {
         "aka": "",
@@ -51,7 +51,7 @@
         "escapeChar": "",
         "name": "LINE SEPARATOR",
         "replaceWith": "",
-        "type": "Separators"
+        "type": "Separator"
     },
     {
         "aka": "",
@@ -59,7 +59,7 @@
         "escapeChar": "",
         "name": "PARAGRAPH SEPARATOR",
         "replaceWith": "",
-        "type": "Separators"
+        "type": "Separator"
     },
     {
         "aka": "",
@@ -92,12 +92,12 @@
         "type": "Invisible"
     },
     {
-        "aka": "",
+        "aka": "ALM",
         "code": "U+061C",
         "escapeChar": "",
         "name": "ARABIC LETTER MARK",
         "replaceWith": "",
-        "type": "Invisible"
+        "type": "Bidi"
     },
     {
         "aka": "",
@@ -268,27 +268,27 @@
         "type": "Invisible"
     },
     {
-        "aka": "",
+        "aka": "LRM",
         "code": "U+200E",
         "escapeChar": "",
         "name": "LEFT-TO-RIGHT MARK",
         "replaceWith": "",
-        "type": "Invisible"
+        "type": "Bidi"
     },
     {
-        "aka": "",
+        "aka": "RLM",
         "code": "U+200F",
         "escapeChar": "",
         "name": "RIGHT-TO-LEFT MARK",
         "replaceWith": "",
-        "type": "Invisible"
+        "type": "Bidi"
     },
     {
         "aka": "",
         "code": "U+202F",
         "escapeChar": "",
         "name": "NARROW NO-BREAK SPACE",
-        "replaceWith": "",
+        "replaceWith": " ",
         "type": "Whitespace"
     },
     {
@@ -536,6 +536,262 @@
         "code": "U+1D17A",
         "escapeChar": "",
         "name": "MUSICAL SYMBOL END PHRASE",
+        "replaceWith": "",
+        "type": "Invisible"
+    },
+    {
+        "aka": "FVS1",
+        "code": "U+180B",
+        "escapeChar": "",
+        "name": "MONGOLIAN FREE VARIATION SELECTOR ONE",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "FVS2",
+        "code": "U+180C",
+        "escapeChar": "",
+        "name": "MONGOLIAN FREE VARIATION SELECTOR TWO",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "FVS3",
+        "code": "U+180D",
+        "escapeChar": "",
+        "name": "MONGOLIAN FREE VARIATION SELECTOR THREE",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "FVS4",
+        "code": "U+180F",
+        "escapeChar": "",
+        "name": "MONGOLIAN FREE VARIATION SELECTOR FOUR",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "LRE",
+        "code": "U+202A",
+        "escapeChar": "",
+        "name": "LEFT-TO-RIGHT EMBEDDING",
+        "replaceWith": "",
+        "type": "Bidi"
+    },
+    {
+        "aka": "RLE",
+        "code": "U+202B",
+        "escapeChar": "",
+        "name": "RIGHT-TO-LEFT EMBEDDING",
+        "replaceWith": "",
+        "type": "Bidi"
+    },
+    {
+        "aka": "PDF",
+        "code": "U+202C",
+        "escapeChar": "",
+        "name": "POP DIRECTIONAL FORMATTING",
+        "replaceWith": "",
+        "type": "Bidi"
+    },
+    {
+        "aka": "LRO",
+        "code": "U+202D",
+        "escapeChar": "",
+        "name": "LEFT-TO-RIGHT OVERRIDE",
+        "replaceWith": "",
+        "type": "Bidi"
+    },
+    {
+        "aka": "RLO",
+        "code": "U+202E",
+        "escapeChar": "",
+        "name": "RIGHT-TO-LEFT OVERRIDE",
+        "replaceWith": "",
+        "type": "Bidi"
+    },
+    {
+        "aka": "LRI",
+        "code": "U+2066",
+        "escapeChar": "",
+        "name": "LEFT-TO-RIGHT ISOLATE",
+        "replaceWith": "",
+        "type": "Bidi"
+    },
+    {
+        "aka": "RLI",
+        "code": "U+2067",
+        "escapeChar": "",
+        "name": "RIGHT-TO-LEFT ISOLATE",
+        "replaceWith": "",
+        "type": "Bidi"
+    },
+    {
+        "aka": "FSI",
+        "code": "U+2068",
+        "escapeChar": "",
+        "name": "FIRST STRONG ISOLATE",
+        "replaceWith": "",
+        "type": "Bidi"
+    },
+    {
+        "aka": "PDI",
+        "code": "U+2069",
+        "escapeChar": "",
+        "name": "POP DIRECTIONAL ISOLATE",
+        "replaceWith": "",
+        "type": "Bidi"
+    },
+    {
+        "aka": "VS1",
+        "code": "U+FE00",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-1",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS2",
+        "code": "U+FE01",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-2",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS3",
+        "code": "U+FE02",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-3",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS4",
+        "code": "U+FE03",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-4",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS5",
+        "code": "U+FE04",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-5",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS6",
+        "code": "U+FE05",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-6",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS7",
+        "code": "U+FE06",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-7",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS8",
+        "code": "U+FE07",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-8",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS9",
+        "code": "U+FE08",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-9",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS10",
+        "code": "U+FE09",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-10",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS11",
+        "code": "U+FE0A",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-11",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS12",
+        "code": "U+FE0B",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-12",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS13",
+        "code": "U+FE0C",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-13",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS14",
+        "code": "U+FE0D",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-14",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS15",
+        "code": "U+FE0E",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-15",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "VS16",
+        "code": "U+FE0F",
+        "escapeChar": "",
+        "name": "VARIATION SELECTOR-16",
+        "replaceWith": "",
+        "type": "Variation"
+    },
+    {
+        "aka": "",
+        "code": "U+FFF9",
+        "escapeChar": "",
+        "name": "INTERLINEAR ANNOTATION ANCHOR",
+        "replaceWith": "",
+        "type": "Invisible"
+    },
+    {
+        "aka": "",
+        "code": "U+FFFA",
+        "escapeChar": "",
+        "name": "INTERLINEAR ANNOTATION SEPARATOR",
+        "replaceWith": "",
+        "type": "Invisible"
+    },
+    {
+        "aka": "",
+        "code": "U+FFFB",
+        "escapeChar": "",
+        "name": "INTERLINEAR ANNOTATION TERMINATOR",
         "replaceWith": "",
         "type": "Invisible"
     }

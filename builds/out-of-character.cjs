@@ -1,4 +1,6 @@
 /* out-of-character 2.3.0 MIT */
+'use strict';
+
 var data = [
 	{
 		actualUnicodeChar: "\n",
@@ -1329,4 +1331,5 @@ const replace = function (text, opts) {
   return result
 };
 
-export { detect, replace };
+exports.detect = detect;
+exports.replace = replace;

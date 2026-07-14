@@ -21,7 +21,7 @@ const getFiles = function (pathStr, recursive = false) {
           if (fs.lstatSync(filePath).isDirectory()) {
             // Recursively process subdirectories
             if (deep) {
-              getDirectory(filePath)
+              getDirectory(filePath, deep)
             }
           } else {
             // Add file to the list
