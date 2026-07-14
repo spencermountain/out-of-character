@@ -780,10 +780,6 @@
     "url": "https://www.compart.com/en/unicode/U+1D17A"
   },
   {
-<<<<<<< HEAD
-    "actualUnicodeChar": "‪",
-    "aka": "",
-=======
     "actualUnicodeChar": "᠋",
     "aka": "FVS1",
     "code": "U+180B",
@@ -830,17 +826,12 @@
   {
     "actualUnicodeChar": "‪",
     "aka": "LRE",
->>>>>>> ddfc35b (2.3.0rc)
     "code": "U+202A",
     "codeEscaped": "\\u202A",
     "escapeChar": "",
     "name": "LEFT-TO-RIGHT EMBEDDING",
     "replaceWith": "",
-<<<<<<< HEAD
-    "type": "Invisible",
-=======
     "type": "Bidi",
->>>>>>> ddfc35b (2.3.0rc)
     "url": "https://www.compart.com/en/unicode/U+202A"
   },
   {
