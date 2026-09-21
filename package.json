@@ -10,6 +10,7 @@
       "url": "https://github.com/fdawgs"
     }
   ],
+  "homepage": "https://work.spencermountain.dev/out-of-character",
   "main": "./builds/out-of-character.cjs",
   "unpkg": "./builds/out-of-character.min.js",
   "types": "types/index.d.ts",
@@ -26,26 +27,18 @@
       }
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/spencermountain/out-of-character.git"
-  },
-  "homepage": "https://github.com/spencermountain/out-of-character",
-  "bugs": {
-    "url": "https://github.com/spencermountain/out-of-character/issues"
-  },
+  "repository": "github:spencermountain/out-of-character",
   "scripts": {
     "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
     "testb": "TESTENV=prod tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
     "watch": "node --watch ./scratch.js",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
     "lint:lockfile": "npx lockfile-lint -p package-lock.json -t npm -a npm -s -i",
     "build": "rollup -c --silent",
     "config:view": "npx http-server . -o=public"
   },
   "prettier": {
     "trailingComma": "es5",
-    "tabWidth": 2,
     "semi": false,
     "singleQuote": true,
     "printWidth": 120
@@ -63,9 +56,6 @@
     "builds/",
     "types/"
   ],
-  "eslintIgnore": [
-    "builds/*.js"
-  ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "29.0.3",
     "@rollup/plugin-json": "6.1.0",
@@ -74,7 +64,7 @@
     "eslint": "10.7.0",
     "rollup": "4.62.2",
     "shelljs": "0.10.0",
-    "tap-dancer": "0.3.4",
+    "tap-dancer": "0.4.0",
     "tape": "5.10.2"
   },
   "dependencies": {
