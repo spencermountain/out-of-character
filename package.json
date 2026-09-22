@@ -1,19 +1,18 @@
 {
   "name": "out-of-character",
-  "description": "remove invisible unicode characters",
   "version": "2.3.0",
+  "description": "remove invisible unicode characters",
+  "license": "MIT",
+  "repository": "github:spencermountain/out-of-character",
+  "homepage": "https://work.spencermountain.dev/out-of-character",
   "author": "Spencer Kelly and Adam Tsiopani",
   "contributors": [
-    {
-      "name": "Frazer Smith",
-      "email": "frazer.dev@icloud.com",
-      "url": "https://github.com/fdawgs"
-    }
+    "Frazer Smith <frazer.dev@icloud.com> (https://github.com/fdawgs)"
   ],
-  "homepage": "https://work.spencermountain.dev/out-of-character",
-  "main": "./builds/out-of-character.cjs",
-  "unpkg": "./builds/out-of-character.min.js",
-  "types": "types/index.d.ts",
+  "keywords": [
+    "unicode",
+    "invisible"
+  ],
   "type": "module",
   "exports": {
     ".": {
@@ -27,7 +26,15 @@
       }
     }
   },
-  "repository": "github:spencermountain/out-of-character",
+  "main": "./builds/out-of-character.cjs",
+  "types": "./types/index.d.ts",
+  "bin": {
+    "out-of-character": "./bin/out-of-character.js"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.10.0"
+  },
   "scripts": {
     "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
     "testb": "TESTENV=prod tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
@@ -37,25 +44,17 @@
     "build": "rollup -c --silent",
     "config:view": "npx http-server . -o=public"
   },
-  "prettier": {
-    "trailingComma": "es5",
-    "semi": false,
-    "singleQuote": true,
-    "printWidth": 120
-  },
-  "bin": {
-    "out-of-character": "./bin/out-of-character.js"
-  },
-  "engines": {
-    "node": ">=20.10.0"
-  },
   "files": [
-    "src/",
-    "data/characters.json",
     "bin/",
     "builds/",
+    "data/characters.json",
+    "src/",
     "types/"
   ],
+  "dependencies": {
+    "colorette": "^2.0.20",
+    "glob": "13.0.6"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "29.0.3",
     "@rollup/plugin-json": "6.1.0",
@@ -67,9 +66,11 @@
     "tap-dancer": "0.4.0",
     "tape": "5.10.2"
   },
-  "dependencies": {
-    "colorette": "^2.0.20",
-    "glob": "13.0.6"
-  },
-  "license": "MIT"
+  "unpkg": "./builds/out-of-character.min.js",
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120
+  }
 }
