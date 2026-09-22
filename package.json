@@ -61,8 +61,8 @@
     "@rollup/plugin-json": "6.1.0",
     "@rollup/plugin-node-resolve": "16.0.3",
     "@rollup/plugin-terser": "1.0.0",
-    "eslint": "10.7.0",
-    "rollup": "4.62.2",
+    "eslint": "10.11.0",
+    "rollup": "4.63.4",
     "shelljs": "0.10.0",
     "tap-dancer": "0.4.0",
     "tape": "5.10.2"
