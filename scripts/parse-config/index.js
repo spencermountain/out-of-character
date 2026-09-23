@@ -3,8 +3,8 @@
 /** @todo Turn this into modules and promisify + tidy. **/
 import codes from '../../data/codes.json' with { type: 'json' }
 import config from '../../data/characters-raw.json' with { type: 'json' }
-import fs from 'fs'
-import { resolve } from 'path'
+import fs from 'node:fs'
+import { resolve } from 'node:path'
 
 let parsed = []
 

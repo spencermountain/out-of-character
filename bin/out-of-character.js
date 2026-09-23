@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import fs from 'fs'
+import fs from 'node:fs'
 import { dim, blue } from 'colorette'
 import detectFile from './detect-file.js'
 import { replace } from '../src/index.js'

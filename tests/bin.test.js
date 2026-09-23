@@ -1,7 +1,7 @@
 import test from 'tape'
 import sh from 'shelljs'
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
 import getFiles from '../bin/getFiles.js'
 
 test('test glob input', function (t) {

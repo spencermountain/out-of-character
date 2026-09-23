@@ -1,6 +1,6 @@
 import { globSync, hasMagic } from 'glob'
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
 
 /**
  * @description Get files from a directory, file, or glob pattern.
