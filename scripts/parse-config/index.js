@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 
 /** @todo Turn this into modules and promisify + tidy. **/
-import codes from '../../data/codes.json' with { type: 'json' }
-import config from '../../data/characters-raw.json' with { type: 'json' }
+import codes from '../../data/codes.js'
+import config from '../../data/characters-raw.js'
 import fs from 'node:fs'
 import { resolve } from 'node:path'
 

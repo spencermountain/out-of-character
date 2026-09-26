@@ -9,10 +9,6 @@
   "contributors": [
     "Frazer Smith <frazer.dev@icloud.com> (https://github.com/fdawgs)"
   ],
-  "keywords": [
-    "unicode",
-    "invisible"
-  ],
   "type": "module",
   "exports": {
     ".": {
@@ -33,7 +29,7 @@
   },
   "sideEffects": false,
   "engines": {
-    "node": ">=20.10.0"
+    "node": ">=20"
   },
   "scripts": {
     "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
@@ -51,19 +47,21 @@
     "src/",
     "types/"
   ],
+  "keywords": [
+    "unicode",
+    "invisible"
+  ],
   "dependencies": {
     "colorette": "^2.0.20",
     "glob": "13.0.6"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "29.0.3",
-    "@rollup/plugin-json": "6.1.0",
-    "@rollup/plugin-node-resolve": "16.0.3",
     "@rollup/plugin-terser": "1.0.0",
     "eslint": "10.11.0",
-    "rollup": "4.63.4",
+    "rollup": "4.63.5",
+    "rollup-plugin-filesize-check": "2.0.1",
     "shelljs": "0.10.0",
-    "tap-dancer": "0.4.0",
+    "tap-dancer": "0.4.3",
     "tape": "5.10.2"
   },
   "unpkg": "./builds/out-of-character.min.js",

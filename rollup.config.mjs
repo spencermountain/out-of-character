@@ -1,11 +1,11 @@
-import commonjs from '@rollup/plugin-commonjs'
 import json from '@rollup/plugin-json'
-import resolve from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
+import sizeCheck from 'rollup-plugin-filesize-check'
+import fs from 'node:fs'
+
+const pkg = JSON.parse(fs.readFileSync('./package.json').toString())
+
 const name = 'out-of-character'
-
-import pkg from './package.json' with { type: 'json' };
-
 const banner = `/* ${name} ${pkg.version} MIT */`
 
 export default [
@@ -19,9 +19,6 @@ export default [
       },
     ],
     plugins: [
-      resolve(),
-      json(),
-      commonjs(),
     ],
   },
   {
@@ -36,9 +33,6 @@ export default [
       },
     ],
     plugins: [
-      resolve(),
-      json(),
-      commonjs(),
     ],
   },
   {
@@ -53,9 +47,6 @@ export default [
       },
     ],
     plugins: [
-      resolve(),
-      json(),
-      commonjs(),
     ],
   },
   {
@@ -68,10 +59,12 @@ export default [
       },
     ],
     plugins: [
-      resolve(),
-      json(),
-      commonjs(),
       terser(),
+      sizeCheck({
+        expect: 21, // sizes in kb
+        warn: 10, // acceptable change (+/-)
+        throw: 20, // unacceptable change (+/-)
+      })
     ],
   },
 ]

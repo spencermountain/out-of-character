@@ -1,4 +1,4 @@
-import data from '../data/characters.json' with { type: 'json' }
+import data from '../data/characters.js'
 import { isEmoji, charBefore } from './isEmoji.js'
 
 // For easier lookup — keyed by the literal character
