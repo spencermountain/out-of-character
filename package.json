@@ -37,7 +37,8 @@
     "watch": "node --watch ./scratch.js",
     "lint": "eslint .",
     "lint:lockfile": "npx lockfile-lint -p package-lock.json -t npm -a npm -s -i",
-    "build": "rollup -c --silent",
+    "build": "node ./scripts/version.js && rollup -c --silent",
+    "version": "node ./scripts/version.js",
     "config:view": "npx http-server . -o=public"
   },
   "files": [

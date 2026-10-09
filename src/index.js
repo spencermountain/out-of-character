@@ -1,4 +1,5 @@
 import findAll from './match.js'
+import version from './_version.js'
 
 
 /**
@@ -49,4 +50,4 @@ const replace = function (text, opts) {
   return result
 }
 
-export { detect, replace }
+export { detect, replace, version }

@@ -1,4 +1,3 @@
-import json from '@rollup/plugin-json'
 import terser from '@rollup/plugin-terser'
 import sizeCheck from 'rollup-plugin-filesize-check'
 import fs from 'node:fs'

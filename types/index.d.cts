@@ -22,3 +22,5 @@ export function detect(input: string, opts?: Options): FoundCharacter[] | null
 
 /** remove invisible characters from the text */
 export function replace(input: string, opts?: Options): string
+
+export const version: string
