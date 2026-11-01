@@ -75,7 +75,7 @@
     "rollup": "4.62.2",
     "shelljs": "0.10.0",
     "tap-dancer": "0.3.4",
-    "tape": "5.10.2"
+    "tape": "5.10.3"
   },
   "dependencies": {
     "colorette": "^2.0.20",
