@@ -1,6 +1,8 @@
-import { globSync, hasMagic } from 'glob'
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
+
+// glob characters: * ? [ ] { }
+const hasMagic = (str) => /[*?[\]{}]/.test(str)
 
 /**
  * @description Get files from a directory, file, or glob pattern.
@@ -37,7 +39,8 @@ const getFiles = function (pathStr, recursive = false) {
 
   // Handle glob patterns
   if (!fs.existsSync(pathStr) && hasMagic(pathStr)) {
-    return globSync(pathStr) || []
+    // native glob, node>=22
+    return fs.globSync(pathStr).filter((file) => !fs.lstatSync(file).isDirectory())
   }
 
   // Check if it's a file or directory

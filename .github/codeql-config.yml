@@ -11,4 +11,7 @@ paths:
   - "**/*.html"
   - "**/*.js"
   - "**/*.yml"
-  - "!build/**"
+
+paths-ignore:
+  - "builds/**"
+  - "scratch.js"

@@ -1,18 +1,14 @@
 {
   "name": "out-of-character",
+  "version": "3.0.0",
   "description": "remove invisible unicode characters",
-  "version": "2.3.0",
+  "license": "MIT",
+  "repository": "github:spencermountain/out-of-character",
+  "homepage": "https://work.spencermountain.dev/out-of-character",
   "author": "Spencer Kelly and Adam Tsiopani",
   "contributors": [
-    {
-      "name": "Frazer Smith",
-      "email": "frazer.dev@icloud.com",
-      "url": "https://github.com/fdawgs"
-    }
+    "Frazer Smith <frazer.dev@icloud.com> (https://github.com/fdawgs)"
   ],
-  "main": "./builds/out-of-character.cjs",
-  "unpkg": "./builds/out-of-character.min.js",
-  "types": "types/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
@@ -26,60 +22,46 @@
       }
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/spencermountain/out-of-character.git"
+  "main": "./builds/out-of-character.cjs",
+  "types": "./types/index.d.ts",
+  "bin": {
+    "out-of-character": "./bin/out-of-character.js"
   },
-  "homepage": "https://github.com/spencermountain/out-of-character",
-  "bugs": {
-    "url": "https://github.com/spencermountain/out-of-character/issues"
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
   },
   "scripts": {
     "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
-    "testb": "TESTENV=prod tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
     "watch": "node --watch ./scratch.js",
-    "lint": "eslint . --fix",
-    "lint:lockfile": "npx lockfile-lint -p package-lock.json -t npm -a npm -s -i",
-    "build": "rollup -c --silent",
-    "config:view": "npx http-server . -o=public"
+    "lint": "eslint .",
+    "build": "node ./scripts/version.js && node ./scripts/data.js && rollup -c --silent",
+    "version": "node ./scripts/version.js",
+    "unicode:check": "node ./scripts/unicode-check.js"
   },
+  "files": [
+    "bin/",
+    "builds/",
+    "src/",
+    "types/"
+  ],
+  "keywords": [
+    "unicode",
+    "invisible"
+  ],
   "prettier": {
     "trailingComma": "es5",
-    "tabWidth": 2,
     "semi": false,
     "singleQuote": true,
     "printWidth": 120
   },
-  "bin": {
-    "out-of-character": "./bin/out-of-character.js"
-  },
-  "engines": {
-    "node": ">=20.10.0"
-  },
-  "files": [
-    "src/",
-    "data/characters.json",
-    "bin/",
-    "builds/",
-    "types/"
-  ],
-  "eslintIgnore": [
-    "builds/*.js"
-  ],
   "devDependencies": {
-    "@rollup/plugin-commonjs": "29.0.3",
-    "@rollup/plugin-json": "6.1.0",
-    "@rollup/plugin-node-resolve": "16.0.3",
-    "@rollup/plugin-terser": "1.0.0",
-    "eslint": "10.7.0",
-    "rollup": "4.62.2",
-    "shelljs": "0.10.0",
-    "tap-dancer": "0.3.4",
-    "tape": "5.10.2"
+    "@rollup/plugin-terser": "1.0.2",
+    "eslint": "10.15.0",
+    "rollup": "4.68.8",
+    "rollup-plugin-filesize-check": "2.0.1",
+    "tap-dancer": "0.4.4",
+    "tape": "5.11.0"
   },
-  "dependencies": {
-    "colorette": "^2.0.20",
-    "glob": "13.0.6"
-  },
-  "license": "MIT"
+  "unpkg": "./builds/out-of-character.min.js"
 }

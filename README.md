@@ -1,46 +1,40 @@
 <div align="center">
-  <img src="https://cloud.githubusercontent.com/assets/399657/23590290/ede73772-01aa-11e7-8915-181ef21027bc.png" />
-
-  <div>remove invisible unicode characters from a text</div>
-
-  <!-- npm version -->
+  <div><b>out-of-character</b></div>
+  <div>remove invisible unicode characters from text</div>
+  <div>
+    <img width="300" height="8" alt="image" src="https://github.com/user-attachments/assets/a8454327-add3-4486-ad7d-c24be50f9d8d" />
+  </div>
   <a href="https://npmjs.org/package/out-of-character">
     <img src="https://img.shields.io/npm/v/out-of-character.svg?style=flat-square" />
   </a>
+  <a href="https://bundlephobia.com/result?p=out-of-character">
+    <img src="https://badgen.net/bundlejs/min/out-of-character" />
+  </a>
+  <div align="center">
+    <code>npm install out-of-character</code>
+  </div>
 </div>
-
-<div align="center">
-  <code>npm install out-of-character</code>
-    <div>by <a href="https://github.com/spencermountain">Spencer Kelly</a> and <a href="https://github.com/thegoatherder">Adam Tsiopani</a></div>
-  <hr/>
-</div>
-
 <!-- spacer -->
-<img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+<img height="20px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
-Unicode has [a few-dozen](https://character.construction/blanks) characters that *do not render anything*, on purpose.
+Unicode has [a few-dozen](https://character.construction/blanks) characters that _do not render anything_, on purpose.
 
-This is *cool* for cultural idiosyncracies in historical languages.
-More often though, their use is unintentional *(or [nefarious!](https://330k.github.io/misc_tools/unicode_steganography.html))*, and these characters end-up causing problems parsing text formats.
-
-<img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
-<!-- spacer -->
-
-<div align="center">
-
-• these are sometimes called *'zero-width'*, *'ignorable'*, or *'tag-characters'* • <br/>
-
-</div>
+This is _cool_ for cultural idiosyncracies in historical languages.
+More often though, their use is unintentional _(or [nefarious!](https://330k.github.io/misc_tools/unicode_steganography.html))_, and these characters end-up causing problems parsing text formats.
 
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 <!-- spacer -->
 
+these are sometimes called _'zero-width'_, _'ignorable'_, or _'tag-characters'_
+
+<img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
+<!-- spacer -->
 
 This library helps spot and remove these funboys, before they cause some trouble.
 
-It also catches *bidirectional control characters* (the ['Trojan Source'](https://trojansource.codes/) trick), *tag characters* (invisible letters used for [steganography](https://330k.github.io/misc_tools/unicode_steganography.html)), and *stray variation selectors* — while leaving legitimate emoji, keycap, CJK, and Mongolian sequences alone.
+It also catches _bidirectional control characters_ (the ['Trojan Source'](https://trojansource.codes/) trick), _tag characters_ (invisible letters used for [steganography](https://330k.github.io/misc_tools/unicode_steganography.html)), _stray variation selectors_, _Egyptian hieroglyph format controls_, and _unassigned ignorable code points_ — while leaving legitimate emoji, keycap, CJK, Mongolian, and hieroglyphic sequences alone.
 
-Please remember that some text is meant to have *Khmer-vowels*, or *Kaithi-alphabet* characters.
+Please remember that some text is meant to have _Khmer-vowels_, or _Kaithi-alphabet_ characters.
 
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
@@ -54,16 +48,19 @@ Please remember that some text is meant to have *Khmer-vowels*, or *Kaithi-alpha
 </di>
 
 detect invisible characters in all files in a directory
+
 ```bash
 out-of-character ./path/to/dir
 ```
 
 remove them from all files in a directory
+
 ```bash
 out-of-character ./path/to/dir --replace
 ```
 
 include files in nested sub-directories
+
 ```bash
 out-of-character ./path/to/dir --replace --recursive
 ```
@@ -71,26 +68,30 @@ out-of-character ./path/to/dir --replace --recursive
 ---
 
 detect invisible characters in a file
+
 ```bash
 out-of-character ./path/to/file.txt
 ```
 
 remove invisible characters from a file
+
 ```bash
 out-of-character ./path/to/file.txt --replace
 ```
 
-*(`--remove` is an alias for `--replace`, and glob patterns like `./src/**/*.js` work too)*
+_(glob patterns like `'./src/**/*.js'` work too, and you can pass several paths at once)_
 
+the command exits with a non-zero code when it finds hidden characters, so it can be used in a CI step or pre-commit hook.
 
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
 ## Javascript API
-```js
-import {detect, replace} from 'out-of-character'
 
-let str='noth­ing s͏neak឵y h᠎ere' //actually, there is.
+```js
+import { detect, replace } from 'out-of-character'
+
+let str = 'noth­ing s͏neak឵y h᠎ere' //actually, there is.
 console.log(detect(str))
 /*  😮  😮  😮
 [
@@ -130,7 +131,7 @@ console.log(str !== after)
 // true
 ```
 
-`detect` returns `null` when the text is clean. Offsets are UTF-16 code-unit indices, like `String.prototype.indexOf`.
+`detect` returns an empty array when the text is clean. Offsets are UTF-16 code-unit indices, like `String.prototype.indexOf`.
 
 Both functions accept an options object, to leave some characters alone — by code, or by type:
 
@@ -143,9 +144,10 @@ replace(str, { exclude: ['Bidi', 'U+200B'] })
 ```
 
 fixing/detecting in files can be done like:
+
 ```js
 const fs = require('fs')
-const {detect, replace} = require('out-of-character')
+const { detect, replace } = require('out-of-character')
 
 let text = fs.readFileSync('./some-file.txt').toString()
 console.log(detect(text))
@@ -158,21 +160,21 @@ fs.writeFileSync('./some-file.txt', replace(text))
 let goodNow = fs.readFileSync('./some-file.txt').toString()
 console.log(detect(goodNow))
 // fhew.
-
 ```
 
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
-*Thank you to [character.construction/blanks](https://character.construction/blanks) by [Jan Lelis](https://janlelis.com/)*
-
-*and [a tale of characters in Unicode](https://www.contentful.com/blog/2016/12/06/unicode-javascript-and-the-emoji-family/) by [Stefan Judis](https://github.com/stefanjudis)*
-
 ### See also
-* [printable-characters](https://github.com/xpl/printable-characters) - by Vit Gordon
-* [unzalgo](https://github.com/kdex/unzalgo) - by kdex
+
+- [printable-characters](https://github.com/xpl/printable-characters) - by Vit Gordon
+- [unzalgo](https://github.com/kdex/unzalgo) - by kdex
 
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
-MIT
+_Thank you to [character.construction/blanks](https://character.construction/blanks) by [Jan Lelis](https://janlelis.com/)_
+
+_and [a tale of characters in Unicode](https://www.contentful.com/blog/2016/12/06/unicode-javascript-and-the-emoji-family/) by [Stefan Judis](https://github.com/stefanjudis)_
+
+MIT - PRs welcomed

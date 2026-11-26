@@ -1,6 +1,6 @@
-import fs from 'fs'
+import fs from 'node:fs'
 import { detect } from '../src/index.js'
-import { blue, yellow, dim, italic, red } from 'colorette'
+import { styleText } from 'node:util'
 
 /**
  * @description Detects hidden characters in a file.
@@ -10,18 +10,18 @@ import { blue, yellow, dim, italic, red } from 'colorette'
 const detectFile = function (path) {
   const text = fs.readFileSync(path).toString()
   const found = detect(text)
-  if (found && found.length > 0) {
-    console.log('\n  ' + yellow(path))
+  if (found.length > 0) {
+    console.log('\n  ' + styleText('yellow', path))
     const noun = found.length > 1 ? 'characters' : 'character'
-    console.log(blue(`   - Found hidden-${noun} - `))
+    console.log(styleText('blue', `   - Found hidden-${noun} - `))
     found.forEach((obj) => {
-      console.log(dim(`     ${red('•')} '${obj.name}' :${obj.offset}`))
+      console.log(styleText('dim', `     ${styleText('red', '•')} '${obj.name}' :${obj.offset}`))
     })
     return true
   }
   // Looks good
-  console.log(italic('  ' + yellow(path)))
-  console.log(dim(blue(`     ${'•'} looks good`)))
+  console.log(styleText('italic', '  ' + styleText('yellow', path)))
+  console.log(styleText('dim', styleText('blue', '     • looks good')))
   return false
 }
 

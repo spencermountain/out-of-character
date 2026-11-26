@@ -3,7 +3,23 @@
 
 -->
 
-#### 2.3.0
+#### 3.0.0 [Nov 2026]
+
+- **[change]** - use native nodev22 glob
+- **[change]** - Node 20 is no longer supported
+- **[change]** - Exit non-zero when hidden characters are found
+- **[change]** - detect() always returns an array
+- **[change]** - Multiple paths in CLI
+- **[change]** - `--test, --detect` and `--remove` CLI flags removed
+- **[change]** - unminified builds/out-of-character.js is no longer shipped
+- **[new]** - 4,006 new hidden characters
+- - Supplementary variation selectors
+- - Unassigned
+- - Egyptian hieroglyph format controls
+- **[change]** - now zero dependencies
+
+#### 2.3.0 [Jul 2026]
+
 - **[fix]** `replace()` no longer leaves a lone surrogate behind when removing an astral character (kaithi, duployan, musical symbols)
 - **[fix]** `require('out-of-character')` works again — added a proper commonjs build (`builds/out-of-character.cjs`)
 - **[fix]** cli `--remove` actually removes, `--recursive` actually recurses (and no longer disables `--replace`)
@@ -19,30 +35,36 @@
 - **[change]** sourcemaps are disabled for the umd build
 - **[update]** cleanup dependencies
 
-
 #### 2.2.0
+
 - update dependencies
 
 #### 2.1.0
+
 - update dependencies
 
 #### 2.0.1
+
 - performance improvements
 
 #### 2.0.0
+
 - **BREAKING CHANGE**: dropped support for Node <=18
 - removed Babel to get rid of inefficient polyfills
 - performance improvements
 
 #### 1.2.4
+
 - performance improvements
 
 #### 1.2.3
+
 - update deps
 - cosmetic changes
 - performance improvements
 
 #### 1.2.2
+
 - fix/nbsp
 - cosmetic changes
 - update deps

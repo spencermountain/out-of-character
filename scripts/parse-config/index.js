@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
 
 /** @todo Turn this into modules and promisify + tidy. **/
-import codes from '../../data/codes.json' with { type: 'json' }
-import config from '../../data/characters-raw.json' with { type: 'json' }
-import fs from 'fs'
-import { resolve } from 'path'
+import codes from '../../data/codes.js'
+import config from '../../data/characters-raw.js'
+import fs from 'node:fs'
+import { resolve } from 'node:path'
 
 let parsed = []
 
@@ -36,7 +36,7 @@ const parse = function (char) {
 }
 
 const save = function (obj) {
-  fs.writeFile(resolve(`${import.meta.dirname}/../../data/characters.json`), JSON.stringify(obj, null, 2) + '\n', (err) => {
+  fs.writeFile(resolve(`${import.meta.dirname}/../../data/characters.js`), 'export default ' + JSON.stringify(obj, null, 2) + '\n', (err) => {
     if (err) throw err
     console.log('The file has been saved!')
     console.log(parsed)

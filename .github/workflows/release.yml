@@ -29,20 +29,20 @@ jobs:
 
       - name: install
         run: |
-          npm ci --ignore-scripts
+          npm install -g pnpm@12
+          pnpm install --frozen-lockfile --ignore-scripts
 
       - name: static checks
         run: |
-          npm run lint
+          pnpm run lint
 
       - name: build
         run: |
-          npm run build
+          pnpm run build
 
       - name: test
         run: |
-          npm run test
-          npm run testb
+          pnpm run test
 
       - name: publish
         run: |

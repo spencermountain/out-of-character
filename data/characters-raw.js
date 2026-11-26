@@ -1,4 +1,4 @@
-[
+export default [
     {
         "aka": "LF",
         "code": "U+000A",

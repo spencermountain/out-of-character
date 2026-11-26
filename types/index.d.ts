@@ -17,8 +17,10 @@ export interface Options {
   exclude?: string[]
 }
 
-/** find the invisible characters in this text, or null if there are none */
-export function detect(input: string, opts?: Options): FoundCharacter[] | null
+/** find the invisible characters in this text — an empty array if there are none */
+export function detect(input: string, opts?: Options): FoundCharacter[]
 
 /** remove invisible characters from the text */
 export function replace(input: string, opts?: Options): string
+
+export const version: string
