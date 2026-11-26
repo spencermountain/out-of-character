@@ -32,7 +32,7 @@ these are sometimes called _'zero-width'_, _'ignorable'_, or _'tag-characters'_
 
 This library helps spot and remove these funboys, before they cause some trouble.
 
-It also catches _bidirectional control characters_ (the ['Trojan Source'](https://trojansource.codes/) trick), _tag characters_ (invisible letters used for [steganography](https://330k.github.io/misc_tools/unicode_steganography.html)), and _stray variation selectors_ — while leaving legitimate emoji, keycap, CJK, and Mongolian sequences alone.
+It also catches _bidirectional control characters_ (the ['Trojan Source'](https://trojansource.codes/) trick), _tag characters_ (invisible letters used for [steganography](https://330k.github.io/misc_tools/unicode_steganography.html)), _stray variation selectors_, _Egyptian hieroglyph format controls_, and _unassigned ignorable code points_ — while leaving legitimate emoji, keycap, CJK, Mongolian, and hieroglyphic sequences alone.
 
 Please remember that some text is meant to have _Khmer-vowels_, or _Kaithi-alphabet_ characters.
 

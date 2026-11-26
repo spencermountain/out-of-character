@@ -6,9 +6,12 @@
 #### 3.0.0 [Nov 2026]
 
 - **[change]** - use native nodev22 glob
+- **[change]** - Node 20 is no longer supported
 - **[change]** - Exit non-zero when hidden characters are found
 - **[change]** - detect() always returns an array
 - **[change]** - Multiple paths in CLI
+- **[change]** - `--test, --detect` and `--remove` CLI flags removed
+- **[change]** - unminified builds/out-of-character.js is no longer shipped
 - **[new]** - 4,006 new hidden characters
 - - Supplementary variation selectors
 - - Unassigned

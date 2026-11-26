@@ -33,14 +33,11 @@
   },
   "scripts": {
     "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
-    "testb": "TESTENV=prod tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
     "watch": "node --watch ./scratch.js",
     "lint": "eslint .",
-    "lint:lockfile": "npx lockfile-lint -p package-lock.json -t npm -a npm -s -i",
     "build": "node ./scripts/version.js && node ./scripts/data.js && rollup -c --silent",
     "version": "node ./scripts/version.js",
-    "unicode:check": "node ./scripts/unicode-check.js",
-    "config:view": "npx http-server . -o=public"
+    "unicode:check": "node ./scripts/unicode-check.js"
   },
   "files": [
     "bin/",
@@ -63,7 +60,6 @@
     "eslint": "10.15.0",
     "rollup": "4.68.8",
     "rollup-plugin-filesize-check": "2.0.1",
-    "shelljs": "0.10.0",
     "tap-dancer": "0.4.4",
     "tape": "5.11.0"
   },

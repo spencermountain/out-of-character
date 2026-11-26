@@ -1,7 +1,8 @@
 import test from 'tape'
-import sh from 'shelljs'
 import fs from 'node:fs'
+import os from 'node:os'
 import path from 'node:path'
+import { spawnSync } from 'node:child_process'
 import getFiles from '../bin/getFiles.js'
 
 test('test glob input', function (t) {
@@ -16,33 +17,44 @@ test('test glob input', function (t) {
   t.end()
 })
 
-/** @todo Review this test. */
-test.skip('bin detect cmd', function (t) {
-  let cmd = './bin/out-of-character.js ./tests/texts/bad-text.txt'
-  let res = sh.exec(cmd, { silent: true }).stdout
-  let wasFound = res.match(/found/i) || null
-  t.notEqual(wasFound, null, 'detect true')
+const bin = './bin/out-of-character.js'
+const run = (args) => spawnSync(process.execPath, [bin, ...args], { encoding: 'utf8' })
+
+test('bin detect cmd', function (t) {
+  let res = run(['./tests/texts/bad-text.txt'])
+  t.ok(/found/i.test(res.stdout), 'detect true')
+  t.equal(res.status, 1, 'fails when characters are found')
 
   // False-positive test
-  cmd = './bin/out-of-character.js ./tests/texts/good-text.txt --detect'
-  res = sh.exec(cmd, { silent: true }).stdout
-  wasFound = res.match(/looks good/i) || null
-  t.notEqual(wasFound, null, 'detect false')
+  res = run(['./tests/texts/good-text.txt'])
+  t.ok(/looks good/i.test(res.stdout), 'detect false')
+  t.equal(res.status, 0, 'passes when clean')
+
+  res = run(['./tests/texts/good-text.txt', './tests/texts/bad-text.txt'])
+  t.ok(/inspecting 2 files/.test(res.stdout), 'several paths')
+  t.equal(res.status, 1, 'fails if any file is bad')
+
+  res = run(['./tests/texts/good-text.txt', '--nope'])
+  t.equal(res.status, 1, 'unknown flag')
   t.end()
 })
 
-/** @todo Review this test. */
-test.skip('replace bin cmd', function (t) {
+test('bin replace cmd', function (t) {
   // Create a copy
-  const filePath = './tests/texts/bad-text-copy.txt'
-  sh.exec(`cp ./tests/texts/bad-text.txt ${filePath}`)
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ooc-'))
+  const filePath = path.join(dir, 'bad-text-copy.txt')
+  fs.copyFileSync('./tests/texts/bad-text.txt', filePath)
 
   const before = fs.readFileSync(filePath).toString()
-  sh.exec(`./bin/out-of-character.js ${filePath} --replace`, { silent: true })
+  let res = run([filePath, '--replace'])
   const after = fs.readFileSync(filePath).toString()
   t.notEqual(before, after, 'file has changed')
+  t.equal(res.status, 0, 'passes after replacing')
+
+  res = run([filePath])
+  t.equal(res.status, 0, 'file is now clean')
   // Cleanup
-  sh.exec(`rm ${filePath}`)
+  fs.rmSync(dir, { recursive: true })
   t.end()
 })
 

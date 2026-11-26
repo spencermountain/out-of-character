@@ -43,7 +43,6 @@ jobs:
       - name: test
         run: |
           pnpm run test
-          pnpm run testb
 
       - name: publish
         run: |
