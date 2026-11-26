@@ -1,6 +1,6 @@
 {
   "name": "out-of-character",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "remove invisible unicode characters",
   "license": "MIT",
   "repository": "github:spencermountain/out-of-character",

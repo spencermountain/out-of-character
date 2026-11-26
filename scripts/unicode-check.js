@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import raw from '../data/characters-raw.js'
+import ranges from '../src/_ranges.js'
 
 // Lists hidden-ish characters in the latest Unicode release that are missing
 // from data/characters-raw.js. It only prints candidates — adding one is a judgement call.
@@ -10,8 +11,9 @@ const cats = ['Cf', 'Zs', 'Zl', 'Zp']
 
 const toHex = (num) => 'U+' + num.toString(16).toUpperCase().padStart(4, '0')
 const have = new Set(raw.map((obj) => parseInt(obj.code.slice(2), 16)))
-// ordinary whitespace, and the tag block that src/match.js covers as a range
-const isHandled = (num) => have.has(num) || [0x9, 0xa, 0xd, 0x20].includes(num) || (num >= 0xe0000 && num <= 0xe007f)
+const inRange = (num) => ranges.some((row) => num >= row[0] && num <= row[1])
+// ordinary whitespace is fine, and the larger blocks are covered in src/_ranges.js
+const isHandled = (num) => have.has(num) || [0x9, 0xa, 0xd, 0x20].includes(num) || inRange(num)
 
 const getLines = async (file) => {
   const res = await fetch(base + file)

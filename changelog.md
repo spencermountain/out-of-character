@@ -9,7 +9,11 @@
 - **[change]** - Exit non-zero when hidden characters are found
 - **[change]** - detect() always returns an array
 - **[change]** - Multiple paths in CLI
-- **[change]** - Zero dependencies
+- **[new]** - 4,006 new hidden characters
+- - Supplementary variation selectors
+- - Unassigned
+- - Egyptian hieroglyph format controls
+- **[change]** - now zero dependencies
 
 #### 2.3.0 [Jul 2026]
 
