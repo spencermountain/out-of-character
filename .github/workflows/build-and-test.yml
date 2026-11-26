@@ -59,24 +59,25 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          cache: npm
           check-latest: true
           node-version: lts/*
 
       - name: Install
-        run: npm ci --ignore-scripts
+        run: |
+          npm install -g pnpm@12
+          pnpm install --frozen-lockfile --ignore-scripts
 
       - name: Audit NPM package signatures and provenance attestations
         run: npm audit signatures
 
       - name: Run ESLint
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Run Lockfile Linter
         run: npm run lint:lockfile
 
       - name: Run build
-        run: npm run build --if-present
+        run: pnpm run build
 
   unit-tests:  
     name: Unit Tests
@@ -97,12 +98,13 @@ jobs:
       - name: Setup Node ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          cache: npm
           check-latest: true
           node-version: ${{ matrix.node-version }}
 
       - name: Install
-        run: npm ci --ignore-scripts
+        run: |
+          npm install -g pnpm@12
+          pnpm install --frozen-lockfile --ignore-scripts
 
       - name: Run tests
-        run: npm t
+        run: pnpm test

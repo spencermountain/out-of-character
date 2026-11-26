@@ -7,16 +7,12 @@ import version from './_version.js'
  * @param {string} text - The text to search for hidden characters.
  * @param {object} [opts] - Options.
  * @param {string[]} [opts.exclude] - Codes (like 'U+202E') or types (like 'Bidi') to ignore.
- * @returns {{name: string, code: string, type: string, offset: number, replacement: string}[]|null} An array
- * of objects representing the found hidden characters, or null if none are found.
+ * @returns {{name: string, code: string, type: string, offset: number, replacement: string}[]} An array
+ * of objects representing the found hidden characters — empty if none are found.
  * Offsets are UTF-16 code-unit indices, like String.prototype.indexOf.
  */
 const detect = function (text, opts) {
-  const matches = findAll(text, opts)
-  if (matches.length > 0) {
-    return matches
-  }
-  return null
+  return findAll(text, opts)
 }
 
 /**

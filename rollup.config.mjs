@@ -38,20 +38,6 @@ export default [
     input: 'src/index.js',
     output: [
       {
-        file: `builds/${name}.js`,
-        format: 'umd',
-        sourcemap: false,
-        name: 'outOfCharacter',
-        banner: banner,
-      },
-    ],
-    plugins: [
-    ],
-  },
-  {
-    input: 'src/index.js',
-    output: [
-      {
         file: `builds/${name}.min.js`,
         format: 'umd',
         name: 'outOfCharacter',
@@ -60,9 +46,9 @@ export default [
     plugins: [
       terser(),
       sizeCheck({
-        expect: 21, // sizes in kb
-        warn: 10, // acceptable change (+/-)
-        throw: 20, // unacceptable change (+/-)
+        expect: 7, // sizes in kb
+        warn: 2, // acceptable change (+/-)
+        throw: 5, // unacceptable change (+/-)
       })
     ],
   },

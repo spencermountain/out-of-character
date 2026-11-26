@@ -40,7 +40,7 @@ const getFiles = function (pathStr, recursive = false) {
   // Handle glob patterns
   if (!fs.existsSync(pathStr) && hasMagic(pathStr)) {
     // native glob, node>=22
-    return fs.globSync(pathStr)
+    return fs.globSync(pathStr).filter((file) => !fs.lstatSync(file).isDirectory())
   }
 
   // Check if it's a file or directory

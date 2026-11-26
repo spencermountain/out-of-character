@@ -36,7 +36,7 @@ const parse = function (char) {
 }
 
 const save = function (obj) {
-  fs.writeFile(resolve(`${import.meta.dirname}/../../data/characters.json`), JSON.stringify(obj, null, 2) + '\n', (err) => {
+  fs.writeFile(resolve(`${import.meta.dirname}/../../data/characters.js`), 'export default ' + JSON.stringify(obj, null, 2) + '\n', (err) => {
     if (err) throw err
     console.log('The file has been saved!')
     console.log(parsed)

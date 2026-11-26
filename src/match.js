@@ -1,12 +1,11 @@
-import data from '../data/characters.js'
+import data from './_data.js'
 import { isEmoji, charBefore } from './isEmoji.js'
 
 // For easier lookup — keyed by the literal character
 const byChar = new Map()
-data.forEach((obj) => {
-  if (obj.replaceWith !== undefined) {
-    byChar.set(obj.actualUnicodeChar, obj)
-  }
+data.forEach(([code, name, type, replaceWith]) => {
+  const char = String.fromCodePoint(parseInt(code.slice(2), 16))
+  byChar.set(char, { code, name, type, replaceWith })
 })
 
 const esc = (char) => `\\u{${char.codePointAt(0).toString(16).toUpperCase()}}`

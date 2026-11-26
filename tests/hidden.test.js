@@ -24,7 +24,7 @@ test('bidi control characters', function (t) {
   // a trojan-source style line
   const sneaky = 'if (level != "user‮ ⁦// admin check⁩ ⁦") {'
   t.equal(detect(sneaky).length, 4, 'found all four bidi controls')
-  t.equal(detect(sneaky, { exclude: ['Bidi'] }), null, 'exclude Bidi type')
+  t.deepEqual(detect(sneaky, { exclude: ['Bidi'] }), [], 'exclude Bidi type')
   t.end()
 })
 
@@ -41,7 +41,7 @@ test('tag characters', function (t) {
 
   // the flag-of-england emoji is a legitimate tag sequence
   const england = '\u{1F3F4}\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}'
-  t.equal(detect(`go ${england}!`), null, 'england flag is not flagged')
+  t.deepEqual(detect(`go ${england}!`), [], 'england flag is not flagged')
   t.equal(replace(`go ${england}!`), `go ${england}!`, 'england flag is preserved')
   t.end()
 })
@@ -54,10 +54,10 @@ test('variation selectors', function (t) {
   t.equal(replace('a️b'), 'ab', 'stray vs16 removed')
 
   // legitimate uses are left alone
-  t.equal(detect('❤️'), null, 'emoji presentation selector kept')
-  t.equal(detect('#️⃣'), null, 'keycap sequence kept')
-  t.equal(detect('辻︀'), null, 'cjk variation sequence kept')
-  t.equal(detect('ᠠ᠋'), null, 'mongolian fvs after mongolian letter kept')
+  t.deepEqual(detect('❤️'), [], 'emoji presentation selector kept')
+  t.deepEqual(detect('#️⃣'), [], 'keycap sequence kept')
+  t.deepEqual(detect('辻︀'), [], 'cjk variation sequence kept')
+  t.deepEqual(detect('ᠠ᠋'), [], 'mongolian fvs after mongolian letter kept')
   t.end()
 })
 
@@ -65,7 +65,7 @@ test('exclude option', function (t) {
   const str = 'a​b‮c'
   t.equal(detect(str).length, 2, 'both found by default')
   t.equal(detect(str, { exclude: ['U+200B'] }).length, 1, 'exclude by code')
-  t.equal(detect(str, { exclude: ['U+200B', 'Bidi'] }), null, 'exclude by code and type')
+  t.deepEqual(detect(str, { exclude: ['U+200B', 'Bidi'] }), [], 'exclude by code and type')
   t.equal(replace(str, { exclude: ['Bidi'] }), 'ab‮c', 'replace respects exclude')
   t.end()
 })

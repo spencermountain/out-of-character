@@ -79,7 +79,9 @@ remove invisible characters from a file
 out-of-character ./path/to/file.txt --replace
 ```
 
-_(`--remove` is an alias for `--replace`, and glob patterns like `./src/**/*.js` work too)_
+_(glob patterns like `'./src/**/*.js'` work too, and you can pass several paths at once)_
+
+the command exits with a non-zero code when it finds hidden characters, so it can be used in a CI step or pre-commit hook.
 
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
@@ -129,7 +131,7 @@ console.log(str !== after)
 // true
 ```
 
-`detect` returns `null` when the text is clean. Offsets are UTF-16 code-unit indices, like `String.prototype.indexOf`.
+`detect` returns an empty array when the text is clean. Offsets are UTF-16 code-unit indices, like `String.prototype.indexOf`.
 
 Both functions accept an options object, to leave some characters alone — by code, or by type:
 

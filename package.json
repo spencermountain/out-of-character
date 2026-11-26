@@ -37,14 +37,14 @@
     "watch": "node --watch ./scratch.js",
     "lint": "eslint .",
     "lint:lockfile": "npx lockfile-lint -p package-lock.json -t npm -a npm -s -i",
-    "build": "node ./scripts/version.js && rollup -c --silent",
+    "build": "node ./scripts/version.js && node ./scripts/data.js && rollup -c --silent",
     "version": "node ./scripts/version.js",
+    "unicode:check": "node ./scripts/unicode-check.js",
     "config:view": "npx http-server . -o=public"
   },
   "files": [
     "bin/",
     "builds/",
-    "data/characters.json",
     "src/",
     "types/"
   ],
@@ -52,8 +52,11 @@
     "unicode",
     "invisible"
   ],
-  "dependencies": {
-    "colorette": "^2.0.20"
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120
   },
   "devDependencies": {
     "@rollup/plugin-terser": "1.0.2",
@@ -64,11 +67,5 @@
     "tap-dancer": "0.4.4",
     "tape": "5.11.0"
   },
-  "unpkg": "./builds/out-of-character.min.js",
-  "prettier": {
-    "trailingComma": "es5",
-    "semi": false,
-    "singleQuote": true,
-    "printWidth": 120
-  }
+  "unpkg": "./builds/out-of-character.min.js"
 }

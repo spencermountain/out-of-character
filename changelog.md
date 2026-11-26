@@ -5,7 +5,11 @@
 
 #### 3.0.0 [Nov 2026]
 
-- **[change]** - use native nodejs glob
+- **[change]** - use native nodev22 glob
+- **[change]** - Exit non-zero when hidden characters are found
+- **[change]** - detect() always returns an array
+- **[change]** - Multiple paths in CLI
+- **[change]** - Zero dependencies
 
 #### 2.3.0 [Jul 2026]
 
