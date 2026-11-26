@@ -1,7 +1,7 @@
 {
-  "name": "char-out",
-  "version": "3.0.0",
-  "description": "remove invisible unicode characters",
+  "name": "out-of-character",
+  "version": "3.1.0",
+  "description": "renamed to char-out - remove invisible unicode characters",
   "license": "MIT",
   "repository": "github:spencermountain/char-out",
   "homepage": "https://work.spencermountain.dev/char-out",
@@ -14,54 +14,37 @@
     ".": {
       "import": {
         "types": "./types/index.d.ts",
-        "default": "./builds/char-out.mjs"
+        "default": "./index.js"
       },
       "require": {
         "types": "./types/index.d.cts",
-        "default": "./builds/char-out.cjs"
+        "default": "./index.cjs"
       }
     }
   },
-  "main": "./builds/char-out.cjs",
+  "main": "./index.cjs",
   "types": "./types/index.d.ts",
   "bin": {
-    "char-out": "bin/char-out.js"
+    "out-of-character": "bin/out-of-character.js"
   },
   "sideEffects": false,
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
-    "watch": "node --watch ./scratch.js",
-    "lint": "eslint .",
-    "build": "node ./scripts/version.js && node ./scripts/data.js && rollup -c --silent",
-    "version": "node ./scripts/version.js",
-    "unicode:check": "node ./scripts/unicode-check.js"
+    "test": "node ./test.js"
   },
   "files": [
     "bin/",
-    "builds/",
-    "src/",
+    "index.js",
+    "index.cjs",
     "types/"
   ],
   "keywords": [
     "unicode",
     "invisible"
   ],
-  "prettier": {
-    "trailingComma": "es5",
-    "semi": false,
-    "singleQuote": true,
-    "printWidth": 120
-  },
-  "devDependencies": {
-    "@rollup/plugin-terser": "1.0.2",
-    "eslint": "10.15.0",
-    "rollup": "4.68.8",
-    "rollup-plugin-filesize-check": "2.0.1",
-    "tap-dancer": "0.4.4",
-    "tape": "5.11.0"
-  },
-  "unpkg": "./builds/char-out.min.js"
+  "dependencies": {
+    "char-out": "^3.0.0"
+  }
 }

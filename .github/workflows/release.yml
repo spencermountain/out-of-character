@@ -28,21 +28,13 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: install
+        # fails until the char-out release is live
         run: |
-          npm install -g pnpm@12
-          pnpm install --frozen-lockfile --ignore-scripts
-
-      - name: static checks
-        run: |
-          pnpm run lint
-
-      - name: build
-        run: |
-          pnpm run build
+          npm install --ignore-scripts --no-package-lock
 
       - name: test
         run: |
-          pnpm run test
+          npm test
 
       - name: publish
         # auth is via npm trusted publisher (OIDC), no token needed
