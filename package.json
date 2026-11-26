@@ -29,7 +29,7 @@
   },
   "sideEffects": false,
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "scripts": {
     "test": "tape \"./tests/**/*.test.js\" | tap-dancer  --color always",
@@ -53,17 +53,16 @@
     "invisible"
   ],
   "dependencies": {
-    "colorette": "^2.0.20",
-    "glob": "13.0.6"
+    "colorette": "^2.0.20"
   },
   "devDependencies": {
-    "@rollup/plugin-terser": "1.0.0",
-    "eslint": "10.11.0",
-    "rollup": "4.63.5",
+    "@rollup/plugin-terser": "1.0.2",
+    "eslint": "10.15.0",
+    "rollup": "4.68.8",
     "rollup-plugin-filesize-check": "2.0.1",
     "shelljs": "0.10.0",
-    "tap-dancer": "0.4.3",
-    "tape": "5.10.2"
+    "tap-dancer": "0.4.4",
+    "tape": "5.11.0"
   },
   "unpkg": "./builds/out-of-character.min.js",
   "prettier": {
