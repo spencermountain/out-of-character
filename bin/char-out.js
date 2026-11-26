@@ -23,7 +23,7 @@ process.argv.slice(2).forEach((arg) => {
 })
 
 if (paths.length === 0) {
-  console.warn(`Must supply a file path: 'out-of-character ./path/to/file.txt'`)
+  console.warn(`Must supply a file path: 'char-out ./path/to/file.txt'`)
   process.exit(1)
 }
 

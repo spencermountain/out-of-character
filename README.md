@@ -1,17 +1,17 @@
 <div align="center">
-  <div><b>out-of-character</b></div>
+  <div><b>char-out</b></div>
   <div>remove invisible unicode characters from text</div>
   <div>
     <img width="300" height="8" alt="image" src="https://github.com/user-attachments/assets/a8454327-add3-4486-ad7d-c24be50f9d8d" />
   </div>
-  <a href="https://npmjs.org/package/out-of-character">
-    <img src="https://img.shields.io/npm/v/out-of-character.svg?style=flat-square" />
+  <a href="https://npmjs.org/package/char-out">
+    <img src="https://img.shields.io/npm/v/char-out.svg?style=flat-square" />
   </a>
-  <a href="https://bundlephobia.com/result?p=out-of-character">
-    <img src="https://badgen.net/bundlejs/min/out-of-character" />
+  <a href="https://bundlephobia.com/result?p=char-out">
+    <img src="https://badgen.net/bundlejs/min/char-out" />
   </a>
   <div align="center">
-    <code>npm install out-of-character</code>
+    <code>npm install char-out</code>
   </div>
 </div>
 <!-- spacer -->
@@ -35,7 +35,9 @@ This library helps spot and remove these funboys, before they cause some trouble
 It also catches _bidirectional control characters_ (the ['Trojan Source'](https://trojansource.codes/) trick), _tag characters_ (invisible letters used for [steganography](https://330k.github.io/misc_tools/unicode_steganography.html)), _stray variation selectors_, _Egyptian hieroglyph format controls_, and _unassigned ignorable code points_ — while leaving legitimate emoji, keycap, CJK, Mongolian, and hieroglyphic sequences alone.
 
 Please remember that some text is meant to have _Khmer-vowels_, or _Kaithi-alphabet_ characters.
-
+<br/>
+<br/>
+This library used to be called `out-of-character`.
 <!-- spacer -->
 <img height="15px" src="https://user-images.githubusercontent.com/399657/68221862-17ceb980-ffb8-11e9-87d4-7b30b6488f16.png"/>
 
@@ -44,25 +46,25 @@ Please remember that some text is meant to have _Khmer-vowels_, or _Kaithi-alpha
 ## CLI
 
 <di>
-  <code>npm install -g out-of-character</code>
+  <code>npm install -g char-out</code>
 </di>
 
 detect invisible characters in all files in a directory
 
 ```bash
-out-of-character ./path/to/dir
+char-out ./path/to/dir
 ```
 
 remove them from all files in a directory
 
 ```bash
-out-of-character ./path/to/dir --replace
+char-out ./path/to/dir --replace
 ```
 
 include files in nested sub-directories
 
 ```bash
-out-of-character ./path/to/dir --replace --recursive
+char-out ./path/to/dir --replace --recursive
 ```
 
 ---
@@ -70,13 +72,13 @@ out-of-character ./path/to/dir --replace --recursive
 detect invisible characters in a file
 
 ```bash
-out-of-character ./path/to/file.txt
+char-out ./path/to/file.txt
 ```
 
 remove invisible characters from a file
 
 ```bash
-out-of-character ./path/to/file.txt --replace
+char-out ./path/to/file.txt --replace
 ```
 
 _(glob patterns like `'./src/**/*.js'` work too, and you can pass several paths at once)_
@@ -89,7 +91,7 @@ the command exits with a non-zero code when it finds hidden characters, so it ca
 ## Javascript API
 
 ```js
-import { detect, replace } from 'out-of-character'
+import { detect, replace } from 'char-out'
 
 let str = 'noth­ing s͏neak឵y h᠎ere' //actually, there is.
 console.log(detect(str))
@@ -147,7 +149,7 @@ fixing/detecting in files can be done like:
 
 ```js
 const fs = require('fs')
-const { detect, replace } = require('out-of-character')
+const { detect, replace } = require('char-out')
 
 let text = fs.readFileSync('./some-file.txt').toString()
 console.log(detect(text))

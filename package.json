@@ -1,10 +1,10 @@
 {
-  "name": "out-of-character",
+  "name": "char-out",
   "version": "3.0.0",
   "description": "remove invisible unicode characters",
   "license": "MIT",
-  "repository": "github:spencermountain/out-of-character",
-  "homepage": "https://work.spencermountain.dev/out-of-character",
+  "repository": "github:spencermountain/char-out",
+  "homepage": "https://work.spencermountain.dev/char-out",
   "author": "Spencer Kelly and Adam Tsiopani",
   "contributors": [
     "Frazer Smith <frazer.dev@icloud.com> (https://github.com/fdawgs)"
@@ -14,18 +14,18 @@
     ".": {
       "import": {
         "types": "./types/index.d.ts",
-        "default": "./builds/out-of-character.mjs"
+        "default": "./builds/char-out.mjs"
       },
       "require": {
         "types": "./types/index.d.cts",
-        "default": "./builds/out-of-character.cjs"
+        "default": "./builds/char-out.cjs"
       }
     }
   },
-  "main": "./builds/out-of-character.cjs",
+  "main": "./builds/char-out.cjs",
   "types": "./types/index.d.ts",
   "bin": {
-    "out-of-character": "./bin/out-of-character.js"
+    "char-out": "bin/char-out.js"
   },
   "sideEffects": false,
   "engines": {
@@ -63,5 +63,5 @@
     "tap-dancer": "0.4.4",
     "tape": "5.11.0"
   },
-  "unpkg": "./builds/out-of-character.min.js"
+  "unpkg": "./builds/char-out.min.js"
 }

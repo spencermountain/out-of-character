@@ -4,7 +4,7 @@ import fs from 'node:fs'
 
 const pkg = JSON.parse(fs.readFileSync('./package.json').toString())
 
-const name = 'out-of-character'
+const name = 'char-out'
 const banner = `/* ${name} ${pkg.version} MIT */`
 
 export default [
@@ -40,7 +40,7 @@ export default [
       {
         file: `builds/${name}.min.js`,
         format: 'umd',
-        name: 'outOfCharacter',
+        name: 'charOut',
       },
     ],
     plugins: [
