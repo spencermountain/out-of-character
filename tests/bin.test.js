@@ -17,7 +17,7 @@ test('test glob input', function (t) {
   t.end()
 })
 
-const bin = './bin/out-of-character.js'
+const bin = './bin/char-out.js'
 const run = (args) => spawnSync(process.execPath, [bin, ...args], { encoding: 'utf8' })
 
 test('bin detect cmd', function (t) {
@@ -41,7 +41,7 @@ test('bin detect cmd', function (t) {
 
 test('bin replace cmd', function (t) {
   // Create a copy
-  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ooc-'))
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'char-out-'))
   const filePath = path.join(dir, 'bad-text-copy.txt')
   fs.copyFileSync('./tests/texts/bad-text.txt', filePath)
 

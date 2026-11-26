@@ -5,6 +5,7 @@
 
 #### 3.0.0 [Nov 2026]
 
+- **[change]** - package renamed from `out-of-character` to `char-out`
 - **[change]** - use native nodev22 glob
 - **[change]** - Node 20 is no longer supported
 - **[change]** - Exit non-zero when hidden characters are found

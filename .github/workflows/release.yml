@@ -45,8 +45,6 @@ jobs:
           pnpm run test
 
       - name: publish
+        # auth is via npm trusted publisher (OIDC), no token needed
         run: |
-          echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
           npm publish --access public --provenance
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
